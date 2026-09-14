@@ -1,0 +1,9 @@
+.env
+.env.*
+.claude/
+incoming/
+*.log
+.DS_Store
+
+# Pillow desempaquetado a mano (no hay pip en la imagen). Se rehace con memory/editar-fotos.md
+vendor/

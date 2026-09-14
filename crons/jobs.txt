@@ -1,0 +1,10 @@
+# Crons autónomos del agente — el scheduler interno (bin/agent_cron.py) recarga
+# este archivo cada minuto. El agente puede editarlo él mismo (queda auditable
+# si el workspace está en git).
+# Formato: MIN HORA DIA MES DOW | prompt   (* , número o lista a,b,c · DOW: 0=lunes…6=domingo)
+# La zona horaria es la del contenedor (TZ del compose).
+
+# Ejemplos:
+# 0 9 * * 0 | [CRON] Reporte semanal: resume la semana y envíalo por tg.sh.
+# 30 8 1 * * | [CRON] Día 1 del mes: revisa los pendientes mensuales y avisa por tg.sh.
+
