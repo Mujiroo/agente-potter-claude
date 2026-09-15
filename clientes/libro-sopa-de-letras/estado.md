@@ -363,3 +363,20 @@ Pedro pidió revisar todo como editor profesional.
 - Verificado: 0 errores, 0 desbordes, 0 Type3, zona segura OK, código de barras libre, contraportada 340/374. El Vol. 1 sigue idéntico (md5).
 - Archivos: `entregables/vol2/` (interior v1, portada v1, cover_preview.png).
 - Esperando revisión de Pedro. Pendiente además: confirmar nombre "World Hunt!".
+
+# Vol. 3–5 — investigación de temas (13:51–14:20, msgs 216–219)
+- Pedro pide que YO proponga los temas de los Vol. 3, 4 y 5: complementarios, comerciales, con buena rotación.
+- Top 100 Amazon Word Search Games (15-sep-2026):
+  - misterio/asesinato 15; Biblia/fe 9; calma/mindfulness/inspiración 7
+  - estacionales 8 (otoño 5, Halloween 2, Navidad 1, subiendo); español 4
+  - nostalgia #10; naturaleza 3 (jardín #67, fauna #94, perros #99); USA #85 (Brain Games)
+  - licencias: Friends, Gilmore Girls, Family Feud, Wheel of Fortune, Dolly Parton, D&D
+- Autocompletado: "for seniors" y "large print" aparecen en Christmas, nostalgic, gardening, bible, inspirational, winter, cat.
+- Resultados (búsqueda amplia): christmas 10k+, bible 10k+, inspirational 9k+, nostalgic 5k+, usa 5k+, garden 3k+, dog 3k+, bird 2k+.
+- Recomendación enviada:
+  - **Vol. 3 Christmas** (publicar antes de fines de octubre; sin personajes registrados)
+  - **Vol. 4 Nostalgia** (solo genéricos)
+  - **Vol. 5 USA Road Trip** (sigue al Vol. 2)
+  - Alternativas: Biblia, jardín y aves, perros y gatos.
+  - Extras: serie en español; pack de 5 volúmenes.
+- Esperando OK.
