@@ -488,3 +488,14 @@ Pedro pidió revisar todo como editor profesional.
   - Confirmó opción A (mover a Elementos eliminados). Moví 5; 2 (Enel, Booz) dieron 404 porque él los borró segundos antes.
   - Resultado: 8 en Elementos eliminados (incluye un Falabella nuevo que borró él). Bandeja: solo BTG. No deseado: Bci Pyme intacto.
   - Ofrecí borrado definitivo.
+
+# Idea nueva: libro híbrido "Calming & Cozy" (msgs 303–306, 20:19)
+- Pedro propone: 40 sopas + 20 sudokus fáciles + 10 laberintos; subnicho calma/anti-estrés; estética "Bold & Easy".
+- Mandó una tabla con 10 bloques temáticos y listas de palabras **en español** (Mañanas Acogedoras, Paseo por el Bosque, Rincón de Lectura, Jardín de Flores, Tarde de Lluvia, Escapada a la Playa, Noche Estrellada, Cocina Casera, Momentos de Yoga, Cabaña de Montaña).
+- Mi análisis (msg 307):
+  - Datos a favor: 6 libros mixtos y 7 del ángulo calma en el top 100; nadie combina bien ambos.
+  - "Bold & Easy" sirve como estilo, no como palabra clave (la dominan los libros para colorear).
+  - Puedo generar los 3 tipos: sopas, sudokus (con solución única verificada) y laberintos (con salida verificada).
+  - Cuentas: 70 páginas de puzzles + 48 de soluciones ≈ 120 págs.; precio US$ 10,99–12,99.
+  - Preguntas: idioma (la lista vino en español), 40 temas (¿los amplío yo?), serie nueva o dentro de Big Print Word Hunt (recomiendo nueva).
+  - Ofrecí un libro de muestra con 2 sopas, 2 sudokus y 1 laberinto.
