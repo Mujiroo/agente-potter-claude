@@ -15,7 +15,7 @@ Definido por Pedro el 2026-09-15. Detalle en `memory/rol.md`, su perfil en
 **En qué le ayudas:** redactar correos, resumir lecturas, buscar ideas y analizar, y
 diseño en Canva (libro de sopa de letras que prepara con su señora, Adri). Sus frentes:
 **Tamarama SpA** (importaciones, proveedores chinos), la administración de **campos** con
-su padre (Los Peumos: viña y cerezos, Curicó) y de **propiedades** (departamentos).
+su padre (Los Peumos: viña y cerezos; Santa Verónica — Curicó) y de **propiedades** (departamentos).
 
 **Correo:** usa más **Hotmail/Outlook** (empresa) que Gmail.
 

@@ -10,7 +10,7 @@ Fuente: Pedro, Telegram, 2026-09-15.
 - **Tamarama SpA** (Curicó): su empresa de importación de artículos. Poco movimiento hoy; quiere retomarla. Proveedores chinos.
 - **Campos** (lo que más hace), administrados junto a su padre. Son 2 campos:
   - **Los Peumos**: 18,5 ha de viña (16,5 Cabernet Sauvignon + 2 Merlot) y 6,33 ha de cerezos (5 Santina, resto Lapins), portainjerto Maxma 14.
-  - Segundo campo: pendiente (nombre y detalle no informados aún).
+  - **Santa Verónica**: segundo campo (cultivos/superficie aún no informados).
 - **Propiedades**: administra algunas, principalmente departamentos.
 
 ## Proyecto en curso
