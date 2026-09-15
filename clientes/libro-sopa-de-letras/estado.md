@@ -337,3 +337,10 @@ Pedro pidió revisar todo como editor profesional.
      - con puntuación en la lista: ST. PETERSBURG, PORT-AU-PRINCE, CAP-HAITIEN, PETION-VILLE
      - mantener BANGALORE y TURKEY
   - aviso: MEXICO en MEXICO CITY y PANAMA en PANAMA CITY → dejarlo
+- 13:31 Pedro decide (msg 204):
+  1) **B**: frases de viaje por puzzle
+  2) **cambiar países** para atraer lectores de EE. UU.
+  3) OK Ucrania (POLTAVA, CHERNIVTSI) y **cambiar Corea del Norte**
+  4) OK correcciones de nombres; dejar BANGALORE y TURKEY; dejar MEXICO y PANAMA (dentro de su capital)
+- Portada Vol. 2 en progreso: estilo bold teal (#00897B), ilustración `suitcase` (maleta con sopa de letras, globo, avión, pin), nombre de trabajo "WORLD HUNT!" (0 títulos en Amazon).
+  - Plantilla generalizada (`bold_palette`, `illustration`, `count`, `band_line`); el Vol. 1 se regenera idéntico byte a byte (md5 verificado).

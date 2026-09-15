@@ -1,0 +1,916 @@
+{
+ "title": "Word Search",
+ "subtitle": "World Hunt!",
+ "volume": "Vol. 2",
+ "tagline": "55 Large Print Puzzles of Countries, Capitals and Cities for Adults and Seniors",
+ "trim": [
+  6,
+  9
+ ],
+ "size": 13,
+ "seed": 2027,
+ "directions": "forward",
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": {
+  "name": "Big Print Word Hunt",
+  "volume": 2
+ },
+ "series_note": "<b>World Hunt!</b> is Vol. 2 of the <b>Big Print Word Hunt</b> series.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "instructions_style": "icons",
+ "puzzles": [
+  {
+   "phrase": "China",
+   "words": [
+    "CHINA",
+    "BEIJING",
+    "SHANGHAI",
+    "GUANGZHOU",
+    "SHENZHEN",
+    "WUHAN",
+    "CHENGDU",
+    "NANJING",
+    "HANGZHOU"
+   ]
+  },
+  {
+   "phrase": "India",
+   "words": [
+    "INDIA",
+    "NEW DELHI",
+    "MUMBAI",
+    "BANGALORE",
+    "HYDERABAD",
+    "AHMEDABAD",
+    "CHENNAI",
+    "KOLKATA",
+    "SURAT"
+   ]
+  },
+  {
+   "phrase": "Brazil",
+   "words": [
+    "BRAZIL",
+    "BRASILIA",
+    "SAO PAULO",
+    "SALVADOR",
+    "FORTALEZA",
+    "CURITIBA",
+    "MANAUS",
+    "RECIFE",
+    "BELEM"
+   ]
+  },
+  {
+   "phrase": "Mexico",
+   "words": [
+    "MEXICO",
+    "MEXICO CITY",
+    "GUADALAJARA",
+    "MONTERREY",
+    "PUEBLA",
+    "TIJUANA",
+    "LEON",
+    "JUAREZ",
+    "MERIDA"
+   ]
+  },
+  {
+   "phrase": "Russia",
+   "words": [
+    "RUSSIA",
+    "MOSCOW",
+    "ST PETERSBURG",
+    "NOVOSIBIRSK",
+    "KRASNOYARSK",
+    "KAZAN",
+    "SAMARA",
+    "ROSTOV",
+    "VORONEZH"
+   ]
+  },
+  {
+   "phrase": "Japan",
+   "words": [
+    "JAPAN",
+    "TOKYO",
+    "OSAKA",
+    "YOKOHAMA",
+    "NAGOYA",
+    "SAPPORO",
+    "KOBE",
+    "KYOTO",
+    "HIROSHIMA"
+   ]
+  },
+  {
+   "phrase": "Germany",
+   "words": [
+    "GERMANY",
+    "BERLIN",
+    "HAMBURG",
+    "MUNICH",
+    "COLOGNE",
+    "FRANKFURT",
+    "STUTTGART",
+    "DORTMUND",
+    "ESSEN"
+   ]
+  },
+  {
+   "phrase": "France",
+   "words": [
+    "FRANCE",
+    "PARIS",
+    "MARSEILLE",
+    "LYON",
+    "TOULOUSE",
+    "NICE",
+    "NANTES",
+    "STRASBOURG",
+    "BORDEAUX"
+   ]
+  },
+  {
+   "phrase": "Italy",
+   "words": [
+    "ITALY",
+    "ROME",
+    "MILAN",
+    "NAPLES",
+    "TURIN",
+    "PALERMO",
+    "GENOA",
+    "BOLOGNA",
+    "FLORENCE"
+   ]
+  },
+  {
+   "phrase": "Spain",
+   "words": [
+    "SPAIN",
+    "MADRID",
+    "BARCELONA",
+    "VALENCIA",
+    "SEVILLE",
+    "ZARAGOZA",
+    "MALAGA",
+    "MURCIA",
+    "BILBAO"
+   ]
+  },
+  {
+   "phrase": "Canada",
+   "words": [
+    "CANADA",
+    "OTTAWA",
+    "TORONTO",
+    "MONTREAL",
+    "VANCOUVER",
+    "CALGARY",
+    "EDMONTON",
+    "WINNIPEG",
+    "HAMILTON"
+   ]
+  },
+  {
+   "phrase": "Turkey",
+   "words": [
+    "TURKEY",
+    "ANKARA",
+    "ISTANBUL",
+    "IZMIR",
+    "BURSA",
+    "ADANA",
+    "GAZIANTEP",
+    "KONYA",
+    "ANTALYA"
+   ]
+  },
+  {
+   "phrase": "Egypt",
+   "words": [
+    "EGYPT",
+    "CAIRO",
+    "ALEXANDRIA",
+    "GIZA",
+    "LUXOR",
+    "ASWAN",
+    "MANSOURA",
+    "TANTA",
+    "ASYUT"
+   ]
+  },
+  {
+   "phrase": "Nigeria",
+   "words": [
+    "NIGERIA",
+    "ABUJA",
+    "LAGOS",
+    "KANO",
+    "IBADAN",
+    "PORT HARCOURT",
+    "KADUNA",
+    "ENUGU",
+    "ONITSHA"
+   ]
+  },
+  {
+   "phrase": "Pakistan",
+   "words": [
+    "PAKISTAN",
+    "ISLAMABAD",
+    "KARACHI",
+    "LAHORE",
+    "FAISALABAD",
+    "RAWALPINDI",
+    "MULTAN",
+    "PESHAWAR",
+    "QUETTA"
+   ]
+  },
+  {
+   "phrase": "Indonesia",
+   "words": [
+    "INDONESIA",
+    "JAKARTA",
+    "SURABAYA",
+    "BANDUNG",
+    "MEDAN",
+    "SEMARANG",
+    "PALEMBANG",
+    "MAKASSAR",
+    "TANGERANG"
+   ]
+  },
+  {
+   "phrase": "Vietnam",
+   "words": [
+    "VIETNAM",
+    "HANOI",
+    "HO CHI MINH",
+    "HAIPHONG",
+    "DANANG",
+    "CAN THO",
+    "HUE",
+    "VINH",
+    "QUI NHON"
+   ]
+  },
+  {
+   "phrase": "Thailand",
+   "words": [
+    "THAILAND",
+    "BANGKOK",
+    "CHIANG MAI",
+    "PATTAYA",
+    "PHUKET",
+    "KHON KAEN",
+    "HATYAI",
+    "NONTHABURI",
+    "RAYONG"
+   ]
+  },
+  {
+   "phrase": "Malaysia",
+   "words": [
+    "MALAYSIA",
+    "KUALA LUMPUR",
+    "JOHOR BAHRU",
+    "IPOH",
+    "KUCHING",
+    "KOTA KINABALU",
+    "SHAH ALAM",
+    "MALACCA",
+    "ALOR SETAR"
+   ]
+  },
+  {
+   "phrase": "South Korea",
+   "words": [
+    "SOUTH KOREA",
+    "SEOUL",
+    "BUSAN",
+    "INCHEON",
+    "DAEGU",
+    "DAEJEON",
+    "GWANGJU",
+    "SUWON",
+    "ULSAN"
+   ]
+  },
+  {
+   "phrase": "North Korea",
+   "words": [
+    "NORTH KOREA",
+    "PYONGYANG",
+    "HAMHUNG",
+    "CHONGJIN",
+    "NAMPO",
+    "WONSAN",
+    "SINUIJU",
+    "KAESONG",
+    "HAEJU"
+   ]
+  },
+  {
+   "phrase": "Argentina",
+   "words": [
+    "ARGENTINA",
+    "BUENOS AIRES",
+    "CORDOBA",
+    "ROSARIO",
+    "MENDOZA",
+    "LA PLATA",
+    "SALTA",
+    "TUCUMAN",
+    "MAR DEL PLATA"
+   ]
+  },
+  {
+   "phrase": "Poland",
+   "words": [
+    "POLAND",
+    "WARSAW",
+    "KRAKOW",
+    "WROCLAW",
+    "POZNAN",
+    "GDANSK",
+    "LODZ",
+    "SZCZECIN",
+    "BYDGOSZCZ"
+   ]
+  },
+  {
+   "phrase": "Ukraine",
+   "words": [
+    "UKRAINE",
+    "KYIV",
+    "KHARKIV",
+    "ODESA",
+    "DNIPRO",
+    "DONETSK",
+    "LVIV",
+    "MYKOLAIV",
+    "MARIUPOL"
+   ]
+  },
+  {
+   "phrase": "Colombia",
+   "words": [
+    "COLOMBIA",
+    "BOGOTA",
+    "MEDELLIN",
+    "CALI",
+    "CARTAGENA",
+    "BARRANQUILLA",
+    "BUCARAMANGA",
+    "PEREIRA",
+    "MANIZALES"
+   ]
+  },
+  {
+   "phrase": "Venezuela",
+   "words": [
+    "VENEZUELA",
+    "CARACAS",
+    "MARACAIBO",
+    "MARACAY",
+    "BARQUISIMETO",
+    "MATURIN",
+    "CUMANA",
+    "BARINAS",
+    "CORO"
+   ]
+  },
+  {
+   "phrase": "Peru",
+   "words": [
+    "PERU",
+    "LIMA",
+    "AREQUIPA",
+    "TRUJILLO",
+    "CUSCO",
+    "IQUITOS",
+    "CHICLAYO",
+    "PIURA",
+    "HUANCAYO"
+   ]
+  },
+  {
+   "phrase": "Chile",
+   "words": [
+    "CHILE",
+    "SANTIAGO",
+    "VALPARAISO",
+    "CONCEPCION",
+    "ANTOFAGASTA",
+    "TEMUCO",
+    "RANCAGUA",
+    "TALCA",
+    "IQUIQUE"
+   ]
+  },
+  {
+   "phrase": "Ecuador",
+   "words": [
+    "ECUADOR",
+    "QUITO",
+    "GUAYAQUIL",
+    "CUENCA",
+    "MACHALA",
+    "MANTA",
+    "PORTOVIEJO",
+    "AMBATO",
+    "LOJA"
+   ]
+  },
+  {
+   "phrase": "Bolivia",
+   "words": [
+    "BOLIVIA",
+    "LA PAZ",
+    "SANTA CRUZ",
+    "COCHABAMBA",
+    "EL ALTO",
+    "SUCRE",
+    "ORURO",
+    "POTOSI",
+    "TARIJA"
+   ]
+  },
+  {
+   "phrase": "Paraguay",
+   "words": [
+    "PARAGUAY",
+    "ASUNCION",
+    "ENCARNACION",
+    "LUQUE",
+    "SAN LORENZO",
+    "CAPIATA",
+    "LAMBARE",
+    "LIMPIO",
+    "PILAR"
+   ]
+  },
+  {
+   "phrase": "Uruguay",
+   "words": [
+    "URUGUAY",
+    "MONTEVIDEO",
+    "SALTO",
+    "PAYSANDU",
+    "LAS PIEDRAS",
+    "RIVERA",
+    "MALDONADO",
+    "TACUAREMBO",
+    "MELO"
+   ]
+  },
+  {
+   "phrase": "Honduras",
+   "words": [
+    "HONDURAS",
+    "TEGUCIGALPA",
+    "LA CEIBA",
+    "CHOLUTECA",
+    "COMAYAGUA",
+    "DANLI",
+    "EL PROGRESO",
+    "SIGUATEPEQUE",
+    "TELA"
+   ]
+  },
+  {
+   "phrase": "Nicaragua",
+   "words": [
+    "NICARAGUA",
+    "MANAGUA",
+    "MASAYA",
+    "GRANADA",
+    "CHINANDEGA",
+    "JINOTEGA",
+    "ESTELI",
+    "MATAGALPA",
+    "BLUEFIELDS"
+   ]
+  },
+  {
+   "phrase": "Costa Rica",
+   "words": [
+    "COSTA RICA",
+    "SAN JOSE",
+    "ALAJUELA",
+    "CARTAGO",
+    "HEREDIA",
+    "LIMON",
+    "PUNTARENAS",
+    "DESAMPARADOS",
+    "GUAPILES"
+   ]
+  },
+  {
+   "phrase": "Panama",
+   "words": [
+    "PANAMA",
+    "PANAMA CITY",
+    "COLON",
+    "DAVID",
+    "LA CHORRERA",
+    "CHITRE",
+    "PENONOME",
+    "LAS TABLAS",
+    "AGUADULCE"
+   ]
+  },
+  {
+   "phrase": "El Salvador",
+   "words": [
+    "EL SALVADOR",
+    "SAN SALVADOR",
+    "SANTA ANA",
+    "SAN MIGUEL",
+    "SONSONATE",
+    "USULUTAN",
+    "AHUACHAPAN",
+    "LA UNION",
+    "COJUTEPEQUE"
+   ]
+  },
+  {
+   "phrase": "Jamaica",
+   "words": [
+    "JAMAICA",
+    "KINGSTON",
+    "MONTEGO BAY",
+    "SPANISH TOWN",
+    "PORTMORE",
+    "MANDEVILLE",
+    "OCHO RIOS",
+    "LINSTEAD",
+    "MAY PEN"
+   ]
+  },
+  {
+   "phrase": "Cuba",
+   "words": [
+    "CUBA",
+    "HAVANA",
+    "CAMAGUEY",
+    "HOLGUIN",
+    "GUANTANAMO",
+    "SANTA CLARA",
+    "CIENFUEGOS",
+    "MATANZAS",
+    "BAYAMO"
+   ]
+  },
+  {
+   "phrase": "Haiti",
+   "words": [
+    "HAITI",
+    "PORT AU PRINCE",
+    "CAP HAITIEN",
+    "GONAIVES",
+    "LES CAYES",
+    "JACMEL",
+    "JEREMIE",
+    "PETIONVILLE",
+    "DELMAS"
+   ]
+  },
+  {
+   "phrase": "Morocco",
+   "words": [
+    "MOROCCO",
+    "RABAT",
+    "CASABLANCA",
+    "FEZ",
+    "MARRAKESH",
+    "TANGIER",
+    "AGADIR",
+    "MEKNES",
+    "OUJDA"
+   ]
+  },
+  {
+   "phrase": "Algeria",
+   "words": [
+    "ALGERIA",
+    "ALGIERS",
+    "ORAN",
+    "CONSTANTINE",
+    "ANNABA",
+    "BLIDA",
+    "BATNA",
+    "SETIF",
+    "TLEMCEN"
+   ]
+  },
+  {
+   "phrase": "Tunisia",
+   "words": [
+    "TUNISIA",
+    "TUNIS",
+    "SFAX",
+    "SOUSSE",
+    "KAIROUAN",
+    "BIZERTE",
+    "GABES",
+    "ARIANA",
+    "GAFSA"
+   ]
+  },
+  {
+   "phrase": "Libya",
+   "words": [
+    "LIBYA",
+    "TRIPOLI",
+    "BENGHAZI",
+    "MISRATA",
+    "ZAWIYA",
+    "SABHA",
+    "TOBRUK",
+    "BAYDA",
+    "ZLITEN"
+   ]
+  },
+  {
+   "phrase": "Kenya",
+   "words": [
+    "KENYA",
+    "NAIROBI",
+    "MOMBASA",
+    "KISUMU",
+    "NAKURU",
+    "ELDORET",
+    "THIKA",
+    "MALINDI",
+    "KITALE"
+   ]
+  },
+  {
+   "phrase": "Ethiopia",
+   "words": [
+    "ETHIOPIA",
+    "ADDIS ABABA",
+    "DIRE DAWA",
+    "MEKELLE",
+    "GONDAR",
+    "HAWASSA",
+    "BAHIR DAR",
+    "JIMMA",
+    "ADAMA"
+   ]
+  },
+  {
+   "phrase": "Ghana",
+   "words": [
+    "GHANA",
+    "ACCRA",
+    "KUMASI",
+    "TAMALE",
+    "TAKORADI",
+    "TEMA",
+    "CAPE COAST",
+    "SUNYANI",
+    "KOFORIDUA"
+   ]
+  },
+  {
+   "phrase": "Uganda",
+   "words": [
+    "UGANDA",
+    "KAMPALA",
+    "GULU",
+    "MBARARA",
+    "JINJA",
+    "MBALE",
+    "MASAKA",
+    "ENTEBBE",
+    "ARUA"
+   ]
+  },
+  {
+   "phrase": "Zambia",
+   "words": [
+    "ZAMBIA",
+    "LUSAKA",
+    "KITWE",
+    "NDOLA",
+    "KABWE",
+    "CHINGOLA",
+    "LIVINGSTONE",
+    "LUANSHYA",
+    "MONGU"
+   ]
+  },
+  {
+   "phrase": "Zimbabwe",
+   "words": [
+    "ZIMBABWE",
+    "HARARE",
+    "BULAWAYO",
+    "CHITUNGWIZA",
+    "MUTARE",
+    "GWERU",
+    "KWEKWE",
+    "KADOMA",
+    "MASVINGO"
+   ]
+  },
+  {
+   "phrase": "Angola",
+   "words": [
+    "ANGOLA",
+    "LUANDA",
+    "HUAMBO",
+    "LOBITO",
+    "BENGUELA",
+    "LUBANGO",
+    "MALANJE",
+    "NAMIBE",
+    "CABINDA"
+   ]
+  },
+  {
+   "phrase": "Mozambique",
+   "words": [
+    "MOZAMBIQUE",
+    "MAPUTO",
+    "BEIRA",
+    "NAMPULA",
+    "CHIMOIO",
+    "QUELIMANE",
+    "TETE",
+    "PEMBA",
+    "INHAMBANE"
+   ]
+  },
+  {
+   "phrase": "Senegal",
+   "words": [
+    "SENEGAL",
+    "DAKAR",
+    "THIES",
+    "KAOLACK",
+    "ZIGUINCHOR",
+    "RUFISQUE",
+    "SAINT LOUIS",
+    "TAMBACOUNDA",
+    "DIOURBEL"
+   ]
+  },
+  {
+   "phrase": "Cameroon",
+   "words": [
+    "CAMEROON",
+    "YAOUNDE",
+    "DOUALA",
+    "GAROUA",
+    "BAMENDA",
+    "MAROUA",
+    "BAFOUSSAM",
+    "NGAOUNDERE",
+    "KUMBA"
+   ]
+  },
+  {
+   "phrase": "Myanmar",
+   "words": [
+    "MYANMAR",
+    "NAYPYIDAW",
+    "YANGON",
+    "MANDALAY",
+    "MAWLAMYINE",
+    "BAGO",
+    "PATHEIN",
+    "MONYWA",
+    "TAUNGGYI"
+   ]
+  }
+ ],
+ "cover": {
+  "page_count": 112,
+  "paper": "white",
+  "title": "WORD SEARCH",
+  "series_name": "WORLD HUNT!",
+  "volume": "VOL. 2",
+  "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
+  "band2": "for Adults and Seniors · Solutions Included",
+  "spine": "WORD SEARCH  ·  WORLD HUNT!  ·  VOL. 2  ·  PETER & CARDU",
+  "cart": {
+   "grid": [
+    "PARISQWEL",
+    "BTOKYOZUI",
+    "CAIROJHNM",
+    "VSEOULKRA"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     1,
+     1,
+     1,
+     5
+    ],
+    [
+     2,
+     0,
+     2,
+     4
+    ],
+    [
+     0,
+     8,
+     3,
+     8
+    ]
+   ],
+   "lens": [
+    3,
+    6
+   ]
+  },
+  "back_headline": "Pack your bags and start searching!",
+  "back_intro": [
+   "From Tokyo to Buenos Aires, <b>World Hunt!</b> takes you around the globe in 55 relaxing word search puzzles."
+  ],
+  "back_bullets": [
+   "55 puzzles in <b>LARGE PRINT</b>, one per page",
+   "55 countries, each with its capital and 7 major cities: 495 words in all",
+   "Travel from Asia to the Americas and Africa, one country at a time",
+   "Words always read left to right or top to bottom. No backwards words!",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A calm, screen-free trip around the world for adults and seniors.",
+  "colors": {
+   "bg": "#FFF4DC",
+   "ink": "#1D3557",
+   "red": "#E63946",
+   "yellow": "#FFC93C",
+   "accent": "#457B9D",
+   "highlight": "#A8E6CF",
+   "tile": "#F6E3BA"
+  },
+  "sample": {
+   "title": "SAMPLE",
+   "grid": [
+    "TOKYOQ",
+    "OSAKAX",
+    "KYOTOB",
+    "NAGOYA",
+    "KOBEZR",
+    "SAPPOR"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     0,
+     2,
+     4
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ],
+    [
+     4,
+     0,
+     4,
+     3
+    ]
+   ],
+   "words": "TOKYO · OSAKA · KYOTO · NAGOYA · KOBE"
+  },
+  "style": "bold",
+  "author": "Peter & Cardu",
+  "illustration": "suitcase",
+  "count": "55",
+  "band_line": "World Geography Puzzles for Adults & Seniors",
+  "bold": {
+   "bg": "#00897B",
+   "ink": "#063B36",
+   "deep": "#00695C"
+  }
+ }
+}
