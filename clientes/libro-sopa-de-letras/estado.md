@@ -396,3 +396,18 @@ Pedro pidió revisar todo como editor profesional.
   - Propuse "Christmas Countdown Planner & Puzzle Book": 25 días (mini sopa + actividad/recuerdo + check) + regalos, tarjetas, menú, decoración, presupuesto, checklist semanal; letra grande. Fecha: fines de octubre.
 - Prioridad sugerida: Vol. 5 Christmas, Planner, Vol. 3 USA, Vol. 4 Nostalgia (esperando OK).
 - Vol. 3 USA: interior y portada generados en el scratchpad y auditados (0 errores). Falta enviar.
+
+## Vol. 3 USA v1 entregado — ~14:30 (msgs 232–235)
+- `vol3/libro3_usa.json`, seed 2028:
+  - Puzzles 1–50: estado + capital + 7 ciudades o lugares, orden NE → S → MW → SW → W → AK/HI.
+  - Puzzles 51–55: National Parks ×2, Landmarks, Road Trip, Symbols. Cada puzzle tiene `theme_label`.
+- 55 frases de viaje en auto, sin repetir las de Vol. 1 y 2.
+- Evitados:
+  - duplicados homónimos entre estados (Springfield, Portland, Jackson, Columbus, Charleston, Newark, Dover, Salem, Augusta, Albany, Rochester, Manhattan, Bellevue, Lexington, Norfolk, Alexandria…)
+  - marcas: Space Needle, Empire State, Hollywood Sign, Disney
+- Contenidas aceptadas: INDIANA/INDIANAPOLIS, OKLAHOMA/OKLAHOMA CITY.
+- Portada: navy #1D2F6F, ilustración `billboard` (cartel con MAINE/TEXAS/IOWA/OHIO marcadas, estrellas, auto teal, carretera), escala 0,62. "USA Hunt!" sin títulos en Amazon.
+- Paleta B/N ampliada: car/glass/post/chrome.
+- Verificado: 0 errores, 0 desbordes, 0 Type3, 0 colores no grises, zona segura OK. Vol. 1 y 2 intactos (cmp).
+- Archivos: `entregables/vol3/`.
+- Siguiente: Vol. 5 Christmas. Esperando prioridad con el planner.

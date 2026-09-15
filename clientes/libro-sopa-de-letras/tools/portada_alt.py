@@ -264,9 +264,9 @@ def billboard(cx, top, words, c):
       <path d="M-10,0 C-10,-38 20,-44 60,-46 L110,-78 C120,-84 170,-84 185,-74 L220,-46 C265,-44 290,-36 292,0 z"
             fill="{body}" stroke="{ink}" stroke-width="7" stroke-linejoin="round"/>
       <path d="M118,-72 L175,-72 L200,-48 L100,-48 z" fill="{c.get('glass', '#B3E5FC')}" stroke="{ink}" stroke-width="5" stroke-linejoin="round"/>
-      <rect x="-14" y="-10" width="310" height="16" rx="8" fill="#ECEFF1" stroke="{ink}" stroke-width="5"/>
-      <circle cx="55" cy="6" r="30" fill="{ink}"/><circle cx="55" cy="6" r="12" fill="#ECEFF1"/>
-      <circle cx="230" cy="6" r="30" fill="{ink}"/><circle cx="230" cy="6" r="12" fill="#ECEFF1"/>
+      <rect x="-14" y="-10" width="310" height="16" rx="8" fill="{c.get('chrome', '#ECEFF1')}" stroke="{ink}" stroke-width="5"/>
+      <circle cx="55" cy="6" r="30" fill="{ink}"/><circle cx="55" cy="6" r="12" fill="{c.get('chrome', '#ECEFF1')}"/>
+      <circle cx="230" cy="6" r="30" fill="{ink}"/><circle cx="230" cy="6" r="12" fill="{c.get('chrome', '#ECEFF1')}"/>
       <circle cx="-4" cy="-26" r="8" fill="{c['yellow']}" stroke="{ink}" stroke-width="4"/>
     </g>''')
     lr, lc = words["lens"]
