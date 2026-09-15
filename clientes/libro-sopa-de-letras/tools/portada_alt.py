@@ -69,6 +69,8 @@ def bold_palette(cv):
 
 def illustration(cv, cx, top, c, ink):
     kind = cv.get("illustration", "cart")
+    if kind == "billboard":
+        return scaled(billboard(cx - 20, top - 10, cv["cart"], dict(c, ink=ink)), cx - 20, top - 10, 0.62)
     if kind == "suitcase":
         return scaled(suitcase(cx - 95, top + 40, cv["cart"], dict(c, ink=ink)), cx - 95, top + 40, 0.66)
     return scaled(cart(cx - 55, top, cv["cart"], dict(c, ink=ink)), cx - 55, top, 0.72)
@@ -94,7 +96,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
         # autor arriba y centrado, separado del título
         out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
                    f'font-size="21" letter-spacing="4" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"].upper())}</text>')
-    if cv.get("illustration") == "suitcase":
+    if cv.get("illustration") in ("suitcase", "billboard"):
         bx, by, k = x0 + w - 118, y0 + 648, 0.88
     else:
         bx, by, k = x0 + w - 128, y0 + 585, 1
@@ -221,6 +223,60 @@ def suitcase(cx, top, words, c):
     <circle cx="{lx}" cy="{ly}" r="66" fill="#fff" fill-opacity=".25" stroke="{ink}" stroke-width="11"/>
     <path d="M{lx-40},{ly-22} a48,48 0 0 1 30,-30" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>''')
     return "".join(out)
+
+def billboard(cx, top, words, c):
+    """Cartel de carretera cuya cara es una sopa de letras con estados marcados; auto clásico delante."""
+    rows = words["grid"]
+    nr, nc = len(rows), len(rows[0])
+    cell = 42
+    gw, gh = nc * cell, nr * cell
+    gx, gy = cx - gw / 2, top + 60
+    ink = c["ink"]
+    bx0, by0, bw, bh = gx - 30, gy - 30, gw + 60, gh + 60
+    out = []
+    # postes
+    for px in (bx0 + 70, bx0 + bw - 70):
+        out.append(f'<rect x="{px-10}" y="{by0+bh-10}" width="20" height="130" fill="{c.get("post", "#8D6E63")}" stroke="{ink}" stroke-width="6"/>')
+    # carretera
+    out.append(f'<path d="M{bx0-120},{by0+bh+150} L{bx0+bw+120},{by0+bh+150} L{bx0+bw+60},{by0+bh+105} L{bx0-60},{by0+bh+105} z" '
+               f'fill="#4A4A4A" stroke="{ink}" stroke-width="6" stroke-linejoin="round"/>')
+    for k in range(6):
+        x = bx0 - 40 + k * (bw + 80) / 6
+        out.append(f'<rect x="{x}" y="{by0+bh+124}" width="46" height="8" rx="4" fill="{c["yellow"]}"/>')
+    # cartel
+    out.append(f'<rect x="{bx0}" y="{by0}" width="{bw}" height="{bh}" rx="14" fill="#fff" stroke="{ink}" stroke-width="9"/>')
+    out.append(f'<rect x="{bx0-14}" y="{by0-14}" width="{bw+28}" height="22" rx="8" fill="{c["red"]}" stroke="{ink}" stroke-width="6"/>')
+    for k in range(5):  # estrellas sobre el cartel
+        sx = bx0 + 40 + k * (bw - 80) / 4
+        out.append(f'<path transform="translate({sx},{by0-3}) scale(.55)" d="M0,-18 L5,-6 18,-6 8,2 12,15 0,7 -12,15 -8,2 -18,-6 -5,-6 z" fill="#fff"/>')
+    for (r1, c1, r2, c2) in words["found"]:
+        out.append(f'<line x1="{gx+c1*cell+cell/2}" y1="{gy+r1*cell+cell/2}" x2="{gx+c2*cell+cell/2}" '
+                   f'y2="{gy+r2*cell+cell/2}" stroke="{c["highlight"]}" stroke-width="34" stroke-linecap="round"/>')
+    for r, row in enumerate(rows):
+        for k, ch in enumerate(row):
+            out.append(f'<text x="{gx+k*cell+cell/2}" y="{gy+r*cell+cell/2+11}" text-anchor="middle" '
+                       f'font-family="Fredoka" font-weight="700" font-size="31" fill="{ink}">{ch}</text>')
+    # auto clásico (convertible) delante, a la izquierda
+    ax, ay = bx0 + 40, by0 + bh + 118
+    body = c.get("car", c["red"])
+    out.append(f'''
+    <g transform="translate({ax},{ay})">
+      <path d="M-10,0 C-10,-38 20,-44 60,-46 L110,-78 C120,-84 170,-84 185,-74 L220,-46 C265,-44 290,-36 292,0 z"
+            fill="{body}" stroke="{ink}" stroke-width="7" stroke-linejoin="round"/>
+      <path d="M118,-72 L175,-72 L200,-48 L100,-48 z" fill="{c.get('glass', '#B3E5FC')}" stroke="{ink}" stroke-width="5" stroke-linejoin="round"/>
+      <rect x="-14" y="-10" width="310" height="16" rx="8" fill="#ECEFF1" stroke="{ink}" stroke-width="5"/>
+      <circle cx="55" cy="6" r="30" fill="{ink}"/><circle cx="55" cy="6" r="12" fill="#ECEFF1"/>
+      <circle cx="230" cy="6" r="30" fill="{ink}"/><circle cx="230" cy="6" r="12" fill="#ECEFF1"/>
+      <circle cx="-4" cy="-26" r="8" fill="{c['yellow']}" stroke="{ink}" stroke-width="4"/>
+    </g>''')
+    lr, lc = words["lens"]
+    lx, ly = gx + lc * cell + cell / 2, gy + lr * cell + cell / 2
+    out.append(f'''
+    <line x1="{lx+52}" y1="{ly+52}" x2="{lx+120}" y2="{ly+120}" stroke="{ink}" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="{lx}" cy="{ly}" r="66" fill="#fff" fill-opacity=".25" stroke="{ink}" stroke-width="11"/>
+    <path d="M{lx-40},{ly-22} a48,48 0 0 1 30,-30" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>''')
+    return "".join(out)
+
 
 STYLES = {"bold": front_bold, "grid": front_grid}
 

@@ -384,3 +384,15 @@ Pedro pidió revisar todo como editor profesional.
   - Yo armo las listas de palabras.
   - Christmas debe estar publicado a fines de octubre (KDP permite publicar fuera de orden).
   - Otros libros navideños sugeridos (respuesta a su pregunta): sudoku letra grande, libro de actividades mixto, crucigramas. Colorear no recomendado.
+
+## Otras ideas navideñas (msgs 227–231)
+- Pedro (227): libro para colorear con imágenes de Canva que yo mejore. Respondí:
+  - Posible, pero hay que declarar las imágenes IA en KDP y no son protegibles por derechos de autor.
+  - Stock de Canva no vale tal cual.
+  - Yo limpio a B/N a 300 DPI, maqueto, reverso en blanco y hago la portada. No redibujo.
+  - Propuse prueba con 5 imágenes.
+- Pedro (228, 230): planner de Navidad tipo calendario de adviento (actividades diarias, lista de regalos, checklist).
+  - Demanda: autocompletado "christmas planner 2026", "advent puzzle books for adults 2026", "advent calendar puzzles for adults"; hay un "The Seniors' Advent Calendar: 24 Days of Relaxing Puzzles".
+  - Propuse "Christmas Countdown Planner & Puzzle Book": 25 días (mini sopa + actividad/recuerdo + check) + regalos, tarjetas, menú, decoración, presupuesto, checklist semanal; letra grande. Fecha: fines de octubre.
+- Prioridad sugerida: Vol. 5 Christmas, Planner, Vol. 3 USA, Vol. 4 Nostalgia (esperando OK).
+- Vol. 3 USA: interior y portada generados en el scratchpad y auditados (0 errores). Falta enviar.

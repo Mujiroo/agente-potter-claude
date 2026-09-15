@@ -1,0 +1,767 @@
+[
+ {
+  "label": "MAINE",
+  "words": [
+   "MAINE",
+   "AUGUSTA",
+   "CAMDEN",
+   "BANGOR",
+   "LEWISTON",
+   "BAR HARBOR",
+   "ACADIA",
+   "BIDDEFORD",
+   "OGUNQUIT"
+  ]
+ },
+ {
+  "label": "NEW HAMPSHIRE",
+  "words": [
+   "NEW HAMPSHIRE",
+   "CONCORD",
+   "MANCHESTER",
+   "NASHUA",
+   "PORTSMOUTH",
+   "KEENE",
+   "HANOVER",
+   "LACONIA",
+   "LEBANON"
+  ]
+ },
+ {
+  "label": "VERMONT",
+  "words": [
+   "VERMONT",
+   "MONTPELIER",
+   "BURLINGTON",
+   "RUTLAND",
+   "BARRE",
+   "STOWE",
+   "BENNINGTON",
+   "BRATTLEBORO",
+   "WINOOSKI"
+  ]
+ },
+ {
+  "label": "MASSACHUSETTS",
+  "words": [
+   "MASSACHUSETTS",
+   "BOSTON",
+   "WORCESTER",
+   "CAMBRIDGE",
+   "LOWELL",
+   "PLYMOUTH",
+   "CAPE COD",
+   "NANTUCKET",
+   "QUINCY"
+  ]
+ },
+ {
+  "label": "RHODE ISLAND",
+  "words": [
+   "RHODE ISLAND",
+   "PROVIDENCE",
+   "NEWPORT",
+   "WARWICK",
+   "CRANSTON",
+   "PAWTUCKET",
+   "WOONSOCKET",
+   "BRISTOL",
+   "BLOCK ISLAND"
+  ]
+ },
+ {
+  "label": "CONNECTICUT",
+  "words": [
+   "CONNECTICUT",
+   "HARTFORD",
+   "NEW HAVEN",
+   "STAMFORD",
+   "BRIDGEPORT",
+   "WATERBURY",
+   "NORWALK",
+   "MYSTIC",
+   "GREENWICH"
+  ]
+ },
+ {
+  "label": "NEW YORK",
+  "words": [
+   "NEW YORK",
+   "ALBANY",
+   "MANHATTAN",
+   "BROOKLYN",
+   "BUFFALO",
+   "ROCHESTER",
+   "SYRACUSE",
+   "NIAGARA FALLS",
+   "LONG ISLAND"
+  ]
+ },
+ {
+  "label": "NEW JERSEY",
+  "words": [
+   "NEW JERSEY",
+   "TRENTON",
+   "NEWARK",
+   "JERSEY CITY",
+   "PATERSON",
+   "ATLANTIC CITY",
+   "PRINCETON",
+   "HOBOKEN",
+   "CAPE MAY"
+  ]
+ },
+ {
+  "label": "PENNSYLVANIA",
+  "words": [
+   "PENNSYLVANIA",
+   "HARRISBURG",
+   "PHILADELPHIA",
+   "PITTSBURGH",
+   "ALLENTOWN",
+   "ERIE",
+   "SCRANTON",
+   "LANCASTER",
+   "GETTYSBURG"
+  ]
+ },
+ {
+  "label": "DELAWARE",
+  "words": [
+   "DELAWARE",
+   "DOVER",
+   "WILMINGTON",
+   "REHOBOTH BEACH",
+   "MIDDLETOWN",
+   "SMYRNA",
+   "MILFORD",
+   "LEWES",
+   "SEAFORD"
+  ]
+ },
+ {
+  "label": "MARYLAND",
+  "words": [
+   "MARYLAND",
+   "ANNAPOLIS",
+   "BALTIMORE",
+   "FREDERICK",
+   "ROCKVILLE",
+   "GAITHERSBURG",
+   "OCEAN CITY",
+   "HAGERSTOWN",
+   "SALISBURY"
+  ]
+ },
+ {
+  "label": "VIRGINIA",
+  "words": [
+   "VIRGINIA",
+   "RICHMOND",
+   "NORFOLK",
+   "ARLINGTON",
+   "ALEXANDRIA",
+   "ROANOKE",
+   "WILLIAMSBURG",
+   "CHESAPEAKE",
+   "SHENANDOAH"
+  ]
+ },
+ {
+  "label": "WEST VIRGINIA",
+  "words": [
+   "WEST VIRGINIA",
+   "CHARLESTON",
+   "HUNTINGTON",
+   "MORGANTOWN",
+   "PARKERSBURG",
+   "WHEELING",
+   "BECKLEY",
+   "FAIRMONT",
+   "HARPERS FERRY"
+  ]
+ },
+ {
+  "label": "NORTH CAROLINA",
+  "words": [
+   "NORTH CAROLINA",
+   "RALEIGH",
+   "CHARLOTTE",
+   "GREENSBORO",
+   "DURHAM",
+   "ASHEVILLE",
+   "WINSTON-SALEM",
+   "OUTER BANKS",
+   "FAYETTEVILLE"
+  ]
+ },
+ {
+  "label": "SOUTH CAROLINA",
+  "words": [
+   "SOUTH CAROLINA",
+   "COLUMBIA",
+   "GREENVILLE",
+   "MYRTLE BEACH",
+   "SPARTANBURG",
+   "HILTON HEAD",
+   "ROCK HILL",
+   "BEAUFORT",
+   "SUMTER"
+  ]
+ },
+ {
+  "label": "GEORGIA",
+  "words": [
+   "GEORGIA",
+   "ATLANTA",
+   "SAVANNAH",
+   "MACON",
+   "ATHENS",
+   "VALDOSTA",
+   "STONE MOUNTAIN",
+   "MARIETTA",
+   "JEKYLL ISLAND"
+  ]
+ },
+ {
+  "label": "FLORIDA",
+  "words": [
+   "FLORIDA",
+   "TALLAHASSEE",
+   "MIAMI",
+   "ORLANDO",
+   "TAMPA",
+   "JACKSONVILLE",
+   "KEY WEST",
+   "EVERGLADES",
+   "CAPE CANAVERAL"
+  ]
+ },
+ {
+  "label": "ALABAMA",
+  "words": [
+   "ALABAMA",
+   "MONTGOMERY",
+   "BIRMINGHAM",
+   "HUNTSVILLE",
+   "MOBILE",
+   "TUSCALOOSA",
+   "DOTHAN",
+   "AUBURN",
+   "GULF SHORES"
+  ]
+ },
+ {
+  "label": "MISSISSIPPI",
+  "words": [
+   "MISSISSIPPI",
+   "JACKSON",
+   "GULFPORT",
+   "BILOXI",
+   "HATTIESBURG",
+   "TUPELO",
+   "NATCHEZ",
+   "VICKSBURG",
+   "OXFORD"
+  ]
+ },
+ {
+  "label": "TENNESSEE",
+  "words": [
+   "TENNESSEE",
+   "NASHVILLE",
+   "MEMPHIS",
+   "KNOXVILLE",
+   "CHATTANOOGA",
+   "CLARKSVILLE",
+   "MURFREESBORO",
+   "GATLINBURG",
+   "JOHNSON CITY"
+  ]
+ },
+ {
+  "label": "KENTUCKY",
+  "words": [
+   "KENTUCKY",
+   "FRANKFORT",
+   "LOUISVILLE",
+   "LEXINGTON",
+   "BOWLING GREEN",
+   "OWENSBORO",
+   "COVINGTON",
+   "PADUCAH",
+   "ELIZABETHTOWN"
+  ]
+ },
+ {
+  "label": "LOUISIANA",
+  "words": [
+   "LOUISIANA",
+   "BATON ROUGE",
+   "NEW ORLEANS",
+   "SHREVEPORT",
+   "LAFAYETTE",
+   "LAKE CHARLES",
+   "MONROE",
+   "HOUMA",
+   "BOSSIER CITY"
+  ]
+ },
+ {
+  "label": "ARKANSAS",
+  "words": [
+   "ARKANSAS",
+   "LITTLE ROCK",
+   "FORT SMITH",
+   "JONESBORO",
+   "HOT SPRINGS",
+   "BENTONVILLE",
+   "CONWAY",
+   "PINE BLUFF",
+   "TEXARKANA"
+  ]
+ },
+ {
+  "label": "OHIO",
+  "words": [
+   "OHIO",
+   "COLUMBUS",
+   "CLEVELAND",
+   "CINCINNATI",
+   "TOLEDO",
+   "AKRON",
+   "DAYTON",
+   "CANTON",
+   "SANDUSKY"
+  ]
+ },
+ {
+  "label": "MICHIGAN",
+  "words": [
+   "MICHIGAN",
+   "LANSING",
+   "DETROIT",
+   "GRAND RAPIDS",
+   "ANN ARBOR",
+   "FLINT",
+   "KALAMAZOO",
+   "TRAVERSE CITY",
+   "SAGINAW"
+  ]
+ },
+ {
+  "label": "INDIANA",
+  "words": [
+   "INDIANA",
+   "INDIANAPOLIS",
+   "FORT WAYNE",
+   "EVANSVILLE",
+   "SOUTH BEND",
+   "BLOOMINGTON",
+   "GARY",
+   "CARMEL",
+   "MUNCIE"
+  ]
+ },
+ {
+  "label": "ILLINOIS",
+  "words": [
+   "ILLINOIS",
+   "SPRINGFIELD",
+   "CHICAGO",
+   "AURORA",
+   "NAPERVILLE",
+   "ROCKFORD",
+   "JOLIET",
+   "PEORIA",
+   "CHAMPAIGN"
+  ]
+ },
+ {
+  "label": "WISCONSIN",
+  "words": [
+   "WISCONSIN",
+   "MADISON",
+   "MILWAUKEE",
+   "GREEN BAY",
+   "KENOSHA",
+   "RACINE",
+   "APPLETON",
+   "EAU CLAIRE",
+   "LA CROSSE"
+  ]
+ },
+ {
+  "label": "MINNESOTA",
+  "words": [
+   "MINNESOTA",
+   "SAINT PAUL",
+   "MINNEAPOLIS",
+   "DULUTH",
+   "MANKATO",
+   "SAINT CLOUD",
+   "MOORHEAD",
+   "BEMIDJI",
+   "WINONA"
+  ]
+ },
+ {
+  "label": "IOWA",
+  "words": [
+   "IOWA",
+   "DES MOINES",
+   "CEDAR RAPIDS",
+   "DAVENPORT",
+   "SIOUX CITY",
+   "AMES",
+   "DUBUQUE",
+   "WATERLOO",
+   "COUNCIL BLUFFS"
+  ]
+ },
+ {
+  "label": "MISSOURI",
+  "words": [
+   "MISSOURI",
+   "JEFFERSON CITY",
+   "KANSAS CITY",
+   "SAINT LOUIS",
+   "BRANSON",
+   "JOPLIN",
+   "INDEPENDENCE",
+   "HANNIBAL",
+   "SAINT JOSEPH"
+  ]
+ },
+ {
+  "label": "KANSAS",
+  "words": [
+   "KANSAS",
+   "TOPEKA",
+   "WICHITA",
+   "OVERLAND PARK",
+   "OLATHE",
+   "LAWRENCE",
+   "SALINA",
+   "DODGE CITY",
+   "HUTCHINSON"
+  ]
+ },
+ {
+  "label": "NEBRASKA",
+  "words": [
+   "NEBRASKA",
+   "LINCOLN",
+   "OMAHA",
+   "GRAND ISLAND",
+   "KEARNEY",
+   "NORTH PLATTE",
+   "SCOTTSBLUFF",
+   "FREMONT",
+   "HASTINGS"
+  ]
+ },
+ {
+  "label": "SOUTH DAKOTA",
+  "words": [
+   "SOUTH DAKOTA",
+   "PIERRE",
+   "SIOUX FALLS",
+   "RAPID CITY",
+   "ABERDEEN",
+   "BROOKINGS",
+   "WATERTOWN",
+   "MOUNT RUSHMORE",
+   "BADLANDS"
+  ]
+ },
+ {
+  "label": "NORTH DAKOTA",
+  "words": [
+   "NORTH DAKOTA",
+   "BISMARCK",
+   "FARGO",
+   "GRAND FORKS",
+   "MINOT",
+   "WILLISTON",
+   "DICKINSON",
+   "JAMESTOWN",
+   "MANDAN"
+  ]
+ },
+ {
+  "label": "OKLAHOMA",
+  "words": [
+   "OKLAHOMA",
+   "OKLAHOMA CITY",
+   "TULSA",
+   "NORMAN",
+   "LAWTON",
+   "EDMOND",
+   "BROKEN ARROW",
+   "STILLWATER",
+   "MUSKOGEE"
+  ]
+ },
+ {
+  "label": "TEXAS",
+  "words": [
+   "TEXAS",
+   "AUSTIN",
+   "HOUSTON",
+   "DALLAS",
+   "SAN ANTONIO",
+   "EL PASO",
+   "FORT WORTH",
+   "CORPUS CHRISTI",
+   "GALVESTON"
+  ]
+ },
+ {
+  "label": "NEW MEXICO",
+  "words": [
+   "NEW MEXICO",
+   "SANTA FE",
+   "ALBUQUERQUE",
+   "LAS CRUCES",
+   "TAOS",
+   "ROSWELL",
+   "CARLSBAD",
+   "FARMINGTON",
+   "WHITE SANDS"
+  ]
+ },
+ {
+  "label": "ARIZONA",
+  "words": [
+   "ARIZONA",
+   "PHOENIX",
+   "TUCSON",
+   "MESA",
+   "SCOTTSDALE",
+   "FLAGSTAFF",
+   "SEDONA",
+   "YUMA",
+   "GRAND CANYON"
+  ]
+ },
+ {
+  "label": "COLORADO",
+  "words": [
+   "COLORADO",
+   "DENVER",
+   "BOULDER",
+   "FORT COLLINS",
+   "ASPEN",
+   "VAIL",
+   "PUEBLO",
+   "DURANGO",
+   "GRAND JUNCTION"
+  ]
+ },
+ {
+  "label": "UTAH",
+  "words": [
+   "UTAH",
+   "SALT LAKE CITY",
+   "PROVO",
+   "OGDEN",
+   "MOAB",
+   "PARK CITY",
+   "SAINT GEORGE",
+   "ZION",
+   "BRYCE CANYON"
+  ]
+ },
+ {
+  "label": "NEVADA",
+  "words": [
+   "NEVADA",
+   "CARSON CITY",
+   "LAS VEGAS",
+   "RENO",
+   "HENDERSON",
+   "ELKO",
+   "LAKE TAHOE",
+   "BOULDER CITY",
+   "SPARKS"
+  ]
+ },
+ {
+  "label": "WYOMING",
+  "words": [
+   "WYOMING",
+   "CHEYENNE",
+   "CASPER",
+   "LARAMIE",
+   "GILLETTE",
+   "CODY",
+   "JACKSON HOLE",
+   "YELLOWSTONE",
+   "GRAND TETON"
+  ]
+ },
+ {
+  "label": "MONTANA",
+  "words": [
+   "MONTANA",
+   "HELENA",
+   "BILLINGS",
+   "MISSOULA",
+   "BOZEMAN",
+   "GREAT FALLS",
+   "BUTTE",
+   "KALISPELL",
+   "GLACIER"
+  ]
+ },
+ {
+  "label": "IDAHO",
+  "words": [
+   "IDAHO",
+   "BOISE",
+   "MERIDIAN",
+   "NAMPA",
+   "POCATELLO",
+   "COEUR D'ALENE",
+   "TWIN FALLS",
+   "SUN VALLEY",
+   "SANDPOINT"
+  ]
+ },
+ {
+  "label": "WASHINGTON",
+  "words": [
+   "WASHINGTON",
+   "OLYMPIA",
+   "SEATTLE",
+   "SPOKANE",
+   "TACOMA",
+   "BELLEVUE",
+   "EVERETT",
+   "YAKIMA",
+   "MOUNT RAINIER"
+  ]
+ },
+ {
+  "label": "OREGON",
+  "words": [
+   "OREGON",
+   "SALEM",
+   "PORTLAND",
+   "EUGENE",
+   "BEND",
+   "MEDFORD",
+   "CORVALLIS",
+   "ASTORIA",
+   "CRATER LAKE"
+  ]
+ },
+ {
+  "label": "CALIFORNIA",
+  "words": [
+   "CALIFORNIA",
+   "SACRAMENTO",
+   "SAN DIEGO",
+   "SAN FRANCISCO",
+   "FRESNO",
+   "OAKLAND",
+   "LONG BEACH",
+   "YOSEMITE",
+   "NAPA VALLEY"
+  ]
+ },
+ {
+  "label": "ALASKA",
+  "words": [
+   "ALASKA",
+   "JUNEAU",
+   "ANCHORAGE",
+   "FAIRBANKS",
+   "KETCHIKAN",
+   "SITKA",
+   "NOME",
+   "DENALI",
+   "KODIAK"
+  ]
+ },
+ {
+  "label": "HAWAII",
+  "words": [
+   "HAWAII",
+   "HONOLULU",
+   "HILO",
+   "MAUI",
+   "KAUAI",
+   "WAIKIKI",
+   "PEARL HARBOR",
+   "KAILUA",
+   "KONA"
+  ]
+ },
+ {
+  "label": "NATIONAL PARKS",
+  "words": [
+   "ARCHES",
+   "CANYONLANDS",
+   "CAPITOL REEF",
+   "JOSHUA TREE",
+   "DEATH VALLEY",
+   "SEQUOIA",
+   "REDWOOD",
+   "BIG BEND"
+  ]
+ },
+ {
+  "label": "MORE PARKS",
+  "words": [
+   "MAMMOTH CAVE",
+   "SMOKY MOUNTAIN",
+   "ROCKY MOUNTAIN",
+   "MESA VERDE",
+   "SAGUARO",
+   "BISCAYNE",
+   "GREAT BASIN",
+   "HALEAKALA"
+  ]
+ },
+ {
+  "label": "LANDMARKS",
+  "words": [
+   "LADY LIBERTY",
+   "GOLDEN GATE",
+   "GATEWAY ARCH",
+   "LIBERTY BELL",
+   "WHITE HOUSE",
+   "CAPITOL",
+   "ALAMO",
+   "HOOVER DAM"
+  ]
+ },
+ {
+  "label": "ROAD TRIP",
+  "words": [
+   "ROAD MAP",
+   "SNACKS",
+   "SUNGLASSES",
+   "PLAYLIST",
+   "GAS STATION",
+   "MOTEL",
+   "DINER",
+   "COOLER"
+  ]
+ },
+ {
+  "label": "SYMBOLS",
+  "words": [
+   "BALD EAGLE",
+   "OLD GLORY",
+   "UNCLE SAM",
+   "APPLE PIE",
+   "BASEBALL",
+   "FOURTH OF JULY",
+   "FIREWORKS",
+   "STAR SPANGLED"
+  ]
+ }
+]

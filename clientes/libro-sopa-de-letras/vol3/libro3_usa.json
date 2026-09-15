@@ -1,0 +1,972 @@
+{
+ "title": "Word Search",
+ "subtitle": "USA Hunt!",
+ "volume": "Vol. 3",
+ "tagline": "55 Large Print Puzzles of the 50 States, Capitals, Cities and National Parks for Adults and Seniors",
+ "trim": [
+  6,
+  9
+ ],
+ "size": 13,
+ "seed": 2028,
+ "directions": "forward",
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": {
+  "name": "Big Print Word Hunt",
+  "volume": 3
+ },
+ "series_note": "<b>USA Hunt!</b> is Vol. 3 of the <b>Big Print Word Hunt</b> series.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "instructions_style": "icons",
+ "puzzles": [
+  {
+   "phrase": "Buckle Up!",
+   "theme_label": "MAINE",
+   "words": [
+    "MAINE",
+    "AUGUSTA",
+    "CAMDEN",
+    "BANGOR",
+    "LEWISTON",
+    "BAR HARBOR",
+    "ACADIA",
+    "BIDDEFORD",
+    "OGUNQUIT"
+   ]
+  },
+  {
+   "phrase": "Are We There Yet?",
+   "theme_label": "NEW HAMPSHIRE",
+   "words": [
+    "NEW HAMPSHIRE",
+    "CONCORD",
+    "MANCHESTER",
+    "NASHUA",
+    "PORTSMOUTH",
+    "KEENE",
+    "HANOVER",
+    "LACONIA",
+    "LEBANON"
+   ]
+  },
+  {
+   "phrase": "Scenic Byway!",
+   "theme_label": "VERMONT",
+   "words": [
+    "VERMONT",
+    "MONTPELIER",
+    "BURLINGTON",
+    "RUTLAND",
+    "BARRE",
+    "STOWE",
+    "BENNINGTON",
+    "BRATTLEBORO",
+    "WINOOSKI"
+   ]
+  },
+  {
+   "phrase": "Next Exit!",
+   "theme_label": "MASSACHUSETTS",
+   "words": [
+    "MASSACHUSETTS",
+    "BOSTON",
+    "WORCESTER",
+    "CAMBRIDGE",
+    "LOWELL",
+    "PLYMOUTH",
+    "CAPE COD",
+    "NANTUCKET",
+    "QUINCY"
+   ]
+  },
+  {
+   "phrase": "Pit Stop!",
+   "theme_label": "RHODE ISLAND",
+   "words": [
+    "RHODE ISLAND",
+    "PROVIDENCE",
+    "NEWPORT",
+    "WARWICK",
+    "CRANSTON",
+    "PAWTUCKET",
+    "WOONSOCKET",
+    "BRISTOL",
+    "BLOCK ISLAND"
+   ]
+  },
+  {
+   "phrase": "Fill Up the Tank!",
+   "theme_label": "CONNECTICUT",
+   "words": [
+    "CONNECTICUT",
+    "HARTFORD",
+    "NEW HAVEN",
+    "STAMFORD",
+    "BRIDGEPORT",
+    "WATERBURY",
+    "NORWALK",
+    "MYSTIC",
+    "GREENWICH"
+   ]
+  },
+  {
+   "phrase": "Rest Area Ahead!",
+   "theme_label": "NEW YORK",
+   "words": [
+    "NEW YORK",
+    "ALBANY",
+    "MANHATTAN",
+    "BROOKLYN",
+    "BUFFALO",
+    "ROCHESTER",
+    "SYRACUSE",
+    "NIAGARA FALLS",
+    "LONG ISLAND"
+   ]
+  },
+  {
+   "phrase": "Open Road!",
+   "theme_label": "NEW JERSEY",
+   "words": [
+    "NEW JERSEY",
+    "TRENTON",
+    "NEWARK",
+    "JERSEY CITY",
+    "PATERSON",
+    "ATLANTIC CITY",
+    "PRINCETON",
+    "HOBOKEN",
+    "CAPE MAY"
+   ]
+  },
+  {
+   "phrase": "Cruise Control!",
+   "theme_label": "PENNSYLVANIA",
+   "words": [
+    "PENNSYLVANIA",
+    "HARRISBURG",
+    "PHILADELPHIA",
+    "PITTSBURGH",
+    "ALLENTOWN",
+    "ERIE",
+    "SCRANTON",
+    "LANCASTER",
+    "GETTYSBURG"
+   ]
+  },
+  {
+   "phrase": "Windows Down!",
+   "theme_label": "DELAWARE",
+   "words": [
+    "DELAWARE",
+    "DOVER",
+    "WILMINGTON",
+    "REHOBOTH BEACH",
+    "MIDDLETOWN",
+    "SMYRNA",
+    "MILFORD",
+    "LEWES",
+    "SEAFORD"
+   ]
+  },
+  {
+   "phrase": "Detour Ahead!",
+   "theme_label": "MARYLAND",
+   "words": [
+    "MARYLAND",
+    "ANNAPOLIS",
+    "BALTIMORE",
+    "FREDERICK",
+    "ROCKVILLE",
+    "GAITHERSBURG",
+    "OCEAN CITY",
+    "HAGERSTOWN",
+    "SALISBURY"
+   ]
+  },
+  {
+   "phrase": "State Line!",
+   "theme_label": "VIRGINIA",
+   "words": [
+    "VIRGINIA",
+    "RICHMOND",
+    "NORFOLK",
+    "ARLINGTON",
+    "ALEXANDRIA",
+    "ROANOKE",
+    "WILLIAMSBURG",
+    "CHESAPEAKE",
+    "SHENANDOAH"
+   ]
+  },
+  {
+   "phrase": "Welcome Sign!",
+   "theme_label": "WEST VIRGINIA",
+   "words": [
+    "WEST VIRGINIA",
+    "CHARLESTON",
+    "HUNTINGTON",
+    "MORGANTOWN",
+    "PARKERSBURG",
+    "WHEELING",
+    "BECKLEY",
+    "FAIRMONT",
+    "HARPERS FERRY"
+   ]
+  },
+  {
+   "phrase": "Mile Marker!",
+   "theme_label": "NORTH CAROLINA",
+   "words": [
+    "NORTH CAROLINA",
+    "RALEIGH",
+    "CHARLOTTE",
+    "GREENSBORO",
+    "DURHAM",
+    "ASHEVILLE",
+    "WINSTON-SALEM",
+    "OUTER BANKS",
+    "FAYETTEVILLE"
+   ]
+  },
+  {
+   "phrase": "Roadside Diner!",
+   "theme_label": "SOUTH CAROLINA",
+   "words": [
+    "SOUTH CAROLINA",
+    "COLUMBIA",
+    "GREENVILLE",
+    "MYRTLE BEACH",
+    "SPARTANBURG",
+    "HILTON HEAD",
+    "ROCK HILL",
+    "BEAUFORT",
+    "SUMTER"
+   ]
+  },
+  {
+   "phrase": "Sweet Tea Stop!",
+   "theme_label": "GEORGIA",
+   "words": [
+    "GEORGIA",
+    "ATLANTA",
+    "SAVANNAH",
+    "MACON",
+    "ATHENS",
+    "VALDOSTA",
+    "STONE MOUNTAIN",
+    "MARIETTA",
+    "JEKYLL ISLAND"
+   ]
+  },
+  {
+   "phrase": "Country Roads!",
+   "theme_label": "FLORIDA",
+   "words": [
+    "FLORIDA",
+    "TALLAHASSEE",
+    "MIAMI",
+    "ORLANDO",
+    "TAMPA",
+    "JACKSONVILLE",
+    "KEY WEST",
+    "EVERGLADES",
+    "CAPE CANAVERAL"
+   ]
+  },
+  {
+   "phrase": "Coast to Coast!",
+   "theme_label": "ALABAMA",
+   "words": [
+    "ALABAMA",
+    "MONTGOMERY",
+    "BIRMINGHAM",
+    "HUNTSVILLE",
+    "MOBILE",
+    "TUSCALOOSA",
+    "DOTHAN",
+    "AUBURN",
+    "GULF SHORES"
+   ]
+  },
+  {
+   "phrase": "Toll Booth!",
+   "theme_label": "MISSISSIPPI",
+   "words": [
+    "MISSISSIPPI",
+    "JACKSON",
+    "GULFPORT",
+    "BILOXI",
+    "HATTIESBURG",
+    "TUPELO",
+    "NATCHEZ",
+    "VICKSBURG",
+    "OXFORD"
+   ]
+  },
+  {
+   "phrase": "Small Town Charm!",
+   "theme_label": "TENNESSEE",
+   "words": [
+    "TENNESSEE",
+    "NASHVILLE",
+    "MEMPHIS",
+    "KNOXVILLE",
+    "CHATTANOOGA",
+    "CLARKSVILLE",
+    "MURFREESBORO",
+    "GATLINBURG",
+    "JOHNSON CITY"
+   ]
+  },
+  {
+   "phrase": "Main Street!",
+   "theme_label": "KENTUCKY",
+   "words": [
+    "KENTUCKY",
+    "FRANKFORT",
+    "LOUISVILLE",
+    "LEXINGTON",
+    "BOWLING GREEN",
+    "OWENSBORO",
+    "COVINGTON",
+    "PADUCAH",
+    "ELIZABETHTOWN"
+   ]
+  },
+  {
+   "phrase": "County Fair!",
+   "theme_label": "LOUISIANA",
+   "words": [
+    "LOUISIANA",
+    "BATON ROUGE",
+    "NEW ORLEANS",
+    "SHREVEPORT",
+    "LAFAYETTE",
+    "LAKE CHARLES",
+    "MONROE",
+    "HOUMA",
+    "BOSSIER CITY"
+   ]
+  },
+  {
+   "phrase": "Farm Stand!",
+   "theme_label": "ARKANSAS",
+   "words": [
+    "ARKANSAS",
+    "LITTLE ROCK",
+    "FORT SMITH",
+    "JONESBORO",
+    "HOT SPRINGS",
+    "BENTONVILLE",
+    "CONWAY",
+    "PINE BLUFF",
+    "TEXARKANA"
+   ]
+  },
+  {
+   "phrase": "Heartland Highway!",
+   "theme_label": "OHIO",
+   "words": [
+    "OHIO",
+    "COLUMBUS",
+    "CLEVELAND",
+    "CINCINNATI",
+    "TOLEDO",
+    "AKRON",
+    "DAYTON",
+    "CANTON",
+    "SANDUSKY"
+   ]
+  },
+  {
+   "phrase": "Lakeside Drive!",
+   "theme_label": "MICHIGAN",
+   "words": [
+    "MICHIGAN",
+    "LANSING",
+    "DETROIT",
+    "GRAND RAPIDS",
+    "ANN ARBOR",
+    "FLINT",
+    "KALAMAZOO",
+    "TRAVERSE CITY",
+    "SAGINAW"
+   ]
+  },
+  {
+   "phrase": "River Crossing!",
+   "theme_label": "INDIANA",
+   "words": [
+    "INDIANA",
+    "INDIANAPOLIS",
+    "FORT WAYNE",
+    "EVANSVILLE",
+    "SOUTH BEND",
+    "BLOOMINGTON",
+    "GARY",
+    "CARMEL",
+    "MUNCIE"
+   ]
+  },
+  {
+   "phrase": "Bridge Ahead!",
+   "theme_label": "ILLINOIS",
+   "words": [
+    "ILLINOIS",
+    "SPRINGFIELD",
+    "CHICAGO",
+    "AURORA",
+    "NAPERVILLE",
+    "ROCKFORD",
+    "JOLIET",
+    "PEORIA",
+    "CHAMPAIGN"
+   ]
+  },
+  {
+   "phrase": "Covered Bridge!",
+   "theme_label": "WISCONSIN",
+   "words": [
+    "WISCONSIN",
+    "MADISON",
+    "MILWAUKEE",
+    "GREEN BAY",
+    "KENOSHA",
+    "RACINE",
+    "APPLETON",
+    "EAU CLAIRE",
+    "LA CROSSE"
+   ]
+  },
+  {
+   "phrase": "Rush Hour!",
+   "theme_label": "MINNESOTA",
+   "words": [
+    "MINNESOTA",
+    "SAINT PAUL",
+    "MINNEAPOLIS",
+    "DULUTH",
+    "MANKATO",
+    "SAINT CLOUD",
+    "MOORHEAD",
+    "BEMIDJI",
+    "WINONA"
+   ]
+  },
+  {
+   "phrase": "Prairie Winds!",
+   "theme_label": "IOWA",
+   "words": [
+    "IOWA",
+    "DES MOINES",
+    "CEDAR RAPIDS",
+    "DAVENPORT",
+    "SIOUX CITY",
+    "AMES",
+    "DUBUQUE",
+    "WATERLOO",
+    "COUNCIL BLUFFS"
+   ]
+  },
+  {
+   "phrase": "Big Sky Views!",
+   "theme_label": "MISSOURI",
+   "words": [
+    "MISSOURI",
+    "JEFFERSON CITY",
+    "KANSAS CITY",
+    "SAINT LOUIS",
+    "BRANSON",
+    "JOPLIN",
+    "INDEPENDENCE",
+    "HANNIBAL",
+    "SAINT JOSEPH"
+   ]
+  },
+  {
+   "phrase": "Mountain Pass!",
+   "theme_label": "KANSAS",
+   "words": [
+    "KANSAS",
+    "TOPEKA",
+    "WICHITA",
+    "OVERLAND PARK",
+    "OLATHE",
+    "LAWRENCE",
+    "SALINA",
+    "DODGE CITY",
+    "HUTCHINSON"
+   ]
+  },
+  {
+   "phrase": "Desert Highway!",
+   "theme_label": "NEBRASKA",
+   "words": [
+    "NEBRASKA",
+    "LINCOLN",
+    "OMAHA",
+    "GRAND ISLAND",
+    "KEARNEY",
+    "NORTH PLATTE",
+    "SCOTTSBLUFF",
+    "FREMONT",
+    "HASTINGS"
+   ]
+  },
+  {
+   "phrase": "Canyon Views!",
+   "theme_label": "SOUTH DAKOTA",
+   "words": [
+    "SOUTH DAKOTA",
+    "PIERRE",
+    "SIOUX FALLS",
+    "RAPID CITY",
+    "ABERDEEN",
+    "BROOKINGS",
+    "WATERTOWN",
+    "MOUNT RUSHMORE",
+    "BADLANDS"
+   ]
+  },
+  {
+   "phrase": "Wild West!",
+   "theme_label": "NORTH DAKOTA",
+   "words": [
+    "NORTH DAKOTA",
+    "BISMARCK",
+    "FARGO",
+    "GRAND FORKS",
+    "MINOT",
+    "WILLISTON",
+    "DICKINSON",
+    "JAMESTOWN",
+    "MANDAN"
+   ]
+  },
+  {
+   "phrase": "Cowboy Country!",
+   "theme_label": "OKLAHOMA",
+   "words": [
+    "OKLAHOMA",
+    "OKLAHOMA CITY",
+    "TULSA",
+    "NORMAN",
+    "LAWTON",
+    "EDMOND",
+    "BROKEN ARROW",
+    "STILLWATER",
+    "MUSKOGEE"
+   ]
+  },
+  {
+   "phrase": "Neon Lights!",
+   "theme_label": "TEXAS",
+   "words": [
+    "TEXAS",
+    "AUSTIN",
+    "HOUSTON",
+    "DALLAS",
+    "SAN ANTONIO",
+    "EL PASO",
+    "FORT WORTH",
+    "CORPUS CHRISTI",
+    "GALVESTON"
+   ]
+  },
+  {
+   "phrase": "Motel Check-In!",
+   "theme_label": "NEW MEXICO",
+   "words": [
+    "NEW MEXICO",
+    "SANTA FE",
+    "ALBUQUERQUE",
+    "LAS CRUCES",
+    "TAOS",
+    "ROSWELL",
+    "CARLSBAD",
+    "FARMINGTON",
+    "WHITE SANDS"
+   ]
+  },
+  {
+   "phrase": "Campfire Night!",
+   "theme_label": "ARIZONA",
+   "words": [
+    "ARIZONA",
+    "PHOENIX",
+    "TUCSON",
+    "MESA",
+    "SCOTTSDALE",
+    "FLAGSTAFF",
+    "SEDONA",
+    "YUMA",
+    "GRAND CANYON"
+   ]
+  },
+  {
+   "phrase": "Stargazing!",
+   "theme_label": "COLORADO",
+   "words": [
+    "COLORADO",
+    "DENVER",
+    "BOULDER",
+    "FORT COLLINS",
+    "ASPEN",
+    "VAIL",
+    "PUEBLO",
+    "DURANGO",
+    "GRAND JUNCTION"
+   ]
+  },
+  {
+   "phrase": "Trailhead!",
+   "theme_label": "UTAH",
+   "words": [
+    "UTAH",
+    "SALT LAKE CITY",
+    "PROVO",
+    "OGDEN",
+    "MOAB",
+    "PARK CITY",
+    "SAINT GEORGE",
+    "ZION",
+    "BRYCE CANYON"
+   ]
+  },
+  {
+   "phrase": "Pack a Picnic!",
+   "theme_label": "NEVADA",
+   "words": [
+    "NEVADA",
+    "CARSON CITY",
+    "LAS VEGAS",
+    "RENO",
+    "HENDERSON",
+    "ELKO",
+    "LAKE TAHOE",
+    "BOULDER CITY",
+    "SPARKS"
+   ]
+  },
+  {
+   "phrase": "Map Check!",
+   "theme_label": "WYOMING",
+   "words": [
+    "WYOMING",
+    "CHEYENNE",
+    "CASPER",
+    "LARAMIE",
+    "GILLETTE",
+    "CODY",
+    "JACKSON HOLE",
+    "YELLOWSTONE",
+    "GRAND TETON"
+   ]
+  },
+  {
+   "phrase": "Gas and Snacks!",
+   "theme_label": "MONTANA",
+   "words": [
+    "MONTANA",
+    "HELENA",
+    "BILLINGS",
+    "MISSOULA",
+    "BOZEMAN",
+    "GREAT FALLS",
+    "BUTTE",
+    "KALISPELL",
+    "GLACIER"
+   ]
+  },
+  {
+   "phrase": "Photo Stop!",
+   "theme_label": "IDAHO",
+   "words": [
+    "IDAHO",
+    "BOISE",
+    "MERIDIAN",
+    "NAMPA",
+    "POCATELLO",
+    "COEUR D'ALENE",
+    "TWIN FALLS",
+    "SUN VALLEY",
+    "SANDPOINT"
+   ]
+  },
+  {
+   "phrase": "Postcard Views!",
+   "theme_label": "WASHINGTON",
+   "words": [
+    "WASHINGTON",
+    "OLYMPIA",
+    "SEATTLE",
+    "SPOKANE",
+    "TACOMA",
+    "BELLEVUE",
+    "EVERETT",
+    "YAKIMA",
+    "MOUNT RAINIER"
+   ]
+  },
+  {
+   "phrase": "Northern Lights!",
+   "theme_label": "OREGON",
+   "words": [
+    "OREGON",
+    "SALEM",
+    "PORTLAND",
+    "EUGENE",
+    "BEND",
+    "MEDFORD",
+    "CORVALLIS",
+    "ASTORIA",
+    "CRATER LAKE"
+   ]
+  },
+  {
+   "phrase": "Island Breeze!",
+   "theme_label": "CALIFORNIA",
+   "words": [
+    "CALIFORNIA",
+    "SACRAMENTO",
+    "SAN DIEGO",
+    "SAN FRANCISCO",
+    "FRESNO",
+    "OAKLAND",
+    "LONG BEACH",
+    "YOSEMITE",
+    "NAPA VALLEY"
+   ]
+  },
+  {
+   "phrase": "Park Ranger!",
+   "theme_label": "ALASKA",
+   "words": [
+    "ALASKA",
+    "JUNEAU",
+    "ANCHORAGE",
+    "FAIRBANKS",
+    "KETCHIKAN",
+    "SITKA",
+    "NOME",
+    "DENALI",
+    "KODIAK"
+   ]
+  },
+  {
+   "phrase": "Hiking Boots!",
+   "theme_label": "HAWAII",
+   "words": [
+    "HAWAII",
+    "HONOLULU",
+    "HILO",
+    "MAUI",
+    "KAUAI",
+    "WAIKIKI",
+    "PEARL HARBOR",
+    "KAILUA",
+    "KONA"
+   ]
+  },
+  {
+   "phrase": "Lighthouse Stop!",
+   "theme_label": "NATIONAL PARKS",
+   "words": [
+    "ARCHES",
+    "CANYONLANDS",
+    "CAPITOL REEF",
+    "JOSHUA TREE",
+    "DEATH VALLEY",
+    "SEQUOIA",
+    "REDWOOD",
+    "BIG BEND",
+    "OLYMPIC"
+   ]
+  },
+  {
+   "phrase": "American Icons!",
+   "theme_label": "MORE PARKS",
+   "words": [
+    "MAMMOTH CAVE",
+    "GREAT SMOKIES",
+    "ROCKY MOUNTAIN",
+    "MESA VERDE",
+    "SAGUARO",
+    "BISCAYNE",
+    "GREAT BASIN",
+    "HALEAKALA",
+    "KINGS CANYON"
+   ]
+  },
+  {
+   "phrase": "Drive Safe!",
+   "theme_label": "LANDMARKS",
+   "words": [
+    "LADY LIBERTY",
+    "GOLDEN GATE",
+    "GATEWAY ARCH",
+    "LIBERTY BELL",
+    "WHITE HOUSE",
+    "CAPITOL",
+    "ALAMO",
+    "HOOVER DAM",
+    "TIMES SQUARE"
+   ]
+  },
+  {
+   "phrase": "Home of the Brave!",
+   "theme_label": "ROAD TRIP",
+   "words": [
+    "ROAD MAP",
+    "SNACKS",
+    "SUNGLASSES",
+    "PLAYLIST",
+    "GAS STATION",
+    "MOTEL",
+    "DINER",
+    "COOLER",
+    "SPARE TIRE"
+   ]
+  },
+  {
+   "phrase": "Last Mile!",
+   "theme_label": "SYMBOLS",
+   "words": [
+    "BALD EAGLE",
+    "OLD GLORY",
+    "UNCLE SAM",
+    "APPLE PIE",
+    "BASEBALL",
+    "FOURTH OF JULY",
+    "FIREWORKS",
+    "STAR SPANGLED",
+    "GREAT SEAL"
+   ]
+  }
+ ],
+ "cover": {
+  "page_count": 112,
+  "paper": "white",
+  "title": "WORD SEARCH",
+  "series_name": "USA HUNT!",
+  "volume": "VOL. 3",
+  "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
+  "band2": "for Adults and Seniors · Solutions Included",
+  "spine": "WORD SEARCH  ·  USA HUNT!  ·  VOL. 3  ·  PETER & CARDU",
+  "cart": {
+   "grid": [
+    "MAINEZUTO",
+    "TEXASKWQH",
+    "BIOWALMRI",
+    "UTAHPDCNO"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     4
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     1,
+     2,
+     4
+    ],
+    [
+     0,
+     8,
+     3,
+     8
+    ]
+   ],
+   "lens": [
+    2,
+    6
+   ]
+  },
+  "back_headline": "Hit the road and start searching!",
+  "back_intro": [
+   "From Maine to Hawaii, <b>USA Hunt!</b> takes you on a road trip through all 50 states in 55 relaxing word search puzzles."
+  ],
+  "back_bullets": [
+   "55 puzzles in <b>LARGE PRINT</b>, one per page",
+   "All 50 states, each with its capital and 7 cities or famous places",
+   "5 bonus puzzles: national parks, landmarks, road trip and American symbols",
+   "Words always read left to right or top to bottom. No backwards words!",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A calm, screen-free road trip for adults and seniors.",
+  "colors": {
+   "bg": "#FFF4DC",
+   "ink": "#1D3557",
+   "red": "#E63946",
+   "yellow": "#FFC93C",
+   "accent": "#457B9D",
+   "highlight": "#A8E6CF",
+   "tile": "#F6E3BA",
+   "car": "#26A69A"
+  },
+  "sample": {
+   "title": "SAMPLE",
+   "grid": [
+    "JUNEAU",
+    "SITKAX",
+    "NOMEBQ",
+    "KODIAK",
+    "DENALI",
+    "WRCFZY"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     5
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     0,
+     2,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ],
+    [
+     4,
+     0,
+     4,
+     5
+    ]
+   ],
+   "words": "JUNEAU · SITKA · NOME · KODIAK · DENALI"
+  },
+  "style": "bold",
+  "author": "Peter & Cardu",
+  "illustration": "billboard",
+  "count": "55",
+  "band_line": "USA Travel Puzzles for Adults & Seniors",
+  "bold": {
+   "bg": "#1D2F6F",
+   "ink": "#0E1738",
+   "deep": "#141F4D"
+  }
+ }
+}
