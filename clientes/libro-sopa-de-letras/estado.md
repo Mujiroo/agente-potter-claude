@@ -380,3 +380,7 @@ Pedro pidió revisar todo como editor profesional.
   - Alternativas: Biblia, jardín y aves, perros y gatos.
   - Extras: serie en español; pack de 5 volúmenes.
 - Esperando OK.
+- 14:02 Pedro decide (msgs 221–223): **Vol. 3 USA, Vol. 4 Nostalgia, Vol. 5 Christmas**. "Do it!"
+  - Yo armo las listas de palabras.
+  - Christmas debe estar publicado a fines de octubre (KDP permite publicar fuera de orden).
+  - Otros libros navideños sugeridos (respuesta a su pregunta): sudoku letra grande, libro de actividades mixto, crucigramas. Colorear no recomendado.
