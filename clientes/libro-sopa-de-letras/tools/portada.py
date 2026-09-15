@@ -18,6 +18,7 @@ import os
 import sys
 
 HERE = os.path.dirname(os.path.abspath(__file__))
+sys.path.insert(0, HERE)
 BLEED = 0.125
 PAPER = {"white": 0.002252, "cream": 0.0025}  # pulgadas por página (KDP)
 U = 100  # unidades SVG por pulgada
@@ -236,7 +237,7 @@ def font_css():
             f"@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-VF.ttf'); font-weight: 300 700; }}\n")
 
 
-def main(src, dst, front_only=False, white=False):
+def main(src, dst, front_only=False, white=False, style=None):
     book = json.load(open(src, encoding="utf-8"))
     cv, c = book["cover"], book["cover"]["colors"]
     tw, th = book["trim"]
@@ -245,7 +246,12 @@ def main(src, dst, front_only=False, white=False):
     fw, fh = (tw + BLEED) * U, (th + 2 * BLEED) * U  # cada cara incluye sangrado exterior
     if front_only:
         W, H = fw + BLEED * U, fh  # sangrado a ambos lados para preview
-        svg = front(0, 0, W, H, cv, c, white)
+        style = style or cv.get("style", "classic")
+        if style != "classic":
+            import portada_alt
+            svg = portada_alt.STYLES[style](0, 0, W, H, cv, c)
+        else:
+            svg = front(0, 0, W, H, cv, c, white)
     else:
         W, H = 2 * fw + sw, fh
         svg = back(0, 0, fw, H, cv, c) + spine(fw, 0, sw, H, cv, c) + front(fw + sw, 0, fw, H, cv, c, cx=fw + sw + tw * U / 2)
@@ -271,4 +277,5 @@ svg {{ display: block; width: {W/U:.4f}in; height: {H/U:.4f}in; }}
 
 if __name__ == "__main__":
     args = [a for a in sys.argv[1:] if not a.startswith("--")]
-    main(args[0], args[1], "--front-only" in sys.argv, "--white" in sys.argv)
+    style = next((a.split("=", 1)[1] for a in sys.argv if a.startswith("--style=")), None)
+    main(args[0], args[1], "--front-only" in sys.argv, "--white" in sys.argv, style)

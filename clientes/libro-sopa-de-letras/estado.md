@@ -151,3 +151,16 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
 - Soluciones: cápsula `rect` rx=15 con contorno negro de 2,6 unidades, rotada según la dirección.
 - Pendiente: nombre de autor/sello → línea de copyright en p2. Recomendaciones de venta antes de publicar.
 - 11:17 Pedro confirma lista en 14 pt (msg 93). Interior v5 = versión vigente.
+
+## Alternativas comerciales de portada — enviadas 11:45 (msgs 100–103)
+- Pedro (msg 96) pidió revisar la competencia y alternativas "lo más comercial posible".
+- Revisé con agent-browser el top 30 de Amazon Best Sellers (Word Search Games) y la búsqueda "large print word search grocery food".
+  - El título domina más del 50% de la portada.
+  - Textura o bordes de letras de sopa.
+  - Números grandes en sellos (5000 WORDS, 224 PUZZLES).
+  - LARGE PRINT en franja roja abajo; colores saturados.
+  - En comida predominan ilustraciones realistas o de IA.
+- Nuevo `tools/portada_alt.py` con estilos `bold` (A) y `grid` (B); `portada.py --front-only --style=bold|grid`.
+  - Hice una hoja comparativa con miniaturas de Amazon.
+- Recomendé **A · Bold**: azul con textura de letras, WORD SEARCH gigante, sello 55 PUZZLES, franja LARGE PRINT, carro al 74%.
+- Esperando elección → luego contraportada y lomo del estilo elegido (hoy `back`/`spine` son del estilo clásico).
