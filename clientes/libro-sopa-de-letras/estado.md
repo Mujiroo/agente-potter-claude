@@ -279,3 +279,11 @@ Pedro pidió revisar todo como editor profesional.
   - **A (recomendada)**: una sola serie en KDP (p. ej. "Word Search Hunt!"), cada libro con nombre propio (Vol. 1 Aisle Hunt!, Vol. 2 p. ej. World Hunt!). En este libro solo cambia la nota de p2.
   - **B**: una serie por tema.
 - Esperando su idea.
+- 12:53 Pedro valora que todo quede dentro de márgenes y medidas (guardado en memory/preferencias.md).
+- 12:53 Pedro preguntó si "Aisle Hunt!"/"World Hunt!" son nombres comerciales que venden (msg 170). Respondí (msg 171):
+  - No venden solos: son marca, no búsqueda.
+  - Lo que atrae ventas es "Word Search" + un subtítulo con lo que la gente busca (large print, tema, adults and seniors) + la portada en miniatura.
+  - El nombre creativo es gancho opcional.
+  - Recomendé subtítulo descriptivo por libro y nombre de serie descriptivo (p. ej. "Large Print Word Search by Theme").
+  - Aclaré que Amazon no publica cómo pondera el título frente a las palabras clave (es práctica habitual) y que "World Hunt" no está verificado.
+- Pregunté si mantiene "Aisle Hunt!" en el Vol. 1 o pasa a un enfoque solo descriptivo (pendiente).
