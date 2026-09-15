@@ -17,3 +17,6 @@ Fuente: Pedro, Telegram, 2026-09-15.
 - **Decide él entre opciones**: prefiere que le presente alternativas con una recomendada (A/B/C) y elegir.
 
 Ver [[rol]], [[pedro]].
+- **Nunca enviar correos ni actuar hacia afuera sin su aprobación explícita** (Telegram, 2026-09-15, msg 318; confirmado por mí en msg 319).
+  **Why:** Pedro lo pidió expresamente.
+  **How to apply:** redactar y mostrar; enviar/publicar/borrar solo cuando él lo confirme. Investigar y leer sí es libre.
