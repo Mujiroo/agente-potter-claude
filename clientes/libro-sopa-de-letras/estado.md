@@ -472,3 +472,9 @@ Pedro pidió revisar todo como editor profesional.
   - Temas comunes de la competencia: carols, Santa's workshop, nativity, foods/treats/cookies/baking, ornaments, winter wonderland, traditions, holiday movies. Todos cubiertos menos películas (evitadas por marcas).
   - La mezcla de Navidad con invierno es normal en la categoría. Diferenciales nuestros: Dickens, Nutcracker, poema de 1823, dulces del mundo, mercado navideño.
   - Conclusión enviada (msg 279): alineado, no cambiar.
+- 17:18–19:12 Soporte iPhone:
+  - "Sincronización en pausa" en Mensajes = iCloud lleno (10,21 de 5 GB). Recomendé ampliar a 50 GB ($990 CLP/mes) o liberar espacio.
+  - Borrar correos de Hotmail NO libera iCloud (Mail en iCloud = No).
+- 19:22 Pedro pregunta qué volumen es más interesante para Amazon (msg 291). Ranking enviado (msg 292):
+  - V4 Nostalgia (top 10, todo el año), V5 Christmas (temporada, publicar primero), V3 USA, V2 World, V1 Supermercado.
+  - Estrategia: publicar V5 y V4 primero y el resto en pocas semanas.
