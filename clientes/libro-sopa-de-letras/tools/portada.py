@@ -219,6 +219,10 @@ def spine(x0, y0, sw, h, cv, c):
 def front_svg_white(book):
     """Portada sobre fondo blanco, recortada al área de corte (página 1 del interior)."""
     cv, c = book["cover"], book["cover"]["colors"]
+    if book.get("interior_ink", "bw") == "bw":
+        # interior en blanco y negro: paleta de grises pensada para imprimir con contraste
+        c = dict(c, ink="#111111", red="#2B2B2B", yellow="#E4E4E4", accent="#555555",
+                 highlight="#CFCFCF", tile="#F2F2F2")
     tw, th = book["trim"]
     W, H = (tw + 2 * BLEED) * U, (th + 2 * BLEED) * U
     b = BLEED * U

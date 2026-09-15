@@ -106,3 +106,8 @@ Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derec
   - B) PUZZLE 1 · AISLE 1 (recomendada)
   - C) PUZZLE N + frase rotativa
   Esperando la elección; cambia también la viñeta "Themed aisles…" de la contraportada.
+- 10:17 Pedro preguntó si la p1 se ve bien en grises. La simulé (filtro grayscale):
+  - En color se pierde contraste: rojo sobre amarillo queda gris sobre gris.
+  - Hice una paleta B/N para la p1 (`interior_ink: "bw"`, que es el valor por defecto en `front_svg_white`). Enviada (msgs 72–74).
+  - La portada exterior sigue en color.
+- Sigue pendiente: títulos A/B/C.
