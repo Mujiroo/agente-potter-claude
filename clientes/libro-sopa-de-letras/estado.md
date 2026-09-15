@@ -415,3 +415,16 @@ Pedro pidió revisar todo como editor profesional.
   - Agregué `cart.usa_flag`: bandera flameando en asta a la izquierda y cabecera del cartel con barras y estrellas. Paleta B/N con flag_blue.
   - Enviados antes/después, **portada v2 + interior v2**. Verificado: zona segura, 0 errores, grises; Vol. 1 y 2 intactos.
 - Vol. 5 Christmas: lista borrador lista (`vol5/lista_borrador.json`, 55 temas × 9, sin duplicados, sin palabras contenidas, sin personajes registrados).
+
+## Vol. 5 Christmas v1 entregado — ~15:00
+- `vol5/libro5_christmas.json`, seed 2030:
+  - 55 temáticas con `theme_label` y 55 frases festivas únicas que no revelan palabras de su puzzle.
+  - Puzzle 10: títulos de villancicos → palabras de canto (los títulos desbordaban la lista en 14 pt).
+- Sin personajes registrados (Rudolph, Frosty, Grinch, Elf on the Shelf); renos del poema de 1823, Scrooge, Nutcracker (dominio público).
+- Portada:
+  - verde #1B5E20, ilustración `giftbox` (caja con grilla SNOW/TREE/STAR/BELL/GIFT, tapa roja, moño dorado, árbol, copos), escala 0,6
+  - `price_tag` ajusta el ancho si el nombre tiene más de 11 caracteres (Vol. 1–3 sin cambios, verificado con cmp)
+- Paleta B/N + tree.
+- Verificado: 0 errores, 0 desbordes (holgura mín. 11 px), 0 Type3, grises, zona segura, código de barras libre.
+- Archivos: `entregables/vol5/`.
+- Pendientes: OK de Pedro al Vol. 5; OK al planner navideño; revisión del Vol. 2 (nombre World Hunt!). Siguiente: Vol. 4 Nostalgia.

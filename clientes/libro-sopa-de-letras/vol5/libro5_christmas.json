@@ -1,0 +1,977 @@
+{
+ "title": "Word Search",
+ "subtitle": "Christmas Hunt!",
+ "volume": "Vol. 5",
+ "tagline": "55 Large Print Christmas Puzzles for Adults and Seniors",
+ "trim": [
+  6,
+  9
+ ],
+ "size": 13,
+ "seed": 2030,
+ "directions": "forward",
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": {
+  "name": "Big Print Word Hunt",
+  "volume": 5
+ },
+ "series_note": "<b>Christmas Hunt!</b> is Vol. 5 of the <b>Big Print Word Hunt</b> series.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "instructions_style": "icons",
+ "puzzles": [
+  {
+   "phrase": "Trim the Tree!",
+   "theme_label": "Christmas Tree",
+   "words": [
+    "ORNAMENTS",
+    "TINSEL",
+    "GARLAND",
+    "TREE TOPPER",
+    "STAR",
+    "LIGHTS",
+    "EVERGREEN",
+    "FRASER FIR",
+    "BRANCHES"
+   ]
+  },
+  {
+   "phrase": "Santa’s Coming!",
+   "theme_label": "Santa",
+   "words": [
+    "SANTA CLAUS",
+    "SLEIGH",
+    "REINDEER",
+    "NORTH POLE",
+    "WORKSHOP",
+    "ELVES",
+    "NICE LIST",
+    "CHIMNEY",
+    "RED SUIT"
+   ]
+  },
+  {
+   "phrase": "Up on the Rooftop!",
+   "theme_label": "Reindeer",
+   "words": [
+    "DASHER",
+    "DANCER",
+    "PRANCER",
+    "VIXEN",
+    "COMET",
+    "CUPID",
+    "DONNER",
+    "BLITZEN",
+    "ANTLERS"
+   ]
+  },
+  {
+   "phrase": "Sweet Treats!",
+   "theme_label": "Treats",
+   "words": [
+    "GINGERBREAD",
+    "CANDY CANE",
+    "FUDGE",
+    "SUGAR COOKIES",
+    "PEPPERMINT",
+    "BROWNIES",
+    "FRUITCAKE",
+    "TOFFEE",
+    "MARSHMALLOWS"
+   ]
+  },
+  {
+   "phrase": "Dinner Is Served!",
+   "theme_label": "Christmas Dinner",
+   "words": [
+    "ROAST TURKEY",
+    "STUFFING",
+    "CRANBERRIES",
+    "GRAVY",
+    "YAMS",
+    "DINNER ROLLS",
+    "PUMPKIN PIE",
+    "GLAZED HAM",
+    "GREEN BEANS"
+   ]
+  },
+  {
+   "phrase": "Bundle Up!",
+   "theme_label": "Winter Weather",
+   "words": [
+    "SNOWFLAKE",
+    "BLIZZARD",
+    "ICICLE",
+    "FROST",
+    "SLEET",
+    "SNOWDRIFT",
+    "WINTER WIND",
+    "COLD SNAP",
+    "FREEZING"
+   ]
+  },
+  {
+   "phrase": "Winter Play!",
+   "theme_label": "Snow Fun",
+   "words": [
+    "SNOWMAN",
+    "SLEDDING",
+    "SNOWBALL",
+    "ICE SKATING",
+    "SKIING",
+    "SNOW ANGEL",
+    "TOBOGGAN",
+    "MITTENS",
+    "SNOW FORT"
+   ]
+  },
+  {
+   "phrase": "Deck Your Door!",
+   "theme_label": "Decorations",
+   "words": [
+    "WREATH",
+    "MISTLETOE",
+    "CANDLES",
+    "HOLLY",
+    "BELLS",
+    "RIBBON",
+    "SNOW GLOBE",
+    "BOUGHS",
+    "DOOR HANGER"
+   ]
+  },
+  {
+   "phrase": "Wrap It Up!",
+   "theme_label": "Gifts",
+   "words": [
+    "PRESENTS",
+    "WRAPPING PAPER",
+    "GIFT TAGS",
+    "GIFT CARD",
+    "SURPRISE",
+    "UNWRAP",
+    "GIFT BAG",
+    "STOCKING",
+    "GIFT BOX"
+   ]
+  },
+  {
+   "phrase": "Sing Along!",
+   "theme_label": "Carol Singing",
+   "words": [
+    "CAROLERS",
+    "HYMNAL",
+    "SONGBOOK",
+    "HARMONY",
+    "MELODY",
+    "CHORUS",
+    "VERSE",
+    "SOPRANO",
+    "DUET"
+   ]
+  },
+  {
+   "phrase": "O Come, All Ye Faithful!",
+   "theme_label": "Nativity",
+   "words": [
+    "BETHLEHEM",
+    "MANGER",
+    "SHEPHERDS",
+    "ANGELS",
+    "WISE MEN",
+    "FRANKINCENSE",
+    "MYRRH",
+    "GOLD",
+    "STABLE"
+   ]
+  },
+  {
+   "phrase": "’Twas the Night!",
+   "theme_label": "Christmas Eve",
+   "words": [
+    "MIDNIGHT MASS",
+    "CANDLELIGHT",
+    "CAROLING",
+    "FIRESIDE",
+    "PAJAMAS",
+    "BEDTIME STORY",
+    "CHURCH",
+    "STOCKINGS",
+    "CHRISTMAS EVE"
+   ]
+  },
+  {
+   "phrase": "Rise and Shine!",
+   "theme_label": "Christmas Morning",
+   "words": [
+    "OPEN PRESENTS",
+    "BREAKFAST",
+    "CINNAMON ROLLS",
+    "PANCAKES",
+    "FAMILY",
+    "HUGS",
+    "SMILES",
+    "SLIPPERS",
+    "ROBE"
+   ]
+  },
+  {
+   "phrase": "Cozy by the Fire!",
+   "theme_label": "Cozy Night In",
+   "words": [
+    "FIREPLACE",
+    "BLANKET",
+    "HOT CIDER",
+    "MOVIE NIGHT",
+    "POPCORN",
+    "WOOL SOCKS",
+    "QUILT",
+    "RECLINER",
+    "STORYBOOK"
+   ]
+  },
+  {
+   "phrase": "Bake Some Cheer!",
+   "theme_label": "Baking Day",
+   "words": [
+    "FLOUR",
+    "SUGAR",
+    "BUTTER",
+    "ROLLING PIN",
+    "COOKIE CUTTER",
+    "SPRINKLES",
+    "FROSTING",
+    "OVEN MITTS",
+    "MIXING BOWL"
+   ]
+  },
+  {
+   "phrase": "Color Me Festive!",
+   "theme_label": "Christmas Colors",
+   "words": [
+    "RED",
+    "GREEN",
+    "SILVER",
+    "WHITE",
+    "CRIMSON",
+    "EMERALD",
+    "IVORY",
+    "BURGUNDY",
+    "COPPER"
+   ]
+  },
+  {
+   "phrase": "God Bless Us, Every One!",
+   "theme_label": "A Christmas Carol",
+   "words": [
+    "SCROOGE",
+    "TINY TIM",
+    "BOB CRATCHIT",
+    "MARLEY",
+    "FEZZIWIG",
+    "HUMBUG",
+    "GHOST",
+    "CHAINS",
+    "DICKENS"
+   ]
+  },
+  {
+   "phrase": "Dance of Joy!",
+   "theme_label": "The Nutcracker",
+   "words": [
+    "NUTCRACKER",
+    "CLARA",
+    "SUGAR PLUM",
+    "MOUSE KING",
+    "TCHAIKOVSKY",
+    "BALLET",
+    "WALTZ",
+    "TUTU",
+    "ORCHESTRA"
+   ]
+  },
+  {
+   "phrase": "Merry Everywhere!",
+   "theme_label": "Around the World",
+   "words": [
+    "FELIZ NAVIDAD",
+    "JOYEUX NOEL",
+    "BUON NATALE",
+    "LAS POSADAS",
+    "SAINT LUCIA",
+    "BOXING DAY",
+    "YULETIDE",
+    "PINATA",
+    "SAINT NICHOLAS"
+   ]
+  },
+  {
+   "phrase": "Stay Warm!",
+   "theme_label": "Winter Clothes",
+   "words": [
+    "TURTLENECK",
+    "BEANIE",
+    "SWEATER",
+    "PARKA",
+    "GLOVES",
+    "SNOW BOOTS",
+    "EARMUFFS",
+    "THERMALS",
+    "PEACOAT"
+   ]
+  },
+  {
+   "phrase": "Let’s Get Festive!",
+   "theme_label": "Holiday Party",
+   "words": [
+    "UGLY SWEATER",
+    "PARTY",
+    "CONTEST",
+    "PRIZES",
+    "POMPOMS",
+    "SEQUINS",
+    "DANCING",
+    "GAMES",
+    "KARAOKE"
+   ]
+  },
+  {
+   "phrase": "Make a Joyful Noise!",
+   "theme_label": "Festive Sounds",
+   "words": [
+    "SLEIGH BELLS",
+    "CHOIR",
+    "ORGAN",
+    "HANDBELLS",
+    "TRUMPET",
+    "HARP",
+    "FIDDLE",
+    "CHIMES",
+    "PIANO"
+   ]
+  },
+  {
+   "phrase": "Mail Call!",
+   "theme_label": "Christmas Cards",
+   "words": [
+    "GREETINGS",
+    "POSTAGE",
+    "STAMPS",
+    "ENVELOPE",
+    "ADDRESS BOOK",
+    "HANDWRITTEN",
+    "WAX SEAL",
+    "LETTER",
+    "PHOTO CARD"
+   ]
+  },
+  {
+   "phrase": "Smells Like Christmas!",
+   "theme_label": "Holiday Scents",
+   "words": [
+    "CINNAMON",
+    "CLOVES",
+    "NUTMEG",
+    "GINGER",
+    "VANILLA",
+    "ORANGE PEEL",
+    "ALLSPICE",
+    "CHESTNUTS",
+    "MULLED WINE"
+   ]
+  },
+  {
+   "phrase": "Little Surprises!",
+   "theme_label": "Stocking Stuffers",
+   "words": [
+    "CHOCOLATE",
+    "TANGERINE",
+    "CANDY",
+    "LIP BALM",
+    "PUZZLE BOOK",
+    "KEYCHAIN",
+    "PLAYING CARDS",
+    "YO-YO",
+    "WHISTLE"
+   ]
+  },
+  {
+   "phrase": "Tidings of Comfort!",
+   "theme_label": "Faith",
+   "words": [
+    "NATIVITY",
+    "PRAYER",
+    "HYMNS",
+    "CHAPEL",
+    "BLESSING",
+    "GOSPEL",
+    "SERMON",
+    "PEACE ON EARTH",
+    "EMMANUEL"
+   ]
+  },
+  {
+   "phrase": "Count the Gifts!",
+   "theme_label": "Twelve Days",
+   "words": [
+    "PARTRIDGE",
+    "PEAR TREE",
+    "TURTLE DOVES",
+    "FRENCH HENS",
+    "CALLING BIRDS",
+    "GOLDEN RINGS",
+    "GEESE",
+    "SWANS",
+    "MAIDS MILKING"
+   ]
+  },
+  {
+   "phrase": "Busy Elves!",
+   "theme_label": "Toy Workshop",
+   "words": [
+    "TOY TRAINS",
+    "ROCKING HORSE",
+    "TEDDY BEAR",
+    "DOLLHOUSE",
+    "WOODEN BLOCKS",
+    "HAMMER",
+    "PAINTBRUSH",
+    "TOOLBOX",
+    "BUILDING"
+   ]
+  },
+  {
+   "phrase": "Out with the Old!",
+   "theme_label": "New Year's Eve",
+   "words": [
+    "BALL DROP",
+    "MIDNIGHT",
+    "CONFETTI",
+    "CHAMPAGNE",
+    "NOISEMAKERS",
+    "RESOLUTIONS",
+    "FIREWORKS",
+    "PARTY HATS",
+    "AULD LANG SYNE"
+   ]
+  },
+  {
+   "phrase": "Wild and Wintry!",
+   "theme_label": "Winter Animals",
+   "words": [
+    "POLAR BEAR",
+    "PENGUIN",
+    "SNOWY OWL",
+    "ARCTIC FOX",
+    "MOOSE",
+    "CARDINAL",
+    "SNOWSHOE HARE",
+    "CARIBOU",
+    "ERMINE"
+   ]
+  },
+  {
+   "phrase": "Light It Up!",
+   "theme_label": "Holiday Lights",
+   "words": [
+    "STRING LIGHTS",
+    "TWINKLE",
+    "GLOW",
+    "SPARKLE",
+    "LUMINARIAS",
+    "LANTERN",
+    "LIGHT SHOW",
+    "NEIGHBORHOOD",
+    "EXTENSION CORD"
+   ]
+  },
+  {
+   "phrase": "Shop Small!",
+   "theme_label": "Christmas Market",
+   "words": [
+    "VENDORS",
+    "CRAFTS",
+    "HANDMADE",
+    "WOODEN TOYS",
+    "HOT CHOCOLATE",
+    "BRATWURST",
+    "PRETZELS",
+    "KNITWEAR",
+    "MUSIC BOX"
+   ]
+  },
+  {
+   "phrase": "Build It Sweet!",
+   "theme_label": "Gingerbread House",
+   "words": [
+    "ICING",
+    "GUMDROPS",
+    "LICORICE",
+    "JELLY BEANS",
+    "WAFER",
+    "ROOFTOP",
+    "WINDOWS",
+    "FENCE",
+    "CANDY PATH"
+   ]
+  },
+  {
+   "phrase": "All Together Now!",
+   "theme_label": "Family Gathering",
+   "words": [
+    "GRANDPARENTS",
+    "COUSINS",
+    "AUNTS",
+    "UNCLES",
+    "GRANDKIDS",
+    "NEIGHBORS",
+    "GUESTS",
+    "HOST",
+    "TOAST"
+   ]
+  },
+  {
+   "phrase": "Go for Gold!",
+   "theme_label": "Winter Sports",
+   "words": [
+    "HOCKEY",
+    "CURLING",
+    "BOBSLED",
+    "SNOWBOARD",
+    "SKI JUMP",
+    "BIATHLON",
+    "LUGE",
+    "FIGURE SKATING",
+    "SLALOM"
+   ]
+  },
+  {
+   "phrase": "Warm Mug Moments!",
+   "theme_label": "Warm Drinks",
+   "words": [
+    "HOT COCOA",
+    "APPLE CIDER",
+    "EGGNOG",
+    "PEPPERMINT TEA",
+    "SPICED LATTE",
+    "WASSAIL",
+    "MULLED CIDER",
+    "COFFEE",
+    "WHIPPED CREAM"
+   ]
+  },
+  {
+   "phrase": "Get Crafty!",
+   "theme_label": "Christmas Crafts",
+   "words": [
+    "GLITTER",
+    "PAPER CHAIN",
+    "PINECONES",
+    "FELT",
+    "YARN",
+    "SCISSORS",
+    "PAINT",
+    "STENCILS",
+    "GLUE GUN"
+   ]
+  },
+  {
+   "phrase": "Day by Day!",
+   "theme_label": "Advent",
+   "words": [
+    "ADVENT",
+    "CALENDAR",
+    "COUNTDOWN",
+    "DOORS",
+    "DAILY TREAT",
+    "TWENTY FIVE",
+    "NUMBERS",
+    "PATIENCE",
+    "DECEMBER"
+   ]
+  },
+  {
+   "phrase": "Winter Stroll!",
+   "theme_label": "Winter Walk",
+   "words": [
+    "FOOTPRINTS",
+    "SNOWY PATH",
+    "BARE TREES",
+    "FROSTY AIR",
+    "PINE FOREST",
+    "BIRDSONG",
+    "FROZEN POND",
+    "WOODPILE",
+    "CHICKADEE"
+   ]
+  },
+  {
+   "phrase": "Set the Table!",
+   "theme_label": "Christmas Table",
+   "words": [
+    "CENTERPIECE",
+    "PLACE CARDS",
+    "NAPKINS",
+    "FINE CHINA",
+    "SILVERWARE",
+    "GOBLETS",
+    "TABLECLOTH",
+    "CANDELABRA",
+    "TABLE RUNNER"
+   ]
+  },
+  {
+   "phrase": "Home for the Holidays!",
+   "theme_label": "Holiday Travel",
+   "words": [
+    "AIRPORT",
+    "TRAIN STATION",
+    "SUITCASE",
+    "ROAD TRIP",
+    "GOING HOME",
+    "ARRIVALS",
+    "LUGGAGE",
+    "BOARDING",
+    "SNOWY ROADS"
+   ]
+  },
+  {
+   "phrase": "Green and Growing!",
+   "theme_label": "Christmas Plants",
+   "words": [
+    "POINSETTIA",
+    "AMARYLLIS",
+    "PAPERWHITES",
+    "IVY",
+    "ROSEMARY",
+    "BALSAM FIR",
+    "JUNIPER",
+    "HELLEBORE",
+    "WINTERBERRY"
+   ]
+  },
+  {
+   "phrase": "Snow Buddy!",
+   "theme_label": "Snowman",
+   "words": [
+    "CARROT NOSE",
+    "COAL",
+    "TOP HAT",
+    "SCARF",
+    "BUTTONS",
+    "STICK ARMS",
+    "BROOM",
+    "BIG SMILE",
+    "PEBBLES"
+   ]
+  },
+  {
+   "phrase": "Wonder of Winter!",
+   "theme_label": "Winter Wonder",
+   "words": [
+    "ICE CASTLE",
+    "SNOW DAY",
+    "FROZEN LAKE",
+    "AURORA",
+    "WHITEOUT",
+    "SNOWFALL",
+    "HOARFROST",
+    "ICE CRYSTALS",
+    "SPARKLING"
+   ]
+  },
+  {
+   "phrase": "Brunch Is Ready!",
+   "theme_label": "Holiday Brunch",
+   "words": [
+    "FRENCH TOAST",
+    "QUICHE",
+    "BACON",
+    "OMELET",
+    "CREPES",
+    "FRUIT SALAD",
+    "MIMOSA",
+    "BISCUITS",
+    "HASH BROWNS"
+   ]
+  },
+  {
+   "phrase": "Give a Little!",
+   "theme_label": "Giving",
+   "words": [
+    "GENEROSITY",
+    "KINDNESS",
+    "SHARING",
+    "GIVING",
+    "CHARITY",
+    "VOLUNTEER",
+    "DONATION",
+    "GOODWILL",
+    "GRATITUDE"
+   ]
+  },
+  {
+   "phrase": "Wishes on Paper!",
+   "theme_label": "Letter to Santa",
+   "words": [
+    "DEAR SANTA",
+    "WISH LIST",
+    "BEEN GOOD",
+    "MAILBOX",
+    "CRAYONS",
+    "PROMISE",
+    "SIGNATURE",
+    "DRAWING",
+    "HOPES"
+   ]
+  },
+  {
+   "phrase": "Once Upon a Night!",
+   "theme_label": "The Night Before",
+   "words": [
+    "KERCHIEF",
+    "NIGHTCAP",
+    "CLATTER",
+    "SHUTTERS",
+    "TWINKLING",
+    "ROUND BELLY",
+    "BUNDLE",
+    "CHUBBY",
+    "JOLLY"
+   ]
+  },
+  {
+   "phrase": "Forest Walk!",
+   "theme_label": "Evergreen Forest",
+   "words": [
+    "SPRUCE",
+    "HEMLOCK",
+    "DOUGLAS FIR",
+    "PINE",
+    "CEDAR",
+    "TREE FARM",
+    "NEEDLES",
+    "BARK",
+    "FOREST TRAIL"
+   ]
+  },
+  {
+   "phrase": "Sweet Traditions!",
+   "theme_label": "Sweets of the World",
+   "words": [
+    "PANETTONE",
+    "STOLLEN",
+    "BUCHE DE NOEL",
+    "LEBKUCHEN",
+    "TURRON",
+    "MINCE PIES",
+    "PFEFFERNUSSE",
+    "KOURABIEDES",
+    "SHORTBREAD"
+   ]
+  },
+  {
+   "phrase": "Almost Ready!",
+   "theme_label": "Getting Ready",
+   "words": [
+    "GUEST ROOM",
+    "VACUUM",
+    "DUSTING",
+    "FRESH SHEETS",
+    "GROCERY LIST",
+    "DECORATING",
+    "TO-DO LIST",
+    "BAKING",
+    "MENU PLAN"
+   ]
+  },
+  {
+   "phrase": "Starry Night!",
+   "theme_label": "Night Sky",
+   "words": [
+    "STARLIGHT",
+    "MOON",
+    "NORTH STAR",
+    "SHOOTING STAR",
+    "CONSTELLATION",
+    "MILKY WAY",
+    "TELESCOPE",
+    "PLANETS",
+    "WISHES"
+   ]
+  },
+  {
+   "phrase": "Remember When?",
+   "theme_label": "Memories",
+   "words": [
+    "PHOTO ALBUM",
+    "TRADITIONS",
+    "HOME MOVIES",
+    "KEEPSAKE",
+    "HEIRLOOM",
+    "STORYTELLING",
+    "CHILDHOOD",
+    "SCRAPBOOK",
+    "OLD FRIENDS"
+   ]
+  },
+  {
+   "phrase": "Tidings of Joy!",
+   "theme_label": "Peace and Joy",
+   "words": [
+    "JOY",
+    "PEACE",
+    "LOVE",
+    "HOPE",
+    "WONDER",
+    "MAGIC",
+    "MERRY",
+    "BRIGHT",
+    "CHEER"
+   ]
+  },
+  {
+   "phrase": "Merry Christmas to All!",
+   "theme_label": "Season's Wishes",
+   "words": [
+    "CHRISTMAS DAY",
+    "HAPPY HOLIDAYS",
+    "HAPPY NEW YEAR",
+    "YULE",
+    "NOEL",
+    "FESTIVE",
+    "CELEBRATE",
+    "FA LA LA",
+    "HO HO HO"
+   ]
+  }
+ ],
+ "cover": {
+  "page_count": 112,
+  "paper": "white",
+  "title": "WORD SEARCH",
+  "series_name": "CHRISTMAS HUNT!",
+  "volume": "VOL. 5",
+  "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
+  "band2": "for Adults and Seniors · Solutions Included",
+  "spine": "WORD SEARCH  ·  CHRISTMAS HUNT!  ·  VOL. 5  ·  PETER & CARDU",
+  "cart": {
+   "grid": [
+    "SNOWJOYEL",
+    "TREEBSTAR",
+    "ELFQKBELL",
+    "GIFTSLEIX"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     3
+    ],
+    [
+     1,
+     0,
+     1,
+     3
+    ],
+    [
+     1,
+     5,
+     1,
+     8
+    ],
+    [
+     2,
+     5,
+     2,
+     8
+    ],
+    [
+     3,
+     0,
+     3,
+     3
+    ]
+   ],
+   "lens": [
+    2,
+    3
+   ]
+  },
+  "back_headline": "Grab some cocoa and start searching!",
+  "back_intro": [
+   "From trimming the tree to the stroke of midnight, <b>Christmas Hunt!</b> fills the season with 55 cozy word search puzzles."
+  ],
+  "back_bullets": [
+   "55 puzzles in <b>LARGE PRINT</b>, one per page",
+   "495 holiday words: treats, carols, decorations, winter fun, traditions and more",
+   "A festive greeting with every puzzle, from <i>Trim the Tree!</i> to <i>Merry Christmas to All!</i>",
+   "Words always read left to right or top to bottom. No backwards words!",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A calm, screen-free holiday tradition for adults and seniors, and a lovely stocking stuffer.",
+  "colors": {
+   "bg": "#FFF4DC",
+   "ink": "#1D3557",
+   "red": "#E63946",
+   "yellow": "#FFC93C",
+   "accent": "#457B9D",
+   "highlight": "#A8E6CF",
+   "tile": "#F6E3BA"
+  },
+  "sample": {
+   "title": "SAMPLE",
+   "grid": [
+    "WREATH",
+    "HOLLYQ",
+    "BELLSX",
+    "RIBBON",
+    "CANDLE",
+    "PINEZT"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     5
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     0,
+     2,
+     4
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ],
+    [
+     4,
+     0,
+     4,
+     5
+    ]
+   ],
+   "words": "WREATH · HOLLY · BELLS · RIBBON · CANDLE"
+  },
+  "style": "bold",
+  "author": "Peter & Cardu",
+  "illustration": "giftbox",
+  "count": "55",
+  "band_line": "Holiday Puzzles for Adults & Seniors",
+  "bold": {
+   "bg": "#1B5E20",
+   "ink": "#0B2E13",
+   "deep": "#124116"
+  }
+ }
+}

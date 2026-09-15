@@ -52,12 +52,14 @@ def big_title(cx, y, text, size, width, fill, shadow, outline, thick=8):
 
 
 def price_tag(cx, cy, text, fill, ink, hole, text_color, size=58):
+    # nombres largos (CHRISTMAS HUNT!) se ajustan al ancho de la etiqueta; los cortos quedan igual
+    fit = ' textLength="350" lengthAdjust="spacingAndGlyphs"' if len(text) > 11 else ""
     return f'''
     <g transform="translate({cx},{cy}) rotate(-3)">
       <path d="M-205,-44 H175 L215,0 L175,44 H-205 a12,12 0 0 1 -12,-12 V-32 a12,12 0 0 1 12,-12 z"
             fill="{fill}" stroke="{ink}" stroke-width="6" stroke-linejoin="round"/>
       <circle cx="186" cy="0" r="9" fill="{hole}" stroke="{ink}" stroke-width="4"/>
-      <text x="-15" y="21" text-anchor="middle" font-family="Luckiest Guy" font-size="{size}" fill="{text_color}">{esc(text)}</text>
+      <text x="-15" y="21" text-anchor="middle" font-family="Luckiest Guy" font-size="{size}" fill="{text_color}"{fit}>{esc(text)}</text>
     </g>'''
 
 
@@ -69,6 +71,8 @@ def bold_palette(cv):
 
 def illustration(cv, cx, top, c, ink):
     kind = cv.get("illustration", "cart")
+    if kind == "giftbox":
+        return scaled(giftbox(cx - 70, top + 28, cv["cart"], dict(c, ink=ink)), cx - 70, top + 28, 0.6)
     if kind == "billboard":
         return scaled(billboard(cx - 20, top - 10, cv["cart"], dict(c, ink=ink)), cx - 20, top - 10, 0.62)
     if kind == "suitcase":
@@ -96,7 +100,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
         # autor arriba y centrado, separado del título
         out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
                    f'font-size="21" letter-spacing="4" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"].upper())}</text>')
-    if cv.get("illustration") in ("suitcase", "billboard"):
+    if cv.get("illustration") in ("suitcase", "billboard", "giftbox"):
         bx, by, k = x0 + w - 118, y0 + 648, 0.88
     else:
         bx, by, k = x0 + w - 128, y0 + 585, 1
@@ -304,6 +308,61 @@ def billboard(cx, top, words, c):
       <circle cx="230" cy="6" r="30" fill="{ink}"/><circle cx="230" cy="6" r="12" fill="{c.get('chrome', '#ECEFF1')}"/>
       <circle cx="-4" cy="-26" r="8" fill="{c['yellow']}" stroke="{ink}" stroke-width="4"/>
     </g>''')
+    lr, lc = words["lens"]
+    lx, ly = gx + lc * cell + cell / 2, gy + lr * cell + cell / 2
+    out.append(f'''
+    <line x1="{lx+52}" y1="{ly+52}" x2="{lx+120}" y2="{ly+120}" stroke="{ink}" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="{lx}" cy="{ly}" r="66" fill="#fff" fill-opacity=".25" stroke="{ink}" stroke-width="11"/>
+    <path d="M{lx-40},{ly-22} a48,48 0 0 1 30,-30" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>''')
+    return "".join(out)
+
+
+def giftbox(cx, top, words, c):
+    """Regalo navideño: la cara frontal es una sopa de letras; tapa con cinta y moño, árbol y copos."""
+    rows = words["grid"]
+    nr, nc = len(rows), len(rows[0])
+    cell = 42
+    gw, gh = nc * cell, nr * cell
+    gx, gy = cx - gw / 2, top + 120
+    ink = c["ink"]
+    bx0, by0, bw, bh = gx - 34, gy - 34, gw + 68, gh + 68
+    red, gold = c["red"], c["yellow"]
+    out = []
+    # arbolito a la derecha, detrás
+    tx, ty = bx0 + bw + 95, by0 - 40
+    for k, (wd, yy) in enumerate([(120, 0), (160, 70), (200, 140)]):
+        out.append(f'<path d="M{tx},{ty+yy-60} L{tx+wd/2},{ty+yy+40} L{tx-wd/2},{ty+yy+40} z" fill="{c.get("tree", "#43A047")}" '
+                   f'stroke="{ink}" stroke-width="6" stroke-linejoin="round"/>')
+    out.append(f'<rect x="{tx-16}" y="{ty+180}" width="32" height="36" fill="{c.get("post", "#8D6E63")}" stroke="{ink}" stroke-width="6"/>')
+    out.append(f'<path transform="translate({tx},{ty-70}) scale(1.1)" d="M0,-18 L5,-6 18,-6 8,2 12,15 0,7 -12,15 -8,2 -18,-6 -5,-6 z" fill="{gold}" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>')
+    for (ox, oy, col) in [(-30, 20, red), (25, 60, gold), (-45, 120, gold), (40, 140, red), (0, 95, "#fff")]:
+        out.append(f'<circle cx="{tx+ox}" cy="{ty+oy}" r="10" fill="{col}" stroke="{ink}" stroke-width="4"/>')
+    # caja
+    out.append(f'<rect x="{bx0}" y="{by0}" width="{bw}" height="{bh}" rx="12" fill="#fff" stroke="{ink}" stroke-width="9"/>')
+    # tapa
+    lx0, ly0, lw, lh = bx0 - 22, by0 - 62, bw + 44, 62
+    out.append(f'<rect x="{lx0}" y="{ly0}" width="{lw}" height="{lh}" rx="12" fill="{red}" stroke="{ink}" stroke-width="9"/>')
+    out.append(f'<rect x="{cx-26}" y="{ly0}" width="52" height="{lh}" fill="{gold}" stroke="{ink}" stroke-width="6"/>')
+    # moño
+    out.append(f'''
+    <path d="M{cx},{ly0+4} C{cx-40},{ly0-70} {cx-120},{ly0-40} {cx-70},{ly0+4} z" fill="{gold}" stroke="{ink}" stroke-width="7" stroke-linejoin="round"/>
+    <path d="M{cx},{ly0+4} C{cx+40},{ly0-70} {cx+120},{ly0-40} {cx+70},{ly0+4} z" fill="{gold}" stroke="{ink}" stroke-width="7" stroke-linejoin="round"/>
+    <circle cx="{cx}" cy="{ly0}" r="18" fill="{gold}" stroke="{ink}" stroke-width="7"/>''')
+    # cinta vertical sólo en los bordes superior/inferior de la cara, para no tapar letras
+    out.append(f'<rect x="{cx-26}" y="{by0+4}" width="52" height="26" fill="{gold}"/>'
+               f'<rect x="{cx-26}" y="{by0+bh-30}" width="52" height="26" fill="{gold}"/>')
+    for (r1, c1, r2, c2) in words["found"]:
+        out.append(f'<line x1="{gx+c1*cell+cell/2}" y1="{gy+r1*cell+cell/2}" x2="{gx+c2*cell+cell/2}" '
+                   f'y2="{gy+r2*cell+cell/2}" stroke="{c["highlight"]}" stroke-width="34" stroke-linecap="round"/>')
+    for r, row in enumerate(rows):
+        for k, ch in enumerate(row):
+            out.append(f'<text x="{gx+k*cell+cell/2}" y="{gy+r*cell+cell/2+11}" text-anchor="middle" '
+                       f'font-family="Fredoka" font-weight="700" font-size="31" fill="{ink}">{ch}</text>')
+    out.append(f'<ellipse cx="{cx+60}" cy="{by0+bh+22}" rx="{bw/2+120}" ry="14" fill="#000" opacity=".14"/>')
+    # copos de nieve
+    for (sx, sy, sc) in [(bx0 - 70, by0 - 120, 1.2), (bx0 - 110, by0 + 90, 0.9), (bx0 + bw + 20, by0 + bh - 10, 0.8)]:
+        out.append(f'<g transform="translate({sx},{sy}) scale({sc})" stroke="#fff" stroke-width="6" stroke-linecap="round">'
+                   '<path d="M0,-24 V24 M-21,-12 L21,12 M-21,12 L21,-12"/></g>')
     lr, lc = words["lens"]
     lx, ly = gx + lc * cell + cell / 2, gy + lr * cell + cell / 2
     out.append(f'''
