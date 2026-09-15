@@ -478,3 +478,8 @@ Pedro pidió revisar todo como editor profesional.
 - 19:22 Pedro pregunta qué volumen es más interesante para Amazon (msg 291). Ranking enviado (msg 292):
   - V4 Nostalgia (top 10, todo el año), V5 Christmas (temporada, publicar primero), V3 USA, V2 World, V1 Supermercado.
   - Estrategia: publicar V5 y V4 primero y el resto en pocas semanas.
+- 19:23 Pedro: ¿publicar todos de una vez? (msg 293). Respondí (msg 294):
+  - KDP limita a 3 títulos nuevos cada 24 h (vigente, Publishers Weekly / Authors Guild) → 2 días.
+  - Pros: serie completa, ventas cruzadas, Christmas a tiempo.
+  - Contras: un rechazo afecta a los 5; presupuesto de Ads repartido; declarar IA en cada uno.
+  - Recomendé subir V5 primero, esperar aprobación (≤72 h) y luego el resto en 2 días.
