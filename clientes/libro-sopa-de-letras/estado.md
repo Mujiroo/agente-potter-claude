@@ -287,3 +287,9 @@ Pedro pidió revisar todo como editor profesional.
   - Recomendé subtítulo descriptivo por libro y nombre de serie descriptivo (p. ej. "Large Print Word Search by Theme").
   - Aclaré que Amazon no publica cómo pondera el título frente a las palabras clave (es práctica habitual) y que "World Hunt" no está verificado.
 - Pregunté si mantiene "Aisle Hunt!" en el Vol. 1 o pasa a un enfoque solo descriptivo (pendiente).
+- 12:56 Pedro preguntó si el libro está bien para publicar y ser comercial (msg 172). Respondí (msg 173):
+  - Publicable: sí.
+  - Fortalezas: portada, título con palabras clave, nicho, interior cuidado.
+  - Débiles: 55 puzzles frente a 100–224 de la competencia; 9 palabras; sin reseñas al inicio.
+  - Falta: nombre de serie, descripción, 7 palabras clave y categorías, precio, marcar IA en texto.
+- **Error mío corregido** (msg 174): había sugerido reseñas de amigos o familiares. Amazon lo **prohíbe** (Community Guidelines). Alternativas: reseñas espontáneas, Amazon Ads, programas oficiales.
