@@ -12,3 +12,7 @@ Fuente: Pedro, Telegram, 2026-09-15.
 - **Preguntar si algo no se entiende**, en vez de suponer.
 
 Ver [[rol]], [[pedro]].
+- **Rigor en medidas y verificación**: valora que todo quede alineado, dentro de márgenes y medidas, y que yo lo verifique antes de entregar (Telegram, 2026-09-15, msg 169).
+  **Why:** lo dijo explícitamente tras la revisión editorial.
+  **How to apply:** antes de mandar un archivo, medir (zona segura, desbordes, fuentes, auditoría) y decir qué se verificó.
+- **Decide él entre opciones**: prefiere que le presente alternativas con una recomendada (A/B/C) y elegir.
