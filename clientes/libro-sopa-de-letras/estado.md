@@ -125,3 +125,20 @@ Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derec
   - Los puzzles son algorítmicos y las palabras son de Pedro.
 - Nota técnica: no usar `pkill -f` con un patrón que calce con la propia línea de comando (mata la shell).
 - Esperando: conformidad de Pedro / siguientes ajustes.
+
+## Recomendaciones de mejora — enviadas 11:10 (msgs 85–86)
+Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
+
+- Ya cumple: 1 puzzle por página, grilla de ~18 pt, B/N, soluciones al final.
+- Propuse para el interior:
+  - lista de palabras de 13 pt → 16–18 pt (lo que quepa en 3 columnas)
+  - frase sin cursiva
+  - "This book belongs to ___" en p2
+  - línea de copyright en p2 (falta nombre de autor/sello)
+  - soluciones con contorno en vez de relleno
+- Ideas para Vol. 2: mensaje secreto con las letras sobrantes; más palabras (los top traen 15–20).
+- Precio: impresión US$ 2,344 (1,00 + 0,012 × 112). En Amazon.com la regalía es 50% bajo US$ 9,99 y 60% desde 9,99.
+  - US$ 7,99 → 1,65 · US$ 8,99 → 2,15 · US$ 9,99 → 3,65 (recomendado)
+- Envié 7 palabras clave, estrategia de serie (Vol. 2–3 pronto, un tema por libro) y el ángulo de regalo solo en la descripción.
+- Fuentes: KDP G201834340, KDP community (regalías), kdpeasy (blog no oficial).
+- Esperando: si aplico las mejoras + nombre de autor/sello.
