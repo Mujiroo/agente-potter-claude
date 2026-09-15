@@ -9,7 +9,7 @@ Entrada: un JSON con el libro:
     "size": 13, "seed": 1,     # grilla size×size
     "directions": "forward",   # solo izq->der / arriba->abajo (sin palabras al revés) | "all"
     "series_note": "texto al pie de la página de instrucciones" (opcional),
-    "puzzles": [{"theme": "Dairy Case" (opcional), "words": ["MILK", ...9]}, ...]
+    "puzzles": [{"phrase": "Grab a Cart!" | "theme": "Dairy Case" (opcional), "words": ["MILK", ...9]}, ...]
   }
 Salida: un HTML con 1 página de título, 1 de instrucciones, N puzzles y N soluciones,
 que se imprime a PDF con Chrome:  agent-browser open file://<html> && agent-browser pdf <pdf>
@@ -121,7 +121,9 @@ def words_block(words):
 
 
 def header(kind, i, p):
-    """Con temática: rótulo chico + tema. Sin temática: solo 'Puzzle N'."""
+    """Con frase: 'PUZZLE N' grande + frase. Con temática: rótulo chico + tema. Si no: solo 'Puzzle N'."""
+    if p.get("phrase"):
+        return f'<h1 class="num-title">{kind} {i}</h1><div class="phrase">{html.escape(p["phrase"])}</div>'
     if p.get("theme"):
         return f'<div class="tag">{kind} {i}</div><h1>{html.escape(p["theme"])}</h1>'
     return f'<div class="tag">&nbsp;</div><h1>{kind} {i}</h1>'
@@ -147,6 +149,8 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .words ul {{ list-style: none; margin: 0; padding: 0; width: 33.3%; }}
 .words li {{ font-size: {max(12, 19 * k):.0f}pt; font-weight: 700; line-height: 1.45; text-transform: uppercase; white-space: nowrap; }}
 .title-page {{ justify-content: center; text-align: center; }}
+.num-title {{ text-transform: uppercase; letter-spacing: 1px; margin: 0; }}
+.phrase {{ font-size: {max(12, 17 * k):.0f}pt; font-style: italic; color: #333; margin: 0.02in 0 0.1in; }}
 .cover1 {{ width: 100%; max-height: 100%; }}
 .title-page .big {{ font-size: {64 * k:.0f}pt; font-weight: 900; line-height: 1; }}
 .title-page .sub {{ font-size: {30 * k:.0f}pt; margin-top: 0.15in; font-weight: 700; }}

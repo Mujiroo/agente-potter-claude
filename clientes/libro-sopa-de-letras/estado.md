@@ -111,3 +111,17 @@ Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derec
   - Hice una paleta B/N para la p1 (`interior_ink: "bw"`, que es el valor por defecto en `front_svg_white`). Enviada (msgs 72–74).
   - La portada exterior sigue en color.
 - Sigue pendiente: títulos A/B/C.
+
+## Versión con títulos C — enviada 10:25 (msgs 78–81)
+- Pedro eligió **C** (msg 75): cada puzzle lleva "PUZZLE N" y debajo una frase de compras. Las 55 frases son únicas y están en el JSON (`phrase`).
+  - Las soluciones muestran "SOLUTION N" con la misma frase.
+- Viñeta de la contraportada: "A fun shopping moment on every page, from Grab a Cart! to See You Next Time!".
+  - Muestra de la contraportada: "PUZZLE 7".
+  - Texto de la contraportada a 18px para que no se desborde.
+- Entregados: **interior v4** (112 págs., 6×9) y **portada v2** (12,502×9,25"). Verificado: 495 palabras únicas, solo hacia adelante, 0 ambigüedades, sin desbordes.
+- Declaración de IA en KDP: primero dije "no declarar" y lo corregí.
+  - **Texto = sí**: contraportada, instrucciones y frases los redacté yo.
+  - **Imágenes = no**: la portada es vectorial hecha con código.
+  - Los puzzles son algorítmicos y las palabras son de Pedro.
+- Nota técnica: no usar `pkill -f` con un patrón que calce con la propia línea de comando (mata la shell).
+- Esperando: conformidad de Pedro / siguientes ajustes.

@@ -13,7 +13,7 @@
  "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of a series of themed large print word search books.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
  "puzzles": [
   {
-   "theme": "Citrus & Orchard",
+   "phrase": "Grab a Cart!",
    "words": [
     "KIDNEY BEAN",
     "COCONUT OIL",
@@ -27,7 +27,7 @@
    ]
   },
   {
-   "theme": "Veggie Basics",
+   "phrase": "Check Your List!",
    "words": [
     "NAVY BEAN",
     "POTATO",
@@ -41,7 +41,7 @@
    ]
   },
   {
-   "theme": "Garden Greens",
+   "phrase": "Clean-Up on Aisle 3!",
    "words": [
     "SPINACH",
     "BROCCOLI",
@@ -55,7 +55,7 @@
    ]
   },
   {
-   "theme": "Melons & Sweet Fruits",
+   "phrase": "Don’t Forget the Coupons!",
    "words": [
     "JELLY BEANS",
     "WATERMELON",
@@ -69,7 +69,7 @@
    ]
   },
   {
-   "theme": "Exotic Produce",
+   "phrase": "Fresh from the Farm!",
    "words": [
     "BLACKBERRY",
     "BOYSENBERRY",
@@ -83,7 +83,7 @@
    ]
   },
   {
-   "theme": "Leafy Greens & Legumes",
+   "phrase": "Pick the Ripest One!",
    "words": [
     "SPROUT",
     "BOK CHOY",
@@ -97,7 +97,7 @@
    ]
   },
   {
-   "theme": "Dairy Case",
+   "phrase": "Mind the Wobbly Wheel!",
    "words": [
     "SOYBEAN",
     "MILK",
@@ -111,7 +111,7 @@
    ]
   },
   {
-   "theme": "Morning Bakery",
+   "phrase": "Free Samples Ahead!",
    "words": [
     "TOFU",
     "BREAD",
@@ -125,7 +125,7 @@
    ]
   },
   {
-   "theme": "Pantry Staples",
+   "phrase": "Price Check, Please!",
    "words": [
     "PANCAKE",
     "CORN FLAKES",
@@ -139,7 +139,7 @@
    ]
   },
   {
-   "theme": "Breakfast Grains",
+   "phrase": "Buy One, Get One!",
    "words": [
     "CEREAL",
     "OATS",
@@ -153,7 +153,7 @@
    ]
   },
   {
-   "theme": "Pantry to Butcher",
+   "phrase": "Watch Out, Wet Floor!",
    "words": [
     "TAPIOCA",
     "COUSCOUS",
@@ -167,7 +167,7 @@
    ]
   },
   {
-   "theme": "Meat Counter",
+   "phrase": "Stock Up the Pantry!",
    "words": [
     "SAUSAGE",
     "HAM",
@@ -181,7 +181,7 @@
    ]
   },
   {
-   "theme": "Meat & Seafood",
+   "phrase": "Take a Number at the Deli!",
    "words": [
     "LAMB",
     "DUCK",
@@ -195,7 +195,7 @@
    ]
   },
   {
-   "theme": "Seafood & Sips",
+   "phrase": "Fresh Bread Just Out!",
    "words": [
     "TROUT",
     "SARDINE",
@@ -209,7 +209,7 @@
    ]
   },
   {
-   "theme": "Drinks & Sweeteners",
+   "phrase": "Paper or Plastic?",
    "words": [
     "WATER",
     "COFFEE",
@@ -223,7 +223,7 @@
    ]
   },
   {
-   "theme": "Sodas & Condiments",
+   "phrase": "Bring Your Own Bag!",
    "words": [
     "ROOT BEER",
     "GINGER ALE",
@@ -237,7 +237,7 @@
    ]
   },
   {
-   "theme": "Sauces & Spices",
+   "phrase": "Don’t Squish the Eggs!",
    "words": [
     "SAUCE",
     "DRESSING",
@@ -251,7 +251,7 @@
    ]
   },
   {
-   "theme": "Spice Rack",
+   "phrase": "Is That on Sale?",
    "words": [
     "ANISE",
     "CARDAMOM",
@@ -265,7 +265,7 @@
    ]
   },
   {
-   "theme": "Frozen Treats & Candy",
+   "phrase": "Snack Break!",
    "words": [
     "ICE POP",
     "SORBET",
@@ -279,7 +279,7 @@
    ]
   },
   {
-   "theme": "Sweet Shop",
+   "phrase": "Just One More Aisle!",
    "words": [
     "MARSHMALLOW",
     "GINGER SNAPS",
@@ -293,7 +293,7 @@
    ]
   },
   {
-   "theme": "Baking Aisle",
+   "phrase": "Where Did I Park?",
    "words": [
     "BATTER",
     "PIE CRUST",
@@ -307,7 +307,7 @@
    ]
   },
   {
-   "theme": "Cleaning Supplies",
+   "phrase": "Weekly Specials!",
    "words": [
     "SPONGE",
     "BROOM",
@@ -321,7 +321,7 @@
    ]
   },
   {
-   "theme": "Personal Care",
+   "phrase": "Fill the Fridge!",
    "words": [
     "LOTION",
     "DEODORANT",
@@ -335,7 +335,7 @@
    ]
   },
   {
-   "theme": "Household Odds & Ends",
+   "phrase": "Just Browsing!",
    "words": [
     "GLUE",
     "SCISSORS",
@@ -349,7 +349,7 @@
    ]
   },
   {
-   "theme": "Tropical Fruits",
+   "phrase": "Shopping Spree!",
    "words": [
     "BLEACH",
     "WIPES",
@@ -363,7 +363,7 @@
    ]
   },
   {
-   "theme": "Berries & More",
+   "phrase": "Taste Test Time!",
    "words": [
     "STRAWBERRY",
     "BLUEBERRY",
@@ -377,7 +377,7 @@
    ]
   },
   {
-   "theme": "Fresh Vegetables",
+   "phrase": "Cart Full, Heart Full!",
    "words": [
     "ARTICHOKE",
     "ASPARAGUS",
@@ -391,7 +391,7 @@
    ]
   },
   {
-   "theme": "Root Vegetables",
+   "phrase": "Chilly in the Freezer Aisle!",
    "words": [
     "SHALLOT",
     "GINGER",
@@ -405,7 +405,7 @@
    ]
   },
   {
-   "theme": "Herb Garden",
+   "phrase": "Read the Label!",
    "words": [
     "CHARD",
     "PARSLEY",
@@ -419,7 +419,7 @@
    ]
   },
   {
-   "theme": "Herbs & Hot Peppers",
+   "phrase": "Halfway to Checkout!",
    "words": [
     "SAGE",
     "TARRAGON",
@@ -433,7 +433,7 @@
    ]
   },
   {
-   "theme": "Roots & Dairy",
+   "phrase": "Treat Yourself!",
    "words": [
     "MICROGREENS",
     "YAM",
@@ -447,7 +447,7 @@
    ]
   },
   {
-   "theme": "Deli Counter",
+   "phrase": "Big Bag, Small Price!",
    "words": [
     "MILK POWDER",
     "MEATBALLS",
@@ -461,7 +461,7 @@
    ]
   },
   {
-   "theme": "Poultry & Fish",
+   "phrase": "Lunch Box Ideas!",
    "words": [
     "CHICKEN THIGH",
     "CHICKEN WING",
@@ -475,7 +475,7 @@
    ]
   },
   {
-   "theme": "Fish Market",
+   "phrase": "Party Supplies!",
    "words": [
     "OYSTER",
     "MUSSEL",
@@ -489,7 +489,7 @@
    ]
   },
   {
-   "theme": "Seafood & Breads",
+   "phrase": "Stocking the Shelves!",
    "words": [
     "SQUID",
     "OCTOPUS",
@@ -503,7 +503,7 @@
    ]
   },
   {
-   "theme": "Bakery Favorites",
+   "phrase": "Back to the Produce Aisle!",
    "words": [
     "TOAST",
     "SOURDOUGH",
@@ -517,7 +517,7 @@
    ]
   },
   {
-   "theme": "Bakery & Grains",
+   "phrase": "Weigh Your Veggies!",
    "words": [
     "PIE",
     "BROWNIE",
@@ -531,7 +531,7 @@
    ]
   },
   {
-   "theme": "Pasta Aisle",
+   "phrase": "Scan and Go!",
    "words": [
     "CORNMEAL",
     "SEMOLINA",
@@ -545,7 +545,7 @@
    ]
   },
   {
-   "theme": "Baking Essentials",
+   "phrase": "Midnight Snack Run!",
    "words": [
     "UDON",
     "SOBA",
@@ -559,7 +559,7 @@
    ]
   },
   {
-   "theme": "Spices & Dips",
+   "phrase": "Lost in Aisle 40!",
    "words": [
     "PAPRIKA",
     "CUMIN",
@@ -573,7 +573,7 @@
    ]
   },
   {
-   "theme": "Nut Aisle",
+   "phrase": "Grandma’s Recipe List!",
    "words": [
     "JELLY",
     "PRESERVES",
@@ -587,7 +587,7 @@
    ]
   },
   {
-   "theme": "Snack Aisle",
+   "phrase": "What’s for Dinner?",
    "words": [
     "PINE NUTS",
     "CHIA SEEDS",
@@ -601,7 +601,7 @@
    ]
   },
   {
-   "theme": "Drinks & Party Supplies",
+   "phrase": "Early Bird Shopper!",
    "words": [
     "MILKSHAKE",
     "SMOOTHIE",
@@ -615,7 +615,7 @@
    ]
   },
   {
-   "theme": "Party & Personal Care",
+   "phrase": "Rainy Day Groceries!",
    "words": [
     "PLASTIC FORKS",
     "STRAWS",
@@ -629,7 +629,7 @@
    ]
   },
   {
-   "theme": "Home Essentials",
+   "phrase": "Picnic Basket Ready!",
    "words": [
     "COTTON BALLS",
     "COTTON SWABS",
@@ -643,7 +643,7 @@
    ]
   },
   {
-   "theme": "Jars & Sweets",
+   "phrase": "Sweet Tooth Alert!",
    "words": [
     "RECYCLING BIN",
     "OLIVES",
@@ -657,7 +657,7 @@
    ]
   },
   {
-   "theme": "World Foods",
+   "phrase": "Around the World Aisle!",
    "words": [
     "PIEROGI",
     "KIMCHI",
@@ -671,7 +671,7 @@
    ]
   },
   {
-   "theme": "Fridge Favorites",
+   "phrase": "Fridge Raid!",
    "words": [
     "SWEET POTATO",
     "BELL PEPPER",
@@ -685,7 +685,7 @@
    ]
   },
   {
-   "theme": "Weekly Shopping List",
+   "phrase": "Sunday Shopping!",
    "words": [
     "RYE BREAD",
     "RICE CRACKERS",
@@ -699,7 +699,7 @@
    ]
   },
   {
-   "theme": "Shopping Cart Mix",
+   "phrase": "Almost Out of Milk!",
    "words": [
     "MINERAL WATER",
     "ICED TEA",
@@ -713,7 +713,7 @@
    ]
   },
   {
-   "theme": "Pantry & Home",
+   "phrase": "Restock Day!",
    "words": [
     "GLASS CLEANER",
     "LUNCH BAGS",
@@ -727,7 +727,7 @@
    ]
   },
   {
-   "theme": "Dairy & Beverages",
+   "phrase": "Express Lane!",
    "words": [
     "LIMA BEAN",
     "OAT MILK",
@@ -741,7 +741,7 @@
    ]
   },
   {
-   "theme": "Household Mix",
+   "phrase": "Bag It Up!",
    "words": [
     "HOT SAUCE",
     "HAND SOAP",
@@ -755,7 +755,7 @@
    ]
   },
   {
-   "theme": "Last-Minute Items",
+   "phrase": "Receipt, Please!",
    "words": [
     "WHIPPED CREAM",
     "GRAPE JUICE",
@@ -769,7 +769,7 @@
    ]
   },
   {
-   "theme": "Checkout Lane",
+   "phrase": "See You Next Time!",
    "words": [
     "PINTO BEAN",
     "COCONUT MILK",
@@ -837,7 +837,7 @@
   "back_bullets": [
    "55 puzzles in <b>LARGE PRINT</b>, one per page",
    "495 everyday grocery words: fruits, veggies, dairy, bakery, snacks, household essentials and more",
-   "Themed aisles, from <i>Citrus &amp; Orchard</i> to <i>Checkout Lane</i>",
+   "A fun shopping moment on every page, from <i>Grab a Cart!</i> to <i>See You Next Time!</i>",
    "Words always read left to right or top to bottom. No backwards words!",
    "Full solutions at the back of the book"
   ],
@@ -852,7 +852,7 @@
    "tile": "#F6E3BA"
   },
   "sample": {
-   "title": "DAIRY CASE",
+   "title": "PUZZLE 7",
    "grid": [
     "MILKQZ",
     "BUTTER",

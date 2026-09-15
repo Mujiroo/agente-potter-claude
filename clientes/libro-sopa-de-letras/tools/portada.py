@@ -256,7 +256,7 @@ def main(src, dst, front_only=False, white=False):
 @page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }}
 html, body {{ margin: 0; padding: 0; }}
 svg {{ display: block; width: {W/U:.4f}in; height: {H/U:.4f}in; }}
-.backtext {{ font-family: 'Fredoka', sans-serif; font-size: 19px; line-height: 1.38; color: {c['ink']}; }}
+.backtext {{ font-family: 'Fredoka', sans-serif; font-size: 18px; line-height: 1.38; color: {c['ink']}; }}
 .backtext p {{ margin: 0 0 10px; }}
 .backtext ul {{ margin: 6px 0 12px; padding: 0; list-style: none; }}
 .backtext li {{ margin-bottom: 5px; padding-left: 26px; position: relative; }}
