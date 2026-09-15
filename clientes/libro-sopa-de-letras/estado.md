@@ -304,3 +304,10 @@ Pedro pidió revisar todo como editor profesional.
   3) sello EASY (opcional)
   4) papel blanco (actual) o crema (cambia el lomo)
   5) prueba impresa recomendada
+- 13:06 Pedro decide (msg 185): **sin sello EASY**, **papel blanco**, **sin prueba impresa**.
+- Nombre de serie (msg 182) y punto 2 (msg 183). Busqué en Amazon libros cuyo título contenga cada nombre:
+  - Libres (0 títulos): Big Print Word Hunt, Large Print Word Search by Theme, Word Search Hunt.
+  - Ya usados: Big Letter Word Search (2), Easy Large Print Word Search (1).
+- Recomendé serie **"Big Print Word Hunt"** + **mantener "Aisle Hunt!"**.
+  - KDP: serie Big Print Word Hunt, vol. 1; título Word Search; subtítulo Aisle Hunt! 55 Large Print Supermarket Puzzles for Adults and Seniors.
+  - p2: "Aisle Hunt! is Vol. 1 of the Big Print Word Hunt series…". Portada sin cambios. Esperando OK.
