@@ -10,7 +10,7 @@
  "size": 13,
  "seed": 2026,
  "directions": "forward",
- "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of a series of themed large print word search books.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of a series of themed large-print word search books.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
  "puzzles": [
   {
    "phrase": "Grab a Cart!",
@@ -41,7 +41,7 @@
    ]
   },
   {
-   "phrase": "Clean-Up on Aisle 3!",
+   "phrase": "Cleanup on Aisle 3!",
    "words": [
     "SPINACH",
     "BROCCOLI",
@@ -89,7 +89,7 @@
     "BOK CHOY",
     "ENDIVE",
     "ESCAROLE",
-    "COLLARD",
+    "COLLARDS",
     "WATERCRESS",
     "ROMAINE",
     "LENTIL",
@@ -340,7 +340,7 @@
     "GLUE",
     "SCISSORS",
     "CANDLE",
-    "MATCH",
+    "MATCHES",
     "BATTERY",
     "LIGHT BULB",
     "COFFEE FILTER",
@@ -449,7 +449,7 @@
   {
    "phrase": "Big Bag, Small Price!",
    "words": [
-    "MILK POWDER",
+    "POWDERED MILK",
     "MEATBALLS",
     "PEPPERONI",
     "BOLOGNA",
@@ -636,7 +636,7 @@
     "BANDAGES",
     "SUNSCREEN",
     "AIR FRESHENER",
-    "FABRIC SHEETS",
+    "DRYER SHEETS",
     "STAIN REMOVER",
     "DISH RACK",
     "TRASH CAN"
@@ -657,7 +657,7 @@
    ]
   },
   {
-   "phrase": "Around the World Aisle!",
+   "phrase": "International Aisle!",
    "words": [
     "PIEROGI",
     "KIMCHI",
@@ -709,7 +709,7 @@
     "POTATO CHIPS",
     "DISH SOAP",
     "PAPER TOWELS",
-    "CANDLES"
+    "FLASHLIGHT"
    ]
   },
   {
@@ -837,7 +837,7 @@
   "back_bullets": [
    "55 puzzles in <b>LARGE PRINT</b>, one per page",
    "495 everyday grocery words: fruits, veggies, dairy, bakery, snacks, household essentials and more",
-   "A fun shopping moment on every page, from <i>Grab a Cart!</i> to <i>See You Next Time!</i>",
+   "A fun shopping moment with every puzzle, from <i>Grab a Cart!</i> to <i>See You Next Time!</i>",
    "Words always read left to right or top to bottom. No backwards words!",
    "Full solutions at the back of the book"
   ],

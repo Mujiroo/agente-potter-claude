@@ -80,7 +80,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
         # autor arriba y centrado, separado del título
         out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
                    f'font-size="21" letter-spacing="4" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"].upper())}</text>')
-    bx, by = x0 + w - 115, y0 + 585
+    bx, by = x0 + w - 128, y0 + 585
     out.append(f'<g transform="rotate(10 {bx} {by})">{burst(bx, by, 82, 71, c["red"], "#fff")}'
                f'<text x="{bx}" y="{by-6}" text-anchor="middle" font-family="Luckiest Guy" font-size="60" fill="#fff">55</text>'
                f'<text x="{bx}" y="{by+30}" text-anchor="middle" font-family="Luckiest Guy" font-size="25" fill="#fff">PUZZLES</text></g>')
@@ -152,15 +152,15 @@ def back_bold(x0, y0, w, h, cv, c):
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
            letter_texture(x0, y0, w, h, "#FFFFFF", 0.11, seed=11),
            big_title(left + width / 2, y0 + 118, cv["back_headline"].upper(), 44, width - 10, c["yellow"], "#0D47A1", navy),
-           f'<rect x="{left}" y="{y0+150}" width="{width}" height="405" rx="24" fill="#fff" stroke="{navy}" stroke-width="6"/>',
-           f'<foreignObject x="{left+28}" y="{y0+170}" width="{width-56}" height="375">'
+           f'<rect x="{left}" y="{y0+150}" width="{width}" height="418" rx="24" fill="#fff" stroke="{navy}" stroke-width="6"/>',
+           f'<foreignObject x="{left+28}" y="{y0+170}" width="{width-56}" height="390">'
            f'<div xmlns="http://www.w3.org/1999/xhtml" class="backtext">'
            + "".join(f"<p>{p}</p>" for p in cv["back_intro"])
            + "<ul>" + "".join(f"<li>{b}</li>" for b in cv["back_bullets"]) + "</ul>"
            + f'<p class="close">{cv["back_close"]}</p></div></foreignObject>',
            f'<rect x="{x0}" y="{y0+h-190}" width="{w}" height="190" fill="{c["red"]}"/>',
            f'<rect x="{x0}" y="{y0+h-190}" width="{w}" height="8" fill="{navy}"/>',
-           sample(left + 15, y0 + 590, cv, dict(c, ink=navy))]
+           sample(left + 15, y0 + 600, cv, dict(c, ink=navy))]
     return "".join(out)
 
 

@@ -260,3 +260,22 @@ Pedro pidió revisar todo como editor profesional.
   - CANDLES (#50) → FLASHLIGHT
 - Decisión: nombre de serie en KDP (p. ej. "Word Search Hunt!") y ajustar la nota de p2.
 - Los PDFs con las correcciones técnicas están generados en el scratchpad; se envían como interior v10 + portada v7 después del OK.
+
+## Correcciones editoriales aplicadas — interior v10 + portada v7 (msgs 161–168)
+- Pedro aprobó todo menos el tema Vol. 1 (msg 161). Aplicado:
+  - contraportada: "with every puzzle"
+  - #3 "Cleanup on Aisle 3!"; #47 "International Aisle!"
+  - nota de serie: "large-print"
+  - DRYER SHEETS (#45), POWDERED MILK (#32), COLLARDS (#6), MATCHES (#24), FLASHLIGHT (#50, reemplaza CANDLES)
+- Ajustes derivados:
+  - recuadro de contraportada 418 u de alto, foreignObject 390, muestra en y+600 (el texto quedaba a 5 px del borde)
+  - sello 55 PUZZLES en `x0+w-128` (una punta salía de la zona segura)
+- `verificar.py`: 0 errores. PDFs: 0 Type3. Copiados en `entregables/libro1/`.
+- **Vigentes: interior v10 + portada v7.**
+
+## Serie / Vol. 2 (msgs 163–168)
+- Pedro: habrá más libros; el siguiente con **países, capitales y ciudades importantes**.
+- Propuse:
+  - **A (recomendada)**: una sola serie en KDP (p. ej. "Word Search Hunt!"), cada libro con nombre propio (Vol. 1 Aisle Hunt!, Vol. 2 p. ej. World Hunt!). En este libro solo cambia la nota de p2.
+  - **B**: una serie por tema.
+- Esperando su idea.
