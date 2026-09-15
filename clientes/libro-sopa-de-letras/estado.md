@@ -41,3 +41,17 @@
 - Libro en **inglés**.
 - **Serie**: Pedro hará más libros → la portada debe ser una **plantilla genérica** que se reutilice cambiando la temática de cada libro.
 - Esperando: el listado.
+
+## Libro 1 (supermercado) — interior entregado 2026-09-15 ~10:00
+- Listado de Pedro: Excel `Supermercado`, col. A, 55 bloques de 9 palabras separados por fila vacía (sin nombres de tema). Datos en `libro1_supermercado.json`.
+  - Antes mandó otro archivo (msg 29) y dijo que era "para otro libro": ignorado.
+- Generador reutilizable para la serie: `tools/generar.py libro.json salida.html`, y luego `agent-browser open file://…html` + `agent-browser pdf …`.
+  - 8,5×11", márgenes 0,75", grilla 15×15, 8 direcciones, seed fija (2026), 3 columnas de palabras en el orden de la lista.
+  - Verifica que cada palabra aparezca exactamente 1 vez (con la primera seed hubo 2 dobles: HAM y APPLE; se corrigió).
+  - Sin pip en el contenedor: el PDF se hace con Chrome vía agent-browser, sin librerías.
+- PDF enviado por Telegram (msg 35): 112 páginas, 6,4 MB. Pedro lo sube a Canva.
+- Pendiente de Pedro:
+  - portada elegida y título final (p1 hoy es solo texto "AISLE HUNT!")
+  - ¿8 direcciones o solo hacia adelante?
+  - ¿nombres de tema por puzzle?
+  - portada completa para KDP (lomo y contraportada)

@@ -1,0 +1,723 @@
+{
+ "title": "AISLE HUNT!",
+ "subtitle": "Supermarket Word Search",
+ "size": 15,
+ "seed": 2026,
+ "puzzles": [
+  {
+   "words": [
+    "KIDNEY BEAN",
+    "COCONUT OIL",
+    "ORANGE",
+    "LEMON",
+    "LIME",
+    "PEACH",
+    "PEAR",
+    "GRAPE",
+    "CHERRY"
+   ]
+  },
+  {
+   "words": [
+    "NAVY BEAN",
+    "POTATO",
+    "ONION",
+    "GARLIC",
+    "TOMATO",
+    "PEPPER",
+    "CELERY",
+    "RADISH",
+    "LETTUCE"
+   ]
+  },
+  {
+   "words": [
+    "SPINACH",
+    "BROCCOLI",
+    "CABBAGE",
+    "PEAS",
+    "BEANS",
+    "CORN",
+    "SQUASH",
+    "PUMPKIN",
+    "TURNIP"
+   ]
+  },
+  {
+   "words": [
+    "JELLY BEANS",
+    "WATERMELON",
+    "CANTALOUPE",
+    "HONEYDEW",
+    "TANGERINE",
+    "GRAPEFRUIT",
+    "NECTARINE",
+    "PERSIMMON",
+    "POMEGRANATE"
+   ]
+  },
+  {
+   "words": [
+    "BLACKBERRY",
+    "BOYSENBERRY",
+    "CURRANT",
+    "CLEMENTINE",
+    "KUMQUAT",
+    "STARFRUIT",
+    "DRAGON FRUIT",
+    "MUSHROOM",
+    "TRUFFLE"
+   ]
+  },
+  {
+   "words": [
+    "SPROUT",
+    "BOK CHOY",
+    "ENDIVE",
+    "ESCAROLE",
+    "COLLARD",
+    "WATERCRESS",
+    "ROMAINE",
+    "LENTIL",
+    "CHICKPEA"
+   ]
+  },
+  {
+   "words": [
+    "SOYBEAN",
+    "MILK",
+    "CREAM",
+    "BUTTER",
+    "YOGURT",
+    "CHEESE",
+    "CUSTARD",
+    "PUDDING",
+    "EGGS"
+   ]
+  },
+  {
+   "words": [
+    "TOFU",
+    "BREAD",
+    "BAGEL",
+    "MUFFIN",
+    "BISCUIT",
+    "CRACKER",
+    "PRETZEL",
+    "DONUT",
+    "WAFFLE"
+   ]
+  },
+  {
+   "words": [
+    "PANCAKE",
+    "CORN FLAKES",
+    "BREAD CRUMBS",
+    "RICE",
+    "PASTA",
+    "NOODLE",
+    "FLOUR",
+    "SUGAR",
+    "SALT"
+   ]
+  },
+  {
+   "words": [
+    "CEREAL",
+    "OATS",
+    "QUINOA",
+    "OATMEAL",
+    "GRANOLA",
+    "BRAN",
+    "MUESLI",
+    "GRITS",
+    "POLENTA"
+   ]
+  },
+  {
+   "words": [
+    "TAPIOCA",
+    "COUSCOUS",
+    "TAHINI",
+    "MARMALADE",
+    "CHICKEN",
+    "TURKEY",
+    "BEEF",
+    "PORK",
+    "BACON"
+   ]
+  },
+  {
+   "words": [
+    "SAUSAGE",
+    "HAM",
+    "SALAMI",
+    "STEAK",
+    "BRISKET",
+    "TENDERLOIN",
+    "SIRLOIN",
+    "RIBS",
+    "VEAL"
+   ]
+  },
+  {
+   "words": [
+    "LAMB",
+    "DUCK",
+    "MEATLOAF",
+    "MORTADELLA",
+    "LIVER",
+    "SALMON",
+    "TUNA",
+    "SHRIMP",
+    "COD"
+   ]
+  },
+  {
+   "words": [
+    "TROUT",
+    "SARDINE",
+    "LOBSTER",
+    "CRAB",
+    "CLAM",
+    "FISH STICKS",
+    "FISH CAKES",
+    "JUICE",
+    "SODA"
+   ]
+  },
+  {
+   "words": [
+    "WATER",
+    "COFFEE",
+    "TEA",
+    "COCOA",
+    "SYRUP",
+    "HONEY",
+    "VINEGAR",
+    "LIMEADE",
+    "FRUIT PUNCH"
+   ]
+  },
+  {
+   "words": [
+    "ROOT BEER",
+    "GINGER ALE",
+    "COLA",
+    "SELTZER",
+    "KETCHUP",
+    "MUSTARD",
+    "RELISH",
+    "PICKLES",
+    "MAYO"
+   ]
+  },
+  {
+   "words": [
+    "SAUCE",
+    "DRESSING",
+    "SPICE",
+    "HERBS",
+    "HORSERADISH",
+    "PEPPERMINT",
+    "SPEARMINT",
+    "CHILI",
+    "CAYENNE"
+   ]
+  },
+  {
+   "words": [
+    "ANISE",
+    "CARDAMOM",
+    "CORIANDER",
+    "CLOVES",
+    "BRINE",
+    "CHUTNEY",
+    "TOPPING",
+    "COMPOTE",
+    "PUREE"
+   ]
+  },
+  {
+   "words": [
+    "POPSICLE",
+    "SORBET",
+    "SHERBET",
+    "GELATO",
+    "MERINGUE",
+    "MARZIPAN",
+    "FONDANT",
+    "LICORICE",
+    "CARAMEL"
+   ]
+  },
+  {
+   "words": [
+    "MARSHMALLOW",
+    "GINGER SNAPS",
+    "CUPCAKE",
+    "ECLAIR",
+    "MACARON",
+    "NOUGAT",
+    "PRALINE",
+    "TORTILLA",
+    "DOUGH"
+   ]
+  },
+  {
+   "words": [
+    "BATTER",
+    "PIE CRUST",
+    "PIE FILLING",
+    "GLAZE",
+    "ICING",
+    "FROSTING",
+    "CORN CHIPS",
+    "NAPKIN",
+    "TISSUE"
+   ]
+  },
+  {
+   "words": [
+    "SPONGE",
+    "BROOM",
+    "MOP",
+    "BUCKET",
+    "BRUSH",
+    "DUSTER",
+    "DETERGENT",
+    "SOAP",
+    "SHAMPOO"
+   ]
+  },
+  {
+   "words": [
+    "LOTION",
+    "DEODORANT",
+    "RAZOR",
+    "COMB",
+    "TOWEL",
+    "TOILET PAPER",
+    "ALUMINUM FOIL",
+    "PLASTIC WRAP",
+    "TAPE"
+   ]
+  },
+  {
+   "words": [
+    "GLUE",
+    "SCISSORS",
+    "CANDLE",
+    "MATCH",
+    "BATTERY",
+    "LIGHT BULB",
+    "COFFEE FILTER",
+    "CLEANER",
+    "POLISH"
+   ]
+  },
+  {
+   "words": [
+    "BLEACH",
+    "WIPES",
+    "FREEZER BAGS",
+    "KIWI",
+    "MANGO",
+    "PAPAYA",
+    "GUAVA",
+    "LYCHEE",
+    "RASPBERRY"
+   ]
+  },
+  {
+   "words": [
+    "STRAWBERRY",
+    "BLUEBERRY",
+    "CRANBERRY",
+    "APRICOT",
+    "PLUM",
+    "FIG",
+    "DATE",
+    "COCONUT",
+    "AVOCADO"
+   ]
+  },
+  {
+   "words": [
+    "ARTICHOKE",
+    "ASPARAGUS",
+    "EGGPLANT",
+    "ZUCCHINI",
+    "CUCUMBER",
+    "KALE",
+    "ARUGULA",
+    "LEEK",
+    "SCALLION"
+   ]
+  },
+  {
+   "words": [
+    "SHALLOT",
+    "GINGER",
+    "TURMERIC",
+    "BEET",
+    "RUTABAGA",
+    "PARSNIP",
+    "JICAMA",
+    "OKRA",
+    "FENNEL"
+   ]
+  },
+  {
+   "words": [
+    "CHARD",
+    "PARSLEY",
+    "BASIL",
+    "CILANTRO",
+    "MINT",
+    "DILL",
+    "THYME",
+    "ROSEMARY",
+    "OREGANO"
+   ]
+  },
+  {
+   "words": [
+    "SAGE",
+    "TARRAGON",
+    "BAY LEAF",
+    "CHIVES",
+    "JALAPENO",
+    "HABANERO",
+    "POBLANO",
+    "SERRANO",
+    "EDAMAME"
+   ]
+  },
+  {
+   "words": [
+    "MICROGREENS",
+    "YAM",
+    "PLANTAIN",
+    "CASSAVA",
+    "TARO",
+    "BUTTERMILK",
+    "MARGARINE",
+    "GHEE",
+    "HALF AND HALF"
+   ]
+  },
+  {
+   "words": [
+    "MILK POWDER",
+    "MEATBALLS",
+    "PEPPERONI",
+    "BOLOGNA",
+    "PROSCIUTTO",
+    "HOT DOG",
+    "PASTRAMI",
+    "JERKY",
+    "PORK CHOP"
+   ]
+  },
+  {
+   "words": [
+    "CHICKEN THIGH",
+    "CHICKEN WING",
+    "DRUMSTICK",
+    "CHORIZO",
+    "ANDOUILLE",
+    "HALIBUT",
+    "TILAPIA",
+    "MACKEREL",
+    "ANCHOVY"
+   ]
+  },
+  {
+   "words": [
+    "OYSTER",
+    "MUSSEL",
+    "SCALLOP",
+    "CATFISH",
+    "HADDOCK",
+    "SNAPPER",
+    "SWORDFISH",
+    "CAVIAR",
+    "CRAWFISH"
+   ]
+  },
+  {
+   "words": [
+    "SQUID",
+    "OCTOPUS",
+    "HERRING",
+    "CROISSANT",
+    "BAGUETTE",
+    "PITA",
+    "NAAN",
+    "BUNS",
+    "ROLLS"
+   ]
+  },
+  {
+   "words": [
+    "TOAST",
+    "SOURDOUGH",
+    "CORNBREAD",
+    "BREADSTICK",
+    "BISCOTTI",
+    "DANISH",
+    "STRUDEL",
+    "SCONE",
+    "TART"
+   ]
+  },
+  {
+   "words": [
+    "PIE",
+    "BROWNIE",
+    "COOKIE",
+    "BARLEY",
+    "BULGUR",
+    "FARRO",
+    "MILLET",
+    "RYE",
+    "WHEAT"
+   ]
+  },
+  {
+   "words": [
+    "CORNMEAL",
+    "SEMOLINA",
+    "VERMICELLI",
+    "MACARONI",
+    "SPAGHETTI",
+    "LASAGNA",
+    "RAVIOLI",
+    "GNOCCHI",
+    "RAMEN"
+   ]
+  },
+  {
+   "words": [
+    "UDON",
+    "SOBA",
+    "CROUTONS",
+    "YEAST",
+    "CORNSTARCH",
+    "GELATIN",
+    "VANILLA",
+    "CINNAMON",
+    "NUTMEG"
+   ]
+  },
+  {
+   "words": [
+    "PAPRIKA",
+    "CUMIN",
+    "FENUGREEK",
+    "SAFFRON",
+    "OLIVE OIL",
+    "SALSA",
+    "GUACAMOLE",
+    "HUMMUS",
+    "JAM"
+   ]
+  },
+  {
+   "words": [
+    "JELLY",
+    "PRESERVES",
+    "ALMONDS",
+    "WALNUTS",
+    "PECANS",
+    "CASHEWS",
+    "PISTACHIOS",
+    "PEANUTS",
+    "HAZELNUTS"
+   ]
+  },
+  {
+   "words": [
+    "PINE NUTS",
+    "CHIA SEEDS",
+    "RAISINS",
+    "TRAIL MIX",
+    "GRANOLA BAR",
+    "POPCORN",
+    "PORK RINDS",
+    "CHEESE PUFFS",
+    "LEMONADE"
+   ]
+  },
+  {
+   "words": [
+    "MILKSHAKE",
+    "SMOOTHIE",
+    "ENERGY DRINK",
+    "WINE",
+    "CIDER",
+    "KOMBUCHA",
+    "ESPRESSO",
+    "PAPER PLATES",
+    "PLASTIC CUPS"
+   ]
+  },
+  {
+   "words": [
+    "PLASTIC FORKS",
+    "STRAWS",
+    "ALUMINUM PANS",
+    "OVEN MITTS",
+    "BODY WASH",
+    "TOOTHPASTE",
+    "TOOTHBRUSH",
+    "MOUTHWASH",
+    "FLOSS"
+   ]
+  },
+  {
+   "words": [
+    "COTTON BALLS",
+    "COTTON SWABS",
+    "BANDAGES",
+    "SUNSCREEN",
+    "AIR FRESHENER",
+    "FABRIC SHEETS",
+    "STAIN REMOVER",
+    "DISH RACK",
+    "TRASH CAN"
+   ]
+  },
+  {
+   "words": [
+    "RECYCLING BIN",
+    "OLIVES",
+    "CAPERS",
+    "APPLESAUCE",
+    "FUDGE",
+    "TAFFY",
+    "GUMDROPS",
+    "BUTTERSCOTCH",
+    "TORTELLINI"
+   ]
+  },
+  {
+   "words": [
+    "PIEROGI",
+    "KIMCHI",
+    "CAPICOLA",
+    "VEGGIE BURGER",
+    "PIMENTO",
+    "SRIRACHA",
+    "TAMARI",
+    "MISO PASTE",
+    "WASABI"
+   ]
+  },
+  {
+   "words": [
+    "SWEET POTATO",
+    "BELL PEPPER",
+    "SNAP PEA",
+    "GREEN BEAN",
+    "DRIED FRUIT",
+    "ALMOND MILK",
+    "ICE CREAM",
+    "PEANUT BUTTER",
+    "CREAM CHEESE"
+   ]
+  },
+  {
+   "words": [
+    "RYE BREAD",
+    "RICE CRACKERS",
+    "GROUND BEEF",
+    "TURKEY BACON",
+    "HAM STEAK",
+    "SPARE RIBS",
+    "CAKE",
+    "APPLE JUICE",
+    "BAKING SODA"
+   ]
+  },
+  {
+   "words": [
+    "MINERAL WATER",
+    "ICED TEA",
+    "MAPLE SYRUP",
+    "BEER",
+    "SOY SAUCE",
+    "POTATO CHIPS",
+    "DISH SOAP",
+    "PAPER TOWELS",
+    "CANDLES"
+   ]
+  },
+  {
+   "words": [
+    "GLASS CLEANER",
+    "LUNCH BAGS",
+    "BAKING POWDER",
+    "VEGETABLE OIL",
+    "FLAX SEEDS",
+    "PROTEIN BAR",
+    "SPORTS DRINK",
+    "PAPER CUPS",
+    "SNOW PEA"
+   ]
+  },
+  {
+   "words": [
+    "LIMA BEAN",
+    "OAT MILK",
+    "SOUR CREAM",
+    "ALMOND BUTTER",
+    "CORNED BEEF",
+    "ORANGE JUICE",
+    "CLUB SODA",
+    "SPRING WATER",
+    "GREEN TEA"
+   ]
+  },
+  {
+   "words": [
+    "HOT SAUCE",
+    "HAND SOAP",
+    "DISH TOWEL",
+    "FLOOR CLEANER",
+    "TRASH BAGS",
+    "CANOLA OIL",
+    "SESAME SEEDS",
+    "BLACK BEAN",
+    "SOY MILK"
+   ]
+  },
+  {
+   "words": [
+    "WHIPPED CREAM",
+    "GRAPE JUICE",
+    "TONIC WATER",
+    "HERBAL TEA",
+    "BBQ SAUCE",
+    "LAUNDRY SOAP",
+    "SANDWICH BAGS",
+    "SESAME OIL",
+    "PUMPKIN SEEDS"
+   ]
+  },
+  {
+   "words": [
+    "PINTO BEAN",
+    "COCONUT MILK",
+    "TOMATO JUICE",
+    "CHAI TEA",
+    "PEANUT OIL",
+    "APPLE",
+    "BANANA",
+    "CARROT",
+    "PINEAPPLE"
+   ]
+  }
+ ]
+}
