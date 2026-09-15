@@ -298,3 +298,9 @@ Pedro pidió revisar todo como editor profesional.
   - Resultados: grocery word search 443; supermarket word search 194; food word search large print 4.000+.
   - Recomendé **mantener Supermarket** y poner grocery/food en las 7 palabras clave.
 - Nota técnica: nunca dejar `cat >> archivo` sin entrada en un comando (se cuelga esperando stdin).
+- 13:03 Pedro pidió un resumen de lo que falta definir de la edición (lo de KDP después). Enviado (msg 181):
+  1) nombre de serie / VOL. 1
+  2) mantener "Aisle Hunt!" o ir solo descriptivo
+  3) sello EASY (opcional)
+  4) papel blanco (actual) o crema (cambia el lomo)
+  5) prueba impresa recomendada
