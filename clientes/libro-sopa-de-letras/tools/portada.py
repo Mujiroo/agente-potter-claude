@@ -227,8 +227,13 @@ def front_svg_white(book):
     tw, th = book["trim"]
     W, H = (tw + 2 * BLEED) * U, (th + 2 * BLEED) * U
     b = BLEED * U
+    if cv.get("style", "classic") != "classic":
+        import portada_alt
+        body = portada_alt.STYLES[cv["style"]](0, 0, W, H, cv, c, white=True)
+    else:
+        body = front(0, 0, W, H, cv, c, white=True)
     return (f'<svg class="cover1" xmlns="http://www.w3.org/2000/svg" viewBox="{b} {b} {tw*U} {th*U}">'
-            f'{front(0, 0, W, H, cv, c, white=True)}</svg>')
+            f'{body}</svg>')
 
 
 def font_css():
@@ -249,12 +254,19 @@ def main(src, dst, front_only=False, white=False, style=None):
         style = style or cv.get("style", "classic")
         if style != "classic":
             import portada_alt
-            svg = portada_alt.STYLES[style](0, 0, W, H, cv, c)
+            svg = portada_alt.STYLES[style](0, 0, W, H, cv, c, white=white)
         else:
             svg = front(0, 0, W, H, cv, c, white)
     else:
         W, H = 2 * fw + sw, fh
-        svg = back(0, 0, fw, H, cv, c) + spine(fw, 0, sw, H, cv, c) + front(fw + sw, 0, fw, H, cv, c, cx=fw + sw + tw * U / 2)
+        style = style or cv.get("style", "classic")
+        if style != "classic":
+            import portada_alt
+            bk, sp = portada_alt.BACKS[style]
+            svg = (bk(0, 0, fw, H, cv, c) + sp(fw, 0, sw, H, cv, c)
+                   + portada_alt.STYLES[style](fw + sw, 0, fw, H, cv, c, cx=fw + sw + tw * U / 2))
+        else:
+            svg = back(0, 0, fw, H, cv, c) + spine(fw, 0, sw, H, cv, c) + front(fw + sw, 0, fw, H, cv, c, cx=fw + sw + tw * U / 2)
     fonts = os.path.join(HERE, "fonts")
     doc = f'''<!doctype html><html><head><meta charset="utf-8"><style>
 @font-face {{ font-family: 'Luckiest Guy'; src: url('file://{fonts}/LuckiestGuy-Regular.ttf'); }}

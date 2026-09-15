@@ -164,3 +164,22 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - Hice una hoja comparativa con miniaturas de Amazon.
 - Recomendé **A · Bold**: azul con textura de letras, WORD SEARCH gigante, sello 55 PUZZLES, franja LARGE PRINT, carro al 74%.
 - Esperando elección → luego contraportada y lomo del estilo elegido (hoy `back`/`spine` son del estilo clásico).
+
+## Portada A (bold) elegida — portada v3 + interior v6 enviados ~12:00 (msgs 107–113)
+- Pedro eligió **A** (msg 104). `cover.style = "bold"` en el JSON.
+  - `portada_alt.back_bold`, `spine_bold` y `front_bold(white=True)` para la p1 en B/N.
+  - La franja roja es continua de contraportada a frente.
+- Pedro preguntó si "LARGE PRINT" se justifica (msg 106):
+  - grilla ~18,5 pt (cumple APH ≥18)
+  - lista 14 pt (mínimo NAVH)
+  - instrucciones subidas de 12 → 14 pt
+  - No usar "EXTRA LARGE" ni "JUMBO".
+- Verificado:
+  - portada 900×666 pt
+  - ningún texto fuera de la zona segura (25 u = 0,125" dentro del corte) ni cruzando el lomo
+  - zona de código de barras libre
+  - interior 112 págs. sin desbordes
+- Detalle menor: en la p1 B/N la zanahoria conserva su color fijo (se imprime en gris).
+- Pendiente:
+  - nombre de autor/sello (línea de copyright)
+  - revisión comercial antes de publicar (precio, palabras clave, descripción)

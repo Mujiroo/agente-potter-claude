@@ -56,19 +56,21 @@ def price_tag(cx, cy, text, fill, ink, hole, text_color, size=58):
     </g>'''
 
 
-def front_bold(x0, y0, w, h, cv, c, cx=None):
+def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
     cx = x0 + w / 2 if cx is None else cx
-    blue, navy = "#1565C0", "#0B2E6B"
+    blue, navy, deep, word_fill, tex = "#1565C0", "#0B2E6B", "#0D47A1", "#FFFFFF", ("#FFFFFF", 0.11)
+    if white:  # papel blanco, tinta negra
+        blue, navy, deep, word_fill, tex = "#FFFFFF", "#111111", "#9E9E9E", "#FFFFFF", ("#000000", 0.07)
     out = ['<defs><radialGradient id="vign" cx="50%" cy="45%" r="75%">'
            '<stop offset="60%" stop-color="#000" stop-opacity="0"/>'
-           '<stop offset="100%" stop-color="#000" stop-opacity=".28"/></radialGradient></defs>',
+           f'<stop offset="100%" stop-color="#000" stop-opacity="{0 if white else .28}"/></radialGradient></defs>',
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
-           letter_texture(x0, y0, w, h, "#FFFFFF", 0.11),
+           letter_texture(x0, y0, w, h, *tex),
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="url(#vign)"/>',
-           big_title(cx, y0 + 180, "WORD", 150, 330, "#FFFFFF", "#0D47A1", navy),
-           big_title(cx, y0 + 322, "SEARCH", 150, w - 100, c["yellow"], "#0D47A1", navy),
+           big_title(cx, y0 + 180, "WORD", 150, 330, word_fill, deep, navy),
+           big_title(cx, y0 + 322, "SEARCH", 150, w - 100, c["yellow"], deep, navy),
            scaled(cart(cx - 55, y0 + 455, cv["cart"], dict(c, ink=navy)), cx - 55, y0 + 455, 0.74),
-           price_tag(cx, y0 + 398, cv["series_name"], "#FFFFFF", navy, blue, c["red"])]
+           price_tag(cx, y0 + 398, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
     bx, by = x0 + w - 115, y0 + 585
     out.append(f'<g transform="rotate(10 {bx} {by})">{burst(bx, by, 82, 71, c["red"], "#fff")}'
                f'<text x="{bx}" y="{by-6}" text-anchor="middle" font-family="Luckiest Guy" font-size="60" fill="#fff">55</text>'
@@ -85,7 +87,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None):
     return "".join(out)
 
 
-def front_grid(x0, y0, w, h, cv, c, cx=None):
+def front_grid(x0, y0, w, h, cv, c, cx=None, white=False):
     cx = x0 + w / 2 if cx is None else cx
     ink = "#14213D"
     rng = random.Random(3)
@@ -129,3 +131,38 @@ def front_grid(x0, y0, w, h, cv, c, cx=None):
 
 
 STYLES = {"bold": front_bold, "grid": front_grid}
+
+
+def back_bold(x0, y0, w, h, cv, c):
+    """Contraportada del estilo bold. Zona de código de barras (abajo a la derecha, junto al lomo) libre."""
+    from portada import BLEED, U, sample
+    blue, navy = "#1565C0", "#0B2E6B"
+    left = x0 + BLEED * U + 45
+    width = w - BLEED * U - 90
+    out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
+           letter_texture(x0, y0, w, h, "#FFFFFF", 0.11, seed=11),
+           big_title(left + width / 2, y0 + 118, cv["back_headline"].upper(), 44, width - 10, c["yellow"], "#0D47A1", navy),
+           f'<rect x="{left}" y="{y0+150}" width="{width}" height="405" rx="24" fill="#fff" stroke="{navy}" stroke-width="6"/>',
+           f'<foreignObject x="{left+28}" y="{y0+170}" width="{width-56}" height="375">'
+           f'<div xmlns="http://www.w3.org/1999/xhtml" class="backtext">'
+           + "".join(f"<p>{p}</p>" for p in cv["back_intro"])
+           + "<ul>" + "".join(f"<li>{b}</li>" for b in cv["back_bullets"]) + "</ul>"
+           + f'<p class="close">{cv["back_close"]}</p></div></foreignObject>',
+           f'<rect x="{x0}" y="{y0+h-190}" width="{w}" height="190" fill="{c["red"]}"/>',
+           f'<rect x="{x0}" y="{y0+h-190}" width="{w}" height="8" fill="{navy}"/>',
+           sample(left + 15, y0 + 590, cv, dict(c, ink=navy))]
+    return "".join(out)
+
+
+def spine_bold(x0, y0, sw, h, cv, c):
+    navy = "#0B2E6B"
+    cx, cy = x0 + sw / 2, y0 + h / 2
+    size = max(8, min(15, sw - 2 * 6.25 - 2))
+    return (f'<rect x="{x0}" y="{y0}" width="{sw}" height="{h}" fill="#1565C0"/>'
+            f'<rect x="{x0}" y="{y0+h-190}" width="{sw}" height="190" fill="{c["red"]}"/>'
+            f'<rect x="{x0}" y="{y0+h-190}" width="{sw}" height="8" fill="{navy}"/>'
+            f'<text x="{cx}" y="{cy-40}" transform="rotate(90 {cx} {cy-40})" text-anchor="middle" dominant-baseline="central" '
+            f'font-family="Luckiest Guy" font-size="{size:.1f}" fill="#fff" letter-spacing="1">{esc(cv["spine"])}</text>')
+
+
+BACKS = {"bold": (back_bold, spine_bold)}

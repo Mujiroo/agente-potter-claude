@@ -161,7 +161,7 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .title-page .sub {{ font-size: {30 * k:.0f}pt; margin-top: 0.15in; font-weight: 700; }}
 .title-page .vol {{ font-size: {20 * k:.0f}pt; margin-top: 0.15in; letter-spacing: 3px; }}
 .title-page .note {{ font-size: {16 * k:.0f}pt; margin-top: 0.4in; color: #555; max-width: {live - 0.4:.2f}in; }}
-.instr {{ text-align: left; width: 100%; font-size: {max(12, 17 * k):.0f}pt; line-height: 1.45; }}
+.instr {{ text-align: left; width: 100%; font-size: 14pt; line-height: 1.45; }}
 .instr h1 {{ text-align: left; margin-bottom: 0.2in; }}
 .belongs {{ width: 100%; font-size: {max(12, 17 * k):.0f}pt; font-weight: 700; display: flex; align-items: flex-end;
            gap: 0.1in; margin: 0.1in 0 0.45in; }}
