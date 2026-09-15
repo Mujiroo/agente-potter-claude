@@ -10,7 +10,7 @@
  "size": 13,
  "seed": 2026,
  "directions": "forward",
- "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of a series of themed large-print word search books.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of the <b>Big Print Word Hunt</b> series.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
  "puzzles": [
   {
    "phrase": "Grab a Cart!",
@@ -900,5 +900,9 @@
  },
  "author": "Peter & Cardu",
  "year": 2026,
- "instructions_style": "icons"
+ "instructions_style": "icons",
+ "series": {
+  "name": "Big Print Word Hunt",
+  "volume": 1
+ }
 }

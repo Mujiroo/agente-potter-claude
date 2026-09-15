@@ -311,3 +311,8 @@ Pedro pidió revisar todo como editor profesional.
 - Recomendé serie **"Big Print Word Hunt"** + **mantener "Aisle Hunt!"**.
   - KDP: serie Big Print Word Hunt, vol. 1; título Word Search; subtítulo Aisle Hunt! 55 Large Print Supermarket Puzzles for Adults and Seniors.
   - p2: "Aisle Hunt! is Vol. 1 of the Big Print Word Hunt series…". Portada sin cambios. Esperando OK.
+- 13:10 Pedro aprueba (msg 187): serie **Big Print Word Hunt** vol. 1 y mantener "Aisle Hunt!".
+  - JSON: `series`. Nota p2: "Aisle Hunt! is Vol. 1 of the Big Print Word Hunt series." (la versión larga desbordaba la p2 y cortaba "large-/print"). Mini ejemplo a 2,75".
+  - verificar.py: 0 errores; 0 desbordes; 0 Type3.
+- **EDICIÓN CERRADA. Vigentes: interior v11 + portada v7** (en `entregables/libro1/`).
+- Siguiente: parte KDP (descripción, 7 palabras clave, categorías, precio; marcar IA en texto = sí, imágenes = no).

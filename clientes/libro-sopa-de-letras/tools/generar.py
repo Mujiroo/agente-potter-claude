@@ -264,7 +264,7 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .step {{ width: 100%; display: flex; align-items: center; gap: 0.14in; font-size: 14pt; line-height: 1.25; margin: 0.07in 0; }}
 .step .ico {{ flex: none; }}
 .exwrap {{ width: 100%; display: flex; justify-content: center; margin: 0.12in 0 0.06in; }}
-.example {{ width: 2.9in; }}
+.example {{ width: 2.75in; }}
 .solnote {{ width: 100%; display: flex; align-items: center; gap: 0.14in; font-size: 14pt; margin-top: 0.06in; }}
 .copyright {{ width: 100%; font-size: 9pt; color: #444; text-align: center; line-height: 1.35; margin-bottom: 0.05in; }}
 .series {{ margin-top: auto; margin-bottom: 0.2in; width: 100%; border-top: 1.5px solid #999; padding-top: 0.15in;
