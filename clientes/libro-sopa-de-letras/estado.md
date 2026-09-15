@@ -447,3 +447,12 @@ Pedro pidió revisar todo como editor profesional.
   - Planner esperando OK
 - Lección: para cada volumen nuevo medir los anchos de la lista de palabras (3 columnas a 14 pt) y buscar el nombre en Amazon ANTES de fijarlo.
 - 15:53 Pedro aprueba **Vol. 4 Memory Lane Hunt!** (msg 257) → versión final: interior v1 + portada v1 en entregables/vol4.
+- 15:53 Pedro (msgs 258, 261): pedía el Vol. 5 (se lo reenvié) y luego "**Todos los vol ok**".
+- **SERIE APROBADA (versiones finales):**
+  - V1 interior v11 + portada v7
+  - V2 v1 + v1
+  - V3 interior v2 + portada v2
+  - V4 v1 + v1
+  - V5 v1 + v1
+  - Todos en `entregables/volN/`.
+- Siguiente: parte KDP (empezar por V5 por fecha) y planner navideño (esperando OK).
