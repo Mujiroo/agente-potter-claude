@@ -499,3 +499,4 @@ Pedro pidió revisar todo como editor profesional.
   - Cuentas: 70 páginas de puzzles + 48 de soluciones ≈ 120 págs.; precio US$ 10,99–12,99.
   - Preguntas: idioma (la lista vino en español), 40 temas (¿los amplío yo?), serie nueva o dentro de Big Print Word Hunt (recomiendo nueva).
   - Ofrecí un libro de muestra con 2 sopas, 2 sudokus y 1 laberinto.
+- 20:26 Pedro confirma (msg 312): inglés, serie nueva, yo amplío a 40 temas. Proyecto en `clientes/calm-cozy/`.
