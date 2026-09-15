@@ -201,3 +201,7 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - Zonas seguras OK. Envié antes/después.
 - Pedro (msg 123) pidió el texto completo de la contraportada: enviado (msg 128).
 - Detecté que la muestra "PUZZLE 7" no es el puzzle 7 real → propuse cambiarla a "SAMPLE" en la próxima versión, junto con sus comentarios del texto.
+- 11:41 Pedro **aprueba la portada** con el autor arriba (msg 130).
+  - Portada v6: muestra "SAMPLE".
+  - **Vigentes: portada v6 + interior v8**, copiados en `entregables/libro1/` (fuera de git, no se commitean) + `cover_final.png`.
+- Siguiente: revisión comercial antes de publicar (precio, palabras clave, categorías, descripción).
