@@ -71,6 +71,9 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
            big_title(cx, y0 + 322, "SEARCH", 150, w - 100, c["yellow"], deep, navy),
            scaled(cart(cx - 55, y0 + 455, cv["cart"], dict(c, ink=navy)), cx - 55, y0 + 455, 0.74),
            price_tag(cx, y0 + 398, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
+    if cv.get("author"):
+        out.append(f'<text x="{x0+w-50}" y="{y0+66}" text-anchor="end" font-family="Fredoka" font-weight="700" '
+                   f'font-size="22" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"])}</text>')
     bx, by = x0 + w - 115, y0 + 585
     out.append(f'<g transform="rotate(10 {bx} {by})">{burst(bx, by, 82, 71, c["red"], "#fff")}'
                f'<text x="{bx}" y="{by-6}" text-anchor="middle" font-family="Luckiest Guy" font-size="60" fill="#fff">55</text>'

@@ -183,3 +183,14 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
 - Pendiente:
   - nombre de autor/sello (línea de copyright)
   - revisión comercial antes de publicar (precio, palabras clave, descripción)
+
+## Autor y dificultad — 11:35–12:10 (msgs 114–121)
+- **Autor: "Peter & Cardu"** (msg 114).
+  - JSON: `author`, `year` 2026, `cover.author`.
+  - Aparece en el frente (arriba a la derecha), en el lomo y en la línea de copyright de la p2.
+  - Enviados **portada v4** e **interior v7**. En KDP el autor debe decir exactamente "Peter & Cardu".
+- Dificultad (msg 116):
+  - Medí 13×13, 9 palabras, sin revés; 45% →, 32% ↓, 23% diagonales; 7,3 letras en promedio; las palabras cubren el 39% de la grilla.
+  - Resultado **FÁCIL** (convención de mercado, no estándar oficial). Sugerí usar "easy" en la descripción y las palabras clave.
+  - Pregunté si agrega un sello "EASY" en la portada (pendiente).
+- Ofrecí preparar la descripción de Amazon (pendiente de respuesta).

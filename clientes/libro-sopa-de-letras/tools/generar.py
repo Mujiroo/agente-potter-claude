@@ -166,6 +166,7 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .belongs {{ width: 100%; font-size: {max(12, 17 * k):.0f}pt; font-weight: 700; display: flex; align-items: flex-end;
            gap: 0.1in; margin: 0.1in 0 0.45in; }}
 .belongs span {{ flex: 1; border-bottom: 1.5px solid #111; height: 1.2em; }}
+.copyright {{ width: 100%; font-size: 9pt; color: #444; text-align: center; line-height: 1.35; margin-bottom: 0.05in; }}
 .series {{ margin-top: auto; margin-bottom: 0.2in; width: 100%; border-top: 1.5px solid #999; padding-top: 0.15in;
           font-size: {max(11, 15 * k):.0f}pt; line-height: 1.45; text-align: center; }}
 """
@@ -204,6 +205,10 @@ def main(src, dst):
            '<b>across</b>, <b>up and down</b>, or <b>diagonally</b>, and they can be spelled '
            '<b>forwards or backwards</b>.</p>')
     note = f'<div class="series">{book["series_note"]}</div>' if book.get("series_note") else ""
+    if book.get("author"):
+        note += (f'<div class="copyright">Copyright &copy; {book.get("year", "")} {html.escape(book["author"])}. '
+                 'All rights reserved. No part of this book may be reproduced in any form without written '
+                 'permission from the authors.</div>')
     belongs = ('<div class="belongs">This book belongs to<span></span></div>'
                if book.get("belongs_to", True) else "")
     page(belongs + '<div class="instr"><h1>How to Play</h1>'

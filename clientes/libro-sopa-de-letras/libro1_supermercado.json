@@ -791,7 +791,7 @@
   "volume": "VOL. 1",
   "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
   "band2": "for Adults and Seniors · Solutions Included",
-  "spine": "WORD SEARCH  ·  AISLE HUNT!  ·  VOL. 1",
+  "spine": "WORD SEARCH  ·  AISLE HUNT!  ·  VOL. 1  ·  PETER & CARDU",
   "cart": {
    "grid": [
     "MILKBREAD",
@@ -895,6 +895,9 @@
    ],
    "words": "MILK · BUTTER · CREAM · YOGURT · CHEESE"
   },
-  "style": "bold"
- }
+  "style": "bold",
+  "author": "Peter & Cardu"
+ },
+ "author": "Peter & Cardu",
+ "year": 2026
 }
