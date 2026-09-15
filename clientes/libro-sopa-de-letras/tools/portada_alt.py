@@ -67,19 +67,21 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
            letter_texture(x0, y0, w, h, *tex),
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="url(#vign)"/>',
-           big_title(cx, y0 + 180, "WORD", 150, 330, word_fill, deep, navy),
-           big_title(cx, y0 + 322, "SEARCH", 150, w - 100, c["yellow"], deep, navy),
-           scaled(cart(cx - 55, y0 + 455, cv["cart"], dict(c, ink=navy)), cx - 55, y0 + 455, 0.74),
-           price_tag(cx, y0 + 398, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
+           big_title(cx, y0 + 200, "WORD", 146, 322, word_fill, deep, navy),
+           big_title(cx, y0 + 336, "SEARCH", 146, w - 110, c["yellow"], deep, navy),
+           scaled(cart(cx - 55, y0 + 470, cv["cart"], dict(c, ink=navy)), cx - 55, y0 + 470, 0.72),
+           price_tag(cx, y0 + 410, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
     if cv.get("author"):
-        out.append(f'<text x="{x0+w-50}" y="{y0+66}" text-anchor="end" font-family="Fredoka" font-weight="700" '
-                   f'font-size="22" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"])}</text>')
+        # autor arriba y centrado, separado del título
+        out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
+                   f'font-size="21" letter-spacing="4" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"].upper())}</text>')
     bx, by = x0 + w - 115, y0 + 585
     out.append(f'<g transform="rotate(10 {bx} {by})">{burst(bx, by, 82, 71, c["red"], "#fff")}'
                f'<text x="{bx}" y="{by-6}" text-anchor="middle" font-family="Luckiest Guy" font-size="60" fill="#fff">55</text>'
                f'<text x="{bx}" y="{by+30}" text-anchor="middle" font-family="Luckiest Guy" font-size="25" fill="#fff">PUZZLES</text></g>')
-    out.append(f'<g transform="rotate(-6 {x0+105} {y0+58})"><rect x="{x0+50}" y="{y0+38}" width="110" height="40" rx="20" '
-               f'fill="{c["yellow"]}" stroke="{navy}" stroke-width="4"/><text x="{x0+105}" y="{y0+67}" text-anchor="middle" '
+    vx, vy = x0 + 92, y0 + 360  # VOL. 1 como etiqueta pegada al extremo izquierdo del precio
+    out.append(f'<g transform="rotate(-10 {vx} {vy})"><rect x="{vx-52}" y="{vy-20}" width="104" height="40" rx="20" '
+               f'fill="{c["yellow"]}" stroke="{navy}" stroke-width="4"/><text x="{vx}" y="{vy+9}" text-anchor="middle" '
                f'font-family="Luckiest Guy" font-size="24" fill="{navy}">{esc(cv["volume"])}</text></g>')
     out.append(f'''
     <rect x="{x0}" y="{y0+h-190}" width="{w}" height="190" fill="{c['red']}"/>

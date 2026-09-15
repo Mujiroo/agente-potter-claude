@@ -194,3 +194,10 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - Resultado **FÁCIL** (convención de mercado, no estándar oficial). Sugerí usar "easy" en la descripción y las palabras clave.
   - Pregunté si agrega un sello "EASY" en la portada (pendiente).
 - Ofrecí preparar la descripción de Amazon (pendiente de respuesta).
+
+## Ajuste de autor en portada — portada v5 + interior v8 (msgs 122–128)
+- Pedro (msg 122): el autor quedaba muy cerca del título.
+  - Ahora "PETER & CARDU" va arriba y centrado (letter-spacing 4); título y etiqueta bajan ~12–20 u; VOL. 1 como etiqueta pegada al extremo izquierdo de "AISLE HUNT!"; carro a y=470, escala 0,72.
+  - Zonas seguras OK. Envié antes/después.
+- Pedro (msg 123) pidió el texto completo de la contraportada: enviado (msg 128).
+- Detecté que la muestra "PUZZLE 7" no es el puzzle 7 real → propuse cambiarla a "SAMPLE" en la próxima versión, junto con sus comentarios del texto.
