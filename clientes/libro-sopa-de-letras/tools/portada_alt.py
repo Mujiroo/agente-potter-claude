@@ -189,7 +189,7 @@ def suitcase(cx, top, words, c):
           stroke-width="6" stroke-dasharray="16 13" stroke-linecap="round"/>
     <g transform="translate({bx0+15},{by0-30}) rotate(-25)">
       <path d="M-46,10 L54,-26 L-6,36 L-14,16 z" fill="#fff" stroke="{ink}" stroke-width="5" stroke-linejoin="round"/>
-      <path d="M-14,16 L54,-26 L-2,14" fill="#DDE7EE" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>
+      <path d="M-14,16 L54,-26 L-2,14" fill="{c.get('plane_fold', '#DDE7EE')}" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>
     </g>''')
     # asa
     out.append(f'<path d="M{cx-62},{by0+2} V{by0-34} a16,16 0 0 1 16,-16 H{cx+46} a16,16 0 0 1 16,16 V{by0+2}" '

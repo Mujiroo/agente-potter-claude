@@ -96,6 +96,13 @@ def main(src, htm):
         placed = {}
         for w in p["words"]:
             fwd = find(gp, w, FORWARD)
+            # una palabra contenida en otra de la lista (MEXICO en MEXICO CITY) siempre aparece dentro de
+            # ella: esa aparición no cuenta, pero debe existir exactamente UNA aparición propia
+            longer = [set(c) for o in p["words"] if o != w and clean(w) in clean(o) for c in find(gp, o, FORWARD)]
+            own = [c for c in fwd if not any(set(c) <= L for L in longer)]
+            if longer:
+                notes.append(f"#{k}: '{w}' también se lee dentro de otra palabra de la lista (esperado)")
+                fwd = own
             if len(fwd) != 1:
                 errors.append(f"#{k}: '{w}' aparece {len(fwd)} veces hacia adelante")
                 continue

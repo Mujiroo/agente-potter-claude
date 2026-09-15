@@ -20,105 +20,38 @@
  "instructions_style": "icons",
  "puzzles": [
   {
-   "phrase": "China",
+   "phrase": "Pack Your Bags!",
+   "country": "UNITED STATES",
    "words": [
-    "CHINA",
-    "BEIJING",
-    "SHANGHAI",
-    "GUANGZHOU",
-    "SHENZHEN",
-    "WUHAN",
-    "CHENGDU",
-    "NANJING",
-    "HANGZHOU"
+    "UNITED STATES",
+    "WASHINGTON, D.C.",
+    "NEW YORK",
+    "LOS ANGELES",
+    "CHICAGO",
+    "HOUSTON",
+    "PHOENIX",
+    "PHILADELPHIA",
+    "SAN ANTONIO"
    ]
   },
   {
-   "phrase": "India",
+   "phrase": "Passport, Please!",
+   "country": "UNITED KINGDOM",
    "words": [
-    "INDIA",
-    "NEW DELHI",
-    "MUMBAI",
-    "BANGALORE",
-    "HYDERABAD",
-    "AHMEDABAD",
-    "CHENNAI",
-    "KOLKATA",
-    "SURAT"
+    "UNITED KINGDOM",
+    "LONDON",
+    "BIRMINGHAM",
+    "MANCHESTER",
+    "GLASGOW",
+    "LIVERPOOL",
+    "EDINBURGH",
+    "LEEDS",
+    "BRISTOL"
    ]
   },
   {
-   "phrase": "Brazil",
-   "words": [
-    "BRAZIL",
-    "BRASILIA",
-    "SAO PAULO",
-    "SALVADOR",
-    "FORTALEZA",
-    "CURITIBA",
-    "MANAUS",
-    "RECIFE",
-    "BELEM"
-   ]
-  },
-  {
-   "phrase": "Mexico",
-   "words": [
-    "MEXICO",
-    "MEXICO CITY",
-    "GUADALAJARA",
-    "MONTERREY",
-    "PUEBLA",
-    "TIJUANA",
-    "LEON",
-    "JUAREZ",
-    "MERIDA"
-   ]
-  },
-  {
-   "phrase": "Russia",
-   "words": [
-    "RUSSIA",
-    "MOSCOW",
-    "ST PETERSBURG",
-    "NOVOSIBIRSK",
-    "KRASNOYARSK",
-    "KAZAN",
-    "SAMARA",
-    "ROSTOV",
-    "VORONEZH"
-   ]
-  },
-  {
-   "phrase": "Japan",
-   "words": [
-    "JAPAN",
-    "TOKYO",
-    "OSAKA",
-    "YOKOHAMA",
-    "NAGOYA",
-    "SAPPORO",
-    "KOBE",
-    "KYOTO",
-    "HIROSHIMA"
-   ]
-  },
-  {
-   "phrase": "Germany",
-   "words": [
-    "GERMANY",
-    "BERLIN",
-    "HAMBURG",
-    "MUNICH",
-    "COLOGNE",
-    "FRANKFURT",
-    "STUTTGART",
-    "DORTMUND",
-    "ESSEN"
-   ]
-  },
-  {
-   "phrase": "France",
+   "phrase": "Ready for Takeoff!",
+   "country": "FRANCE",
    "words": [
     "FRANCE",
     "PARIS",
@@ -132,35 +65,8 @@
    ]
   },
   {
-   "phrase": "Italy",
-   "words": [
-    "ITALY",
-    "ROME",
-    "MILAN",
-    "NAPLES",
-    "TURIN",
-    "PALERMO",
-    "GENOA",
-    "BOLOGNA",
-    "FLORENCE"
-   ]
-  },
-  {
-   "phrase": "Spain",
-   "words": [
-    "SPAIN",
-    "MADRID",
-    "BARCELONA",
-    "VALENCIA",
-    "SEVILLE",
-    "ZARAGOZA",
-    "MALAGA",
-    "MURCIA",
-    "BILBAO"
-   ]
-  },
-  {
-   "phrase": "Canada",
+   "phrase": "Window Seat!",
+   "country": "CANADA",
    "words": [
     "CANADA",
     "OTTAWA",
@@ -174,385 +80,23 @@
    ]
   },
   {
-   "phrase": "Turkey",
+   "phrase": "Welcome Aboard!",
+   "country": "MEXICO",
    "words": [
-    "TURKEY",
-    "ANKARA",
-    "ISTANBUL",
-    "IZMIR",
-    "BURSA",
-    "ADANA",
-    "GAZIANTEP",
-    "KONYA",
-    "ANTALYA"
+    "MEXICO",
+    "MEXICO CITY",
+    "GUADALAJARA",
+    "MONTERREY",
+    "PUEBLA",
+    "TIJUANA",
+    "LEON",
+    "JUAREZ",
+    "MERIDA"
    ]
   },
   {
-   "phrase": "Egypt",
-   "words": [
-    "EGYPT",
-    "CAIRO",
-    "ALEXANDRIA",
-    "GIZA",
-    "LUXOR",
-    "ASWAN",
-    "MANSOURA",
-    "TANTA",
-    "ASYUT"
-   ]
-  },
-  {
-   "phrase": "Nigeria",
-   "words": [
-    "NIGERIA",
-    "ABUJA",
-    "LAGOS",
-    "KANO",
-    "IBADAN",
-    "PORT HARCOURT",
-    "KADUNA",
-    "ENUGU",
-    "ONITSHA"
-   ]
-  },
-  {
-   "phrase": "Pakistan",
-   "words": [
-    "PAKISTAN",
-    "ISLAMABAD",
-    "KARACHI",
-    "LAHORE",
-    "FAISALABAD",
-    "RAWALPINDI",
-    "MULTAN",
-    "PESHAWAR",
-    "QUETTA"
-   ]
-  },
-  {
-   "phrase": "Indonesia",
-   "words": [
-    "INDONESIA",
-    "JAKARTA",
-    "SURABAYA",
-    "BANDUNG",
-    "MEDAN",
-    "SEMARANG",
-    "PALEMBANG",
-    "MAKASSAR",
-    "TANGERANG"
-   ]
-  },
-  {
-   "phrase": "Vietnam",
-   "words": [
-    "VIETNAM",
-    "HANOI",
-    "HO CHI MINH",
-    "HAIPHONG",
-    "DANANG",
-    "CAN THO",
-    "HUE",
-    "VINH",
-    "QUI NHON"
-   ]
-  },
-  {
-   "phrase": "Thailand",
-   "words": [
-    "THAILAND",
-    "BANGKOK",
-    "CHIANG MAI",
-    "PATTAYA",
-    "PHUKET",
-    "KHON KAEN",
-    "HATYAI",
-    "NONTHABURI",
-    "RAYONG"
-   ]
-  },
-  {
-   "phrase": "Malaysia",
-   "words": [
-    "MALAYSIA",
-    "KUALA LUMPUR",
-    "JOHOR BAHRU",
-    "IPOH",
-    "KUCHING",
-    "KOTA KINABALU",
-    "SHAH ALAM",
-    "MALACCA",
-    "ALOR SETAR"
-   ]
-  },
-  {
-   "phrase": "South Korea",
-   "words": [
-    "SOUTH KOREA",
-    "SEOUL",
-    "BUSAN",
-    "INCHEON",
-    "DAEGU",
-    "DAEJEON",
-    "GWANGJU",
-    "SUWON",
-    "ULSAN"
-   ]
-  },
-  {
-   "phrase": "North Korea",
-   "words": [
-    "NORTH KOREA",
-    "PYONGYANG",
-    "HAMHUNG",
-    "CHONGJIN",
-    "NAMPO",
-    "WONSAN",
-    "SINUIJU",
-    "KAESONG",
-    "HAEJU"
-   ]
-  },
-  {
-   "phrase": "Argentina",
-   "words": [
-    "ARGENTINA",
-    "BUENOS AIRES",
-    "CORDOBA",
-    "ROSARIO",
-    "MENDOZA",
-    "LA PLATA",
-    "SALTA",
-    "TUCUMAN",
-    "MAR DEL PLATA"
-   ]
-  },
-  {
-   "phrase": "Poland",
-   "words": [
-    "POLAND",
-    "WARSAW",
-    "KRAKOW",
-    "WROCLAW",
-    "POZNAN",
-    "GDANSK",
-    "LODZ",
-    "SZCZECIN",
-    "BYDGOSZCZ"
-   ]
-  },
-  {
-   "phrase": "Ukraine",
-   "words": [
-    "UKRAINE",
-    "KYIV",
-    "KHARKIV",
-    "ODESA",
-    "DNIPRO",
-    "DONETSK",
-    "LVIV",
-    "MYKOLAIV",
-    "MARIUPOL"
-   ]
-  },
-  {
-   "phrase": "Colombia",
-   "words": [
-    "COLOMBIA",
-    "BOGOTA",
-    "MEDELLIN",
-    "CALI",
-    "CARTAGENA",
-    "BARRANQUILLA",
-    "BUCARAMANGA",
-    "PEREIRA",
-    "MANIZALES"
-   ]
-  },
-  {
-   "phrase": "Venezuela",
-   "words": [
-    "VENEZUELA",
-    "CARACAS",
-    "MARACAIBO",
-    "MARACAY",
-    "BARQUISIMETO",
-    "MATURIN",
-    "CUMANA",
-    "BARINAS",
-    "CORO"
-   ]
-  },
-  {
-   "phrase": "Peru",
-   "words": [
-    "PERU",
-    "LIMA",
-    "AREQUIPA",
-    "TRUJILLO",
-    "CUSCO",
-    "IQUITOS",
-    "CHICLAYO",
-    "PIURA",
-    "HUANCAYO"
-   ]
-  },
-  {
-   "phrase": "Chile",
-   "words": [
-    "CHILE",
-    "SANTIAGO",
-    "VALPARAISO",
-    "CONCEPCION",
-    "ANTOFAGASTA",
-    "TEMUCO",
-    "RANCAGUA",
-    "TALCA",
-    "IQUIQUE"
-   ]
-  },
-  {
-   "phrase": "Ecuador",
-   "words": [
-    "ECUADOR",
-    "QUITO",
-    "GUAYAQUIL",
-    "CUENCA",
-    "MACHALA",
-    "MANTA",
-    "PORTOVIEJO",
-    "AMBATO",
-    "LOJA"
-   ]
-  },
-  {
-   "phrase": "Bolivia",
-   "words": [
-    "BOLIVIA",
-    "LA PAZ",
-    "SANTA CRUZ",
-    "COCHABAMBA",
-    "EL ALTO",
-    "SUCRE",
-    "ORURO",
-    "POTOSI",
-    "TARIJA"
-   ]
-  },
-  {
-   "phrase": "Paraguay",
-   "words": [
-    "PARAGUAY",
-    "ASUNCION",
-    "ENCARNACION",
-    "LUQUE",
-    "SAN LORENZO",
-    "CAPIATA",
-    "LAMBARE",
-    "LIMPIO",
-    "PILAR"
-   ]
-  },
-  {
-   "phrase": "Uruguay",
-   "words": [
-    "URUGUAY",
-    "MONTEVIDEO",
-    "SALTO",
-    "PAYSANDU",
-    "LAS PIEDRAS",
-    "RIVERA",
-    "MALDONADO",
-    "TACUAREMBO",
-    "MELO"
-   ]
-  },
-  {
-   "phrase": "Honduras",
-   "words": [
-    "HONDURAS",
-    "TEGUCIGALPA",
-    "LA CEIBA",
-    "CHOLUTECA",
-    "COMAYAGUA",
-    "DANLI",
-    "EL PROGRESO",
-    "SIGUATEPEQUE",
-    "TELA"
-   ]
-  },
-  {
-   "phrase": "Nicaragua",
-   "words": [
-    "NICARAGUA",
-    "MANAGUA",
-    "MASAYA",
-    "GRANADA",
-    "CHINANDEGA",
-    "JINOTEGA",
-    "ESTELI",
-    "MATAGALPA",
-    "BLUEFIELDS"
-   ]
-  },
-  {
-   "phrase": "Costa Rica",
-   "words": [
-    "COSTA RICA",
-    "SAN JOSE",
-    "ALAJUELA",
-    "CARTAGO",
-    "HEREDIA",
-    "LIMON",
-    "PUNTARENAS",
-    "DESAMPARADOS",
-    "GUAPILES"
-   ]
-  },
-  {
-   "phrase": "Panama",
-   "words": [
-    "PANAMA",
-    "PANAMA CITY",
-    "COLON",
-    "DAVID",
-    "LA CHORRERA",
-    "CHITRE",
-    "PENONOME",
-    "LAS TABLAS",
-    "AGUADULCE"
-   ]
-  },
-  {
-   "phrase": "El Salvador",
-   "words": [
-    "EL SALVADOR",
-    "SAN SALVADOR",
-    "SANTA ANA",
-    "SAN MIGUEL",
-    "SONSONATE",
-    "USULUTAN",
-    "AHUACHAPAN",
-    "LA UNION",
-    "COJUTEPEQUE"
-   ]
-  },
-  {
-   "phrase": "Jamaica",
-   "words": [
-    "JAMAICA",
-    "KINGSTON",
-    "MONTEGO BAY",
-    "SPANISH TOWN",
-    "PORTMORE",
-    "MANDEVILLE",
-    "OCHO RIOS",
-    "LINSTEAD",
-    "MAY PEN"
-   ]
-  },
-  {
-   "phrase": "Cuba",
+   "phrase": "Fasten Your Seat Belt!",
+   "country": "CUBA",
    "words": [
     "CUBA",
     "HAVANA",
@@ -566,21 +110,368 @@
    ]
   },
   {
-   "phrase": "Haiti",
+   "phrase": "Next Stop!",
+   "country": "JAMAICA",
    "words": [
-    "HAITI",
-    "PORT AU PRINCE",
-    "CAP HAITIEN",
-    "GONAIVES",
-    "LES CAYES",
-    "JACMEL",
-    "JEREMIE",
-    "PETIONVILLE",
-    "DELMAS"
+    "JAMAICA",
+    "KINGSTON",
+    "MONTEGO BAY",
+    "SPANISH TOWN",
+    "PORTMORE",
+    "MANDEVILLE",
+    "OCHO RIOS",
+    "LINSTEAD",
+    "MAY PEN"
    ]
   },
   {
-   "phrase": "Morocco",
+   "phrase": "Say Cheese!",
+   "country": "PANAMA",
+   "words": [
+    "PANAMA",
+    "PANAMA CITY",
+    "COLON",
+    "DAVID",
+    "LA CHORRERA",
+    "CHITRE",
+    "PENONOME",
+    "LAS TABLAS",
+    "AGUADULCE"
+   ]
+  },
+  {
+   "phrase": "Wish You Were Here!",
+   "country": "COSTA RICA",
+   "words": [
+    "COSTA RICA",
+    "SAN JOSE",
+    "ALAJUELA",
+    "CARTAGO",
+    "HEREDIA",
+    "LIMON",
+    "PUNTARENAS",
+    "DESAMPARADOS",
+    "GUAPILES"
+   ]
+  },
+  {
+   "phrase": "Postcard Time!",
+   "country": "EL SALVADOR",
+   "words": [
+    "EL SALVADOR",
+    "SAN SALVADOR",
+    "SANTA ANA",
+    "SAN MIGUEL",
+    "SONSONATE",
+    "USULUTAN",
+    "AHUACHAPAN",
+    "LA UNION",
+    "COJUTEPEQUE"
+   ]
+  },
+  {
+   "phrase": "Map in Hand!",
+   "country": "COLOMBIA",
+   "words": [
+    "COLOMBIA",
+    "BOGOTA",
+    "MEDELLIN",
+    "CALI",
+    "CARTAGENA",
+    "BARRANQUILLA",
+    "BUCARAMANGA",
+    "PEREIRA",
+    "MANIZALES"
+   ]
+  },
+  {
+   "phrase": "Off the Beaten Path!",
+   "country": "VENEZUELA",
+   "words": [
+    "VENEZUELA",
+    "CARACAS",
+    "MARACAIBO",
+    "MARACAY",
+    "BARQUISIMETO",
+    "MATURIN",
+    "CUMANA",
+    "BARINAS",
+    "CORO"
+   ]
+  },
+  {
+   "phrase": "Local Flavors!",
+   "country": "ECUADOR",
+   "words": [
+    "ECUADOR",
+    "QUITO",
+    "GUAYAQUIL",
+    "CUENCA",
+    "MACHALA",
+    "MANTA",
+    "PORTOVIEJO",
+    "AMBATO",
+    "LOJA"
+   ]
+  },
+  {
+   "phrase": "Market Day!",
+   "country": "PERU",
+   "words": [
+    "PERU",
+    "LIMA",
+    "AREQUIPA",
+    "TRUJILLO",
+    "CUSCO",
+    "IQUITOS",
+    "CHICLAYO",
+    "PIURA",
+    "HUANCAYO"
+   ]
+  },
+  {
+   "phrase": "Sunset Stroll!",
+   "country": "BOLIVIA",
+   "words": [
+    "BOLIVIA",
+    "LA PAZ",
+    "SANTA CRUZ",
+    "COCHABAMBA",
+    "EL ALTO",
+    "SUCRE",
+    "ORURO",
+    "POTOSI",
+    "TARIJA"
+   ]
+  },
+  {
+   "phrase": "City Lights!",
+   "country": "BRAZIL",
+   "words": [
+    "BRAZIL",
+    "BRASILIA",
+    "SAO PAULO",
+    "SALVADOR",
+    "FORTALEZA",
+    "CURITIBA",
+    "MANAUS",
+    "RECIFE",
+    "BELEM"
+   ]
+  },
+  {
+   "phrase": "Road Trip!",
+   "country": "PARAGUAY",
+   "words": [
+    "PARAGUAY",
+    "ASUNCION",
+    "ENCARNACION",
+    "LUQUE",
+    "SAN LORENZO",
+    "CAPIATA",
+    "LAMBARE",
+    "LIMPIO",
+    "PILAR"
+   ]
+  },
+  {
+   "phrase": "Scenic Route!",
+   "country": "URUGUAY",
+   "words": [
+    "URUGUAY",
+    "MONTEVIDEO",
+    "SALTO",
+    "PAYSANDU",
+    "LAS PIEDRAS",
+    "RIVERA",
+    "MALDONADO",
+    "TACUAREMBO",
+    "MELO"
+   ]
+  },
+  {
+   "phrase": "Check-In Time!",
+   "country": "ARGENTINA",
+   "words": [
+    "ARGENTINA",
+    "BUENOS AIRES",
+    "CORDOBA",
+    "ROSARIO",
+    "MENDOZA",
+    "LA PLATA",
+    "SALTA",
+    "TUCUMAN",
+    "MAR DEL PLATA"
+   ]
+  },
+  {
+   "phrase": "Room with a View!",
+   "country": "CHILE",
+   "words": [
+    "CHILE",
+    "SANTIAGO",
+    "VALPARAISO",
+    "CONCEPCION",
+    "ANTOFAGASTA",
+    "TEMUCO",
+    "RANCAGUA",
+    "TALCA",
+    "IQUIQUE"
+   ]
+  },
+  {
+   "phrase": "Lost and Found!",
+   "country": "IRELAND",
+   "words": [
+    "IRELAND",
+    "DUBLIN",
+    "CORK",
+    "LIMERICK",
+    "GALWAY",
+    "WATERFORD",
+    "KILKENNY",
+    "DROGHEDA",
+    "DUNDALK"
+   ]
+  },
+  {
+   "phrase": "Souvenir Shopping!",
+   "country": "PORTUGAL",
+   "words": [
+    "PORTUGAL",
+    "LISBON",
+    "PORTO",
+    "BRAGA",
+    "COIMBRA",
+    "FUNCHAL",
+    "AVEIRO",
+    "EVORA",
+    "FARO"
+   ]
+  },
+  {
+   "phrase": "Travel Light!",
+   "country": "SPAIN",
+   "words": [
+    "SPAIN",
+    "MADRID",
+    "BARCELONA",
+    "VALENCIA",
+    "SEVILLE",
+    "ZARAGOZA",
+    "MALAGA",
+    "MURCIA",
+    "BILBAO"
+   ]
+  },
+  {
+   "phrase": "Jet Lag Is Real!",
+   "country": "GERMANY",
+   "words": [
+    "GERMANY",
+    "BERLIN",
+    "HAMBURG",
+    "MUNICH",
+    "COLOGNE",
+    "FRANKFURT",
+    "STUTTGART",
+    "DORTMUND",
+    "ESSEN"
+   ]
+  },
+  {
+   "phrase": "Explore More!",
+   "country": "ITALY",
+   "words": [
+    "ITALY",
+    "ROME",
+    "MILAN",
+    "NAPLES",
+    "TURIN",
+    "PALERMO",
+    "GENOA",
+    "BOLOGNA",
+    "FLORENCE"
+   ]
+  },
+  {
+   "phrase": "Beach Day!",
+   "country": "GREECE",
+   "words": [
+    "GREECE",
+    "ATHENS",
+    "THESSALONIKI",
+    "PATRAS",
+    "HERAKLION",
+    "LARISSA",
+    "VOLOS",
+    "IOANNINA",
+    "RHODES"
+   ]
+  },
+  {
+   "phrase": "Mountain Views!",
+   "country": "POLAND",
+   "words": [
+    "POLAND",
+    "WARSAW",
+    "KRAKOW",
+    "WROCLAW",
+    "POZNAN",
+    "GDANSK",
+    "LODZ",
+    "SZCZECIN",
+    "BYDGOSZCZ"
+   ]
+  },
+  {
+   "phrase": "All Aboard the Train!",
+   "country": "UKRAINE",
+   "words": [
+    "UKRAINE",
+    "KYIV",
+    "KHARKIV",
+    "ODESA",
+    "DNIPRO",
+    "POLTAVA",
+    "LVIV",
+    "MYKOLAIV",
+    "CHERNIVTSI"
+   ]
+  },
+  {
+   "phrase": "Boarding Pass!",
+   "country": "RUSSIA",
+   "words": [
+    "RUSSIA",
+    "MOSCOW",
+    "ST. PETERSBURG",
+    "NOVOSIBIRSK",
+    "KRASNOYARSK",
+    "KAZAN",
+    "SAMARA",
+    "ROSTOV",
+    "VORONEZH"
+   ]
+  },
+  {
+   "phrase": "Currency Exchange!",
+   "country": "TURKEY",
+   "words": [
+    "TURKEY",
+    "ANKARA",
+    "ISTANBUL",
+    "IZMIR",
+    "BURSA",
+    "ADANA",
+    "GAZIANTEP",
+    "KONYA",
+    "ANTALYA"
+   ]
+  },
+  {
+   "phrase": "Guided Tour!",
+   "country": "MOROCCO",
    "words": [
     "MOROCCO",
     "RABAT",
@@ -594,7 +485,8 @@
    ]
   },
   {
-   "phrase": "Algeria",
+   "phrase": "Take a Detour!",
+   "country": "ALGERIA",
    "words": [
     "ALGERIA",
     "ALGIERS",
@@ -608,7 +500,8 @@
    ]
   },
   {
-   "phrase": "Tunisia",
+   "phrase": "Snap a Photo!",
+   "country": "TUNISIA",
    "words": [
     "TUNISIA",
     "TUNIS",
@@ -622,133 +515,23 @@
    ]
   },
   {
-   "phrase": "Libya",
+   "phrase": "Try the Street Food!",
+   "country": "EGYPT",
    "words": [
-    "LIBYA",
-    "TRIPOLI",
-    "BENGHAZI",
-    "MISRATA",
-    "ZAWIYA",
-    "SABHA",
-    "TOBRUK",
-    "BAYDA",
-    "ZLITEN"
+    "EGYPT",
+    "CAIRO",
+    "ALEXANDRIA",
+    "GIZA",
+    "LUXOR",
+    "ASWAN",
+    "MANSOURA",
+    "TANTA",
+    "ASYUT"
    ]
   },
   {
-   "phrase": "Kenya",
-   "words": [
-    "KENYA",
-    "NAIROBI",
-    "MOMBASA",
-    "KISUMU",
-    "NAKURU",
-    "ELDORET",
-    "THIKA",
-    "MALINDI",
-    "KITALE"
-   ]
-  },
-  {
-   "phrase": "Ethiopia",
-   "words": [
-    "ETHIOPIA",
-    "ADDIS ABABA",
-    "DIRE DAWA",
-    "MEKELLE",
-    "GONDAR",
-    "HAWASSA",
-    "BAHIR DAR",
-    "JIMMA",
-    "ADAMA"
-   ]
-  },
-  {
-   "phrase": "Ghana",
-   "words": [
-    "GHANA",
-    "ACCRA",
-    "KUMASI",
-    "TAMALE",
-    "TAKORADI",
-    "TEMA",
-    "CAPE COAST",
-    "SUNYANI",
-    "KOFORIDUA"
-   ]
-  },
-  {
-   "phrase": "Uganda",
-   "words": [
-    "UGANDA",
-    "KAMPALA",
-    "GULU",
-    "MBARARA",
-    "JINJA",
-    "MBALE",
-    "MASAKA",
-    "ENTEBBE",
-    "ARUA"
-   ]
-  },
-  {
-   "phrase": "Zambia",
-   "words": [
-    "ZAMBIA",
-    "LUSAKA",
-    "KITWE",
-    "NDOLA",
-    "KABWE",
-    "CHINGOLA",
-    "LIVINGSTONE",
-    "LUANSHYA",
-    "MONGU"
-   ]
-  },
-  {
-   "phrase": "Zimbabwe",
-   "words": [
-    "ZIMBABWE",
-    "HARARE",
-    "BULAWAYO",
-    "CHITUNGWIZA",
-    "MUTARE",
-    "GWERU",
-    "KWEKWE",
-    "KADOMA",
-    "MASVINGO"
-   ]
-  },
-  {
-   "phrase": "Angola",
-   "words": [
-    "ANGOLA",
-    "LUANDA",
-    "HUAMBO",
-    "LOBITO",
-    "BENGUELA",
-    "LUBANGO",
-    "MALANJE",
-    "NAMIBE",
-    "CABINDA"
-   ]
-  },
-  {
-   "phrase": "Mozambique",
-   "words": [
-    "MOZAMBIQUE",
-    "MAPUTO",
-    "BEIRA",
-    "NAMPULA",
-    "CHIMOIO",
-    "QUELIMANE",
-    "TETE",
-    "PEMBA",
-    "INHAMBANE"
-   ]
-  },
-  {
-   "phrase": "Senegal",
+   "phrase": "Pick a Destination!",
+   "country": "SENEGAL",
    "words": [
     "SENEGAL",
     "DAKAR",
@@ -762,31 +545,303 @@
    ]
   },
   {
-   "phrase": "Cameroon",
+   "phrase": "Across the Border!",
+   "country": "GHANA",
    "words": [
-    "CAMEROON",
-    "YAOUNDE",
-    "DOUALA",
-    "GAROUA",
-    "BAMENDA",
-    "MAROUA",
-    "BAFOUSSAM",
-    "NGAOUNDERE",
-    "KUMBA"
+    "GHANA",
+    "ACCRA",
+    "KUMASI",
+    "TAMALE",
+    "TAKORADI",
+    "TEMA",
+    "CAPE COAST",
+    "SUNYANI",
+    "KOFORIDUA"
    ]
   },
   {
-   "phrase": "Myanmar",
+   "phrase": "Over the Ocean!",
+   "country": "NIGERIA",
    "words": [
-    "MYANMAR",
-    "NAYPYIDAW",
-    "YANGON",
-    "MANDALAY",
-    "MAWLAMYINE",
-    "BAGO",
-    "PATHEIN",
-    "MONYWA",
-    "TAUNGGYI"
+    "NIGERIA",
+    "ABUJA",
+    "LAGOS",
+    "KANO",
+    "IBADAN",
+    "PORT HARCOURT",
+    "KADUNA",
+    "ENUGU",
+    "ONITSHA"
+   ]
+  },
+  {
+   "phrase": "Land Ahoy!",
+   "country": "ETHIOPIA",
+   "words": [
+    "ETHIOPIA",
+    "ADDIS ABABA",
+    "DIRE DAWA",
+    "MEKELLE",
+    "GONDAR",
+    "HAWASSA",
+    "BAHIR DAR",
+    "JIMMA",
+    "ADAMA"
+   ]
+  },
+  {
+   "phrase": "Follow the Map!",
+   "country": "KENYA",
+   "words": [
+    "KENYA",
+    "NAIROBI",
+    "MOMBASA",
+    "KISUMU",
+    "NAKURU",
+    "ELDORET",
+    "THIKA",
+    "MALINDI",
+    "KITALE"
+   ]
+  },
+  {
+   "phrase": "World Traveler!",
+   "country": "UGANDA",
+   "words": [
+    "UGANDA",
+    "KAMPALA",
+    "GULU",
+    "MBARARA",
+    "JINJA",
+    "MBALE",
+    "MASAKA",
+    "ENTEBBE",
+    "ARUA"
+   ]
+  },
+  {
+   "phrase": "Bucket List!",
+   "country": "ANGOLA",
+   "words": [
+    "ANGOLA",
+    "LUANDA",
+    "HUAMBO",
+    "LOBITO",
+    "BENGUELA",
+    "LUBANGO",
+    "MALANJE",
+    "NAMIBE",
+    "CABINDA"
+   ]
+  },
+  {
+   "phrase": "Travel Buddy!",
+   "country": "ZIMBABWE",
+   "words": [
+    "ZIMBABWE",
+    "HARARE",
+    "BULAWAYO",
+    "CHITUNGWIZA",
+    "MUTARE",
+    "GWERU",
+    "KWEKWE",
+    "KADOMA",
+    "MASVINGO"
+   ]
+  },
+  {
+   "phrase": "Hidden Gems!",
+   "country": "MOZAMBIQUE",
+   "words": [
+    "MOZAMBIQUE",
+    "MAPUTO",
+    "BEIRA",
+    "NAMPULA",
+    "CHIMOIO",
+    "QUELIMANE",
+    "TETE",
+    "PEMBA",
+    "INHAMBANE"
+   ]
+  },
+  {
+   "phrase": "First Class!",
+   "country": "PAKISTAN",
+   "words": [
+    "PAKISTAN",
+    "ISLAMABAD",
+    "KARACHI",
+    "LAHORE",
+    "FAISALABAD",
+    "RAWALPINDI",
+    "MULTAN",
+    "PESHAWAR",
+    "QUETTA"
+   ]
+  },
+  {
+   "phrase": "Carry-On Only!",
+   "country": "INDIA",
+   "words": [
+    "INDIA",
+    "NEW DELHI",
+    "MUMBAI",
+    "BANGALORE",
+    "HYDERABAD",
+    "AHMEDABAD",
+    "CHENNAI",
+    "KOLKATA",
+    "SURAT"
+   ]
+  },
+  {
+   "phrase": "Keep Exploring!",
+   "country": "CHINA",
+   "words": [
+    "CHINA",
+    "BEIJING",
+    "SHANGHAI",
+    "GUANGZHOU",
+    "SHENZHEN",
+    "WUHAN",
+    "CHENGDU",
+    "NANJING",
+    "HANGZHOU"
+   ]
+  },
+  {
+   "phrase": "Postcards from Afar!",
+   "country": "SOUTH KOREA",
+   "words": [
+    "SOUTH KOREA",
+    "SEOUL",
+    "BUSAN",
+    "INCHEON",
+    "DAEGU",
+    "DAEJEON",
+    "GWANGJU",
+    "SUWON",
+    "ULSAN"
+   ]
+  },
+  {
+   "phrase": "Around the Globe!",
+   "country": "JAPAN",
+   "words": [
+    "JAPAN",
+    "TOKYO",
+    "OSAKA",
+    "YOKOHAMA",
+    "NAGOYA",
+    "SAPPORO",
+    "KOBE",
+    "KYOTO",
+    "HIROSHIMA"
+   ]
+  },
+  {
+   "phrase": "Rise and Roam!",
+   "country": "VIETNAM",
+   "words": [
+    "VIETNAM",
+    "HANOI",
+    "SAIGON",
+    "HAIPHONG",
+    "DA NANG",
+    "CAN THO",
+    "HUE",
+    "VINH",
+    "QUI NHON"
+   ]
+  },
+  {
+   "phrase": "Dream Destination!",
+   "country": "THAILAND",
+   "words": [
+    "THAILAND",
+    "BANGKOK",
+    "CHIANG MAI",
+    "PATTAYA",
+    "PHUKET",
+    "KHON KAEN",
+    "HAT YAI",
+    "NONTHABURI",
+    "RAYONG"
+   ]
+  },
+  {
+   "phrase": "Island Hopping!",
+   "country": "MALAYSIA",
+   "words": [
+    "MALAYSIA",
+    "KUALA LUMPUR",
+    "JOHOR BAHRU",
+    "IPOH",
+    "KUCHING",
+    "KOTA KINABALU",
+    "SHAH ALAM",
+    "MALACCA",
+    "ALOR SETAR"
+   ]
+  },
+  {
+   "phrase": "Far from Home!",
+   "country": "INDONESIA",
+   "words": [
+    "INDONESIA",
+    "JAKARTA",
+    "SURABAYA",
+    "BANDUNG",
+    "MEDAN",
+    "SEMARANG",
+    "PALEMBANG",
+    "MAKASSAR",
+    "TANGERANG"
+   ]
+  },
+  {
+   "phrase": "Almost There!",
+   "country": "PHILIPPINES",
+   "words": [
+    "PHILIPPINES",
+    "MANILA",
+    "QUEZON CITY",
+    "DAVAO",
+    "CEBU",
+    "ZAMBOANGA",
+    "ANTIPOLO",
+    "BAGUIO",
+    "ILOILO"
+   ]
+  },
+  {
+   "phrase": "Last Stop!",
+   "country": "AUSTRALIA",
+   "words": [
+    "AUSTRALIA",
+    "CANBERRA",
+    "SYDNEY",
+    "MELBOURNE",
+    "BRISBANE",
+    "PERTH",
+    "ADELAIDE",
+    "GOLD COAST",
+    "HOBART"
+   ]
+  },
+  {
+   "phrase": "Welcome Home!",
+   "country": "NEW ZEALAND",
+   "words": [
+    "NEW ZEALAND",
+    "WELLINGTON",
+    "AUCKLAND",
+    "CHRISTCHURCH",
+    "TAURANGA",
+    "DUNEDIN",
+    "NAPIER",
+    "NELSON",
+    "ROTORUA"
    ]
   }
  ],
@@ -839,12 +894,12 @@
   },
   "back_headline": "Pack your bags and start searching!",
   "back_intro": [
-   "From Tokyo to Buenos Aires, <b>World Hunt!</b> takes you around the globe in 55 relaxing word search puzzles."
+   "From New York to Tokyo, <b>World Hunt!</b> takes you around the globe in 55 relaxing word search puzzles."
   ],
   "back_bullets": [
    "55 puzzles in <b>LARGE PRINT</b>, one per page",
    "55 countries, each with its capital and 7 major cities: 495 words in all",
-   "Travel from Asia to the Americas and Africa, one country at a time",
+   "A trip around the world across the Americas, Europe, Africa, Asia and Oceania",
    "Words always read left to right or top to bottom. No backwards words!",
    "Full solutions at the back of the book"
   ],

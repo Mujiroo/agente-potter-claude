@@ -344,3 +344,22 @@ Pedro pidió revisar todo como editor profesional.
   4) OK correcciones de nombres; dejar BANGALORE y TURKEY; dejar MEXICO y PANAMA (dentro de su capital)
 - Portada Vol. 2 en progreso: estilo bold teal (#00897B), ilustración `suitcase` (maleta con sopa de letras, globo, avión, pin), nombre de trabajo "WORLD HUNT!" (0 títulos en Amazon).
   - Plantilla generalizada (`bold_palette`, `illustration`, `count`, `band_line`); el Vol. 1 se regenera idéntico byte a byte (md5 verificado).
+
+## Vol. 2 v1 entregado — 13:45 (msgs 207–212)
+- Datos: `vol2/libro2_mundo.json` (cada puzzle: `phrase`, `country`, `words`). Seed 2027.
+- Países:
+  - Entran: United States, United Kingdom, Ireland, Portugal, Greece, Philippines, Australia, New Zealand.
+  - Salen: North Korea (pedido), Haiti, Libya, Myanmar (conflictos), Nicaragua, Honduras, Zambia, Cameroon.
+- Orden (pedido msg 207): 1 United States, 2 United Kingdom, 3 France, luego Américas → Europa → África → Asia → Oceanía.
+- Correcciones: DA NANG, HAT YAI, SAIGON, POLTAVA, CHERNIVTSI, ST. PETERSBURG, WASHINGTON, D.C.
+- 55 frases de viaje únicas (Pack Your Bags! → Welcome Home!).
+- Palabras contenidas en otra (aceptado por criterio de Pedro): MEXICO/MEXICO CITY, PANAMA/PANAMA CITY, TUNIS/TUNISIA. `verificar.py` ahora las trata como esperadas.
+- Portada:
+  - teal #00897B, ilustración maleta con grilla (PARIS, TOKYO, CAIRO, LIMA marcadas), globo, pin y avión
+  - sello 55 a la derecha escalado 0,88
+  - contraportada: "Pack your bags and start searching!", muestra TOKYO/OSAKA/KYOTO/NAGOYA/KOBE
+  - band_line "World Geography Puzzles for Adults & Seniors"
+- p1 B/N: agregué `sea`/`land`/`plane_fold` grises.
+- Verificado: 0 errores, 0 desbordes, 0 Type3, zona segura OK, código de barras libre, contraportada 340/374. El Vol. 1 sigue idéntico (md5).
+- Archivos: `entregables/vol2/` (interior v1, portada v1, cover_preview.png).
+- Esperando revisión de Pedro. Pendiente además: confirmar nombre "World Hunt!".
