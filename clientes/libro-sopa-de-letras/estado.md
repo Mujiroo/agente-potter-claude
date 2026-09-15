@@ -20,3 +20,9 @@
 - Problema en todas: la IA dibuja letras ilegibles en lupa/carro → reemplazar por grilla real antes de imprimir.
 - Preview de canva.ai bloqueado por Cloudflare en agent-browser; se revisó exportando PNG por API.
 - Pendiente de Pedro: opción elegida, título final, cantidad de puzzles, plataforma (¿KDP?), tamaño y n.º de páginas (para lomo y contraportada).
+
+## Interior — 2026-09-15 09:08
+- Pedro pregunta si puedo hacer el libro con **55 puzzles** a partir de una lista, en Canva.
+- Respondí: sí. Genero los puzzles y las soluciones en un PDF de interior (KDP). Pedro lo sube a Canva (se abre editable).
+  - No importar directo: CANVA_MCP_IMPORT_DESIGN_FROM_URL exige un enlace público. No publicar sin que Pedro lo pida sabiendo que queda expuesto.
+- Pendiente de Pedro: lista (por tema/puzzle o general), tamaño (¿8,5×11"?), letra grande 15×15 o normal 20×20, soluciones al final.
