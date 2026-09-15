@@ -29,3 +29,15 @@
 - 09:18 Pedro aprueba: le mando el PDF y él lo sube a Canva.
 - Defaults propuestos (msg 25) si no dice otra cosa: 8,5×11", grilla 15×15 letra grande, 1 puzzle por página con título del tema, soluciones al final.
 - Esperando: **la lista** de palabras.
+
+## Especificación del interior — 2026-09-15 09:41 (Pedro, msg 26)
+- Pedro envía listado de **55 puzzles**, cada uno con **9 palabras**.
+- **Letra grande**. Bajo la grilla: **3 columnas × 3 palabras**, en el orden de la lista (no revolver).
+- **112 páginas** + portada y contraportada:
+  - p1: igual a la portada, sobre fondo blanco (página de título)
+  - p2: instrucciones (en inglés)
+  - p3–57: los 55 puzzles
+  - p58–112: las 55 soluciones (al final)
+- Libro en **inglés**.
+- **Serie**: Pedro hará más libros → la portada debe ser una **plantilla genérica** que se reutilice cambiando la temática de cada libro.
+- Esperando: el listado.
