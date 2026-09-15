@@ -316,3 +316,4 @@ Pedro pidió revisar todo como editor profesional.
   - verificar.py: 0 errores; 0 desbordes; 0 Type3.
 - **EDICIÓN CERRADA. Vigentes: interior v11 + portada v7** (en `entregables/libro1/`).
 - Siguiente: parte KDP (descripción, 7 palabras clave, categorías, precio; marcar IA en texto = sí, imágenes = no).
+- 13:21 Pedro: "guarda eso". Archivos finales versionados en `clientes/libro-sopa-de-letras/entregables/vol1/` (interior v11, portada v7, cover_final.png). Resumen del proyecto en `memory/proyectos.md`.
