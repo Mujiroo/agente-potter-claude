@@ -50,7 +50,7 @@ def cart(cx, top, words, c):
     # mercadería asomando por arriba (dibujada antes que la canasta)
     out.append(f'''
     <g transform="translate({gx+40},{gy-10}) rotate(-18)">
-      <rect x="0" y="-150" width="46" height="170" rx="23" fill="#E9B872" stroke="{c['ink']}" stroke-width="5"/>
+      <rect x="0" y="-150" width="46" height="170" rx="23" fill="{c.get('bread', '#E9B872')}" stroke="{c['ink']}" stroke-width="5"/>
       <path d="M8,-120 l30,-14 M8,-85 l30,-14 M8,-50 l30,-14" stroke="{c['ink']}" stroke-width="4" stroke-linecap="round"/>
     </g>
     <g transform="translate({gx+125},{gy-5})">
@@ -62,14 +62,14 @@ def cart(cx, top, words, c):
       <path d="M0,0 C-10,-80 40,-140 110,-150 C70,-120 40,-70 45,0 z" fill="{c['yellow']}" stroke="{c['ink']}" stroke-width="5" stroke-linejoin="round"/>
     </g>
     <g transform="translate({gx+gw-55},{gy-75}) rotate(22)">
-      <path d="M0,0 c-20,-20 -30,-35 -25,-55 M0,0 c0,-25 0,-40 5,-58 M0,0 c20,-18 32,-30 30,-50" stroke="#3FA34D" stroke-width="9" fill="none" stroke-linecap="round"/>
-      <path d="M-24,0 L24,0 L0,130 z" fill="#F4843C" stroke="{c['ink']}" stroke-width="5" stroke-linejoin="round"/>
+      <path d="M0,0 c-20,-20 -30,-35 -25,-55 M0,0 c0,-25 0,-40 5,-58 M0,0 c20,-18 32,-30 30,-50" stroke="{c.get('leaf', '#3FA34D')}" stroke-width="9" fill="none" stroke-linecap="round"/>
+      <path d="M-24,0 L24,0 L0,130 z" fill="{c.get('carrot', '#F4843C')}" stroke="{c['ink']}" stroke-width="5" stroke-linejoin="round"/>
       <path d="M-12,30 h14 M-6,60 h12" stroke="{c['ink']}" stroke-width="4" stroke-linecap="round"/>
     </g>
     <g transform="translate({gx+gw/2+20},{gy-40})">
       <circle r="44" fill="{c['red']}" stroke="{c['ink']}" stroke-width="5"/>
       <path d="M0,-44 c0,-18 6,-26 14,-30" stroke="{c['ink']}" stroke-width="6" fill="none" stroke-linecap="round"/>
-      <path d="M8,-60 c18,-14 38,-10 44,-2 c-16,12 -34,12 -44,2 z" fill="#3FA34D" stroke="{c['ink']}" stroke-width="4"/>
+      <path d="M8,-60 c18,-14 38,-10 44,-2 c-16,12 -34,12 -44,2 z" fill="{c.get('leaf', '#3FA34D')}" stroke="{c['ink']}" stroke-width="4"/>
       <ellipse cx="-16" cy="-14" rx="9" ry="14" fill="#fff" opacity=".45"/>
     </g>''')
     # canasta (trapecio) con la grilla
@@ -223,7 +223,7 @@ def front_svg_white(book):
     if book.get("interior_ink", "bw") == "bw":
         # interior en blanco y negro: paleta de grises pensada para imprimir con contraste
         c = dict(c, ink="#111111", red="#2B2B2B", yellow="#E4E4E4", accent="#555555",
-                 highlight="#CFCFCF", tile="#F2F2F2")
+                 highlight="#CFCFCF", tile="#F2F2F2", bread="#D6D6D6", carrot="#9A9A9A", leaf="#6E6E6E")
     tw, th = book["trim"]
     W, H = (tw + 2 * BLEED) * U, (th + 2 * BLEED) * U
     b = BLEED * U
@@ -239,7 +239,7 @@ def front_svg_white(book):
 def font_css():
     fonts = os.path.join(HERE, "fonts")
     return (f"@font-face {{ font-family: 'Luckiest Guy'; src: url('file://{fonts}/LuckiestGuy-Regular.ttf'); }}\n"
-            f"@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-VF.ttf'); font-weight: 300 700; }}\n")
+            f"@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-400.ttf'); font-weight: 400; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-500.ttf'); font-weight: 500; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-600.ttf'); font-weight: 600; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-700.ttf'); font-weight: 700; }}\n")
 
 
 def main(src, dst, front_only=False, white=False, style=None):
@@ -268,9 +268,9 @@ def main(src, dst, front_only=False, white=False, style=None):
         else:
             svg = back(0, 0, fw, H, cv, c) + spine(fw, 0, sw, H, cv, c) + front(fw + sw, 0, fw, H, cv, c, cx=fw + sw + tw * U / 2)
     fonts = os.path.join(HERE, "fonts")
-    doc = f'''<!doctype html><html><head><meta charset="utf-8"><style>
+    doc = f'''<!doctype html><html><head><meta charset="utf-8"><title>{esc(book.get("title", ""))} - {esc(book.get("subtitle", ""))} (cover)</title><style>
 @font-face {{ font-family: 'Luckiest Guy'; src: url('file://{fonts}/LuckiestGuy-Regular.ttf'); }}
-@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-VF.ttf'); font-weight: 300 700; }}
+@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-400.ttf'); font-weight: 400; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-500.ttf'); font-weight: 500; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-600.ttf'); font-weight: 600; }}@font-face {{ font-family: 'Fredoka'; src: url('file://{fonts}/Fredoka-700.ttf'); font-weight: 700; }}
 @page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }}
 html, body {{ margin: 0; padding: 0; }}
 svg {{ display: block; width: {W/U:.4f}in; height: {H/U:.4f}in; }}

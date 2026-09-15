@@ -68,14 +68,43 @@ def build(words, size, rng, dirs=DIRS, tries=2000):
                 ok = False
                 break
         if ok:
-            for y in range(size):
-                for x in range(size):
-                    if grid[y][x] is None:
-                        grid[y][x] = rng.choice(ALPHA)
-            # cada palabra debe aparecer UNA sola vez, si no la solución es ambigua
-            if all(len(occurrences(grid, w, placed)) == 1 for w in words):
-                return grid, placed
+            base = [row[:] for row in grid]
+            for _ in range(100):  # re-sortear solo el relleno, manteniendo las palabras
+                grid = [row[:] for row in base]
+                for y in range(size):
+                    for x in range(size):
+                        if grid[y][x] is None:
+                            grid[y][x] = rng.choice(ALPHA)
+                # cada palabra UNA sola vez (si no, la solución es ambigua) y ninguna palabra
+                # inapropiada formada por el relleno, en ninguna dirección
+                if (all(len(occurrences(grid, w, placed)) == 1 for w in words)
+                        and not bad_words(grid, placed)):
+                    return grid, placed
     raise RuntimeError(f"No pude colocar: {words}")
+
+
+# Palabras que no deben quedar escondidas por azar en el relleno (en ninguna dirección).
+# Si una aparece DENTRO de una palabra de la lista (RAPE en GRAPE, CUM en CUCUMBER) se tolera.
+BAD = ("ASS SEX TIT TITS FUCK FUK FUC SHIT CRAP DAMN PISS DICK COCK CUNT FAG NAZI KKK SLUT WHORE HOE "
+       "BITCH PORN NIGGER NIGGA NIG RAPE BOOB JIZZ CUM ANAL ANUS PENIS SCREW HELL DUMB IDIOT KILL DIE DEAD "
+       "GAY HAG PIG FAT UGLY STUPID HATE").split()
+
+
+def bad_words(grid, placed):
+    n = len(grid)
+    inside = [set(c) for c in placed.values()]
+    for w in BAD:
+        for r in range(n):
+            for c in range(n):
+                if grid[r][c] != w[0]:
+                    continue
+                for dr, dc in DIRS:
+                    cells = [(r + dr * k, c + dc * k) for k in range(len(w))]
+                    if all(0 <= y < n and 0 <= x < n for y, x in cells) and all(
+                            grid[y][x] == w[k] for k, (y, x) in enumerate(cells)):
+                        if not any(set(cells) <= o for o in inside):
+                            return w
+    return None
 
 
 def occurrences(grid, word, placed):
@@ -307,7 +336,8 @@ def main(src, dst):
         if book.get("cover"):
             import portada
             fonts = portada.font_css()
-        f.write(f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}{css(w, h)}</style></head>'
+        f.write(f'<!doctype html><html><head><meta charset="utf-8"><title>{html.escape(book.get("title", ""))} - '
+                f'{html.escape(book.get("subtitle", ""))} (interior)</title><style>{fonts}{css(w, h)}</style></head>'
                 f'<body>{"".join(pages)}</body></html>')
     print(f"{len(pages)} páginas {w}x{h} -> {dst}")
 

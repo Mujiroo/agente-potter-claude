@@ -36,14 +36,19 @@ def scaled(svg, ox, oy, k):
     return f'<g transform="translate({ox},{oy}) scale({k}) translate({-ox},{-oy})">{svg}</g>'
 
 
-def big_title(cx, y, text, size, width, fill, shadow, outline):
+def big_title(cx, y, text, size, width, fill, shadow, outline, thick=8):
+    """Título con contorno y sombra SIN usar stroke: el texto con stroke sale como fuente Type3 en el
+    PDF de Chrome (riesgo de rechazo en KDP). El contorno se arma con copias rellenas desplazadas."""
     t = (f'text-anchor="middle" font-family="Luckiest Guy" font-size="{size}" textLength="{width}" '
          f'lengthAdjust="spacingAndGlyphs"')
-    return (f'<text x="{cx}" y="{y}" {t} fill="{shadow}" stroke="{shadow}" stroke-width="16" '
-            f'stroke-linejoin="round" transform="translate(6,8)">{esc(text)}</text>'
-            f'<text x="{cx}" y="{y}" {t} fill="{outline}" stroke="{outline}" stroke-width="16" '
-            f'stroke-linejoin="round">{esc(text)}</text>'
-            f'<text x="{cx}" y="{y}" {t} fill="{fill}">{esc(text)}</text>')
+    ring = [(round(thick * math.cos(a), 2), round(thick * math.sin(a), 2))
+            for a in [2 * math.pi * k / 24 for k in range(24)]]
+    out = [f'<g fill="{shadow}">' + "".join(
+        f'<text x="{cx + 6 + dx}" y="{y + 8 + dy}" {t}>{esc(text)}</text>' for dx, dy in ring) + "</g>"]
+    out.append(f'<g fill="{outline}">' + "".join(
+        f'<text x="{cx + dx}" y="{y + dy}" {t}>{esc(text)}</text>' for dx, dy in ring) + "</g>")
+    out.append(f'<text x="{cx}" y="{y}" {t} fill="{fill}">{esc(text)}</text>')
+    return "".join(out)
 
 
 def price_tag(cx, cy, text, fill, ink, hole, text_color, size=58):

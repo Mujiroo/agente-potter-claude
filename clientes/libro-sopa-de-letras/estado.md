@@ -220,3 +220,43 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
 - 12:11 Pedro aprueba la p2 con íconos; las soluciones se quedan con contorno (msg 148).
   - **Vigentes: interior v9 + portada v6**, ambos en `entregables/libro1/`.
 - Pendiente: revisión comercial (precio, palabras clave, categorías, descripción); sello "EASY" sin respuesta.
+
+## Revisión editorial completa — 12:22–12:50 (msgs 153–160)
+Pedro pidió revisar todo como editor profesional.
+
+### Corregido (técnico)
+1. **Palabras ofensivas en el relleno**: 34/55 grillas las tenían (SEX, ASS, KKK, FAG, CUM, FUK…).
+   - Nuevo filtro `BAD` + `bad_words()` en generar.py: re-sortea el relleno hasta 100 veces, manteniendo las palabras.
+   - Se toleran las que caen dentro de palabras de la lista (RAPE en GRAPE, CUM en CUCUMBER, ASS en GLASS/CROISSANT, NIG en GINGER al revés).
+2. **Type3 en PDF**: el texto SVG con `stroke` sale como Type3 en Chrome.
+   - `big_title` ahora arma el contorno con 24 copias rellenas desplazadas.
+   - Fredoka variable reemplazada por estáticas 400/500/600/700 (fonts.gstatic, OFL).
+   - Resultado: 0 Type3 en portada e interior.
+3. **p1 con color** (zanahoria, hojas, pan): claves `bread/carrot/leaf` en la paleta B/N → 100% gris (verificado: 0 colores no grises en el HTML).
+4. `<title>` en los HTML/PDF.
+
+### Nueva herramienta
+- `tools/verificar.py libro.json interior.html`: audita el HTML final.
+  - numeración y paridad
+  - título, frase y lista iguales en puzzle y solución
+  - grilla del puzzle = grilla de la solución
+  - 9 contornos en su posición
+  - 1 aparición hacia adelante y 0 al revés
+  - palabras ofensivas
+  - página de soluciones en p2
+- Resultado actual: **0 errores**.
+- Ortografía: comparé contra la lista dwyl/english-words. Solo marcó términos válidos (NAAN, UDON, SRIRACHA, etc.).
+
+### Propuesto, esperando OK de Pedro
+- a) Contraportada: "on every page" → "with every puzzle"
+- b) #3 "Clean-Up on Aisle 3!" → "Cleanup on Aisle 3!"
+- c) #47 "Around the World Aisle!" → "International Aisle!"
+- d) Nota de serie: "large-print"
+- Palabras:
+  - FABRIC SHEETS → DRYER SHEETS (#45)
+  - MILK POWDER → POWDERED MILK (#32)
+  - COLLARD → COLLARDS (#6)
+  - MATCH → MATCHES (#24)
+  - CANDLES (#50) → FLASHLIGHT
+- Decisión: nombre de serie en KDP (p. ej. "Word Search Hunt!") y ajustar la nota de p2.
+- Los PDFs con las correcciones técnicas están generados en el scratchpad; se envían como interior v10 + portada v7 después del OK.
