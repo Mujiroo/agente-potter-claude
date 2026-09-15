@@ -411,3 +411,7 @@ Pedro pidió revisar todo como editor profesional.
 - Verificado: 0 errores, 0 desbordes, 0 Type3, 0 colores no grises, zona segura OK. Vol. 1 y 2 intactos (cmp).
 - Archivos: `entregables/vol3/`.
 - Siguiente: Vol. 5 Christmas. Esperando prioridad con el planner.
+- 14:17 Pedro (msgs 237–238): la portada Vol. 3 no deja claro que es EE. UU.
+  - Agregué `cart.usa_flag`: bandera flameando en asta a la izquierda y cabecera del cartel con barras y estrellas. Paleta B/N con flag_blue.
+  - Enviados antes/después, **portada v2 + interior v2**. Verificado: zona segura, 0 errores, grises; Vol. 1 y 2 intactos.
+- Vol. 5 Christmas: lista borrador lista (`vol5/lista_borrador.json`, 55 temas × 9, sin duplicados, sin palabras contenidas, sin personajes registrados).

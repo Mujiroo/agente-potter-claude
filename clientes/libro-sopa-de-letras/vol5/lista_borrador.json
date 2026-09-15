@@ -1,0 +1,772 @@
+[
+ {
+  "label": "Christmas Tree",
+  "words": [
+   "ORNAMENTS",
+   "TINSEL",
+   "GARLAND",
+   "TREE TOPPER",
+   "STAR",
+   "LIGHTS",
+   "EVERGREEN",
+   "FRASER FIR",
+   "BRANCHES"
+  ]
+ },
+ {
+  "label": "Santa",
+  "words": [
+   "SANTA CLAUS",
+   "SLEIGH",
+   "REINDEER",
+   "NORTH POLE",
+   "WORKSHOP",
+   "ELVES",
+   "NICE LIST",
+   "CHIMNEY",
+   "RED SUIT"
+  ]
+ },
+ {
+  "label": "Reindeer",
+  "words": [
+   "DASHER",
+   "DANCER",
+   "PRANCER",
+   "VIXEN",
+   "COMET",
+   "CUPID",
+   "DONNER",
+   "BLITZEN",
+   "ANTLERS"
+  ]
+ },
+ {
+  "label": "Treats",
+  "words": [
+   "GINGERBREAD",
+   "CANDY CANE",
+   "FUDGE",
+   "SUGAR COOKIES",
+   "PEPPERMINT",
+   "BROWNIES",
+   "FRUITCAKE",
+   "TOFFEE",
+   "MARSHMALLOWS"
+  ]
+ },
+ {
+  "label": "Christmas Dinner",
+  "words": [
+   "ROAST TURKEY",
+   "STUFFING",
+   "CRANBERRIES",
+   "GRAVY",
+   "YAMS",
+   "DINNER ROLLS",
+   "PUMPKIN PIE",
+   "GLAZED HAM",
+   "GREEN BEANS"
+  ]
+ },
+ {
+  "label": "Winter Weather",
+  "words": [
+   "SNOWFLAKE",
+   "BLIZZARD",
+   "ICICLE",
+   "FROST",
+   "SLEET",
+   "SNOWDRIFT",
+   "WINTER WIND",
+   "COLD SNAP",
+   "FREEZING"
+  ]
+ },
+ {
+  "label": "Snow Fun",
+  "words": [
+   "SNOWMAN",
+   "SLEDDING",
+   "SNOWBALL",
+   "ICE SKATING",
+   "SKIING",
+   "SNOW ANGEL",
+   "TOBOGGAN",
+   "MITTENS",
+   "SNOW FORT"
+  ]
+ },
+ {
+  "label": "Decorations",
+  "words": [
+   "WREATH",
+   "MISTLETOE",
+   "CANDLES",
+   "HOLLY",
+   "BELLS",
+   "RIBBON",
+   "SNOW GLOBE",
+   "BOUGHS",
+   "DOOR HANGER"
+  ]
+ },
+ {
+  "label": "Gifts",
+  "words": [
+   "PRESENTS",
+   "WRAPPING PAPER",
+   "GIFT TAGS",
+   "GIFT CARD",
+   "SURPRISE",
+   "UNWRAP",
+   "GIFT BAG",
+   "STOCKING",
+   "GIFT BOX"
+  ]
+ },
+ {
+  "label": "Carols",
+  "words": [
+   "JINGLE BELLS",
+   "SILENT NIGHT",
+   "JOY TO THE WORLD",
+   "DECK THE HALLS",
+   "O HOLY NIGHT",
+   "FIRST NOEL",
+   "AWAY IN A MANGER",
+   "O TANNENBAUM",
+   "WE THREE KINGS"
+  ]
+ },
+ {
+  "label": "Nativity",
+  "words": [
+   "BETHLEHEM",
+   "MANGER",
+   "SHEPHERDS",
+   "ANGELS",
+   "WISE MEN",
+   "FRANKINCENSE",
+   "MYRRH",
+   "GOLD",
+   "STABLE"
+  ]
+ },
+ {
+  "label": "Christmas Eve",
+  "words": [
+   "MIDNIGHT MASS",
+   "CANDLELIGHT",
+   "CAROLING",
+   "FIRESIDE",
+   "PAJAMAS",
+   "BEDTIME STORY",
+   "CHURCH",
+   "STOCKINGS",
+   "CHRISTMAS EVE"
+  ]
+ },
+ {
+  "label": "Christmas Morning",
+  "words": [
+   "OPEN PRESENTS",
+   "BREAKFAST",
+   "CINNAMON ROLLS",
+   "PANCAKES",
+   "FAMILY",
+   "HUGS",
+   "SMILES",
+   "SLIPPERS",
+   "ROBE"
+  ]
+ },
+ {
+  "label": "Cozy Night In",
+  "words": [
+   "FIREPLACE",
+   "BLANKET",
+   "HOT CIDER",
+   "MOVIE NIGHT",
+   "POPCORN",
+   "WOOL SOCKS",
+   "QUILT",
+   "RECLINER",
+   "STORYBOOK"
+  ]
+ },
+ {
+  "label": "Baking Day",
+  "words": [
+   "FLOUR",
+   "SUGAR",
+   "BUTTER",
+   "ROLLING PIN",
+   "COOKIE CUTTER",
+   "SPRINKLES",
+   "FROSTING",
+   "OVEN MITTS",
+   "MIXING BOWL"
+  ]
+ },
+ {
+  "label": "Christmas Colors",
+  "words": [
+   "RED",
+   "GREEN",
+   "SILVER",
+   "WHITE",
+   "CRIMSON",
+   "EMERALD",
+   "IVORY",
+   "BURGUNDY",
+   "COPPER"
+  ]
+ },
+ {
+  "label": "A Christmas Carol",
+  "words": [
+   "SCROOGE",
+   "TINY TIM",
+   "BOB CRATCHIT",
+   "MARLEY",
+   "FEZZIWIG",
+   "HUMBUG",
+   "GHOST",
+   "CHAINS",
+   "DICKENS"
+  ]
+ },
+ {
+  "label": "The Nutcracker",
+  "words": [
+   "NUTCRACKER",
+   "CLARA",
+   "SUGAR PLUM",
+   "MOUSE KING",
+   "TCHAIKOVSKY",
+   "BALLET",
+   "WALTZ",
+   "TUTU",
+   "ORCHESTRA"
+  ]
+ },
+ {
+  "label": "Around the World",
+  "words": [
+   "FELIZ NAVIDAD",
+   "JOYEUX NOEL",
+   "BUON NATALE",
+   "LAS POSADAS",
+   "SAINT LUCIA",
+   "BOXING DAY",
+   "YULETIDE",
+   "PINATA",
+   "SAINT NICHOLAS"
+  ]
+ },
+ {
+  "label": "Winter Clothes",
+  "words": [
+   "TURTLENECK",
+   "BEANIE",
+   "SWEATER",
+   "PARKA",
+   "GLOVES",
+   "SNOW BOOTS",
+   "EARMUFFS",
+   "THERMALS",
+   "PEACOAT"
+  ]
+ },
+ {
+  "label": "Holiday Party",
+  "words": [
+   "UGLY SWEATER",
+   "PARTY",
+   "CONTEST",
+   "PRIZES",
+   "POMPOMS",
+   "SEQUINS",
+   "DANCING",
+   "GAMES",
+   "KARAOKE"
+  ]
+ },
+ {
+  "label": "Festive Sounds",
+  "words": [
+   "SLEIGH BELLS",
+   "CHOIR",
+   "ORGAN",
+   "HANDBELLS",
+   "TRUMPET",
+   "HARP",
+   "FIDDLE",
+   "CHIMES",
+   "PIANO"
+  ]
+ },
+ {
+  "label": "Christmas Cards",
+  "words": [
+   "GREETINGS",
+   "POSTAGE",
+   "STAMPS",
+   "ENVELOPE",
+   "ADDRESS BOOK",
+   "HANDWRITTEN",
+   "WAX SEAL",
+   "LETTER",
+   "PHOTO CARD"
+  ]
+ },
+ {
+  "label": "Holiday Scents",
+  "words": [
+   "CINNAMON",
+   "CLOVES",
+   "NUTMEG",
+   "GINGER",
+   "VANILLA",
+   "ORANGE PEEL",
+   "ALLSPICE",
+   "CHESTNUTS",
+   "MULLED WINE"
+  ]
+ },
+ {
+  "label": "Stocking Stuffers",
+  "words": [
+   "CHOCOLATE",
+   "TANGERINE",
+   "CANDY",
+   "LIP BALM",
+   "PUZZLE BOOK",
+   "KEYCHAIN",
+   "PLAYING CARDS",
+   "YO-YO",
+   "WHISTLE"
+  ]
+ },
+ {
+  "label": "Faith",
+  "words": [
+   "NATIVITY",
+   "PRAYER",
+   "HYMNS",
+   "CHAPEL",
+   "BLESSING",
+   "GOSPEL",
+   "SERMON",
+   "PEACE ON EARTH",
+   "EMMANUEL"
+  ]
+ },
+ {
+  "label": "Twelve Days",
+  "words": [
+   "PARTRIDGE",
+   "PEAR TREE",
+   "TURTLE DOVES",
+   "FRENCH HENS",
+   "CALLING BIRDS",
+   "GOLDEN RINGS",
+   "GEESE",
+   "SWANS",
+   "MAIDS MILKING"
+  ]
+ },
+ {
+  "label": "Toy Workshop",
+  "words": [
+   "TOY TRAINS",
+   "ROCKING HORSE",
+   "TEDDY BEAR",
+   "DOLLHOUSE",
+   "WOODEN BLOCKS",
+   "HAMMER",
+   "PAINTBRUSH",
+   "TOOLBOX",
+   "BUILDING"
+  ]
+ },
+ {
+  "label": "New Year's Eve",
+  "words": [
+   "BALL DROP",
+   "MIDNIGHT",
+   "CONFETTI",
+   "CHAMPAGNE",
+   "NOISEMAKERS",
+   "RESOLUTIONS",
+   "FIREWORKS",
+   "PARTY HATS",
+   "AULD LANG SYNE"
+  ]
+ },
+ {
+  "label": "Winter Animals",
+  "words": [
+   "POLAR BEAR",
+   "PENGUIN",
+   "SNOWY OWL",
+   "ARCTIC FOX",
+   "MOOSE",
+   "CARDINAL",
+   "SNOWSHOE HARE",
+   "CARIBOU",
+   "ERMINE"
+  ]
+ },
+ {
+  "label": "Holiday Lights",
+  "words": [
+   "STRING LIGHTS",
+   "TWINKLE",
+   "GLOW",
+   "SPARKLE",
+   "LUMINARIAS",
+   "LANTERN",
+   "LIGHT SHOW",
+   "NEIGHBORHOOD",
+   "EXTENSION CORD"
+  ]
+ },
+ {
+  "label": "Christmas Market",
+  "words": [
+   "VENDORS",
+   "CRAFTS",
+   "HANDMADE",
+   "WOODEN TOYS",
+   "HOT CHOCOLATE",
+   "BRATWURST",
+   "PRETZELS",
+   "KNITWEAR",
+   "MUSIC BOX"
+  ]
+ },
+ {
+  "label": "Gingerbread House",
+  "words": [
+   "ICING",
+   "GUMDROPS",
+   "LICORICE",
+   "JELLY BEANS",
+   "WAFER",
+   "ROOFTOP",
+   "WINDOWS",
+   "FENCE",
+   "CANDY PATH"
+  ]
+ },
+ {
+  "label": "Family Gathering",
+  "words": [
+   "GRANDPARENTS",
+   "COUSINS",
+   "AUNTS",
+   "UNCLES",
+   "GRANDKIDS",
+   "NEIGHBORS",
+   "GUESTS",
+   "HOST",
+   "TOAST"
+  ]
+ },
+ {
+  "label": "Winter Sports",
+  "words": [
+   "HOCKEY",
+   "CURLING",
+   "BOBSLED",
+   "SNOWBOARD",
+   "SKI JUMP",
+   "BIATHLON",
+   "LUGE",
+   "FIGURE SKATING",
+   "SLALOM"
+  ]
+ },
+ {
+  "label": "Warm Drinks",
+  "words": [
+   "HOT COCOA",
+   "APPLE CIDER",
+   "EGGNOG",
+   "PEPPERMINT TEA",
+   "SPICED LATTE",
+   "WASSAIL",
+   "MULLED CIDER",
+   "COFFEE",
+   "WHIPPED CREAM"
+  ]
+ },
+ {
+  "label": "Christmas Crafts",
+  "words": [
+   "GLITTER",
+   "PAPER CHAIN",
+   "PINECONES",
+   "FELT",
+   "YARN",
+   "SCISSORS",
+   "PAINT",
+   "STENCILS",
+   "GLUE GUN"
+  ]
+ },
+ {
+  "label": "Advent",
+  "words": [
+   "ADVENT",
+   "CALENDAR",
+   "COUNTDOWN",
+   "DOORS",
+   "DAILY TREAT",
+   "TWENTY FIVE",
+   "NUMBERS",
+   "PATIENCE",
+   "DECEMBER"
+  ]
+ },
+ {
+  "label": "Winter Walk",
+  "words": [
+   "FOOTPRINTS",
+   "SNOWY PATH",
+   "BARE TREES",
+   "FROSTY AIR",
+   "PINE FOREST",
+   "BIRDSONG",
+   "FROZEN POND",
+   "WOODPILE",
+   "CHICKADEE"
+  ]
+ },
+ {
+  "label": "Christmas Table",
+  "words": [
+   "CENTERPIECE",
+   "PLACE CARDS",
+   "NAPKINS",
+   "FINE CHINA",
+   "SILVERWARE",
+   "GOBLETS",
+   "TABLECLOTH",
+   "CANDELABRA",
+   "TABLE RUNNER"
+  ]
+ },
+ {
+  "label": "Holiday Travel",
+  "words": [
+   "AIRPORT",
+   "TRAIN STATION",
+   "SUITCASE",
+   "ROAD TRIP",
+   "GOING HOME",
+   "ARRIVALS",
+   "LUGGAGE",
+   "BOARDING",
+   "SNOWY ROADS"
+  ]
+ },
+ {
+  "label": "Christmas Plants",
+  "words": [
+   "POINSETTIA",
+   "AMARYLLIS",
+   "PAPERWHITES",
+   "IVY",
+   "ROSEMARY",
+   "BALSAM FIR",
+   "JUNIPER",
+   "HELLEBORE",
+   "WINTERBERRY"
+  ]
+ },
+ {
+  "label": "Snowman",
+  "words": [
+   "CARROT NOSE",
+   "COAL",
+   "TOP HAT",
+   "SCARF",
+   "BUTTONS",
+   "STICK ARMS",
+   "BROOM",
+   "BIG SMILE",
+   "PEBBLES"
+  ]
+ },
+ {
+  "label": "Winter Wonder",
+  "words": [
+   "ICE CASTLE",
+   "SNOW DAY",
+   "FROZEN LAKE",
+   "AURORA",
+   "WHITEOUT",
+   "SNOWFALL",
+   "HOARFROST",
+   "ICE CRYSTALS",
+   "SPARKLING"
+  ]
+ },
+ {
+  "label": "Holiday Brunch",
+  "words": [
+   "FRENCH TOAST",
+   "QUICHE",
+   "BACON",
+   "OMELET",
+   "CREPES",
+   "FRUIT SALAD",
+   "MIMOSA",
+   "BISCUITS",
+   "HASH BROWNS"
+  ]
+ },
+ {
+  "label": "Giving",
+  "words": [
+   "GENEROSITY",
+   "KINDNESS",
+   "SHARING",
+   "GIVING",
+   "CHARITY",
+   "VOLUNTEER",
+   "DONATION",
+   "GOODWILL",
+   "GRATITUDE"
+  ]
+ },
+ {
+  "label": "Letter to Santa",
+  "words": [
+   "DEAR SANTA",
+   "WISH LIST",
+   "BEEN GOOD",
+   "MAILBOX",
+   "CRAYONS",
+   "PROMISE",
+   "SIGNATURE",
+   "DRAWING",
+   "HOPES"
+  ]
+ },
+ {
+  "label": "The Night Before",
+  "words": [
+   "KERCHIEF",
+   "NIGHTCAP",
+   "CLATTER",
+   "SHUTTERS",
+   "TWINKLING",
+   "ROUND BELLY",
+   "BUNDLE",
+   "CHUBBY",
+   "JOLLY"
+  ]
+ },
+ {
+  "label": "Evergreen Forest",
+  "words": [
+   "SPRUCE",
+   "HEMLOCK",
+   "DOUGLAS FIR",
+   "PINE",
+   "CEDAR",
+   "TREE FARM",
+   "NEEDLES",
+   "BARK",
+   "FOREST TRAIL"
+  ]
+ },
+ {
+  "label": "Sweets of the World",
+  "words": [
+   "PANETTONE",
+   "STOLLEN",
+   "BUCHE DE NOEL",
+   "LEBKUCHEN",
+   "TURRON",
+   "MINCE PIES",
+   "PFEFFERNUSSE",
+   "KOURABIEDES",
+   "SHORTBREAD"
+  ]
+ },
+ {
+  "label": "Getting Ready",
+  "words": [
+   "GUEST ROOM",
+   "VACUUM",
+   "DUSTING",
+   "FRESH SHEETS",
+   "GROCERY LIST",
+   "DECORATING",
+   "TO-DO LIST",
+   "BAKING",
+   "MENU PLAN"
+  ]
+ },
+ {
+  "label": "Night Sky",
+  "words": [
+   "STARLIGHT",
+   "MOON",
+   "NORTH STAR",
+   "SHOOTING STAR",
+   "CONSTELLATION",
+   "MILKY WAY",
+   "TELESCOPE",
+   "PLANETS",
+   "WISHES"
+  ]
+ },
+ {
+  "label": "Memories",
+  "words": [
+   "PHOTO ALBUM",
+   "TRADITIONS",
+   "HOME MOVIES",
+   "KEEPSAKE",
+   "HEIRLOOM",
+   "STORYTELLING",
+   "CHILDHOOD",
+   "SCRAPBOOK",
+   "OLD FRIENDS"
+  ]
+ },
+ {
+  "label": "Peace and Joy",
+  "words": [
+   "JOY",
+   "PEACE",
+   "LOVE",
+   "HOPE",
+   "WONDER",
+   "MAGIC",
+   "MERRY",
+   "BRIGHT",
+   "CHEER"
+  ]
+ },
+ {
+  "label": "Season's Wishes",
+  "words": [
+   "CHRISTMAS DAY",
+   "HAPPY HOLIDAYS",
+   "HAPPY NEW YEAR",
+   "YULE",
+   "NOEL",
+   "FESTIVE",
+   "CELEBRATE",
+   "FA LA LA",
+   "HO HO HO"
+  ]
+ }
+]

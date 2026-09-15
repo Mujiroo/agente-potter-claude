@@ -245,10 +245,45 @@ def billboard(cx, top, words, c):
         out.append(f'<rect x="{x}" y="{by0+bh+124}" width="46" height="8" rx="4" fill="{c["yellow"]}"/>')
     # cartel
     out.append(f'<rect x="{bx0}" y="{by0}" width="{bw}" height="{bh}" rx="14" fill="#fff" stroke="{ink}" stroke-width="9"/>')
-    out.append(f'<rect x="{bx0-14}" y="{by0-14}" width="{bw+28}" height="22" rx="8" fill="{c["red"]}" stroke="{ink}" stroke-width="6"/>')
-    for k in range(5):  # estrellas sobre el cartel
-        sx = bx0 + 40 + k * (bw - 80) / 4
-        out.append(f'<path transform="translate({sx},{by0-3}) scale(.55)" d="M0,-18 L5,-6 18,-6 8,2 12,15 0,7 -12,15 -8,2 -18,-6 -5,-6 z" fill="#fff"/>')
+    usa = words.get("usa_flag")
+    if usa:
+        # cabecera del cartel como bandera: campo azul con estrellas + franjas rojas y blancas
+        hx, hy, hw, hh = bx0 - 14, by0 - 44, bw + 28, 52
+        blue = c.get("flag_blue", "#1E3A8A")
+        out.append(f'<rect x="{hx}" y="{hy}" width="{hw}" height="{hh}" rx="8" fill="#fff" stroke="{ink}" stroke-width="6"/>')
+        for k in range(0, 7, 2):
+            out.append(f'<rect x="{hx+3}" y="{hy+3+k*(hh-6)/7}" width="{hw-6}" height="{(hh-6)/7}" fill="{c["red"]}"/>')
+        cw = hw * 0.3
+        out.append(f'<rect x="{hx+3}" y="{hy+3}" width="{cw}" height="{(hh-6)*4/7}" fill="{blue}"/>')
+        for r in range(2):
+            for k in range(6):
+                sx, sy = hx + 16 + k * (cw - 26) / 5, hy + 10 + r * 12
+                out.append(f'<circle cx="{sx}" cy="{sy}" r="3" fill="#fff"/>')
+        out.append(f'<rect x="{hx}" y="{hy}" width="{hw}" height="{hh}" rx="8" fill="none" stroke="{ink}" stroke-width="6"/>')
+        # bandera flameando en su asta, a la izquierda del cartel
+        fx, fy = bx0 - 196, by0 - 10
+        out.append(f'<rect x="{fx-6}" y="{fy-20}" width="12" height="{bh+150}" rx="6" fill="{c.get("post", "#8D6E63")}" stroke="{ink}" stroke-width="5"/>')
+        out.append(f'<circle cx="{fx}" cy="{fy-26}" r="12" fill="{c["yellow"]}" stroke="{ink}" stroke-width="5"/>')
+        fw, fh = 158, 100
+        wave = lambda yy: f"M{fx+6},{yy} C{fx+60},{yy-18} {fx+120},{yy+18} {fx+6+fw},{yy}"
+        out.append(f'<path d="M{fx+6},{fy} C{fx+60},{fy-18} {fx+120},{fy+18} {fx+6+fw},{fy} L{fx+6+fw},{fy+fh} '
+                   f'C{fx+120},{fy+fh+18} {fx+60},{fy+fh-18} {fx+6},{fy+fh} z" fill="#fff" stroke="{ink}" stroke-width="6" stroke-linejoin="round"/>')
+        for k in range(0, 13, 2):
+            y1 = fy + k * fh / 13
+            out.append(f'<path d="M{fx+6},{y1} C{fx+60},{y1-18} {fx+120},{y1+18} {fx+6+fw},{y1} L{fx+6+fw},{y1+fh/13} '
+                       f'C{fx+120},{y1+fh/13+18} {fx+60},{y1+fh/13-18} {fx+6},{y1+fh/13} z" fill="{c["red"]}"/>')
+        cy2 = fy + fh * 7 / 13
+        out.append(f'<path d="M{fx+6},{fy} C{fx+34},{fy-10} {fx+58},{fy-5} {fx+72},{fy} L{fx+72},{cy2} C{fx+58},{cy2-5} {fx+34},{cy2-10} {fx+6},{cy2} z" fill="{blue}"/>')
+        for r in range(3):
+            for k in range(4):
+                out.append(f'<circle cx="{fx+17+k*15}" cy="{fy+10+r*14}" r="3" fill="#fff"/>')
+        out.append(f'<path d="M{fx+6},{fy} C{fx+60},{fy-18} {fx+120},{fy+18} {fx+6+fw},{fy} L{fx+6+fw},{fy+fh} '
+                   f'C{fx+120},{fy+fh+18} {fx+60},{fy+fh-18} {fx+6},{fy+fh} z" fill="none" stroke="{ink}" stroke-width="6" stroke-linejoin="round"/>')
+    else:
+        out.append(f'<rect x="{bx0-14}" y="{by0-14}" width="{bw+28}" height="22" rx="8" fill="{c["red"]}" stroke="{ink}" stroke-width="6"/>')
+        for k in range(5):  # estrellas sobre el cartel
+            sx = bx0 + 40 + k * (bw - 80) / 4
+            out.append(f'<path transform="translate({sx},{by0-3}) scale(.55)" d="M0,-18 L5,-6 18,-6 8,2 12,15 0,7 -12,15 -8,2 -18,-6 -5,-6 z" fill="#fff"/>')
     for (r1, c1, r2, c2) in words["found"]:
         out.append(f'<line x1="{gx+c1*cell+cell/2}" y1="{gy+r1*cell+cell/2}" x2="{gx+c2*cell+cell/2}" '
                    f'y2="{gy+r2*cell+cell/2}" stroke="{c["highlight"]}" stroke-width="34" stroke-linecap="round"/>')
