@@ -142,3 +142,11 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
 - Envié 7 palabras clave, estrategia de serie (Vol. 2–3 pronto, un tema por libro) y el ángulo de regalo solo en la descripción.
 - Fuentes: KDP G201834340, KDP community (regalías), kdpeasy (blog no oficial).
 - Esperando: si aplico las mejoras + nombre de autor/sello.
+
+## Interior v5 — enviado 11:25 (msgs 90–92)
+- Pedro aprobó (msg 87): lista a 16 pt "siempre y cuando quepa en 3 columnas", frase sin cursiva, "This book belongs to", soluciones con contorno.
+  - Las recomendaciones de venta quedan para antes de publicar (msg 88).
+- 16 pt **no cabe** (10 puzzles se desbordan hasta 0,7"); 15 → 8; 14,5 → 4; **14 pt → 0**. Quedó en `WORD_PT = 14`, con gap 0,1".
+  - Ofrecí como alternativa 16 pt partiendo las palabras largas (no recomendado).
+- Soluciones: cápsula `rect` rx=15 con contorno negro de 2,6 unidades, rotada según la dirección.
+- Pendiente: nombre de autor/sello → línea de copyright en p2. Recomendaciones de venta antes de publicar.

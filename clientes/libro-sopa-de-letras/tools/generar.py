@@ -32,6 +32,7 @@ DIRS = [(0, 1), (1, 0), (1, 1), (-1, 1), (0, -1), (-1, 0), (-1, -1), (1, -1)]
 FORWARD = DIRS[:4]
 ALPHA = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
 GUTTER, OUTSIDE, TOP, BOTTOM = 0.5, 0.35, 0.4, 0.6
+WORD_PT = 14  # 16 pt no cabe en 3 columnas con palabras como CHICKEN THIGH (probado)
 
 
 def clean(word):
@@ -102,10 +103,14 @@ def grid_svg(grid, placed=None):
     out = [f'<svg class="grid" viewBox="0 0 {s} {s}" xmlns="http://www.w3.org/2000/svg">',
            f'<rect x="1.5" y="1.5" width="{s-3}" height="{s-3}" rx="10" fill="none" stroke="#222" stroke-width="3"/>']
     if placed:
+        import math
         for cells in placed.values():
             (y1, x1), (y2, x2) = cells[0], cells[-1]
-            out.append(f'<line x1="{x1*cell+cell/2}" y1="{y1*cell+cell/2}" x2="{x2*cell+cell/2}" '
-                       f'y2="{y2*cell+cell/2}" stroke="#cfcfcf" stroke-width="30" stroke-linecap="round"/>')
+            cx, cy = (x1 + x2 + 1) * cell / 2, (y1 + y2 + 1) * cell / 2
+            length = math.hypot(x2 - x1, y2 - y1) * cell + cell * 0.8
+            ang = math.degrees(math.atan2(y2 - y1, x2 - x1))
+            out.append(f'<rect x="{cx-length/2:.1f}" y="{cy-15}" width="{length:.1f}" height="30" rx="15" '
+                       f'fill="none" stroke="#000" stroke-width="2.6" transform="rotate({ang:.1f} {cx:.1f} {cy:.1f})"/>')
     for y, row in enumerate(grid):
         for x, ch in enumerate(row):
             out.append(f'<text x="{x*cell+cell/2}" y="{y*cell+cell/2}" text-anchor="middle" '
@@ -145,12 +150,12 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .tag {{ font-size: 9pt; color: #555; margin-bottom: 0.04in; text-transform: uppercase; letter-spacing: 2px; }}
 .grid {{ width: {live:.2f}in; height: {live:.2f}in; }}
 .grid text {{ font-size: 26px; font-weight: 700; font-family: 'Liberation Sans', Arial, sans-serif; }}
-.words {{ display: flex; justify-content: space-between; width: {live - 0.1:.2f}in; margin-top: 0.18in; }}
-.words ul {{ list-style: none; margin: 0; padding: 0; width: 33.3%; }}
-.words li {{ font-size: {max(12, 19 * k):.0f}pt; font-weight: 700; line-height: 1.45; text-transform: uppercase; white-space: nowrap; }}
+.words {{ display: flex; justify-content: space-between; gap: 0.1in; width: {live:.2f}in; margin-top: 0.16in; }}
+.words ul {{ list-style: none; margin: 0; padding: 0; }}
+.words li {{ font-size: {WORD_PT}pt; font-weight: 700; line-height: 1.45; text-transform: uppercase; white-space: nowrap; }}
 .title-page {{ justify-content: center; text-align: center; }}
 .num-title {{ text-transform: uppercase; letter-spacing: 1px; margin: 0; }}
-.phrase {{ font-size: {max(12, 17 * k):.0f}pt; font-style: italic; color: #333; margin: 0.02in 0 0.1in; }}
+.phrase {{ font-size: {max(12, 17 * k):.0f}pt; font-style: normal; color: #333; margin: 0.02in 0 0.1in; }}
 .cover1 {{ width: 100%; max-height: 100%; }}
 .title-page .big {{ font-size: {64 * k:.0f}pt; font-weight: 900; line-height: 1; }}
 .title-page .sub {{ font-size: {30 * k:.0f}pt; margin-top: 0.15in; font-weight: 700; }}
@@ -158,6 +163,9 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .title-page .note {{ font-size: {16 * k:.0f}pt; margin-top: 0.4in; color: #555; max-width: {live - 0.4:.2f}in; }}
 .instr {{ text-align: left; width: 100%; font-size: {max(12, 17 * k):.0f}pt; line-height: 1.45; }}
 .instr h1 {{ text-align: left; margin-bottom: 0.2in; }}
+.belongs {{ width: 100%; font-size: {max(12, 17 * k):.0f}pt; font-weight: 700; display: flex; align-items: flex-end;
+           gap: 0.1in; margin: 0.1in 0 0.45in; }}
+.belongs span {{ flex: 1; border-bottom: 1.5px solid #111; height: 1.2em; }}
 .series {{ margin-top: auto; margin-bottom: 0.2in; width: 100%; border-top: 1.5px solid #999; padding-top: 0.15in;
           font-size: {max(11, 15 * k):.0f}pt; line-height: 1.45; text-align: center; }}
 """
@@ -196,7 +204,9 @@ def main(src, dst):
            '<b>across</b>, <b>up and down</b>, or <b>diagonally</b>, and they can be spelled '
            '<b>forwards or backwards</b>.</p>')
     note = f'<div class="series">{book["series_note"]}</div>' if book.get("series_note") else ""
-    page('<div class="instr"><h1>How to Play</h1>'
+    belongs = ('<div class="belongs">This book belongs to<span></span></div>'
+               if book.get("belongs_to", True) else "")
+    page(belongs + '<div class="instr"><h1>How to Play</h1>'
          '<p>Each puzzle has a grid of letters and a list of words below it.</p>' + how +
          '<p>When you find a word, circle it in the grid and cross it off the list.</p>'
          f'<p>Stuck? The solutions start on page {3 + len(puzzles)}.</p>'
