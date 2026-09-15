@@ -446,3 +446,4 @@ Pedro pidió revisar todo como editor profesional.
   - V5 esperando revisión (urgente)
   - Planner esperando OK
 - Lección: para cada volumen nuevo medir los anchos de la lista de palabras (3 columnas a 14 pt) y buscar el nombre en Amazon ANTES de fijarlo.
+- 15:53 Pedro aprueba **Vol. 4 Memory Lane Hunt!** (msg 257) → versión final: interior v1 + portada v1 en entregables/vol4.
