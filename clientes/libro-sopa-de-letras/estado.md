@@ -205,3 +205,15 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - Portada v6: muestra "SAMPLE".
   - **Vigentes: portada v6 + interior v8**, copiados en `entregables/libro1/` (fuera de git, no se commitean) + `cover_final.png`.
 - Siguiente: revisión comercial antes de publicar (precio, palabras clave, categorías, descripción).
+
+## Página 2 con íconos (propuesta) — 11:55 (msgs 141–146)
+- Pedro quiere "mejorar la página de las soluciones" y mandó una foto de referencia (incoming/file_1.jpg).
+  - La foto era en realidad una **página de instrucciones** de otro libro: recuadro de título, pasos con íconos, mini grilla con cápsulas negras y flechas, "Solutions start on page X".
+- Hice una p2 propia (`instructions_style: "icons"` en el JSON; `instructions_icons()` en generar.py):
+  - 5 pasos con íconos SVG propios (lista, lupa, flechas, lápiz, carro)
+  - mini ejemplo 7×7 con MILK →, EGGS ↓, TEA ↘ en cápsula negra con letras blancas
+  - check "Stuck? Solutions start on page 58."
+  - se mantienen belongs to, nota de serie y copyright
+  - sin desbordes
+- Le pregunté si también quiere cambiar las soluciones a cápsula negra con letras blancas (pendiente).
+- Interior regenerado localmente (v9 candidato, aún no enviado como PDF).

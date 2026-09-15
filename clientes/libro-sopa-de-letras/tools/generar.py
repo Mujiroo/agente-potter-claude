@@ -134,6 +134,71 @@ def header(kind, i, p):
     return f'<div class="tag">&nbsp;</div><h1>{kind} {i}</h1>'
 
 
+
+ICON = {  # íconos de línea propios, 24x24
+    "list": '<rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 8h7M8.5 12h7M8.5 16h5"/>',
+    "lens": '<circle cx="10" cy="10" r="6"/><path d="M14.5 14.5L20 20"/>',
+    "pencil": '<path d="M4 20l1.2-4.4L16 4.8a2 2 0 0 1 2.8 0l.4.4a2 2 0 0 1 0 2.8L8.4 18.8z"/><path d="M14 6.8l3.2 3.2"/>',
+    "cart": '<path d="M3 4h2.5l2.2 10.5h10.3l2-7.5H7"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/>',
+    "check": '<circle cx="12" cy="12" r="9.5"/><path d="M7.5 12.5l3 3 6-6.5"/>',
+}
+
+
+def icon(name, size="0.3in"):
+    return (f'<svg class="ico" style="width:{size};height:{size}" viewBox="0 0 24 24" fill="none" stroke="#111" '
+            f'stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round">{ICON[name]}</svg>')
+
+
+def arrows_icon():
+    return ('<svg class="ico" style="width:0.3in;height:0.3in" viewBox="0 0 24 24" fill="none" stroke="#111" '
+            'stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'
+            '<path d="M2 5h9M8 2l3 3-3 3"/><path d="M5 11v10M2 18l3 3 3-3"/><path d="M11 11l9 9M20 14v6h-6"/></svg>')
+
+
+def example_grid():
+    """Mini sopa de ejemplo con palabras marcadas en cápsula negra y letras blancas."""
+    rows = ["MILKQRT", "EAPJXEZ", "GWOTCBO", "GTBPEHS", "SYVLRAN", "KDBUANC", "OLFSWIZ"]
+    marks = [(0, 0, 0, 3), (1, 0, 4, 0), (2, 3, 4, 5)]  # MILK →, EGGS ↓, TEA ↘
+    cell = 30
+    n = len(rows)
+    inside = {}
+    out = [f'<svg class="example" viewBox="-60 -50 {n*cell+120} {n*cell+70}" xmlns="http://www.w3.org/2000/svg">',
+           f'<rect x="-6" y="-6" width="{n*cell+12}" height="{n*cell+12}" rx="8" fill="#fff" stroke="#111" stroke-width="2.5"/>']
+    for (r1, c1, r2, c2) in marks:
+        dr, dc = (r2 > r1) - (r2 < r1), (c2 > c1) - (c2 < c1)
+        k = max(abs(r2 - r1), abs(c2 - c1))
+        for t in range(k + 1):
+            inside[(r1 + dr * t, c1 + dc * t)] = True
+        x1, y1, x2, y2 = c1 * cell + cell / 2, r1 * cell + cell / 2, c2 * cell + cell / 2, r2 * cell + cell / 2
+        out.append(f'<line x1="{x1}" y1="{y1}" x2="{x2}" y2="{y2}" stroke="#111" stroke-width="25" stroke-linecap="round"/>')
+    for r, row in enumerate(rows):
+        for c, ch in enumerate(row):
+            fill = "#fff" if (r, c) in inside else "#111"
+            out.append(f'<text x="{c*cell+cell/2}" y="{r*cell+cell/2+7}" text-anchor="middle" font-size="19" '
+                       f'font-weight="700" font-family="Liberation Sans, Arial" fill="{fill}">{ch}</text>')
+    a = 'stroke="#111" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"'
+    out.append(f'<path d="M0,-28 H{4*cell-6} M{4*cell-16},-38 l10,10 -10,10" {a}/>')            # →
+    out.append(f'<path d="M-28,{cell} V{5*cell-6} M-38,{5*cell-16} l10,10 10,-10" {a}/>')         # ↓
+    out.append(f'<path d="M{n*cell+14},{3*cell} l40,40 M{n*cell+54},{3*cell+22} v18 h-18" {a}/>')  # ↘
+    out.append('</svg>')
+    return "".join(out)
+
+
+def instructions_icons(forward, sol_page):
+    rows = [
+        (icon("list"), "Read the word list under the grid."),
+        (icon("lens"), "Hunt for one word at a time."),
+        (arrows_icon(), "Words go across, down or diagonally. <b>Never backwards.</b>" if forward
+         else "Words go in any direction, even backwards."),
+        (icon("pencil"), "Circle each word and cross it off the list."),
+        (icon("cart"), "Take your time and enjoy every aisle!"),
+    ]
+    items = "".join(f'<div class="step">{ic}<span>{tx}</span></div>' for ic, tx in rows)
+    return (f'<div class="howbox">How to Play</div>{items}'
+            f'<div class="exwrap">{example_grid()}</div>'
+            f'<div class="solnote">{icon("check", "0.42in")}<span><b>Stuck? Solutions start on page {sol_page}.</b></span></div>')
+
+
 def css(w, h):
     live = w - GUTTER - OUTSIDE
     k = w / 8.5  # escala tipográfica respecto del diseño original 8.5x11
@@ -164,8 +229,14 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .instr {{ text-align: left; width: 100%; font-size: 14pt; line-height: 1.45; }}
 .instr h1 {{ text-align: left; margin-bottom: 0.2in; }}
 .belongs {{ width: 100%; font-size: {max(12, 17 * k):.0f}pt; font-weight: 700; display: flex; align-items: flex-end;
-           gap: 0.1in; margin: 0.1in 0 0.45in; }}
+           gap: 0.1in; margin: 0.05in 0 0.28in; }}
 .belongs span {{ flex: 1; border-bottom: 1.5px solid #111; height: 1.2em; }}
+.howbox {{ border: 2px solid #111; border-radius: 12px; padding: 0.03in 0.3in; font-size: 20pt; font-weight: 700; margin: 0 0 0.16in; }}
+.step {{ width: 100%; display: flex; align-items: center; gap: 0.14in; font-size: 14pt; line-height: 1.25; margin: 0.07in 0; }}
+.step .ico {{ flex: none; }}
+.exwrap {{ width: 100%; display: flex; justify-content: center; margin: 0.12in 0 0.06in; }}
+.example {{ width: 2.9in; }}
+.solnote {{ width: 100%; display: flex; align-items: center; gap: 0.14in; font-size: 14pt; margin-top: 0.06in; }}
 .copyright {{ width: 100%; font-size: 9pt; color: #444; text-align: center; line-height: 1.35; margin-bottom: 0.05in; }}
 .series {{ margin-top: auto; margin-bottom: 0.2in; width: 100%; border-top: 1.5px solid #999; padding-top: 0.15in;
           font-size: {max(11, 15 * k):.0f}pt; line-height: 1.45; text-align: center; }}
@@ -211,11 +282,14 @@ def main(src, dst):
                  'permission from the authors.</div>')
     belongs = ('<div class="belongs">This book belongs to<span></span></div>'
                if book.get("belongs_to", True) else "")
-    page(belongs + '<div class="instr"><h1>How to Play</h1>'
-         '<p>Each puzzle has a grid of letters and a list of words below it.</p>' + how +
-         '<p>When you find a word, circle it in the grid and cross it off the list.</p>'
-         f'<p>Stuck? The solutions start on page {3 + len(puzzles)}.</p>'
-         '<p><b>Have fun!</b></p></div>' + note)
+    if book.get("instructions_style") == "icons":
+        page(belongs + instructions_icons(forward, 3 + len(puzzles)) + note)
+    else:
+        page(belongs + '<div class="instr"><h1>How to Play</h1>'
+             '<p>Each puzzle has a grid of letters and a list of words below it.</p>' + how +
+             '<p>When you find a word, circle it in the grid and cross it off the list.</p>'
+             f'<p>Stuck? The solutions start on page {3 + len(puzzles)}.</p>'
+             '<p><b>Have fun!</b></p></div>' + note)
 
     solved = []
     for i, p in enumerate(puzzles, 1):
