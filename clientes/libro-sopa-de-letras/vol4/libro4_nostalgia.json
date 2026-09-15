@@ -1,0 +1,965 @@
+{
+ "title": "Word Search",
+ "subtitle": "Memory Lane Hunt!",
+ "volume": "Vol. 4",
+ "tagline": "55 Large Print Nostalgic Puzzles for Adults and Seniors",
+ "trim": [
+  6,
+  9
+ ],
+ "size": 13,
+ "seed": 2029,
+ "directions": "forward",
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": {
+  "name": "Big Print Word Hunt",
+  "volume": 4
+ },
+ "series_note": "<b>Memory Lane Hunt!</b> is Vol. 4 of the <b>Big Print Word Hunt</b> series.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
+ "instructions_style": "icons",
+ "puzzles": [
+  {
+   "phrase": "Way Back When!",
+   "theme_label": "Soda Fountain",
+   "words": [
+    "MILKSHAKE",
+    "MALT",
+    "ROOT BEER FLOAT",
+    "BANANA SPLIT",
+    "COUNTER STOOL",
+    "CHERRY ON TOP",
+    "SUNDAE",
+    "SODA JERK",
+    "EGG CREAM"
+   ]
+  },
+  {
+   "phrase": "Pick a Song!",
+   "theme_label": "Jukebox",
+   "words": [
+    "JUKEBOX",
+    "RECORD",
+    "FORTY-FIVE",
+    "NICKEL",
+    "DIME",
+    "SINGLES",
+    "DOO-WOP",
+    "ROCK AND ROLL",
+    "SOCK HOP"
+   ]
+  },
+  {
+   "phrase": "Under the Stars!",
+   "theme_label": "Drive-In Movies",
+   "words": [
+    "DRIVE-IN",
+    "MOVIE SCREEN",
+    "CONCESSIONS",
+    "SPEAKER BOX",
+    "DOUBLE FEATURE",
+    "BACK SEAT",
+    "POPCORN",
+    "INTERMISSION",
+    "HEADLIGHTS"
+   ]
+  },
+  {
+   "phrase": "Ring, Ring!",
+   "theme_label": "Telephone Days",
+   "words": [
+    "ROTARY PHONE",
+    "PARTY LINE",
+    "OPERATOR",
+    "PHONE BOOTH",
+    "LONG DISTANCE",
+    "SWITCHBOARD",
+    "TELEGRAM",
+    "PAY PHONE",
+    "BUSY SIGNAL"
+   ]
+  },
+  {
+   "phrase": "Stay Tuned!",
+   "theme_label": "Living Room",
+   "words": [
+    "RABBIT EARS",
+    "TELEVISION",
+    "RECORD PLAYER",
+    "SHAG CARPET",
+    "LAVA LAMP",
+    "RECLINER",
+    "BEAN BAG",
+    "HI-FI",
+    "WOOD PANELING"
+   ]
+  },
+  {
+   "phrase": "Mom’s Kitchen!",
+   "theme_label": "Mom's Kitchen",
+   "words": [
+    "PERCOLATOR",
+    "ICEBOX",
+    "TOASTER",
+    "GELATIN MOLD",
+    "APRON",
+    "CANISTERS",
+    "RECIPE BOX",
+    "BREAD BOX",
+    "HAND MIXER"
+   ]
+  },
+  {
+   "phrase": "Class Is in Session!",
+   "theme_label": "School Days",
+   "words": [
+    "CHALKBOARD",
+    "LUNCH PAIL",
+    "RECESS",
+    "INKWELL",
+    "SLIDE RULE",
+    "SPELLING BEE",
+    "REPORT CARD",
+    "HALL PASS",
+    "ERASERS"
+   ]
+  },
+  {
+   "phrase": "Playtime!",
+   "theme_label": "Classic Toys",
+   "words": [
+    "MARBLES",
+    "JACKS",
+    "SPINNING TOP",
+    "JUMP ROPE",
+    "KITE",
+    "ROLLER SKATES",
+    "TIN SOLDIERS",
+    "RAG DOLL",
+    "PADDLE BALL"
+   ]
+  },
+  {
+   "phrase": "Olly Olly Oxen Free!",
+   "theme_label": "Outdoor Games",
+   "words": [
+    "HOPSCOTCH",
+    "HIDE AND SEEK",
+    "RED ROVER",
+    "KICK THE CAN",
+    "FREEZE TAG",
+    "MARCO POLO",
+    "DOMINOES",
+    "TIDDLYWINKS",
+    "CAT'S CRADLE"
+   ]
+  },
+  {
+   "phrase": "Cruising in Style!",
+   "theme_label": "Classic Cars",
+   "words": [
+    "TAILFINS",
+    "WHITEWALLS",
+    "CHROME",
+    "CONVERTIBLE",
+    "BENCH SEAT",
+    "HOOD ORNAMENT",
+    "RUMBLE SEAT",
+    "HAND CRANK",
+    "CARBURETOR"
+   ]
+  },
+  {
+   "phrase": "Fill ’Er Up!",
+   "theme_label": "Gas Station",
+   "words": [
+    "FULL SERVICE",
+    "ATTENDANT",
+    "OIL CHECK",
+    "SERVICE BAY",
+    "GAS PUMP",
+    "WINDSHIELD",
+    "AIR HOSE",
+    "TIRE GAUGE",
+    "FILL IT UP"
+   ]
+  },
+  {
+   "phrase": "Sunday Best!",
+   "theme_label": "Fifties Fashion",
+   "words": [
+    "POODLE SKIRT",
+    "SADDLE SHOES",
+    "BOBBY SOCKS",
+    "LETTER JACKET",
+    "PETTICOAT",
+    "CAT EYE",
+    "PEARLS",
+    "PONYTAIL",
+    "DUCKTAIL"
+   ]
+  },
+  {
+   "phrase": "Peace and Love!",
+   "theme_label": "Sixties and Seventies",
+   "words": [
+    "BELL-BOTTOMS",
+    "TIE-DYE",
+    "MINISKIRT",
+    "GO-GO BOOTS",
+    "PLATFORM SHOES",
+    "LEISURE SUIT",
+    "HEADBAND",
+    "FRINGE VEST",
+    "PEACE SIGN"
+   ]
+  },
+  {
+   "phrase": "Let’s Dance!",
+   "theme_label": "Dance Floor",
+   "words": [
+    "TWIST",
+    "JITTERBUG",
+    "SWING",
+    "MASHED POTATO",
+    "LINDY HOP",
+    "DISCO BALL",
+    "BOOGIE",
+    "CHA-CHA",
+    "HUSTLE"
+   ]
+  },
+  {
+   "phrase": "On the Air!",
+   "theme_label": "Radio Days",
+   "words": [
+    "RADIO",
+    "DIAL",
+    "STATIC",
+    "SOAP OPERA",
+    "ANNOUNCER",
+    "BROADCAST",
+    "TRANSISTOR",
+    "AM STATION",
+    "AIRWAVES"
+   ]
+  },
+  {
+   "phrase": "Smile for the Camera!",
+   "theme_label": "Snapshots",
+   "words": [
+    "FILM ROLL",
+    "FLASHBULB",
+    "NEGATIVES",
+    "SLIDE SHOW",
+    "DARKROOM",
+    "INSTANT CAMERA",
+    "SNAPSHOT",
+    "PHOTO ALBUM",
+    "BOX CAMERA"
+   ]
+  },
+  {
+   "phrase": "Take a Letter!",
+   "theme_label": "The Office",
+   "words": [
+    "TYPEWRITER",
+    "CARBON PAPER",
+    "MIMEOGRAPH",
+    "FILING CABINET",
+    "DICTATION",
+    "STENOGRAPHER",
+    "INK BLOTTER",
+    "PAPER CLIPS",
+    "TIME CARD"
+   ]
+  },
+  {
+   "phrase": "Special Delivery!",
+   "theme_label": "Deliveries",
+   "words": [
+    "MILKMAN",
+    "GLASS BOTTLES",
+    "ICEMAN",
+    "PAPERBOY",
+    "MAILMAN",
+    "DOOR-TO-DOOR",
+    "ENCYCLOPEDIA",
+    "MAIL ORDER",
+    "DELIVERY TRUCK"
+   ]
+  },
+  {
+   "phrase": "Sugar Rush!",
+   "theme_label": "Candy Store",
+   "words": [
+    "PENNY CANDY",
+    "CANDY BUTTONS",
+    "ROCK CANDY",
+    "LICORICE WHIP",
+    "GUMBALLS",
+    "TAFFY",
+    "BUBBLE GUM",
+    "LOLLIPOPS",
+    "JAWBREAKERS"
+   ]
+  },
+  {
+   "phrase": "Order Up!",
+   "theme_label": "Diner Menu",
+   "words": [
+    "MEATLOAF",
+    "BLUE PLATE",
+    "PATTY MELT",
+    "FRIED CHICKEN",
+    "APPLE PIE",
+    "HASH BROWNS",
+    "CHILI DOG",
+    "ONION RINGS",
+    "CLUB SANDWICH"
+   ]
+  },
+  {
+   "phrase": "Lazy Summer Days!",
+   "theme_label": "Summer Days",
+   "words": [
+    "LEMONADE STAND",
+    "SPRINKLER",
+    "ICE CREAM TRUCK",
+    "SWIMMING HOLE",
+    "PORCH SWING",
+    "BACKYARD TENT",
+    "FIREFLIES",
+    "ROPE SWING",
+    "TREEHOUSE"
+   ]
+  },
+  {
+   "phrase": "Downtown Stroll!",
+   "theme_label": "Main Street",
+   "words": [
+    "FIVE AND DIME",
+    "BARBERSHOP",
+    "MOVIE PALACE",
+    "HARDWARE STORE",
+    "BAKERY",
+    "GENERAL STORE",
+    "SHOE REPAIR",
+    "TOWN SQUARE",
+    "SODA SHOP"
+   ]
+  },
+  {
+   "phrase": "A Little Off the Top!",
+   "theme_label": "Barber Chair",
+   "words": [
+    "BARBER POLE",
+    "STRAIGHT RAZOR",
+    "SHAVING BRUSH",
+    "HOT TOWEL",
+    "CREW CUT",
+    "FLAT TOP",
+    "POMADE",
+    "SIDEBURNS",
+    "COMB"
+   ]
+  },
+  {
+   "phrase": "Looking Sharp!",
+   "theme_label": "Beauty Parlor",
+   "words": [
+    "HAIR ROLLERS",
+    "HAIRSPRAY",
+    "BOUFFANT",
+    "PERM",
+    "PIN CURLS",
+    "HOOD DRYER",
+    "BEAUTY SALON",
+    "COLD CREAM",
+    "COMPACT"
+   ]
+  },
+  {
+   "phrase": "Wash Day!",
+   "theme_label": "Laundry Day",
+   "words": [
+    "WASHBOARD",
+    "CLOTHESLINE",
+    "CLOTHESPINS",
+    "WRINGER",
+    "STARCH",
+    "IRONING BOARD",
+    "LAUNDRY BASKET",
+    "BLUING",
+    "LINENS"
+   ]
+  },
+  {
+   "phrase": "Out for a Drive!",
+   "theme_label": "Sunday Drive",
+   "words": [
+    "BACK ROADS",
+    "CAR RADIO",
+    "FARM STAND",
+    "CHURCH SUPPER",
+    "GRANDMA'S HOUSE",
+    "LOOKOUT POINT",
+    "COUNTRY ROAD",
+    "PICNIC BASKET",
+    "SUNSET"
+   ]
+  },
+  {
+   "phrase": "Your Move!",
+   "theme_label": "Board Games",
+   "words": [
+    "CHESS",
+    "BACKGAMMON",
+    "MANCALA",
+    "CRIBBAGE",
+    "BINGO",
+    "CARD TABLE",
+    "GAME NIGHT",
+    "DICE",
+    "SOLITAIRE"
+   ]
+  },
+  {
+   "phrase": "Deal Me In!",
+   "theme_label": "Card Games",
+   "words": [
+    "GIN RUMMY",
+    "CANASTA",
+    "BRIDGE",
+    "POKER",
+    "HEARTS",
+    "SPADES",
+    "EUCHRE",
+    "CRAZY EIGHTS",
+    "GO FISH"
+   ]
+  },
+  {
+   "phrase": "Hometown Fun!",
+   "theme_label": "Hometown Fun",
+   "words": [
+    "TOWN PICNIC",
+    "PARADE",
+    "COUNTY FAIR",
+    "HAYRIDE",
+    "CARNIVAL",
+    "BAKE SALE",
+    "POTLUCK",
+    "BARN DANCE",
+    "FIREWORKS SHOW"
+   ]
+  },
+  {
+   "phrase": "Step Right Up!",
+   "theme_label": "The Fair",
+   "words": [
+    "FERRIS WHEEL",
+    "COTTON CANDY",
+    "CAROUSEL",
+    "BUMPER CARS",
+    "RING TOSS",
+    "FUN HOUSE",
+    "CANDY APPLE",
+    "ROLLER COASTER",
+    "SIDESHOW"
+   ]
+  },
+  {
+   "phrase": "Now Showing!",
+   "theme_label": "Movie Palace",
+   "words": [
+    "MARQUEE",
+    "USHER",
+    "TICKET BOOTH",
+    "NEWSREEL",
+    "MATINEE",
+    "VELVET SEATS",
+    "BALCONY",
+    "PROJECTOR",
+    "SILVER SCREEN"
+   ]
+  },
+  {
+   "phrase": "Don’t Touch That Dial!",
+   "theme_label": "Early Television",
+   "words": [
+    "BLACK AND WHITE",
+    "TEST PATTERN",
+    "TV DINNER",
+    "SIGN-OFF",
+    "CHANNEL KNOB",
+    "WESTERNS",
+    "GAME SHOW",
+    "CARTOONS",
+    "ANTENNA"
+   ]
+  },
+  {
+   "phrase": "Spin It Again!",
+   "theme_label": "Music Formats",
+   "words": [
+    "VINYL",
+    "EIGHT-TRACK",
+    "CASSETTE",
+    "TURNTABLE",
+    "NEEDLE",
+    "ALBUM COVER",
+    "BOOM BOX",
+    "MIXTAPE",
+    "REEL-TO-REEL"
+   ]
+  },
+  {
+   "phrase": "Grandma’s Recipes!",
+   "theme_label": "Grandma's Kitchen",
+   "words": [
+    "COOKIE JAR",
+    "CAST IRON",
+    "FLOUR SIFTER",
+    "SUNDAY ROAST",
+    "APPLE BUTTER",
+    "CANNING JARS",
+    "DUTCH OVEN",
+    "TABLECLOTH",
+    "RECIPE CARDS"
+   ]
+  },
+  {
+   "phrase": "Down on the Farm!",
+   "theme_label": "Farm Life",
+   "words": [
+    "TRACTOR",
+    "HAYLOFT",
+    "SILO",
+    "BARN",
+    "CHICKEN COOP",
+    "MILK PAIL",
+    "WINDMILL",
+    "PITCHFORK",
+    "ROOSTER"
+   ]
+  },
+  {
+   "phrase": "Insert a Coin!",
+   "theme_label": "Penny Arcade",
+   "words": [
+    "PINBALL",
+    "CLAW MACHINE",
+    "PHOTO BOOTH",
+    "TOKENS",
+    "AIR HOCKEY",
+    "FORTUNE TELLER",
+    "PRIZE COUNTER",
+    "HIGH SCORE",
+    "JOYSTICK"
+   ]
+  },
+  {
+   "phrase": "Dear Friend!",
+   "theme_label": "Letters and Mail",
+   "words": [
+    "PEN PAL",
+    "STATIONERY",
+    "POSTCARD",
+    "AIRMAIL",
+    "STAMP ALBUM",
+    "LOVE LETTER",
+    "SEALING WAX",
+    "FOUNTAIN PEN",
+    "MAIL SLOT"
+   ]
+  },
+  {
+   "phrase": "Happy Campers!",
+   "theme_label": "Summer Camp",
+   "words": [
+    "CAMPFIRE",
+    "BUNK BEDS",
+    "CANOE",
+    "COMPASS",
+    "KNOT TYING",
+    "S'MORES",
+    "MESS HALL",
+    "CAMP SONGS",
+    "FLASHLIGHT"
+   ]
+  },
+  {
+   "phrase": "Family Vacation!",
+   "theme_label": "Family Road Trip",
+   "words": [
+    "STATION WAGON",
+    "ROAD ATLAS",
+    "CB RADIO",
+    "LICENSE PLATE",
+    "MOTOR INN",
+    "TRAVEL BINGO",
+    "PIT STOP",
+    "SOUVENIRS",
+    "SING-ALONG"
+   ]
+  },
+  {
+   "phrase": "Sweet Sixteen!",
+   "theme_label": "Sweethearts",
+   "words": [
+    "SLOW DANCE",
+    "CLASS RING",
+    "GOING STEADY",
+    "LOVE SONG",
+    "FIRST DATE",
+    "BOUQUET",
+    "PROMISE RING",
+    "CORSAGE",
+    "PROM NIGHT"
+   ]
+  },
+  {
+   "phrase": "Hello, Neighbor!",
+   "theme_label": "The Neighborhood",
+   "words": [
+    "FRONT PORCH",
+    "PICKET FENCE",
+    "STREETLIGHT",
+    "BLOCK PARTY",
+    "CUL-DE-SAC",
+    "PAPER ROUTE",
+    "SIDEWALK CHALK",
+    "BIKE BELL",
+    "WELCOME MAT"
+   ]
+  },
+  {
+   "phrase": "Pedal Power!",
+   "theme_label": "Bicycles",
+   "words": [
+    "BANANA SEAT",
+    "STREAMERS",
+    "BASEBALL CARDS",
+    "KICKSTAND",
+    "TRICYCLE",
+    "HANDLEBARS",
+    "TIRE PUMP",
+    "SPOKES",
+    "COASTER BRAKE"
+   ]
+  },
+  {
+   "phrase": "Hobby Hour!",
+   "theme_label": "Hobbies",
+   "words": [
+    "MODEL TRAINS",
+    "MODEL AIRPLANE",
+    "CROSS-STITCH",
+    "KNITTING",
+    "CROCHET",
+    "COIN FOLDER",
+    "HAM RADIO",
+    "BIRDWATCHING",
+    "WOODWORKING"
+   ]
+  },
+  {
+   "phrase": "Batter Up!",
+   "theme_label": "Hometown Sports",
+   "words": [
+    "SANDLOT",
+    "LITTLE LEAGUE",
+    "BOXING RING",
+    "BOWLING ALLEY",
+    "ROLLER RINK",
+    "HOT DOG VENDOR",
+    "PENNANT",
+    "SCOREBOARD",
+    "BLEACHERS"
+   ]
+  },
+  {
+   "phrase": "Blast Off!",
+   "theme_label": "Space Age",
+   "words": [
+    "MOON LANDING",
+    "ASTRONAUT",
+    "ROCKET SHIP",
+    "SPACE RACE",
+    "SATELLITE",
+    "LAUNCH PAD",
+    "COUNTDOWN",
+    "LUNAR MODULE",
+    "FLYING SAUCER"
+   ]
+  },
+  {
+   "phrase": "A Stitch in Time!",
+   "theme_label": "Sewing Room",
+   "words": [
+    "SEWING MACHINE",
+    "THIMBLE",
+    "PIN CUSHION",
+    "PATTERNS",
+    "BOBBIN",
+    "BUTTON TIN",
+    "TAPE MEASURE",
+    "DARNING EGG",
+    "SPOOL"
+   ]
+  },
+  {
+   "phrase": "Handy Helper!",
+   "theme_label": "Grandpa's Garage",
+   "words": [
+    "WORKBENCH",
+    "TOOLBOX",
+    "MOTOR OIL",
+    "SPARE PARTS",
+    "PEGBOARD",
+    "JUNK DRAWER",
+    "SAWDUST",
+    "OIL CAN",
+    "HAND SAW"
+   ]
+  },
+  {
+   "phrase": "Supper’s Ready!",
+   "theme_label": "Sunday Dinner",
+   "words": [
+    "POT ROAST",
+    "GRAVY BOAT",
+    "DEVILED EGGS",
+    "GELATIN SALAD",
+    "CASSEROLE",
+    "DINNER BELL",
+    "BISCUITS",
+    "SWEET TEA",
+    "PEACH COBBLER"
+   ]
+  },
+  {
+   "phrase": "Chore Time!",
+   "theme_label": "Weekend Chores",
+   "words": [
+    "LAWN MOWER",
+    "RAKING LEAVES",
+    "CAR WASH",
+    "WEEDING",
+    "GARAGE SALE",
+    "SWEEPING",
+    "BEATING RUGS",
+    "GUTTERS",
+    "SHOVELING"
+   ]
+  },
+  {
+   "phrase": "Hip Talk!",
+   "theme_label": "Groovy Slang",
+   "words": [
+    "GROOVY",
+    "FAR OUT",
+    "OUTTA SIGHT",
+    "COOL CAT",
+    "DADDY-O",
+    "RIGHT ON",
+    "NIFTY",
+    "SWELL",
+    "PEACHY KEEN"
+   ]
+  },
+  {
+   "phrase": "Charge It!",
+   "theme_label": "Shopping Trip",
+   "words": [
+    "LAYAWAY",
+    "TRADING STAMPS",
+    "CATALOG",
+    "SHOPPING BAG",
+    "LUNCH COUNTER",
+    "CASH REGISTER",
+    "ESCALATOR",
+    "GIFT WRAP",
+    "SALESCLERK"
+   ]
+  },
+  {
+   "phrase": "Porch Stories!",
+   "theme_label": "Porch Evenings",
+   "words": [
+    "ROCKING CHAIR",
+    "SCREEN DOOR",
+    "CRICKETS",
+    "LIGHTNING BUGS",
+    "PORCH LIGHT",
+    "WIND CHIMES",
+    "BANJO",
+    "HARMONICA",
+    "FRONT STEPS"
+   ]
+  },
+  {
+   "phrase": "Treasures Kept!",
+   "theme_label": "Keepsakes",
+   "words": [
+    "HOPE CHEST",
+    "POCKET WATCH",
+    "LOCKET",
+    "YEARBOOK",
+    "MUSIC BOX",
+    "CHARM BRACELET",
+    "OLD LETTERS",
+    "BABY SHOES",
+    "FAMILY BIBLE"
+   ]
+  },
+  {
+   "phrase": "Life’s Little Joys!",
+   "theme_label": "Simple Pleasures",
+   "words": [
+    "SUNDAY PAPER",
+    "CROSSWORD",
+    "COMIC STRIPS",
+    "LAZY AFTERNOON",
+    "HOMEMADE",
+    "GOOD MANNERS",
+    "HANDSHAKE",
+    "SIMPLE TIMES",
+    "FAMILY DINNER"
+   ]
+  },
+  {
+   "phrase": "Those Were the Days!",
+   "theme_label": "Good Old Days",
+   "words": [
+    "MEMORIES",
+    "YESTERYEAR",
+    "BACK IN THE DAY",
+    "OLDIES",
+    "VINTAGE",
+    "RETRO",
+    "TIMELESS",
+    "REMEMBER WHEN",
+    "NOSTALGIA"
+   ]
+  }
+ ],
+ "cover": {
+  "page_count": 112,
+  "paper": "white",
+  "title": "WORD SEARCH",
+  "series_name": "MEMORY LANE HUNT!",
+  "volume": "VOL. 4",
+  "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
+  "band2": "for Adults and Seniors · Solutions Included",
+  "spine": "WORD SEARCH  ·  MEMORY LANE HUNT!  ·  VOL. 4  ·  PETER & CARDU",
+  "cart": {
+   "grid": [
+    "JUKEBOXDI",
+    "RADIOQMEL",
+    "TWISTVINY",
+    "MALTSKLCE"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     6
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     2,
+     0,
+     2,
+     4
+    ],
+    [
+     3,
+     0,
+     3,
+     3
+    ]
+   ],
+   "lens": [
+    2,
+    6
+   ]
+  },
+  "back_headline": "Take a trip back in time!",
+  "back_intro": [
+   "From soda fountains and drive-in movies to rotary phones and sock hops, <b>Memory Lane Hunt!</b> brings back the good old days in 55 relaxing word search puzzles."
+  ],
+  "back_bullets": [
+   "55 puzzles in <b>LARGE PRINT</b>, one per page",
+   "495 words from the 1950s to the 1980s: toys, fashion, music, cars, home life and more",
+   "A friendly throwback with every puzzle, from <i>Way Back When!</i> to <i>Those Were the Days!</i>",
+   "Words always read left to right or top to bottom. No backwards words!",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A calm, screen-free walk down memory lane for adults and seniors.",
+  "colors": {
+   "bg": "#FFF4DC",
+   "ink": "#1D3557",
+   "red": "#E63946",
+   "yellow": "#FFC93C",
+   "accent": "#457B9D",
+   "highlight": "#A8E6CF",
+   "tile": "#F6E3BA"
+  },
+  "sample": {
+   "title": "SAMPLE",
+   "grid": [
+    "JUKEBX",
+    "RECORD",
+    "DIMEQZ",
+    "NICKEL",
+    "SOCKHP",
+    "SINGLE"
+   ],
+   "found": [
+    [
+     1,
+     0,
+     1,
+     5
+    ],
+    [
+     2,
+     0,
+     2,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ],
+    [
+     5,
+     0,
+     5,
+     5
+    ]
+   ],
+   "words": "RECORD · DIME · NICKEL · SINGLE"
+  },
+  "style": "bold",
+  "author": "Peter & Cardu",
+  "illustration": "retrotv",
+  "count": "55",
+  "band_line": "Nostalgic Puzzles for Adults & Seniors",
+  "bold": {
+   "bg": "#5E35B1",
+   "ink": "#1F0F45",
+   "deep": "#4527A0"
+  }
+ }
+}

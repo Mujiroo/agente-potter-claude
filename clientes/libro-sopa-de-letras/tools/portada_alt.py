@@ -71,6 +71,8 @@ def bold_palette(cv):
 
 def illustration(cv, cx, top, c, ink):
     kind = cv.get("illustration", "cart")
+    if kind == "retrotv":
+        return scaled(retrotv(cx - 70, top + 20, cv["cart"], dict(c, ink=ink)), cx - 70, top + 20, 0.58)
     if kind == "giftbox":
         return scaled(giftbox(cx - 70, top + 28, cv["cart"], dict(c, ink=ink)), cx - 70, top + 28, 0.6)
     if kind == "billboard":
@@ -100,7 +102,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
         # autor arriba y centrado, separado del título
         out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
                    f'font-size="21" letter-spacing="4" fill="{navy if white else "#FFFFFF"}">{esc(cv["author"].upper())}</text>')
-    if cv.get("illustration") in ("suitcase", "billboard", "giftbox"):
+    if cv.get("illustration") in ("suitcase", "billboard", "giftbox", "retrotv"):
         bx, by, k = x0 + w - 118, y0 + 648, 0.88
     else:
         bx, by, k = x0 + w - 128, y0 + 585, 1
@@ -363,6 +365,58 @@ def giftbox(cx, top, words, c):
     for (sx, sy, sc) in [(bx0 - 70, by0 - 120, 1.2), (bx0 - 110, by0 + 90, 0.9), (bx0 + bw + 20, by0 + bh - 10, 0.8)]:
         out.append(f'<g transform="translate({sx},{sy}) scale({sc})" stroke="#fff" stroke-width="6" stroke-linecap="round">'
                    '<path d="M0,-24 V24 M-21,-12 L21,12 M-21,12 L21,-12"/></g>')
+    lr, lc = words["lens"]
+    lx, ly = gx + lc * cell + cell / 2, gy + lr * cell + cell / 2
+    out.append(f'''
+    <line x1="{lx+52}" y1="{ly+52}" x2="{lx+120}" y2="{ly+120}" stroke="{ink}" stroke-width="22" stroke-linecap="round"/>
+    <circle cx="{lx}" cy="{ly}" r="66" fill="#fff" fill-opacity=".25" stroke="{ink}" stroke-width="11"/>
+    <path d="M{lx-40},{ly-22} a48,48 0 0 1 30,-30" stroke="#fff" stroke-width="8" fill="none" stroke-linecap="round"/>''')
+    return "".join(out)
+
+
+def retrotv(cx, top, words, c):
+    """Televisor antiguo de madera: la pantalla es una sopa de letras; antena de conejo y un disco de vinilo."""
+    rows = words["grid"]
+    nr, nc = len(rows), len(rows[0])
+    cell = 42
+    gw, gh = nc * cell, nr * cell
+    gx, gy = cx - gw / 2 - 30, top + 110
+    ink = c["ink"]
+    wood = c.get("wood", "#A1662F")
+    bx0, by0, bw, bh = gx - 60, gy - 55, gw + 190, gh + 110
+    out = []
+    # disco de vinilo detrás, a la derecha
+    rx, ry = bx0 + bw + 40, by0 + 40
+    out.append(f'<circle cx="{rx}" cy="{ry}" r="105" fill="{c.get("vinyl", "#222")}" stroke="{ink}" stroke-width="6"/>')
+    for rr in (85, 68, 52):
+        out.append(f'<circle cx="{rx}" cy="{ry}" r="{rr}" fill="none" stroke="#fff" stroke-opacity=".18" stroke-width="3"/>')
+    out.append(f'<circle cx="{rx}" cy="{ry}" r="34" fill="{c["red"]}" stroke="{ink}" stroke-width="4"/><circle cx="{rx}" cy="{ry}" r="6" fill="#fff"/>')
+    # antena
+    out.append(f'<path d="M{cx-10},{by0} L{cx-90},{by0-120} M{cx+10},{by0} L{cx+100},{by0-110}" stroke="{ink}" stroke-width="7" stroke-linecap="round"/>')
+    out.append(f'<circle cx="{cx-90}" cy="{by0-120}" r="10" fill="{c["yellow"]}" stroke="{ink}" stroke-width="4"/>'
+               f'<circle cx="{cx+100}" cy="{by0-110}" r="10" fill="{c["yellow"]}" stroke="{ink}" stroke-width="4"/>')
+    out.append(f'<ellipse cx="{cx}" cy="{by0}" rx="46" ry="18" fill="{wood}" stroke="{ink}" stroke-width="6"/>')
+    # gabinete y patas
+    for lx in (bx0 + 50, bx0 + bw - 50):
+        out.append(f'<path d="M{lx-8},{by0+bh-4} L{lx-18},{by0+bh+46} M{lx+8},{by0+bh-4} L{lx+18},{by0+bh+46}" stroke="{ink}" stroke-width="9" stroke-linecap="round"/>')
+    out.append(f'<rect x="{bx0}" y="{by0}" width="{bw}" height="{bh}" rx="26" fill="{wood}" stroke="{ink}" stroke-width="9"/>')
+    # pantalla redondeada
+    out.append(f'<rect x="{gx-24}" y="{gy-24}" width="{gw+48}" height="{gh+48}" rx="34" fill="#fff" stroke="{ink}" stroke-width="8"/>')
+    # perillas y parlante a la derecha
+    kx = gx + gw + 70
+    for ky in (gy + 20, gy + 85):
+        out.append(f'<circle cx="{kx}" cy="{ky}" r="22" fill="{c.get("knob", "#F5E6C8")}" stroke="{ink}" stroke-width="6"/>'
+                   f'<line x1="{kx}" y1="{ky}" x2="{kx+12}" y2="{ky-12}" stroke="{ink}" stroke-width="5" stroke-linecap="round"/>')
+    for k in range(4):
+        out.append(f'<line x1="{kx-26}" y1="{gy+130+k*14}" x2="{kx+26}" y2="{gy+130+k*14}" stroke="{ink}" stroke-width="5" stroke-linecap="round"/>')
+    for (r1, c1, r2, c2) in words["found"]:
+        out.append(f'<line x1="{gx+c1*cell+cell/2}" y1="{gy+r1*cell+cell/2}" x2="{gx+c2*cell+cell/2}" '
+                   f'y2="{gy+r2*cell+cell/2}" stroke="{c["highlight"]}" stroke-width="34" stroke-linecap="round"/>')
+    for r, row in enumerate(rows):
+        for k, ch in enumerate(row):
+            out.append(f'<text x="{gx+k*cell+cell/2}" y="{gy+r*cell+cell/2+11}" text-anchor="middle" '
+                       f'font-family="Fredoka" font-weight="700" font-size="31" fill="{ink}">{ch}</text>')
+    out.append(f'<ellipse cx="{cx}" cy="{by0+bh+52}" rx="{bw/2+60}" ry="13" fill="#000" opacity=".14"/>')
     lr, lc = words["lens"]
     lx, ly = gx + lc * cell + cell / 2, gy + lr * cell + cell / 2
     out.append(f'''

@@ -428,3 +428,21 @@ Pedro pidió revisar todo como editor profesional.
 - Verificado: 0 errores, 0 desbordes (holgura mín. 11 px), 0 Type3, grises, zona segura, código de barras libre.
 - Archivos: `entregables/vol5/`.
 - Pendientes: OK de Pedro al Vol. 5; OK al planner navideño; revisión del Vol. 2 (nombre World Hunt!). Siguiente: Vol. 4 Nostalgia.
+- 14:51 Pedro aprueba la nueva portada del Vol. 3 con bandera (msg 246).
+
+## Vol. 4 Nostalgia v1 entregado — ~15:30
+- `vol4/libro4_nostalgia.json`, seed 2029: 55 temas años 50–80, solo genéricos (sin marcas, famosos, programas ni canciones).
+- Nombre: "Nostalgia Hunt!" YA EXISTE en Amazon ("Nostalgia Hunt: Large Print Word Search Puzzle Book for Adults") → **"Memory Lane Hunt!"** (0 títulos). "Nostalgic" va en la franja y el tagline.
+- 5 frases revelaban palabras de su propio puzzle → cambiadas.
+- Listas que no cabían en 14 pt/3 columnas (#1, 21, 22, 26, 44, 51, 54): reordené las palabras midiendo anchos con canvas; en #26 reemplacé ROADSIDE STAND → FARM STAND e ICE CREAM CONE → BACK ROADS. Holgura mínima 5 px.
+- Portada: morado #5E35B1, ilustración `retrotv` (TV de madera con pantalla-grilla JUKEBOX/RADIO/TWIST/MALT, antena, perillas, vinilo). Paleta B/N + wood/vinyl/knob.
+- Verificado: 0 errores, 0 desbordes, 0 Type3, grises, zona segura, código de barras libre. Vol. 1, 2, 3 y 5 intactos (cmp).
+- Archivos: `entregables/vol4/`.
+- Estado de la serie:
+  - V1 cerrado
+  - V2 esperando revisión
+  - V3 portada OK, falta OK final
+  - V4 enviado
+  - V5 esperando revisión (urgente)
+  - Planner esperando OK
+- Lección: para cada volumen nuevo medir los anchos de la lista de palabras (3 columnas a 14 pt) y buscar el nombre en Amazon ANTES de fijarlo.

@@ -225,7 +225,7 @@ def front_svg_white(book):
         c = dict(c, ink="#111111", red="#2B2B2B", yellow="#E4E4E4", accent="#555555",
                  highlight="#CFCFCF", tile="#F2F2F2", bread="#D6D6D6", carrot="#9A9A9A", leaf="#6E6E6E",
                  sea="#E0E0E0", land="#9E9E9E", plane_fold="#E6E6E6",
-                 car="#BDBDBD", glass="#EEEEEE", post="#9E9E9E", chrome="#EEEEEE", flag_blue="#4A4A4A", tree="#8C8C8C")
+                 car="#BDBDBD", glass="#EEEEEE", post="#9E9E9E", chrome="#EEEEEE", flag_blue="#4A4A4A", tree="#8C8C8C", wood="#A6A6A6", vinyl="#333333", knob="#EEEEEE")
     tw, th = book["trim"]
     W, H = (tw + 2 * BLEED) * U, (th + 2 * BLEED) * U
     b = BLEED * U

@@ -1,0 +1,772 @@
+[
+ {
+  "label": "Soda Fountain",
+  "words": [
+   "MILKSHAKE",
+   "MALT",
+   "ROOT BEER FLOAT",
+   "BANANA SPLIT",
+   "SUNDAE",
+   "COUNTER STOOL",
+   "SODA JERK",
+   "CHERRY ON TOP",
+   "EGG CREAM"
+  ]
+ },
+ {
+  "label": "Jukebox",
+  "words": [
+   "JUKEBOX",
+   "RECORD",
+   "FORTY-FIVE",
+   "NICKEL",
+   "DIME",
+   "SINGLES",
+   "DOO-WOP",
+   "ROCK AND ROLL",
+   "SOCK HOP"
+  ]
+ },
+ {
+  "label": "Drive-In Movies",
+  "words": [
+   "DRIVE-IN",
+   "MOVIE SCREEN",
+   "CONCESSIONS",
+   "SPEAKER BOX",
+   "DOUBLE FEATURE",
+   "BACK SEAT",
+   "POPCORN",
+   "INTERMISSION",
+   "HEADLIGHTS"
+  ]
+ },
+ {
+  "label": "Telephone Days",
+  "words": [
+   "ROTARY PHONE",
+   "PARTY LINE",
+   "OPERATOR",
+   "PHONE BOOTH",
+   "LONG DISTANCE",
+   "SWITCHBOARD",
+   "TELEGRAM",
+   "PAY PHONE",
+   "BUSY SIGNAL"
+  ]
+ },
+ {
+  "label": "Living Room",
+  "words": [
+   "RABBIT EARS",
+   "TELEVISION",
+   "RECORD PLAYER",
+   "SHAG CARPET",
+   "LAVA LAMP",
+   "RECLINER",
+   "BEAN BAG",
+   "HI-FI",
+   "WOOD PANELING"
+  ]
+ },
+ {
+  "label": "Mom's Kitchen",
+  "words": [
+   "PERCOLATOR",
+   "ICEBOX",
+   "TOASTER",
+   "GELATIN MOLD",
+   "APRON",
+   "CANISTERS",
+   "RECIPE BOX",
+   "BREAD BOX",
+   "HAND MIXER"
+  ]
+ },
+ {
+  "label": "School Days",
+  "words": [
+   "CHALKBOARD",
+   "LUNCH PAIL",
+   "RECESS",
+   "INKWELL",
+   "SLIDE RULE",
+   "SPELLING BEE",
+   "REPORT CARD",
+   "HALL PASS",
+   "ERASERS"
+  ]
+ },
+ {
+  "label": "Classic Toys",
+  "words": [
+   "MARBLES",
+   "JACKS",
+   "SPINNING TOP",
+   "JUMP ROPE",
+   "KITE",
+   "ROLLER SKATES",
+   "TIN SOLDIERS",
+   "RAG DOLL",
+   "PADDLE BALL"
+  ]
+ },
+ {
+  "label": "Outdoor Games",
+  "words": [
+   "HOPSCOTCH",
+   "HIDE AND SEEK",
+   "RED ROVER",
+   "KICK THE CAN",
+   "FREEZE TAG",
+   "MARCO POLO",
+   "DOMINOES",
+   "TIDDLYWINKS",
+   "CAT'S CRADLE"
+  ]
+ },
+ {
+  "label": "Classic Cars",
+  "words": [
+   "TAILFINS",
+   "WHITEWALLS",
+   "CHROME",
+   "CONVERTIBLE",
+   "BENCH SEAT",
+   "HOOD ORNAMENT",
+   "RUMBLE SEAT",
+   "HAND CRANK",
+   "CARBURETOR"
+  ]
+ },
+ {
+  "label": "Gas Station",
+  "words": [
+   "FULL SERVICE",
+   "ATTENDANT",
+   "OIL CHECK",
+   "SERVICE BAY",
+   "GAS PUMP",
+   "WINDSHIELD",
+   "AIR HOSE",
+   "TIRE GAUGE",
+   "FILL IT UP"
+  ]
+ },
+ {
+  "label": "Fifties Fashion",
+  "words": [
+   "POODLE SKIRT",
+   "SADDLE SHOES",
+   "BOBBY SOCKS",
+   "LETTER JACKET",
+   "PETTICOAT",
+   "CAT EYE",
+   "PEARLS",
+   "PONYTAIL",
+   "DUCKTAIL"
+  ]
+ },
+ {
+  "label": "Sixties and Seventies",
+  "words": [
+   "BELL-BOTTOMS",
+   "TIE-DYE",
+   "MINISKIRT",
+   "GO-GO BOOTS",
+   "PLATFORM SHOES",
+   "LEISURE SUIT",
+   "HEADBAND",
+   "FRINGE VEST",
+   "PEACE SIGN"
+  ]
+ },
+ {
+  "label": "Dance Floor",
+  "words": [
+   "TWIST",
+   "JITTERBUG",
+   "SWING",
+   "MASHED POTATO",
+   "LINDY HOP",
+   "DISCO BALL",
+   "BOOGIE",
+   "CHA-CHA",
+   "HUSTLE"
+  ]
+ },
+ {
+  "label": "Radio Days",
+  "words": [
+   "RADIO",
+   "DIAL",
+   "STATIC",
+   "SOAP OPERA",
+   "ANNOUNCER",
+   "BROADCAST",
+   "TRANSISTOR",
+   "AM STATION",
+   "AIRWAVES"
+  ]
+ },
+ {
+  "label": "Snapshots",
+  "words": [
+   "FILM ROLL",
+   "FLASHBULB",
+   "NEGATIVES",
+   "SLIDE SHOW",
+   "DARKROOM",
+   "INSTANT CAMERA",
+   "SNAPSHOT",
+   "PHOTO ALBUM",
+   "BOX CAMERA"
+  ]
+ },
+ {
+  "label": "The Office",
+  "words": [
+   "TYPEWRITER",
+   "CARBON PAPER",
+   "MIMEOGRAPH",
+   "FILING CABINET",
+   "DICTATION",
+   "STENOGRAPHER",
+   "INK BLOTTER",
+   "PAPER CLIPS",
+   "TIME CARD"
+  ]
+ },
+ {
+  "label": "Deliveries",
+  "words": [
+   "MILKMAN",
+   "GLASS BOTTLES",
+   "ICEMAN",
+   "PAPERBOY",
+   "MAILMAN",
+   "DOOR-TO-DOOR",
+   "ENCYCLOPEDIA",
+   "MAIL ORDER",
+   "DELIVERY TRUCK"
+  ]
+ },
+ {
+  "label": "Candy Store",
+  "words": [
+   "PENNY CANDY",
+   "CANDY BUTTONS",
+   "ROCK CANDY",
+   "LICORICE WHIP",
+   "GUMBALLS",
+   "TAFFY",
+   "BUBBLE GUM",
+   "LOLLIPOPS",
+   "JAWBREAKERS"
+  ]
+ },
+ {
+  "label": "Diner Menu",
+  "words": [
+   "MEATLOAF",
+   "BLUE PLATE",
+   "PATTY MELT",
+   "FRIED CHICKEN",
+   "APPLE PIE",
+   "HASH BROWNS",
+   "CHILI DOG",
+   "ONION RINGS",
+   "CLUB SANDWICH"
+  ]
+ },
+ {
+  "label": "Summer Days",
+  "words": [
+   "LEMONADE STAND",
+   "SPRINKLER",
+   "SWIMMING HOLE",
+   "FIREFLIES",
+   "ICE CREAM TRUCK",
+   "PORCH SWING",
+   "ROPE SWING",
+   "BACKYARD TENT",
+   "TREEHOUSE"
+  ]
+ },
+ {
+  "label": "Main Street",
+  "words": [
+   "FIVE AND DIME",
+   "BARBERSHOP",
+   "MOVIE PALACE",
+   "HARDWARE STORE",
+   "BAKERY",
+   "SHOE REPAIR",
+   "TOWN SQUARE",
+   "GENERAL STORE",
+   "SODA SHOP"
+  ]
+ },
+ {
+  "label": "Barber Chair",
+  "words": [
+   "BARBER POLE",
+   "STRAIGHT RAZOR",
+   "SHAVING BRUSH",
+   "HOT TOWEL",
+   "CREW CUT",
+   "FLAT TOP",
+   "POMADE",
+   "SIDEBURNS",
+   "COMB"
+  ]
+ },
+ {
+  "label": "Beauty Parlor",
+  "words": [
+   "HAIR ROLLERS",
+   "HAIRSPRAY",
+   "BOUFFANT",
+   "PERM",
+   "PIN CURLS",
+   "HOOD DRYER",
+   "BEAUTY SALON",
+   "COLD CREAM",
+   "COMPACT"
+  ]
+ },
+ {
+  "label": "Laundry Day",
+  "words": [
+   "WASHBOARD",
+   "CLOTHESLINE",
+   "CLOTHESPINS",
+   "WRINGER",
+   "STARCH",
+   "IRONING BOARD",
+   "LAUNDRY BASKET",
+   "BLUING",
+   "LINENS"
+  ]
+ },
+ {
+  "label": "Sunday Drive",
+  "words": [
+   "COUNTRY ROAD",
+   "PICNIC BASKET",
+   "ROADSIDE STAND",
+   "LOOKOUT POINT",
+   "ICE CREAM CONE",
+   "CHURCH SUPPER",
+   "GRANDMA'S HOUSE",
+   "SUNSET",
+   "CAR RADIO"
+  ]
+ },
+ {
+  "label": "Board Games",
+  "words": [
+   "CHESS",
+   "BACKGAMMON",
+   "MANCALA",
+   "CRIBBAGE",
+   "BINGO",
+   "CARD TABLE",
+   "GAME NIGHT",
+   "DICE",
+   "SOLITAIRE"
+  ]
+ },
+ {
+  "label": "Card Games",
+  "words": [
+   "GIN RUMMY",
+   "CANASTA",
+   "BRIDGE",
+   "POKER",
+   "HEARTS",
+   "SPADES",
+   "EUCHRE",
+   "CRAZY EIGHTS",
+   "GO FISH"
+  ]
+ },
+ {
+  "label": "Hometown Fun",
+  "words": [
+   "TOWN PICNIC",
+   "PARADE",
+   "COUNTY FAIR",
+   "HAYRIDE",
+   "CARNIVAL",
+   "BAKE SALE",
+   "POTLUCK",
+   "BARN DANCE",
+   "FIREWORKS SHOW"
+  ]
+ },
+ {
+  "label": "The Fair",
+  "words": [
+   "FERRIS WHEEL",
+   "COTTON CANDY",
+   "CAROUSEL",
+   "BUMPER CARS",
+   "RING TOSS",
+   "FUN HOUSE",
+   "CANDY APPLE",
+   "ROLLER COASTER",
+   "SIDESHOW"
+  ]
+ },
+ {
+  "label": "Movie Palace",
+  "words": [
+   "MARQUEE",
+   "USHER",
+   "TICKET BOOTH",
+   "NEWSREEL",
+   "MATINEE",
+   "VELVET SEATS",
+   "BALCONY",
+   "PROJECTOR",
+   "SILVER SCREEN"
+  ]
+ },
+ {
+  "label": "Early Television",
+  "words": [
+   "BLACK AND WHITE",
+   "TEST PATTERN",
+   "TV DINNER",
+   "SIGN-OFF",
+   "CHANNEL KNOB",
+   "WESTERNS",
+   "GAME SHOW",
+   "CARTOONS",
+   "ANTENNA"
+  ]
+ },
+ {
+  "label": "Music Formats",
+  "words": [
+   "VINYL",
+   "EIGHT-TRACK",
+   "CASSETTE",
+   "TURNTABLE",
+   "NEEDLE",
+   "ALBUM COVER",
+   "BOOM BOX",
+   "MIXTAPE",
+   "REEL-TO-REEL"
+  ]
+ },
+ {
+  "label": "Grandma's Kitchen",
+  "words": [
+   "COOKIE JAR",
+   "CAST IRON",
+   "FLOUR SIFTER",
+   "SUNDAY ROAST",
+   "APPLE BUTTER",
+   "CANNING JARS",
+   "DUTCH OVEN",
+   "TABLECLOTH",
+   "RECIPE CARDS"
+  ]
+ },
+ {
+  "label": "Farm Life",
+  "words": [
+   "TRACTOR",
+   "HAYLOFT",
+   "SILO",
+   "BARN",
+   "CHICKEN COOP",
+   "MILK PAIL",
+   "WINDMILL",
+   "PITCHFORK",
+   "ROOSTER"
+  ]
+ },
+ {
+  "label": "Penny Arcade",
+  "words": [
+   "PINBALL",
+   "CLAW MACHINE",
+   "PHOTO BOOTH",
+   "TOKENS",
+   "AIR HOCKEY",
+   "FORTUNE TELLER",
+   "PRIZE COUNTER",
+   "HIGH SCORE",
+   "JOYSTICK"
+  ]
+ },
+ {
+  "label": "Letters and Mail",
+  "words": [
+   "PEN PAL",
+   "STATIONERY",
+   "POSTCARD",
+   "AIRMAIL",
+   "STAMP ALBUM",
+   "LOVE LETTER",
+   "SEALING WAX",
+   "FOUNTAIN PEN",
+   "MAIL SLOT"
+  ]
+ },
+ {
+  "label": "Summer Camp",
+  "words": [
+   "CAMPFIRE",
+   "BUNK BEDS",
+   "CANOE",
+   "COMPASS",
+   "KNOT TYING",
+   "S'MORES",
+   "MESS HALL",
+   "CAMP SONGS",
+   "FLASHLIGHT"
+  ]
+ },
+ {
+  "label": "Family Road Trip",
+  "words": [
+   "STATION WAGON",
+   "ROAD ATLAS",
+   "CB RADIO",
+   "LICENSE PLATE",
+   "MOTOR INN",
+   "TRAVEL BINGO",
+   "PIT STOP",
+   "SOUVENIRS",
+   "SING-ALONG"
+  ]
+ },
+ {
+  "label": "Sweethearts",
+  "words": [
+   "SLOW DANCE",
+   "CLASS RING",
+   "GOING STEADY",
+   "LOVE SONG",
+   "FIRST DATE",
+   "BOUQUET",
+   "PROMISE RING",
+   "CORSAGE",
+   "PROM NIGHT"
+  ]
+ },
+ {
+  "label": "The Neighborhood",
+  "words": [
+   "FRONT PORCH",
+   "PICKET FENCE",
+   "STREETLIGHT",
+   "BLOCK PARTY",
+   "CUL-DE-SAC",
+   "PAPER ROUTE",
+   "SIDEWALK CHALK",
+   "BIKE BELL",
+   "WELCOME MAT"
+  ]
+ },
+ {
+  "label": "Bicycles",
+  "words": [
+   "BANANA SEAT",
+   "STREAMERS",
+   "BASEBALL CARDS",
+   "KICKSTAND",
+   "TRICYCLE",
+   "HANDLEBARS",
+   "TIRE PUMP",
+   "SPOKES",
+   "COASTER BRAKE"
+  ]
+ },
+ {
+  "label": "Hobbies",
+  "words": [
+   "MODEL TRAINS",
+   "MODEL AIRPLANE",
+   "CROSS-STITCH",
+   "KNITTING",
+   "CROCHET",
+   "COIN FOLDER",
+   "HAM RADIO",
+   "BIRDWATCHING",
+   "WOODWORKING"
+  ]
+ },
+ {
+  "label": "Hometown Sports",
+  "words": [
+   "SANDLOT",
+   "LITTLE LEAGUE",
+   "BOXING RING",
+   "BOWLING ALLEY",
+   "ROLLER RINK",
+   "PENNANT",
+   "SCOREBOARD",
+   "BLEACHERS",
+   "HOT DOG VENDOR"
+  ]
+ },
+ {
+  "label": "Space Age",
+  "words": [
+   "MOON LANDING",
+   "ASTRONAUT",
+   "ROCKET SHIP",
+   "SPACE RACE",
+   "SATELLITE",
+   "LAUNCH PAD",
+   "COUNTDOWN",
+   "LUNAR MODULE",
+   "FLYING SAUCER"
+  ]
+ },
+ {
+  "label": "Sewing Room",
+  "words": [
+   "SEWING MACHINE",
+   "THIMBLE",
+   "PIN CUSHION",
+   "PATTERNS",
+   "BOBBIN",
+   "BUTTON TIN",
+   "TAPE MEASURE",
+   "DARNING EGG",
+   "SPOOL"
+  ]
+ },
+ {
+  "label": "Grandpa's Garage",
+  "words": [
+   "WORKBENCH",
+   "TOOLBOX",
+   "MOTOR OIL",
+   "SPARE PARTS",
+   "PEGBOARD",
+   "JUNK DRAWER",
+   "SAWDUST",
+   "OIL CAN",
+   "HAND SAW"
+  ]
+ },
+ {
+  "label": "Sunday Dinner",
+  "words": [
+   "POT ROAST",
+   "GRAVY BOAT",
+   "DEVILED EGGS",
+   "GELATIN SALAD",
+   "CASSEROLE",
+   "DINNER BELL",
+   "BISCUITS",
+   "SWEET TEA",
+   "PEACH COBBLER"
+  ]
+ },
+ {
+  "label": "Weekend Chores",
+  "words": [
+   "LAWN MOWER",
+   "RAKING LEAVES",
+   "CAR WASH",
+   "WEEDING",
+   "GARAGE SALE",
+   "SWEEPING",
+   "BEATING RUGS",
+   "GUTTERS",
+   "SHOVELING"
+  ]
+ },
+ {
+  "label": "Groovy Slang",
+  "words": [
+   "GROOVY",
+   "FAR OUT",
+   "OUTTA SIGHT",
+   "COOL CAT",
+   "DADDY-O",
+   "RIGHT ON",
+   "NIFTY",
+   "SWELL",
+   "PEACHY KEEN"
+  ]
+ },
+ {
+  "label": "Shopping Trip",
+  "words": [
+   "LAYAWAY",
+   "TRADING STAMPS",
+   "CATALOG",
+   "SHOPPING BAG",
+   "LUNCH COUNTER",
+   "ESCALATOR",
+   "CASH REGISTER",
+   "GIFT WRAP",
+   "SALESCLERK"
+  ]
+ },
+ {
+  "label": "Porch Evenings",
+  "words": [
+   "ROCKING CHAIR",
+   "SCREEN DOOR",
+   "CRICKETS",
+   "LIGHTNING BUGS",
+   "PORCH LIGHT",
+   "WIND CHIMES",
+   "BANJO",
+   "HARMONICA",
+   "FRONT STEPS"
+  ]
+ },
+ {
+  "label": "Keepsakes",
+  "words": [
+   "HOPE CHEST",
+   "POCKET WATCH",
+   "LOCKET",
+   "YEARBOOK",
+   "MUSIC BOX",
+   "CHARM BRACELET",
+   "OLD LETTERS",
+   "BABY SHOES",
+   "FAMILY BIBLE"
+  ]
+ },
+ {
+  "label": "Simple Pleasures",
+  "words": [
+   "SUNDAY PAPER",
+   "CROSSWORD",
+   "COMIC STRIPS",
+   "LAZY AFTERNOON",
+   "HOMEMADE",
+   "HANDSHAKE",
+   "GOOD MANNERS",
+   "SIMPLE TIMES",
+   "FAMILY DINNER"
+  ]
+ },
+ {
+  "label": "Good Old Days",
+  "words": [
+   "MEMORIES",
+   "YESTERYEAR",
+   "BACK IN THE DAY",
+   "OLDIES",
+   "VINTAGE",
+   "RETRO",
+   "TIMELESS",
+   "REMEMBER WHEN",
+   "NOSTALGIA"
+  ]
+ }
+]
