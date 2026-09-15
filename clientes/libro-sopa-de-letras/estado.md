@@ -327,3 +327,13 @@ Pedro pidió revisar todo como editor profesional.
   - nombres de más de 13 letras
   - temas sensibles (territorios en disputa, capitales múltiples)
 - Esperando la lista.
+- 13:24 Lista del Vol. 2 recibida (incoming/file_2.xlsx → `vol2/lista_original.json`): 55 bloques × 9 = país + capital + 7 ciudades. Sin repetidas, máx. 13 letras, solo A–Z y espacios. Pedro: "usa lo mismo" (specs del Vol. 1).
+- Revisión y preguntas enviadas (msg 200):
+  1) título por puzzle: país (recomendado) o frase de viaje
+  2) faltan USA, UK y Australia (el mercado es EE. UU.); 22/55 de Latinoamérica
+  3) sensibles: Ucrania DONETSK y MARIUPOL (ocupadas) → POLTAVA y CHERNIVTSI; Corea del Norte (aviso)
+  4) nombres:
+     - DANANG → DA NANG; HATYAI → HAT YAI; HO CHI MINH → SAIGON
+     - con puntuación en la lista: ST. PETERSBURG, PORT-AU-PRINCE, CAP-HAITIEN, PETION-VILLE
+     - mantener BANGALORE y TURKEY
+  - aviso: MEXICO en MEXICO CITY y PANAMA en PANAMA CITY → dejarlo
