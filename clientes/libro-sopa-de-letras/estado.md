@@ -217,3 +217,6 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - sin desbordes
 - Le pregunté si también quiere cambiar las soluciones a cápsula negra con letras blancas (pendiente).
 - Interior regenerado localmente (v9 candidato, aún no enviado como PDF).
+- 12:11 Pedro aprueba la p2 con íconos; las soluciones se quedan con contorno (msg 148).
+  - **Vigentes: interior v9 + portada v6**, ambos en `entregables/libro1/`.
+- Pendiente: revisión comercial (precio, palabras clave, categorías, descripción); sello "EASY" sin respuesta.
