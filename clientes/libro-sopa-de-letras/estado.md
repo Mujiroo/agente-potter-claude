@@ -293,3 +293,8 @@ Pedro pidió revisar todo como editor profesional.
   - Débiles: 55 puzzles frente a 100–224 de la competencia; 9 palabras; sin reseñas al inicio.
   - Falta: nombre de serie, descripción, 7 palabras clave y categorías, precio, marcar IA en texto.
 - **Error mío corregido** (msg 174): había sugerido reseñas de amigos o familiares. Amazon lo **prohíbe** (Community Guidelines). Alternativas: reseñas espontáneas, Amazon Ads, programas oficiales.
+- 12:58 Pedro: ¿"supermarket" o "grocery"? (msg 176). Medí en Amazon.com:
+  - Autocompletado: "supermarket word search" sí aparece; "grocery word…" no sugiere sopas de letras.
+  - Resultados: grocery word search 443; supermarket word search 194; food word search large print 4.000+.
+  - Recomendé **mantener Supermarket** y poner grocery/food en las 7 palabras clave.
+- Nota técnica: nunca dejar `cat >> archivo` sin entrada en un comando (se cuelga esperando stdin).
