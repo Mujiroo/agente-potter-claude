@@ -483,3 +483,8 @@ Pedro pidió revisar todo como editor profesional.
   - Pros: serie completa, ventas cruzadas, Christmas a tiempo.
   - Contras: un rechazo afecta a los 5; presupuesto de Ads repartido; declarar IA en cada uno.
   - Recomendé subir V5 primero, esperar aprobación (≤72 h) y luego el resto en 2 días.
+- 19:38–19:45 Outlook: Pedro pidió borrar los correos que restauró desde Elementos eliminados.
+  - Identifiqué 7 restaurados en Bandeja de entrada (lastModifiedDateTime 22:37:49Z, todos promocionales).
+  - Confirmó opción A (mover a Elementos eliminados). Moví 5; 2 (Enel, Booz) dieron 404 porque él los borró segundos antes.
+  - Resultado: 8 en Elementos eliminados (incluye un Falabella nuevo que borró él). Bandeja: solo BTG. No deseado: Bci Pyme intacto.
+  - Ofrecí borrado definitivo.
