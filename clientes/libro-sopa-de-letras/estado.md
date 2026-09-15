@@ -150,3 +150,4 @@ Pedro pidió (msg 83) más recomendaciones, mirando libros muy vendidos.
   - Ofrecí como alternativa 16 pt partiendo las palabras largas (no recomendado).
 - Soluciones: cápsula `rect` rx=15 con contorno negro de 2,6 unidades, rotada según la dirección.
 - Pendiente: nombre de autor/sello → línea de copyright en p2. Recomendaciones de venta antes de publicar.
+- 11:17 Pedro confirma lista en 14 pt (msg 93). Interior v5 = versión vigente.
