@@ -464,3 +464,6 @@ Pedro pidió revisar todo como editor profesional.
   - Expliqué (msg 272) las categorías: símbolos, Santa, comida, regalos, música, fe, clásicos, familia, invierno.
   - Admití que ~9 temas son de temporada invernal (Winter Sports, Winter Animals, Winter Clothes, Winter Walk, Night Sky, Evergreen Forest, Holiday Brunch, Getting Ready, New Year's Eve) y ofrecí cambiarlos por temas 100 % navideños. Esperando.
 - Nota técnica: los mensajes de Telegram con apóstrofos se escriben a un archivo (heredoc 'EOF') y se envían con "$(cat archivo)"; un apóstrofo dentro de comillas simples rompe el comando.
+- 16:23 Pedro aprueba la portada v2 del Vol. 5 y la explicación de las palabras (msg 276). Los temas se mantienen.
+  - **Vol. 5 final: interior v1 + portada v2** (entregables/vol5).
+- Pendiente: parte KDP (empezar por Vol. 5) y planner navideño (sin respuesta).
