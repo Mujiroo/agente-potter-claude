@@ -1,10 +1,19 @@
 {
- "title": "AISLE HUNT!",
- "subtitle": "Supermarket Word Search",
- "size": 15,
+ "title": "Word Search",
+ "subtitle": "Aisle Hunt!",
+ "volume": "Vol. 1",
+ "tagline": "55 Large Print Supermarket Puzzles for Adults and Seniors",
+ "trim": [
+  6,
+  9
+ ],
+ "size": 13,
  "seed": 2026,
+ "directions": "forward",
+ "series_note": "<b>Aisle Hunt!</b> is Vol. 1 of a series of themed large print word search books.<br>Enjoyed it? A short review on Amazon helps other puzzle lovers find it.",
  "puzzles": [
   {
+   "theme": "Citrus & Orchard",
    "words": [
     "KIDNEY BEAN",
     "COCONUT OIL",
@@ -18,6 +27,7 @@
    ]
   },
   {
+   "theme": "Veggie Basics",
    "words": [
     "NAVY BEAN",
     "POTATO",
@@ -31,6 +41,7 @@
    ]
   },
   {
+   "theme": "Garden Greens",
    "words": [
     "SPINACH",
     "BROCCOLI",
@@ -44,6 +55,7 @@
    ]
   },
   {
+   "theme": "Melons & Sweet Fruits",
    "words": [
     "JELLY BEANS",
     "WATERMELON",
@@ -57,6 +69,7 @@
    ]
   },
   {
+   "theme": "Exotic Produce",
    "words": [
     "BLACKBERRY",
     "BOYSENBERRY",
@@ -70,6 +83,7 @@
    ]
   },
   {
+   "theme": "Leafy Greens & Legumes",
    "words": [
     "SPROUT",
     "BOK CHOY",
@@ -83,6 +97,7 @@
    ]
   },
   {
+   "theme": "Dairy Case",
    "words": [
     "SOYBEAN",
     "MILK",
@@ -96,6 +111,7 @@
    ]
   },
   {
+   "theme": "Morning Bakery",
    "words": [
     "TOFU",
     "BREAD",
@@ -109,6 +125,7 @@
    ]
   },
   {
+   "theme": "Pantry Staples",
    "words": [
     "PANCAKE",
     "CORN FLAKES",
@@ -122,6 +139,7 @@
    ]
   },
   {
+   "theme": "Breakfast Grains",
    "words": [
     "CEREAL",
     "OATS",
@@ -135,6 +153,7 @@
    ]
   },
   {
+   "theme": "Pantry to Butcher",
    "words": [
     "TAPIOCA",
     "COUSCOUS",
@@ -148,6 +167,7 @@
    ]
   },
   {
+   "theme": "Meat Counter",
    "words": [
     "SAUSAGE",
     "HAM",
@@ -161,6 +181,7 @@
    ]
   },
   {
+   "theme": "Meat & Seafood",
    "words": [
     "LAMB",
     "DUCK",
@@ -174,6 +195,7 @@
    ]
   },
   {
+   "theme": "Seafood & Sips",
    "words": [
     "TROUT",
     "SARDINE",
@@ -187,6 +209,7 @@
    ]
   },
   {
+   "theme": "Drinks & Sweeteners",
    "words": [
     "WATER",
     "COFFEE",
@@ -200,6 +223,7 @@
    ]
   },
   {
+   "theme": "Sodas & Condiments",
    "words": [
     "ROOT BEER",
     "GINGER ALE",
@@ -213,6 +237,7 @@
    ]
   },
   {
+   "theme": "Sauces & Spices",
    "words": [
     "SAUCE",
     "DRESSING",
@@ -226,6 +251,7 @@
    ]
   },
   {
+   "theme": "Spice Rack",
    "words": [
     "ANISE",
     "CARDAMOM",
@@ -239,8 +265,9 @@
    ]
   },
   {
+   "theme": "Frozen Treats & Candy",
    "words": [
-    "POPSICLE",
+    "ICE POP",
     "SORBET",
     "SHERBET",
     "GELATO",
@@ -252,6 +279,7 @@
    ]
   },
   {
+   "theme": "Sweet Shop",
    "words": [
     "MARSHMALLOW",
     "GINGER SNAPS",
@@ -265,6 +293,7 @@
    ]
   },
   {
+   "theme": "Baking Aisle",
    "words": [
     "BATTER",
     "PIE CRUST",
@@ -278,6 +307,7 @@
    ]
   },
   {
+   "theme": "Cleaning Supplies",
    "words": [
     "SPONGE",
     "BROOM",
@@ -291,6 +321,7 @@
    ]
   },
   {
+   "theme": "Personal Care",
    "words": [
     "LOTION",
     "DEODORANT",
@@ -304,6 +335,7 @@
    ]
   },
   {
+   "theme": "Household Odds & Ends",
    "words": [
     "GLUE",
     "SCISSORS",
@@ -317,6 +349,7 @@
    ]
   },
   {
+   "theme": "Tropical Fruits",
    "words": [
     "BLEACH",
     "WIPES",
@@ -330,6 +363,7 @@
    ]
   },
   {
+   "theme": "Berries & More",
    "words": [
     "STRAWBERRY",
     "BLUEBERRY",
@@ -343,6 +377,7 @@
    ]
   },
   {
+   "theme": "Fresh Vegetables",
    "words": [
     "ARTICHOKE",
     "ASPARAGUS",
@@ -356,6 +391,7 @@
    ]
   },
   {
+   "theme": "Root Vegetables",
    "words": [
     "SHALLOT",
     "GINGER",
@@ -369,6 +405,7 @@
    ]
   },
   {
+   "theme": "Herb Garden",
    "words": [
     "CHARD",
     "PARSLEY",
@@ -382,6 +419,7 @@
    ]
   },
   {
+   "theme": "Herbs & Hot Peppers",
    "words": [
     "SAGE",
     "TARRAGON",
@@ -395,6 +433,7 @@
    ]
   },
   {
+   "theme": "Roots & Dairy",
    "words": [
     "MICROGREENS",
     "YAM",
@@ -408,6 +447,7 @@
    ]
   },
   {
+   "theme": "Deli Counter",
    "words": [
     "MILK POWDER",
     "MEATBALLS",
@@ -421,6 +461,7 @@
    ]
   },
   {
+   "theme": "Poultry & Fish",
    "words": [
     "CHICKEN THIGH",
     "CHICKEN WING",
@@ -434,6 +475,7 @@
    ]
   },
   {
+   "theme": "Fish Market",
    "words": [
     "OYSTER",
     "MUSSEL",
@@ -447,6 +489,7 @@
    ]
   },
   {
+   "theme": "Seafood & Breads",
    "words": [
     "SQUID",
     "OCTOPUS",
@@ -460,6 +503,7 @@
    ]
   },
   {
+   "theme": "Bakery Favorites",
    "words": [
     "TOAST",
     "SOURDOUGH",
@@ -473,6 +517,7 @@
    ]
   },
   {
+   "theme": "Bakery & Grains",
    "words": [
     "PIE",
     "BROWNIE",
@@ -486,6 +531,7 @@
    ]
   },
   {
+   "theme": "Pasta Aisle",
    "words": [
     "CORNMEAL",
     "SEMOLINA",
@@ -499,6 +545,7 @@
    ]
   },
   {
+   "theme": "Baking Essentials",
    "words": [
     "UDON",
     "SOBA",
@@ -512,6 +559,7 @@
    ]
   },
   {
+   "theme": "Spices & Dips",
    "words": [
     "PAPRIKA",
     "CUMIN",
@@ -525,6 +573,7 @@
    ]
   },
   {
+   "theme": "Nut Aisle",
    "words": [
     "JELLY",
     "PRESERVES",
@@ -538,6 +587,7 @@
    ]
   },
   {
+   "theme": "Snack Aisle",
    "words": [
     "PINE NUTS",
     "CHIA SEEDS",
@@ -551,6 +601,7 @@
    ]
   },
   {
+   "theme": "Drinks & Party Supplies",
    "words": [
     "MILKSHAKE",
     "SMOOTHIE",
@@ -564,6 +615,7 @@
    ]
   },
   {
+   "theme": "Party & Personal Care",
    "words": [
     "PLASTIC FORKS",
     "STRAWS",
@@ -577,6 +629,7 @@
    ]
   },
   {
+   "theme": "Home Essentials",
    "words": [
     "COTTON BALLS",
     "COTTON SWABS",
@@ -590,6 +643,7 @@
    ]
   },
   {
+   "theme": "Jars & Sweets",
    "words": [
     "RECYCLING BIN",
     "OLIVES",
@@ -603,6 +657,7 @@
    ]
   },
   {
+   "theme": "World Foods",
    "words": [
     "PIEROGI",
     "KIMCHI",
@@ -616,6 +671,7 @@
    ]
   },
   {
+   "theme": "Fridge Favorites",
    "words": [
     "SWEET POTATO",
     "BELL PEPPER",
@@ -629,6 +685,7 @@
    ]
   },
   {
+   "theme": "Weekly Shopping List",
    "words": [
     "RYE BREAD",
     "RICE CRACKERS",
@@ -642,6 +699,7 @@
    ]
   },
   {
+   "theme": "Shopping Cart Mix",
    "words": [
     "MINERAL WATER",
     "ICED TEA",
@@ -655,6 +713,7 @@
    ]
   },
   {
+   "theme": "Pantry & Home",
    "words": [
     "GLASS CLEANER",
     "LUNCH BAGS",
@@ -668,6 +727,7 @@
    ]
   },
   {
+   "theme": "Dairy & Beverages",
    "words": [
     "LIMA BEAN",
     "OAT MILK",
@@ -681,6 +741,7 @@
    ]
   },
   {
+   "theme": "Household Mix",
    "words": [
     "HOT SAUCE",
     "HAND SOAP",
@@ -694,6 +755,7 @@
    ]
   },
   {
+   "theme": "Last-Minute Items",
    "words": [
     "WHIPPED CREAM",
     "GRAPE JUICE",
@@ -707,6 +769,7 @@
    ]
   },
   {
+   "theme": "Checkout Lane",
    "words": [
     "PINTO BEAN",
     "COCONUT MILK",

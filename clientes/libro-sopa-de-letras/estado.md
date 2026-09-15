@@ -76,3 +76,18 @@ Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derec
 - Specs de portada: lomo 112 × 0.002252 = 0,252" (texto permitido desde 79 págs.); archivo completo 17,502 × 11,25" con sangrado de 0,125"; 300 DPI; un solo PDF.
 - Mejoras sugeridas: nombre de sección por puzzle, "Vol. 1", página final con la serie.
 - Esperando: OK de Pedro al título → rehacer la portada y corregir POPSICLE en el PDF.
+
+## Cambios de Pedro — 2026-09-15 09:53–09:58 (msgs 42, 43, 47, 48, 52, 53)
+- **Tamaño 6×9"**. Yo había entendido mal "no cambies el tamaño": el tamaño que quiere es 6×9.
+- **Título**: *Word Search: Aisle Hunt! 55 Large Print Supermarket Puzzles for Adults and Seniors* (confirmado, msg 52).
+- Palabras **solo hacia adelante**: → ↓ ↘ ↗, ninguna al revés.
+- Contraportada aprobada; POPSICLE → ICE POP.
+- Mejoras aprobadas: nombres de sección (55, desde Citrus & Orchard hasta Checkout Lane), Vol. 1, nota de serie.
+- Nota de serie: **opción B**, al pie de las instrucciones, para mantener **112 págs.**
+
+## Interior v2 — enviado 10:0x (msg 54)
+- 6×9", grilla 13×13, márgenes espejados (0,5" hacia el lomo, 0,35" hacia afuera). 112 págs.
+- PDF: `agent-browser pdf` IGNORA @page (sale carta). Usar Chrome directo:
+  `~/.agent-browser/browsers/chrome-*/chrome --headless --no-sandbox --no-pdf-header-footer --print-to-pdf=<pdf> file://<html>`
+- El generador evita esconder una palabra dentro de otra; en el puzzle 55 APPLE está contenida en PINEAPPLE. Le propuse cambiar APPLE → PLUM (pendiente).
+- Siguiente: portada completa 6×9 (lomo 0,252", archivo 12,502×9,25").
