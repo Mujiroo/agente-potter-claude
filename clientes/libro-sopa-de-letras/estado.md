@@ -317,3 +317,13 @@ Pedro pidió revisar todo como editor profesional.
 - **EDICIÓN CERRADA. Vigentes: interior v11 + portada v7** (en `entregables/libro1/`).
 - Siguiente: parte KDP (descripción, 7 palabras clave, categorías, precio; marcar IA en texto = sí, imágenes = no).
 - 13:21 Pedro: "guarda eso". Archivos finales versionados en `clientes/libro-sopa-de-letras/entregables/vol1/` (interior v11, portada v7, cover_final.png). Resumen del proyecto en `memory/proyectos.md`.
+
+# VOL. 2 — Países, capitales y ciudades importantes
+- 13:23 Pedro pide armar el Vol. 2 (msg 193): libro + portada, lo más profesional posible, revisando errores de todo tipo. Enviará la lista.
+- Asumo las specs del Vol. 1 salvo indicación: 6×9, blanco, 13×13, 55×9, 112 págs., p1 B/N, p2 con íconos, contornos, solo hacia adelante, frases, autor Peter & Cardu, serie Big Print Word Hunt Vol. 2, portada estilo A con otro color e ilustración de viaje.
+- Revisiones clave para geografía:
+  - capitales y nombres actuales (Astana, Eswatini, Türkiye…)
+  - diacríticos y signos (grilla solo A–Z)
+  - nombres de más de 13 letras
+  - temas sensibles (territorios en disputa, capitales múltiples)
+- Esperando la lista.
