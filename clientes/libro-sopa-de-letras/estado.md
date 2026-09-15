@@ -55,3 +55,24 @@
   - ¿8 direcciones o solo hacia adelante?
   - ¿nombres de tema por puzzle?
   - portada completa para KDP (lomo y contraportada)
+
+## Investigación comercial y KDP — 2026-09-15 ~10:15 (msgs 39–41)
+Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derechos de autor, sugerencia de título y subtítulo, texto de contraportada, destacar la letra grande y otras mejoras.
+
+- Mercado:
+  - Competencia de supermercado: títulos genéricos, 6×9", 50–55 puzzles.
+  - Los top de large print destacan letra grande y "adults and seniors" (asinsight, jul. 2026).
+- Propuesta:
+  - **AISLE HUNT!**, subtítulo *Supermarket Word Search: 55 Large Print Puzzles for Adults and Seniors*.
+  - Busqué "Aisle Hunt" y no hay libro con ese nombre.
+  - Alternativas sin verificar: Cart Full of Words / Shop & Seek.
+- Serie: logo "___ HUNT!" + sello LARGE PRINT + marco de grilla fijos; cambia tema, ilustración y color.
+- Contraportada: texto en inglés enviado (msg 40), sin promesas de salud.
+- Legal / KDP:
+  - **POPSICLE** es marca registrada de Unilever → cambiar a ICE POP (pendiente de su OK).
+  - Declarar en KDP las imágenes hechas con IA (ilustración de Canva AI).
+  - No usar bestseller, free ni marcas en el título; el texto de la portada debe coincidir con los metadatos.
+  - Canva sirve si el diseño es propio.
+- Specs de portada: lomo 112 × 0.002252 = 0,252" (texto permitido desde 79 págs.); archivo completo 17,502 × 11,25" con sangrado de 0,125"; 300 DPI; un solo PDF.
+- Mejoras sugeridas: nombre de sección por puzzle, "Vol. 1", página final con la serie.
+- Esperando: OK de Pedro al título → rehacer la portada y corregir POPSICLE en el PDF.
