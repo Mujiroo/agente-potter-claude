@@ -22,7 +22,10 @@ Uso: generar.py libro.json salida.html
 import html
 import json
 import random
+import os
 import sys
+
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 # (fila, columna). Las 4 primeras se leen hacia adelante; las otras 4 son al revés.
 DIRS = [(0, 1), (1, 0), (1, 1), (-1, 1), (0, -1), (-1, 0), (-1, -1), (1, -1)]
@@ -144,6 +147,7 @@ h1 {{ font-size: {max(18, 30 * k):.0f}pt; margin: 0 0 0.08in; text-align: center
 .words ul {{ list-style: none; margin: 0; padding: 0; width: 33.3%; }}
 .words li {{ font-size: {max(12, 19 * k):.0f}pt; font-weight: 700; line-height: 1.45; text-transform: uppercase; white-space: nowrap; }}
 .title-page {{ justify-content: center; text-align: center; }}
+.cover1 {{ width: 100%; max-height: 100%; }}
 .title-page .big {{ font-size: {64 * k:.0f}pt; font-weight: 900; line-height: 1; }}
 .title-page .sub {{ font-size: {30 * k:.0f}pt; margin-top: 0.15in; font-weight: 700; }}
 .title-page .vol {{ font-size: {20 * k:.0f}pt; margin-top: 0.15in; letter-spacing: 3px; }}
@@ -171,10 +175,15 @@ def main(src, dst):
         num = f'<div class="num">{n}</div>' if n > 1 else ""
         pages.append(f'<section class="page {parity} {cls}">{body}{num}</section>')
 
-    page(f'<div class="big">{html.escape(book["title"])}</div>'
-         f'<div class="sub">{html.escape(book.get("subtitle", ""))}</div>'
-         f'<div class="vol">{html.escape(book.get("volume", ""))}</div>'
-         f'<div class="note">{html.escape(book.get("tagline", ""))}</div>', "title-page")
+    if book.get("cover"):
+        # página 1 = la portada sobre papel blanco
+        import portada
+        page(portada.front_svg_white(book), "title-page")
+    else:
+        page(f'<div class="big">{html.escape(book["title"])}</div>'
+             f'<div class="sub">{html.escape(book.get("subtitle", ""))}</div>'
+             f'<div class="vol">{html.escape(book.get("volume", ""))}</div>'
+             f'<div class="note">{html.escape(book.get("tagline", ""))}</div>', "title-page")
 
     how = ('<p>Find every word from the list hidden in the grid. Words always read '
            '<b>left to right</b> or <b>top to bottom</b>: across, down, or diagonally. '
@@ -201,7 +210,11 @@ def main(src, dst):
         page(f'{header("Solution", i, p)}{grid_svg(grid, placed)}{words_block(p["words"])}')
 
     with open(dst, "w", encoding="utf-8") as f:
-        f.write(f'<!doctype html><html><head><meta charset="utf-8"><style>{css(w, h)}</style></head>'
+        fonts = ""
+        if book.get("cover"):
+            import portada
+            fonts = portada.font_css()
+        f.write(f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}{css(w, h)}</style></head>'
                 f'<body>{"".join(pages)}</body></html>')
     print(f"{len(pages)} páginas {w}x{h} -> {dst}")
 

@@ -776,11 +776,124 @@
     "TOMATO JUICE",
     "CHAI TEA",
     "PEANUT OIL",
-    "APPLE",
+    "MELON",
     "BANANA",
     "CARROT",
     "PINEAPPLE"
    ]
   }
- ]
+ ],
+ "cover": {
+  "page_count": 112,
+  "paper": "white",
+  "title": "WORD SEARCH",
+  "series_name": "AISLE HUNT!",
+  "volume": "VOL. 1",
+  "band1": "55 LARGE PRINT SUPERMARKET PUZZLES",
+  "band2": "for Adults and Seniors · Solutions Included",
+  "spine": "WORD SEARCH  ·  AISLE HUNT!  ·  VOL. 1",
+  "cart": {
+   "grid": [
+    "MILKBREAD",
+    "APPLEXCOT",
+    "TOMATORJE",
+    "EGGSQUNAA"
+   ],
+   "found": [
+    [
+     0,
+     4,
+     0,
+     8
+    ],
+    [
+     1,
+     0,
+     1,
+     4
+    ],
+    [
+     3,
+     0,
+     3,
+     3
+    ],
+    [
+     1,
+     8,
+     3,
+     8
+    ]
+   ],
+   "lens": [
+    1,
+    2
+   ]
+  },
+  "back_headline": "Grab a cart and start searching!",
+  "back_intro": [
+   "From the produce aisle to the checkout lane, <b>Aisle Hunt!</b> turns a trip to the supermarket into 55 relaxing word search puzzles."
+  ],
+  "back_bullets": [
+   "55 puzzles in <b>LARGE PRINT</b>, one per page",
+   "495 everyday grocery words: fruits, veggies, dairy, bakery, snacks, household essentials and more",
+   "Themed aisles, from <i>Citrus &amp; Orchard</i> to <i>Checkout Lane</i>",
+   "Words always read left to right or top to bottom. No backwards words!",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A calm, screen-free break for adults and seniors, at home or on the go.",
+  "colors": {
+   "bg": "#FFF4DC",
+   "ink": "#1D3557",
+   "red": "#E63946",
+   "yellow": "#FFC93C",
+   "accent": "#457B9D",
+   "highlight": "#A8E6CF",
+   "tile": "#F6E3BA"
+  },
+  "sample": {
+   "title": "DAIRY CASE",
+   "grid": [
+    "MILKQZ",
+    "BUTTER",
+    "CREAMX",
+    "YOGURT",
+    "EGGSPA",
+    "CHEESE"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     3
+    ],
+    [
+     1,
+     0,
+     1,
+     5
+    ],
+    [
+     2,
+     0,
+     2,
+     4
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ],
+    [
+     5,
+     0,
+     5,
+     5
+    ]
+   ],
+   "words": "MILK · BUTTER · CREAM · YOGURT · CHEESE"
+  }
+ }
 }

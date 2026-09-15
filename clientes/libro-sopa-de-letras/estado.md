@@ -91,3 +91,18 @@ Pedro pidió (msg 37): portada comercialmente atractiva, cumplir con KDP y derec
   `~/.agent-browser/browsers/chrome-*/chrome --headless --no-sandbox --no-pdf-header-footer --print-to-pdf=<pdf> file://<html>`
 - El generador evita esconder una palabra dentro de otra; en el puzzle 55 APPLE está contenida en PINEAPPLE. Le propuse cambiar APPLE → PLUM (pendiente).
 - Siguiente: portada completa 6×9 (lomo 0,252", archivo 12,502×9,25").
+
+## Portada v1 propia (vectorial) — enviada 10:10 (msgs 68–70)
+- `tools/portada.py libro.json out.html [--front-only] [--white]`, con los datos en `libro.json` → "cover".
+  - Toldo, título, etiqueta "AISLE HUNT!", sello LARGE PRINT, carro con canasta sopa de letras, piso, franja inferior.
+  - Contraportada: titular, tarjeta con texto, muestra "DAIRY CASE" y zona de código de barras libre (abajo a la derecha).
+- Sin IA ni stock. Fuentes en `tools/fonts`: Luckiest Guy (Apache 2.0) y Fredoka (OFL).
+- PDF: Chrome headless `--print-to-pdf`. Medidas 900×666 pt = 12,502×9,25"; lomo 0,2522". Fredoka queda incrustada como Type3 (vectorial).
+- p1 del interior = frente sobre blanco (`portada.front_svg_white`). Avisé que en interior B/N se imprime en grises.
+- Sugerí borrar de Canva las 4 portadas IA (DAHVQyjvkOw, DAHVQw41Dcw, DAHVQz-shcM, DAHVQ1RlCfI).
+- MELON se queda (Pedro, msg 64).
+- Pedro (msg 66): no le calzan los nombres de sección → quiere el número del puzzle identificado. Le di opciones (msg 67):
+  - A) PUZZLE 1
+  - B) PUZZLE 1 · AISLE 1 (recomendada)
+  - C) PUZZLE N + frase rotativa
+  Esperando la elección; cambia también la viñeta "Themed aisles…" de la contraportada.
