@@ -467,3 +467,8 @@ Pedro pidió revisar todo como editor profesional.
 - 16:23 Pedro aprueba la portada v2 del Vol. 5 y la explicación de las palabras (msg 276). Los temas se mantienen.
   - **Vol. 5 final: interior v1 + portada v2** (entregables/vol5).
 - Pendiente: parte KDP (empezar por Vol. 5) y planner navideño (sin respuesta).
+- 16:24 Pedro (msg 278): ¿las palabras se parecen a los libros navideños que venden en Amazon?
+  - agent-browser bloqueado por Amazon ("Something went wrong"). Comparé descripciones y títulos vía búsqueda web: "Christmas Word Search for Adults: 100 Large Print Holiday Puzzles", "Christmas Word Search: 55 Puzzles Based on Holiday Traditions, Carols, and Winter Fun", "Jumbo Christmas Word Search", el bestseller "…2400+ Words, Winter Themed Word Find Puzzles", "…Holiday and Winter Themed Puzzles".
+  - Temas comunes de la competencia: carols, Santa's workshop, nativity, foods/treats/cookies/baking, ornaments, winter wonderland, traditions, holiday movies. Todos cubiertos menos películas (evitadas por marcas).
+  - La mezcla de Navidad con invierno es normal en la categoría. Diferenciales nuestros: Dickens, Nutcracker, poema de 1823, dulces del mundo, mercado navideño.
+  - Conclusión enviada (msg 279): alineado, no cambiar.
