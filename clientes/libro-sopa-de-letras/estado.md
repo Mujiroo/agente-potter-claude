@@ -26,3 +26,6 @@
 - Respondí: sí. Genero los puzzles y las soluciones en un PDF de interior (KDP). Pedro lo sube a Canva (se abre editable).
   - No importar directo: CANVA_MCP_IMPORT_DESIGN_FROM_URL exige un enlace público. No publicar sin que Pedro lo pida sabiendo que queda expuesto.
 - Pendiente de Pedro: lista (por tema/puzzle o general), tamaño (¿8,5×11"?), letra grande 15×15 o normal 20×20, soluciones al final.
+- 09:18 Pedro aprueba: le mando el PDF y él lo sube a Canva.
+- Defaults propuestos (msg 25) si no dice otra cosa: 8,5×11", grilla 15×15 letra grande, 1 puzzle por página con título del tema, soluciones al final.
+- Esperando: **la lista** de palabras.
