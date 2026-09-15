@@ -456,3 +456,11 @@ Pedro pidió revisar todo como editor profesional.
   - V5 v1 + v1
   - Todos en `entregables/volN/`.
 - Siguiente: parte KDP (empezar por V5 por fecha) y planner navideño (esperando OK).
+- 15:54 Pedro (msg 267): portada del Vol. 5 "más navideña".
+  - `cover.festive`: copos de nieve, nieve sobre las letras, guirnalda de luces (sin tapar el autor), suelo nevado, gorro de Santa en VOL. 5, acebo en la etiqueta.
+  - En la p1 B/N se omiten guirnalda y acebo.
+  - **Portada v2** enviada con antes/después (msgs 273–275). Vol. 1–4 intactos (cmp). Interior regenerado: 0 errores, grises.
+- 15:59/16:15 Pedro (msgs 269–270): por qué esas palabras son navideñas.
+  - Expliqué (msg 272) las categorías: símbolos, Santa, comida, regalos, música, fe, clásicos, familia, invierno.
+  - Admití que ~9 temas son de temporada invernal (Winter Sports, Winter Animals, Winter Clothes, Winter Walk, Night Sky, Evergreen Forest, Holiday Brunch, Getting Ready, New Year's Eve) y ofrecí cambiarlos por temas 100 % navideños. Esperando.
+- Nota técnica: los mensajes de Telegram con apóstrofos se escriben a un archivo (heredoc 'EOF') y se envían con "$(cat archivo)"; un apóstrofo dentro de comillas simples rompe el comando.

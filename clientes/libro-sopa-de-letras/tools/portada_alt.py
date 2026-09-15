@@ -82,6 +82,73 @@ def illustration(cv, cx, top, c, ink):
     return scaled(cart(cx - 55, top, cv["cart"], dict(c, ink=ink)), cx - 55, top, 0.72)
 
 
+def festive_back(x0, y0, w, h, seed=5):
+    """Copos de nieve dispersos (detrás de los títulos)."""
+    rng = random.Random(seed)
+    out = []
+    for _ in range(38):
+        sx, sy = x0 + rng.uniform(20, w - 20), y0 + rng.uniform(20, h - 230)
+        sc = rng.uniform(0.35, 0.8)
+        op = rng.uniform(0.45, 0.9)
+        out.append(f'<g transform="translate({sx:.0f},{sy:.0f}) scale({sc:.2f})" stroke="#fff" stroke-width="5" '
+                   f'stroke-linecap="round" opacity="{op:.2f}"><path d="M0,-20 V20 M-17,-10 L17,10 M-17,10 L17,-10"/></g>')
+    return "".join(out)
+
+
+def snow_caps(cx, y, width, n, size):
+    """Nieve acumulada sobre cada letra del título (aprox. por posición uniforme)."""
+    top = y - size * 0.70
+    step = width / n
+    out = []
+    for k in range(n):
+        lx = cx - width / 2 + step * (k + 0.5)
+        wd = step * 0.78
+        out.append(f'<path d="M{lx-wd/2:.0f},{top+10:.0f} C{lx-wd/2:.0f},{top-14:.0f} {lx-wd/6:.0f},{top-20:.0f} {lx:.0f},{top-12:.0f} '
+                   f'C{lx+wd/6:.0f},{top-22:.0f} {lx+wd/2:.0f},{top-12:.0f} {lx+wd/2:.0f},{top+10:.0f} '
+                   f'C{lx+wd/4:.0f},{top+2:.0f} {lx-wd/4:.0f},{top+18:.0f} {lx-wd/2:.0f},{top+10:.0f} z" fill="#fff"/>')
+    return "".join(out)
+
+
+def light_garland(x0, w, y, c, ink):
+    """Guirnalda de luces navideñas de lado a lado."""
+    out = [f'<path d="M{x0-10},{y} Q{x0+w/4},{y+34} {x0+w/2},{y+6} Q{x0+3*w/4},{y+34} {x0+w+10},{y}" '
+           f'fill="none" stroke="{ink}" stroke-width="4"/>']
+    cols = [c["red"], c["yellow"], "#4FC3F7", "#FFFFFF", "#FF8A65"]
+    for k in range(14):
+        t = (k + 0.5) / 14
+        if t < 0.5:
+            u = t * 2; bx = x0 + u * w / 2; by = y + 2 * (1 - u) * u * 34 + u * u * 6
+        else:
+            u = (t - 0.5) * 2; bx = x0 + w / 2 + u * w / 2; by = (1 - u) ** 2 * (y + 6) + 2 * (1 - u) * u * (y + 34) + u * u * y
+        if 0.32 < t < 0.68:  # no tapar el nombre del autor, centrado arriba
+            continue
+        col = cols[k % len(cols)]
+        out.append(f'<g transform="translate({bx:.0f},{by:.0f}) rotate({(-1)**k*12})"><rect x="-4" y="-2" width="8" height="8" fill="{ink}"/>'
+                   f'<ellipse cx="0" cy="14" rx="8" ry="12" fill="{col}" stroke="{ink}" stroke-width="3"/></g>')
+    return "".join(out)
+
+
+def holly(x, y, c, ink, k=1.0):
+    return (f'<g transform="translate({x},{y}) scale({k})">'
+            f'<path d="M0,0 C-14,-16 -38,-14 -46,-4 C-36,-2 -36,8 -44,14 C-28,16 -12,10 0,0 z" fill="#2E7D32" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>'
+            f'<path d="M0,0 C14,-16 38,-14 46,-4 C36,-2 36,8 44,14 C28,16 12,10 0,0 z" fill="#388E3C" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>'
+            f'<circle cx="-6" cy="6" r="8" fill="{c["red"]}" stroke="{ink}" stroke-width="3"/>'
+            f'<circle cx="8" cy="4" r="8" fill="{c["red"]}" stroke="{ink}" stroke-width="3"/>'
+            f'<circle cx="1" cy="-7" r="8" fill="{c["red"]}" stroke="{ink}" stroke-width="3"/></g>')
+
+
+def santa_hat(x, y, c, ink, rot=-18):
+    return (f'<g transform="translate({x},{y}) rotate({rot})">'
+            f'<path d="M-34,0 C-30,-40 10,-62 44,-40 C30,-34 22,-20 26,0 z" fill="{c["red"]}" stroke="{ink}" stroke-width="4" stroke-linejoin="round"/>'
+            f'<rect x="-40" y="-6" width="72" height="16" rx="8" fill="#fff" stroke="{ink}" stroke-width="4"/>'
+            f'<circle cx="46" cy="-40" r="10" fill="#fff" stroke="{ink}" stroke-width="4"/></g>')
+
+
+def snow_ground(x0, y, w):
+    return (f'<path d="M{x0},{y} C{x0+w*0.12},{y-26} {x0+w*0.25},{y-8} {x0+w*0.38},{y-22} C{x0+w*0.52},{y-38} {x0+w*0.66},{y-6} '
+            f'{x0+w*0.8},{y-24} C{x0+w*0.9},{y-34} {x0+w*0.96},{y-14} {x0+w},{y-20} L{x0+w},{y+12} L{x0},{y+12} z" fill="#fff"/>')
+
+
 def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
     cx = x0 + w / 2 if cx is None else cx
     blue, navy, deep = bold_palette(cv)
@@ -93,11 +160,21 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
            f'<stop offset="100%" stop-color="#000" stop-opacity="{0 if white else .28}"/></radialGradient></defs>',
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
            letter_texture(x0, y0, w, h, *tex),
-           f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="url(#vign)"/>',
-           big_title(cx, y0 + 200, "WORD", 146, 322, word_fill, deep, navy),
-           big_title(cx, y0 + 336, "SEARCH", 146, w - 110, c["yellow"], deep, navy),
-           illustration(cv, cx, y0 + 470, c, navy),
-           price_tag(cx, y0 + 410, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
+           f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="url(#vign)"/>']
+    festive = cv.get("festive") and not white
+    if festive:
+        out.append(festive_back(x0, y0, w, h))
+    out += [big_title(cx, y0 + 200, "WORD", 146, 322, word_fill, deep, navy),
+            big_title(cx, y0 + 336, "SEARCH", 146, w - 110, c["yellow"], deep, navy)]
+    if cv.get("festive"):
+        out += [snow_caps(cx, y0 + 200, 322, 4, 146), snow_caps(cx, y0 + 336, w - 110, 6, 146)]
+    out += [illustration(cv, cx, y0 + 470, c, navy)]
+    if festive:
+        out.append(snow_ground(x0, y0 + h - 196, w))
+    out += [price_tag(cx, y0 + 410, cv["series_name"], "#FFFFFF", navy, "#FFFFFF" if white else blue, c["red"])]
+    if festive:  # en la p1 B/N se omiten (tienen colores propios)
+        out.append(holly(cx + 150, y0 + 366, c, navy, 0.8))
+        out.append(light_garland(x0, w, y0 + 18, c, navy))
     if cv.get("author"):
         # autor arriba y centrado, separado del título
         out.append(f'<text x="{cx}" y="{y0+62}" text-anchor="middle" font-family="Fredoka" font-weight="700" '
@@ -114,6 +191,8 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
     out.append(f'<g transform="rotate(-10 {vx} {vy})"><rect x="{vx-52}" y="{vy-20}" width="104" height="40" rx="20" '
                f'fill="{c["yellow"]}" stroke="{navy}" stroke-width="4"/><text x="{vx}" y="{vy+9}" text-anchor="middle" '
                f'font-family="Luckiest Guy" font-size="24" fill="{navy}">{esc(cv["volume"])}</text></g>')
+    if cv.get("festive"):
+        out.append(santa_hat(vx - 44, vy - 20, c, navy))
     out.append(f'''
     <rect x="{x0}" y="{y0+h-190}" width="{w}" height="190" fill="{c['red']}"/>
     <rect x="{x0}" y="{y0+h-190}" width="{w}" height="8" fill="{navy}"/>
