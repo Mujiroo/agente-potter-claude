@@ -20,3 +20,4 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - **Muestra enviada** (msgs 324–326): 12 páginas (2 sopas, 2 sudokus, 1 laberinto + soluciones) y la portada frontal. Sin desbordes, sin Type3, 8,5×11.
 - Pendiente: OK de Pedro para armar el libro completo (40 temas, ~120 págs., portada con lomo y contraportada).
 - 00:20 (16-sep) Pedro: revisará mañana las opciones A/B de portada y la muestra del interior.
+- 00:21 Pedro pide **5 opciones de portada distintas** (algunas fuera del estilo cozy), parecidas a las que más éxito tienen en Amazon, para revisar **mañana 16-sep a las 8:00**.
