@@ -140,3 +140,4 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - Previsualizador con 122 págs. (versión final confirmada) y código de barras puesto por KDP en el espacio libre.
   - Pedro propuso US$ 7,99. Le recomendé no hacerlo: regalía US$ 0,93 al 50 %, contra US$ 2,92 a 9,99 y US$ 4,72 a 12,99. Recomendado 12,99; mínimo razonable 9,99.
   - Esperando que decida el precio.
+- 14:06 **PUBLICADO (enviado a revisión KDP)** con precio **US$ 7,99** (decisión de Pedro; regalía US$ 0,93). Recomendé subirlo a 12,99 (mínimo 9,99) cuando pase a «En venta». Le ofrecí un recordatorio programado; esperando respuesta.
