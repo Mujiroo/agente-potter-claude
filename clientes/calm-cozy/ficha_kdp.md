@@ -20,7 +20,7 @@ Reglas de título, subtítulo y keywords verificadas en KDP Metadata Guidelines 
   5. puzzle book for grandma
   6. mindful activities for adults
   7. screen free hobby for retirees
-- **Categorías (3):** Puzzles & Games › Word Search · Puzzles & Games › Sudoku · Puzzles & Games › Mazes (confirmar nombres en el selector)
+- **Categorías (3), confirmadas en el selector (captura de Pedro, 16-sep):** Libros › Humor y Entretenimiento › Puzzles y Juegos › **Puzzles** · **Sopa de Letras** · **Sudoku** (no existe «Mazes»)
 - **Contenido para adultos:** No
 - **Libro de bajo contenido:** No (tiene puzzles y soluciones)
 
