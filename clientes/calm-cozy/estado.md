@@ -21,3 +21,5 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - Pendiente: OK de Pedro para armar el libro completo (40 temas, ~120 págs., portada con lomo y contraportada).
 - 00:20 (16-sep) Pedro: revisará mañana las opciones A/B de portada y la muestra del interior.
 - 00:21 Pedro pide **5 opciones de portada distintas** (algunas fuera del estilo cozy), parecidas a las que más éxito tienen en Amazon, para revisar **mañana 16-sep a las 8:00**.
+- 01:15 (16-sep) Enviadas **5 portadas** (msgs 333+): 1 cozy, 2 números, 3 ventana, 4 sobria, 5 moderna. Generador: `tools/portadas_opciones.py`; PNG en `entregables/portadas/`.
+  - Recomendé la 5 (moderna) y, como alternativa segura, la 3 (ventana).
