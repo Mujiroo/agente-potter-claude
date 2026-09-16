@@ -23,3 +23,5 @@ Ver [[rol]], [[pedro]].
 - **Nunca ingresar con una clave/credencial a ningún sitio sin preguntarle antes. Él autoriza todo** (Telegram, 2026-09-16, msg 358).
   **Why:** lo pidió explícitamente.
   **How to apply:** antes de cualquier login (agent-browser, Composio u otro) con credenciales, pedir su OK por el chat.
+- **No pide copias de prueba impresas en KDP** (6×9 el 15-sep, msg 185; Calm & Cozy el 16-sep, msg 488). No volver a recomendarlas salvo que haya un riesgo concreto de impresión.
+- **Siempre quiere una revisión final sobre los PDF definitivos antes de publicar** (msg 488).
