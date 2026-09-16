@@ -1,6 +1,14 @@
 # Ficha KDP — Vol. 5 · Word Search: Christmas Hunt!
 
 Borrador para que Pedro lo revise. **Nada de esto se sube sin su OK.**
+
+**16-sep 15:10:** Pedro decidió publicarlo hoy (msg 590). Guía paso a paso enviada (msgs 593–594). Cambios respecto al borrador:
+- La descripción va en texto plano (`entregables/vol5/descripcion_kdp.txt`): el editor de KDP no lee HTML.
+- Categorías: Sopa de Letras + Puzzles; la tercera se busca con «Navidad» en el selector (falta su captura).
+- Letra grande: sí (grilla ~18 pt; lista de palabras en 14 pt).
+- IA: textos «Toda la obra» + imágenes «Muchas», herramienta Claude.
+- Portada brillante; código de barras lo pone KDP.
+- Precio recomendado US$ 9,99 (regalía US$ 3,65); a 7,99 serían US$ 1,65.
 Datos del libro: 6×9", 112 págs., papel blanco, 55 puzzles, autor Peter & Cardu,
 serie *Big Print Word Hunt* (vol. 5).
 
