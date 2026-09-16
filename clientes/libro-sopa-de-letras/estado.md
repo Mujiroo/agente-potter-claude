@@ -526,3 +526,11 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
 ## 2026-09-16 09:23 · Pedro elige los interiores corregidos (msg 375)
 - Los 5 interiores corregidos **reemplazan** a los aprobados en `entregables/volN/` (mismo nombre de archivo, 112 págs. cada uno). La carpeta `corregidos/` ya no existe.
 - Los originales quedan sólo en el historial de git (commit anterior a este cambio). Portadas sin cambios.
+
+## 2026-09-16 09:30 · ¿Listos al 100 %? (msg 379)
+- Auditoría nueva sobre los **PDF finales** (no el HTML): `tools/pdf_texto.mjs` saca el texto con pdfjs-dist y `tools/auditar_pdf.py` lo revisa.
+  - Resultado de los 5 interiores: 112 págs. 6×9, 55+55, grilla idéntica entre puzzle y solución, listas iguales, cada palabra 1 vez, numeración OK, p2→58, **0 groserías en 8 direcciones**.
+  - Validada contra los PDF antiguos (git): detecta 9 hallazgos en Vol. 1 y 9 en Vol. 4.
+  - Portadas: 12,5×9,25" (teórico 12,502; Chrome redondea a puntos, 0,002"). 0 Type3 en los 10 PDF.
+- Respondido (msg 383): los archivos están listos. Para publicar faltan las **fichas KDP** (sólo hay borrador del Vol. 5, sin revisar), la declaración de IA y el límite de 3 títulos cada 24 h. Le ofrecí la ficha del Vol. 5.
+- Ojo: `entregables/libro1/` en la raíz del workspace (fuera de git) es una copia vieja del Vol. 1, con el interior anterior. No usarla.
