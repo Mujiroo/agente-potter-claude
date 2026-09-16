@@ -98,3 +98,13 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
 - **Pendiente de Pedro**:
   - Aprobar la v2 (msgs 464–470).
   - Decidir A/B/C sobre la densidad de las sopas (9 palabras en 15×15, 76 % relleno). Recomendé C: 13×13.
+
+## 2026-09-16 11:10 · Instrucciones
+- msg 474–482: Pedro aprobó el texto más claro del sudoku en la p2 («Every row, column and 3×3 box must have the numbers 1 to 9», «No number repeats in a row, column or box», pie «This box is missing a 7»). Ya está en `tools/pagina2.py`; **faltan los PDF regenerados**.
+- msg 478: pidió ver cómo explican las reglas los libros del rubro. Las editoriales grandes (Brain Games de PIL, Ultimate Brain Health de Callisto) traen instrucciones y consejos por tipo de juego, con un «warm-up».
+  - Propuesta enviada (msg 487): p3 «Helpful Tips» (`pagina2.page3`, activa con `"tips_page": true`; hoy no está activa en el JSON) + página final «Thank you» con invitación a reseña (sin incentivos) para dejar 122 págs. La p3 NO la aplico sin su OK.
+- msg 483–484: ¿listo para publicar? Respondí que todavía no. Faltan:
+  - decisiones: tips sí/no y densidad A/B/C (recomendé C, 13×13)
+  - PDF finales + revisión final sobre esos PDF
+  - ficha KDP
+  - Recomendé una copia de prueba impresa.

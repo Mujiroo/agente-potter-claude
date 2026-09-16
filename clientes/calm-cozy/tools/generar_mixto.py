@@ -116,9 +116,12 @@ def main(src, dst):
 
     n_words, n_sud, n_maze = len(book["word_puzzles"]), book.get("sudokus", 0), book.get("mazes", 0)
     total = n_words + n_sud + n_maze
-    sol_start = 3 + total
+    tips = book.get("tips_page", False)
+    sol_start = 3 + total + (1 if tips else 0)
     if book.get("instructions_style") == "icons":
         page(pagina2.page2(book, sol_start))
+        if tips:
+            page(pagina2.page3())
     else:
         page('<div class="instr"><h1>How to Play</h1>'
              '<p><b>Word searches.</b> Find every word from the list in the grid. Words read '

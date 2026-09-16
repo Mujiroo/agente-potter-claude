@@ -28,8 +28,9 @@ CSS = """
               margin: 0 0 0.16in; }}
 .p2 .card {{ width: 100%; display: flex; align-items: center; gap: 0.3in; border: 1.5px solid #111; border-radius: 14px;
             padding: 0.2in 0.24in; margin-bottom: 0.18in; }}
-.p2 .ex {{ flex: none; width: 2.05in; display: flex; justify-content: center; }}
-.p2 .ex svg {{ width: 100%; height: auto; max-height: 1.95in; }}
+.p2 .ex {{ flex: none; width: 2.05in; display: flex; flex-direction: column; align-items: center; }}
+.p2 .ex .cap {{ font-size: 11.5pt; font-style: italic; margin-top: 0.06in; }}
+.p2 .ex svg {{ width: 100%; height: auto; max-height: 1.8in; }}
 .p2 .txt {{ flex: 1; }}
 .p2 .txt h2 {{ font-size: 17pt; margin: 0 0 0.06in; }}
 .p2 .step {{ display: flex; align-items: center; gap: 0.12in; font-size: 13.5pt; line-height: 1.25; margin: 0.06in 0; }}
@@ -96,8 +97,49 @@ def _maze_example():
     return re.sub(r'class="maze" viewBox="[^"]*"', f'viewBox="{-cell} {-lw} {W + 2*cell} {H + 2*lw}"', svg, count=1)
 
 
+CSS3 = """
+.p3 {{ width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; }}
+.p3 .howbox {{ border: 2px solid #111; border-radius: 12px; padding: 0.03in 0.36in; font-size: 22pt; font-weight: 700; margin: 0.1in 0 0.12in; }}
+.p3 .lead {{ font-size: 13.5pt; text-align: center; margin: 0 0 0.2in; color: #333; }}
+.p3 .tipcard {{ width: 100%; border: 1.5px solid #111; border-radius: 14px; padding: 0.16in 0.3in 0.1in; margin-bottom: 0.2in; }}
+.p3 .tipcard h2 {{ display: flex; align-items: center; gap: 0.12in; font-size: 17pt; margin: 0 0 0.08in; }}
+.p3 .tipcard ul {{ margin: 0; padding-left: 0.28in; }}
+.p3 .tipcard li {{ font-size: 14pt; line-height: 1.3; margin-bottom: 0.08in; }}
+.p3 .closing {{ margin-top: auto; margin-bottom: 0.2in; display: flex; align-items: center; gap: 0.14in; font-size: 15pt; font-weight: 700; text-align: center; }}
+"""
+
+
 def css():
-    return CSS.format()
+    return CSS.format() + CSS3.format()
+
+
+TIPS = [
+    ("lens", "Word Search", [
+        "Find the <b>first letter</b> of a word, then check the letters all around it.",
+        "Watch for double letters, like the <b>LL</b> in PILLOW.",
+        "Go row by row, using your finger or a bookmark as a guide.",
+    ]),
+    ("grid9", "Easy Sudoku", [
+        "Start with the row, column or box that already has the <b>most numbers</b>.",
+        "Pick one number, like <b>1</b>, and find where it is still missing in each box.",
+        "Not sure yet? Write small notes in the corner of the square.",
+    ]),
+    ("path", "Mazes", [
+        "Trace <b>lightly</b> with a pencil so you can erase and try again.",
+        "Stuck? Start from the <b>exit arrow</b> and work your way back.",
+        "A dead end is part of the fun. Just go back to the last turn.",
+    ]),
+]
+
+
+def page3():
+    cards = "".join(
+        f'<div class="tipcard"><h2>{icon(ic, "0.34in")}{t}</h2><ul>'
+        + "".join(f"<li>{x}</li>" for x in tips) + "</ul></div>"
+        for ic, t, tips in TIPS)
+    return ('<div class="p3"><div class="howbox">Helpful Tips</div>'
+            '<div class="lead">A few friendly ideas to get you started.</div>'
+            f'{cards}<div class="closing">{icon("cup", "0.4in")}<span>No timers, no pressure. One puzzle at a time.</span></div></div>')
 
 
 def page2(book, sol_start):
@@ -111,8 +153,8 @@ def page2(book, sol_start):
             ("pencil", "Circle it in the grid and cross it off."),
         ]),
         (_sudoku_example(), "Easy Sudoku", [
-            ("grid9", "Fill each empty square with <b>1 to 9</b>."),
-            ("norep", "No repeats in any <b>row</b>, <b>column</b> or <b>3&times;3 box</b>."),
+            ("grid9", "Every <b>row</b>, <b>column</b> and <b>3&times;3 box</b> must have the numbers <b>1 to 9</b>."),
+            ("norep", "No number repeats in a row, column or box."),
             ("check", "Each puzzle has only one solution."),
         ]),
         (_maze_example(), "Mazes", [
@@ -121,7 +163,10 @@ def page2(book, sol_start):
             ("pencil", "Use a pencil so you can try again."),
         ]),
     ]
-    body = "".join(f'<div class="card"><div class="ex">{ex}</div><div class="txt"><h2>{t}</h2>{steps(st)}</div></div>'
+    captions = {"Easy Sudoku": "This box is missing a 7."}
+    body = "".join(f'<div class="card"><div class="ex">{ex}'
+                   + (f'<div class="cap">{captions[t]}</div>' if t in captions else "")
+                   + f'</div><div class="txt"><h2>{t}</h2>{steps(st)}</div></div>'
                    for ex, t, st in cards)
     copyright = ""
     if book.get("author"):
