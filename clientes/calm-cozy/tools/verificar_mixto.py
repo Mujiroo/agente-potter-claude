@@ -85,7 +85,7 @@ def main(src, dst):
 
     # --- la referencia a las soluciones de la página 2
     sol_pg = next((i for i, p in enumerate(pages, 1) if "<h1>Solutions</h1>" in p), None)
-    ref = re.search(r'solutions start on page (\d+)', pages[1])
+    ref = re.search(r'solutions start on page (\d+)', pages[1], re.I)
     if not ref:
         errs.append("la página 2 no dice dónde empiezan las soluciones")
     elif sol_pg is None or int(ref.group(1)) != sol_pg:

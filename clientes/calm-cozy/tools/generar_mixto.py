@@ -26,6 +26,7 @@ sys.path.insert(0, HERE)
 sys.path.insert(0, os.path.join(HERE, "..", "..", "libro-sopa-de-letras", "tools"))
 
 import puzzles as PZ  # noqa: E402
+import pagina2  # noqa: E402
 from generar import FORWARD, build, grid_svg, words_block  # noqa: E402
 
 GUTTER, OUTSIDE, TOP, BOTTOM = 0.6, 0.5, 0.5, 0.7
@@ -88,18 +89,21 @@ def main(src, dst):
     n_words, n_sud, n_maze = len(book["word_puzzles"]), book.get("sudokus", 0), book.get("mazes", 0)
     total = n_words + n_sud + n_maze
     sol_start = 3 + total
-    page('<div class="instr"><h1>How to Play</h1>'
-         '<p><b>Word searches.</b> Find every word from the list in the grid. Words read '
-         '<b>left to right</b> or <b>top to bottom</b> — across, down or diagonally. '
-         'No words are spelled backwards.</p>'
-         '<p><b>Sudoku.</b> Fill the grid so every row, every column and every 3x3 box '
-         'contains the numbers 1 to 9, with no repeats. Every puzzle has one single solution.</p>'
-         '<p><b>Mazes.</b> Start at the arrow on the left and find your way to the arrow on the right. '
-         'There is only one path through.</p>'
-         f'<p>Take your time — and if you get stuck, the solutions start on page {sol_start}.</p>'
-         '<p><b>Relax and enjoy.</b></p></div>'
-         + (f'<div class="copyright">Copyright &copy; {book.get("year", "")} {html.escape(book.get("author", ""))}. '
-            'All rights reserved.</div>' if book.get("author") else ""))
+    if book.get("instructions_style") == "icons":
+        page(pagina2.page2(book, sol_start))
+    else:
+        page('<div class="instr"><h1>How to Play</h1>'
+             '<p><b>Word searches.</b> Find every word from the list in the grid. Words read '
+             '<b>left to right</b> or <b>top to bottom</b> — across, down or diagonally. '
+             'No words are spelled backwards.</p>'
+             '<p><b>Sudoku.</b> Fill the grid so every row, every column and every 3x3 box '
+             'contains the numbers 1 to 9, with no repeats. Every puzzle has one single solution.</p>'
+             '<p><b>Mazes.</b> Start at the arrow on the left and find your way to the arrow on the right. '
+             'There is only one path through.</p>'
+             f'<p>Take your time — and if you get stuck, the solutions start on page {sol_start}.</p>'
+             '<p><b>Relax and enjoy.</b></p></div>'
+             + (f'<div class="copyright">Copyright &copy; {book.get("year", "")} {html.escape(book.get("author", ""))}. '
+                'All rights reserved.</div>' if book.get("author") else ""))
 
     # secuencia: 4 sopas, 1 sudoku; cada 4 sudokus, 1 laberinto; lo que sobre va al final
     seq = []
@@ -166,7 +170,7 @@ def main(src, dst):
     with open(dst, "w", encoding="utf-8") as f:
         f.write(f'<!doctype html><html><head><meta charset="utf-8">'
                 f'<title>{html.escape(book["title"])} (interior)</title>'
-                f'<style>{fonts}{css(w, h)}</style></head><body>{"".join(pages)}</body></html>')
+                f'<style>{fonts}{css(w, h)}{pagina2.css()}</style></head><body>{"".join(pages)}</body></html>')
     print(f"{len(pages)} páginas {w}x{h} | sopas {wi} · sudokus {si} · laberintos {mi} -> {dst}")
 
 

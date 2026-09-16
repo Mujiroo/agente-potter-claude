@@ -45,3 +45,12 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - Interior generado y auditado con `tools/verificar_mixto.py` (nuevo): **128 páginas**, 40 sopas + 20 sudokus + 10 laberintos, **0 errores, 0 avisos**, sin desbordes, 0 Type3.
 - PDF en `entregables/CalmCozy_Vol1_interior_8.5x11.pdf`. Lomo con 128 págs. en papel blanco: **0,288"**.
 - Falta sólo que Pedro elija la portada para armar frente + lomo + contratapa.
+
+## 2026-09-16 · Mañana
+- 08:19–08:48 Pedro escribió y no le respondí: estuve caído hasta las ~09:04. Me lo reclamó.
+- msg 358: **nunca ingresar con claves a ningún sitio sin preguntarle** (anotado en memory/preferencias.md).
+- msg 359: le gusta la **portada 5 (moderna)**; pide verla **en otros colores**.
+- msg 363: le gusta el interior; pide **mejorar la p2** como en los otros libros, mostrársela y después seguir con el resto.
+- 09:10 Enviada la **p2 nueva** (msgs 367–368): `tools/pagina2.py` (`instructions_style: "icons"` en el JSON). Tiene «belongs to», How to Play, 3 tarjetas con mini ejemplo e íconos (sopa, sudoku y laberinto), aviso de soluciones en la pág. 73 y copyright.
+  - Auditoría: 128 págs., 0 errores, sin salirse de márgenes, 0 Type3. El PDF vigente quedó en `entregables/`.
+  - Esperando su OK.

@@ -9,6 +9,7 @@
  "author": "Peter & Cardu",
  "year": 2026,
  "series": "Calm & Cozy Puzzles",
+ "instructions_style": "icons",
  "sudokus": 20,
  "mazes": 10,
  "word_puzzles": [
