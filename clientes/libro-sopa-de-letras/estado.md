@@ -553,3 +553,8 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - Derechos: según los ToS de Fiverr, el encargo pasa al comprador al entregarse salvo que la publicación diga otra cosa; algunos vendedores cobran aparte la licencia comercial. Pedirle el archivo sin marca de agua y preguntarle si usó IA (declaración KDP).
   - Recomendé pedir correcciones y la portada completa (6×9, 112 págs.), y si le gusta, usar el estilo en los 5 volúmenes.
 - Esperando su decisión.
+
+## 2026-09-16 10:35 · Ancho exacto de las portadas 6×9
+- Chrome dejaba el PDF en 900 pt (12,5") y lo exacto para 112 págs. en papel blanco es 12,5022" (900,16 pt): faltaban 0,002".
+- `calm-cozy/tools/ajustar_mediabox.py` fija el MediaBox exacto y rehace la xref. Validé la xref objeto por objeto y la leí con pdfjs.
+- Aplicado a las 5 portadas en `entregables/volN/`. El contenido no cambia; la diferencia cae en el sangrado exterior.
