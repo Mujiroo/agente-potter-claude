@@ -544,3 +544,12 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - categorías: KDP permite 3, no 10
   - costo de impresión y umbral del 60 % verificados en la ayuda de KDP
 - **Declaración de IA: recomiendo texto SÍ + imágenes SÍ.** Las portadas las generó la IA (código SVG), y la guía de KDP define «AI-generated» como contenido creado por una herramienta de IA, portada incluida. Esto cambia lo que habíamos dejado (imágenes NO). Esperando OK.
+
+## 2026-09-16 10:15 · Portada encargada en Fiverr (1.ª opción)
+- Pedro mandó una portada hecha en Fiverr (incoming/file_5.jpg, con marca de agua). Estilo azul noche y dorado, globo-sopa con monumentos, «Word Search Puzzle · Countries and Cities of the World», 55 puzzles · 495 words, Peter & Cardu. Encaja con el Vol. 2.
+- Mi revisión (msgs 427–428):
+  - Errores: la cápsula vertical marca «CIGRA» (CAIRO está en la fila, sin marcar); una letra X/K deformada; letras desparejas, lo que sugiere IA.
+  - Le falta LARGE PRINT, la serie/volumen y «World Hunt!», y rompe el estilo de la serie.
+  - Derechos: según los ToS de Fiverr, el encargo pasa al comprador al entregarse salvo que la publicación diga otra cosa; algunos vendedores cobran aparte la licencia comercial. Pedirle el archivo sin marca de agua y preguntarle si usó IA (declaración KDP).
+  - Recomendé pedir correcciones y la portada completa (6×9, 112 págs.), y si le gusta, usar el estilo en los 5 volúmenes.
+- Esperando su decisión.
