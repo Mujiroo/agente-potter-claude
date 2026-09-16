@@ -64,6 +64,23 @@ h1 {{ font-size: 26pt; margin: 0 0 0.16in; text-align: center; }}
 .sol2 {{ display: flex; flex-wrap: wrap; gap: 0.3in; justify-content: center; width: 100%; }}
 .sol2 .item {{ width: 45%; text-align: center; font-size: 12pt; }}
 .sol2 .sudoku, .sol2 .maze {{ width: 100%; height: auto; }}
+.page.center {{ justify-content: center; }}
+.page.center .sudoku {{ width: 7in; height: 7in; }}
+.hint {{ }}
+.title-page .tp-author {{ font-family: 'Playfair Display', serif; font-size: 14pt; letter-spacing: 6px; }}
+.title-page .tp-script {{ font-family: 'Caveat', cursive; font-size: 60pt; line-height: 1; margin-top: 0.35in; }}
+.title-page .tp-title {{ font-family: 'Playfair Display', serif; font-size: 66pt; font-weight: 700; letter-spacing: 6px; line-height: 1; }}
+.title-page .tp-sub {{ font-family: 'Playfair Display', serif; font-size: 18pt; margin-top: 0.2in; }}
+.title-page .tp-icons {{ display: flex; gap: 0.45in; justify-content: center; align-items: center; margin-top: 0.55in; }}
+.title-page .tp-icons > div {{ width: 1.55in; }}
+.title-page .tp-icons svg {{ width: 100%; height: auto; }}
+.title-page .tp-vol {{ font-family: 'Playfair Display', serif; font-size: 16pt; letter-spacing: 5px; margin-top: 0.55in; }}
+.title-page .tp-note {{ font-size: 13pt; color: #444; margin-top: 0.15in; }}
+.sol6 {{ display: grid; grid-template-columns: repeat(2, 2.45in); gap: 0.16in 0.9in; justify-content: center; width: 100%; margin-top: 0.1in; }}
+.sol6 .item, .sol4 .item {{ text-align: center; font-size: 12pt; }}
+.sol6 .sudoku {{ width: 2.45in; height: 2.45in; }}
+.sol4 {{ display: grid; grid-template-columns: repeat(2, 3.45in); gap: 0.35in 0.4in; justify-content: center; width: 100%; margin-top: 0.15in; }}
+.sol4 .maze {{ width: 3.45in; height: auto; }}
 .copyright {{ position: absolute; bottom: 0.9in; left: 0; right: 0; text-align: center; font-size: 9pt; color: #444; }}
 """
 
@@ -81,10 +98,21 @@ def main(src, dst):
         num = f'<div class="num">{n}</div>' if n > 1 else ""
         pages.append(f'<section class="page {parity} {cls}">{body}{num}</section>')
 
-    page(f'<div class="big">{html.escape(book["title"])}</div>'
-         f'<div class="sub">{html.escape(book.get("subtitle", ""))}</div>'
-         f'<div class="vol">{html.escape(book.get("volume", ""))}</div>'
-         f'<div class="note">{html.escape(book.get("tagline", ""))}</div>', "title-page")
+    cv = book.get("cover", {})
+    if cv:
+        page(f'<div class="tp-author">{html.escape(cv["author"].upper())}</div>'
+             f'<div class="tp-script">{html.escape(cv["script"])}</div>'
+             f'<div class="tp-title">{html.escape(cv["title"])}</div>'
+             f'<div class="tp-sub">Word Search &middot; Easy Sudoku &middot; Mazes</div>'
+             f'<div class="tp-icons"><div>{pagina2._word_example()}</div><div>{pagina2._sudoku_example()}</div>'
+             f'<div>{pagina2._maze_example()}</div></div>'
+             f'<div class="tp-vol">{html.escape(book.get("volume", "").upper())}</div>'
+             f'<div class="tp-note">{html.escape(book.get("tagline", ""))}</div>', "title-page")
+    else:
+        page(f'<div class="big">{html.escape(book["title"])}</div>'
+             f'<div class="sub">{html.escape(book.get("subtitle", ""))}</div>'
+             f'<div class="vol">{html.escape(book.get("volume", ""))}</div>'
+             f'<div class="note">{html.escape(book.get("tagline", ""))}</div>', "title-page")
 
     n_words, n_sud, n_maze = len(book["word_puzzles"]), book.get("sudokus", 0), book.get("mazes", 0)
     total = n_words + n_sud + n_maze
@@ -130,6 +158,9 @@ def main(src, dst):
         if not progress:
             break
 
+    # se generan antes y se ordenan: los sudokus de más pistas a menos, los laberintos de camino corto a largo
+    sud_pool = sorted((PZ.make_easy_sudoku(rng) for _ in range(n_sud)), key=lambda t: -t[2])
+    maze_pool = sorted((PZ.make_maze(rng, 17, 17) for _ in range(n_maze)), key=lambda m: len(m["path"]))
     solved_w, solved_s, solved_m = [], [], []
     wi = si = mi = 0
     for kind, idx in seq:
@@ -142,31 +173,33 @@ def main(src, dst):
                  f'{grid_svg(grid)}{words_block(p["words"])}')
         elif kind == "s":
             si += 1
-            pz, sol, givens = PZ.make_easy_sudoku(rng)
+            pz, sol, givens = sud_pool[si - 1]
             solved_s.append((si, pz, sol))
             page(f'<div class="tag">Sudoku {si}</div><h1>Easy</h1>{PZ.sudoku_svg(pz)}'
-                 '<div class="hint">Fill in 1 to 9 — no repeats in any row, column or box.</div>')
+                 '<div class="hint">Fill in 1 to 9 — no repeats in any row, column or box.</div>', "center")
         else:
             mi += 1
-            mz = PZ.make_maze(rng, 17, 17)
+            mz = maze_pool[mi - 1]
             solved_m.append((mi, mz))
             page(f'<div class="tag">Maze {mi}</div><h1>Find the Way</h1>{PZ.maze_svg(mz)}'
-                 '<div class="hint">Start on the left, finish on the right.</div>')
+                 '<div class="hint">Start at the arrow on the left, finish at the arrow on the right.</div>', "center")
 
-    page('<div class="instr"><h1>Solutions</h1></div>')
+    page('<div class="divider"><div class="tp-script">Solutions</div>'
+         '<div class="tp-sub">Word Search &middot; Easy Sudoku &middot; Mazes</div></div>', "title-page")
     for i, p, grid, placed in solved_w:
         page(f'<div class="tag">Word Search {i}</div><h1>{html.escape(p["theme"])}</h1>'
              f'{grid_svg(grid, placed)}{words_block(p["words"])}')
-    for k in range(0, len(solved_s), 2):  # dos sudokus por página
+    for k in range(0, len(solved_s), 6):  # seis sudokus por página (2 x 3)
         items = "".join(f'<div class="item">{PZ.sudoku_svg(pz, sol, cell=46)}<div>Sudoku {i}</div></div>'
-                        for i, pz, sol in solved_s[k:k + 2])
-        page(f'<div class="tag">Solutions</div><h1>Sudoku</h1><div class="sol2">{items}</div>')
-    for k in range(0, len(solved_m), 2):  # dos laberintos por página
+                        for i, pz, sol in solved_s[k:k + 6])
+        page(f'<div class="tag">Solutions</div><h1>Sudoku</h1><div class="sol6">{items}</div>')
+    for k in range(0, len(solved_m), 4):  # cuatro laberintos por página (2 x 2)
         items = "".join(f'<div class="item">{PZ.maze_svg(mz, solve=True, cell=26, lw=6)}<div>Maze {i}</div></div>'
-                        for i, mz in solved_m[k:k + 2])
-        page(f'<div class="tag">Solutions</div><h1>Mazes</h1><div class="sol2">{items}</div>')
+                        for i, mz in solved_m[k:k + 4])
+        page(f'<div class="tag">Solutions</div><h1>Mazes</h1><div class="sol4">{items}</div>')
 
-    fonts = ""
+    from portada_cozy import font_css
+    fonts = font_css()
     with open(dst, "w", encoding="utf-8") as f:
         f.write(f'<!doctype html><html><head><meta charset="utf-8">'
                 f'<title>{html.escape(book["title"])} (interior)</title>'

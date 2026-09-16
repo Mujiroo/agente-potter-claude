@@ -15,6 +15,34 @@ sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/../../libro-sopa-de-letras/too
 from generar import BAD  # noqa: E402  (la misma lista que usa el generador)
 
 
+def solvable_by_singles(g):
+    g = [r[:] for r in g]
+
+    def cands(r, c):
+        used = set(g[r]) | {g[i][c] for i in range(9)} | {g[i][j] for i in range(r // 3 * 3, r // 3 * 3 + 3)
+                                                        for j in range(c // 3 * 3, c // 3 * 3 + 3)}
+        return set(range(1, 10)) - used
+    units = ([[(r, c) for c in range(9)] for r in range(9)] + [[(r, c) for r in range(9)] for c in range(9)]
+             + [[(r, c) for r in range(a, a + 3) for c in range(b, b + 3)] for a in (0, 3, 6) for b in (0, 3, 6)])
+    while True:
+        prog = False
+        for r in range(9):
+            for c in range(9):
+                if not g[r][c]:
+                    cs = cands(r, c)
+                    if len(cs) == 1:
+                        g[r][c] = cs.pop()
+                        prog = True
+        for u in units:
+            for d in range(1, 10):
+                spots = [(r, c) for r, c in u if not g[r][c] and d in cands(r, c)]
+                if len(spots) == 1:
+                    g[spots[0][0]][spots[0][1]] = d
+                    prog = True
+        if not prog:
+            return all(all(r) for r in g)
+
+
 def parse_pages(doc):
     return re.findall(r'<section class="page [^"]*">(.*?)</section>', doc, re.S)
 
@@ -84,7 +112,7 @@ def main(src, dst):
         errs.append(f"hay {len(mz)} páginas de laberinto y deberían ser {n_m}")
 
     # --- la referencia a las soluciones de la página 2
-    sol_pg = next((i for i, p in enumerate(pages, 1) if "<h1>Solutions</h1>" in p), None)
+    sol_pg = next((i for i, p in enumerate(pages, 1) if "<h1>Solutions</h1>" in p or 'class="tp-script">Solutions<' in p), None)
     ref = re.search(r'solutions start on page (\d+)', pages[1], re.I)
     if not ref:
         errs.append("la página 2 no dice dónde empiezan las soluciones")
@@ -144,14 +172,25 @@ def main(src, dst):
     if n_sol != n_s:
         errs.append(f"hay {n_sol} soluciones de sudoku y deberían ser {n_s}")
     for i, t in su:
-        nums = re.findall(r'<text [^>]*>(\d)</text>', pages[i - 1])
-        if not 30 <= len(nums) <= 45:
-            warn.append(f"{t} (pág. {i}): {len(nums)} pistas, fuera del rango fácil 30-45")
+        cells = re.findall(r'<text x="([\d.]+)" y="([\d.]+)"[^>]*>(\d)</text>', pages[i - 1])
+        if not 30 <= len(cells) <= 45:
+            warn.append(f"{t} (pág. {i}): {len(cells)} pistas, fuera del rango fácil 30-45")
+        g = [[0] * 9 for _ in range(9)]
+        for x, y, v in cells:
+            g[int(float(y) // 60)][int(float(x) // 60)] = int(v)
+        if PZ.count_solutions([r[:] for r in g], limit=2) != 1:
+            errs.append(f"{t} (pág. {i}): no tiene solución única")
+        elif not solvable_by_singles(g):
+            warn.append(f"{t} (pág. {i}): necesita técnicas más allá de singles (no es 'easy')")
 
     # --- laberintos: que tengan camino
     for i, t in mz:
         if '<h1>Find the Way</h1>' not in pages[i - 1]:
             errs.append(f"{t} (pág. {i}): falta el título")
+    for i, p in enumerate(pages, 1):  # flechas de entrada/salida dentro del dibujo
+        for vb, cell in re.findall(r'<svg class="maze" viewBox="(-?[\d.]+) [^"]*"[^>]*>.*?M(-[\d.]+),', p, re.S):
+            if float(vb) > float(cell):
+                errs.append(f"pág. {i}: la flecha de entrada del laberinto queda fuera del dibujo")
     mz_sol = [p for p in pages if '<h1>Mazes</h1>' in p]
     n_msol = sum(len(re.findall(r'<div>Maze \d+</div>', p)) for p in mz_sol)
     if n_msol != n_m:

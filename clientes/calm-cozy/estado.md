@@ -73,3 +73,28 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - Archivos: `entregables/vol1_final/` (cover PDF, interior PDF, previews). Enviados msgs 447–451.
 - 10:35 Pedro (msg 456): el Calm & Cozy **se queda en 8,5×11**, como le recomendé (msg 455). A 8,5×11 y US$ 12,99 le quedan ~US$ 4,62 por libro; en 6×9 a 9,99, ~US$ 3,30. Posible versión 6×9 aparte más adelante.
 - Sigue pendiente su OK explícito a los PDF finales (msgs 449–451).
+
+## 2026-09-16 11:00 · Revisión experta (msg 458) → v2
+Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entregables/vol1_v1/` y en `libro1_calm_cozy_v1.json`. La v2 está en `entregables/vol1_v2/` y en `libro1_calm_cozy.json`.
+- **Bugs**:
+  - Flechas de los laberintos fuera del viewBox (no se veían), y la entrada tenía 2 aberturas. Corregido en `puzzles.maze_svg`; `verificar_mixto` ahora lo detecta (la v1 da 20 errores).
+- **Editorial**:
+  - 34 palabras repetidas entre sopas → 0.
+  - 4 temas casi duplicados → Picnic Day, Sewing Box, Library Visit, Pot of Soup.
+  - POLAROID (marca) → SNAPSHOT; GREY → GRAY; FISH NETS → FISHING NETS.
+  - En total, 89 palabras distintas a la v1.
+- **Maqueta**:
+  - Portadilla nueva con fuentes y los 3 mini ejemplos.
+  - Sudoku (7") y laberinto centrados.
+  - Laberintos ordenados por largo del camino.
+  - Divisor «Solutions».
+  - Soluciones: 6 sudokus y 4 laberintos por página → **120 págs.** (impresión US$ 3,04 en vez de 3,18).
+- **Portada**: page_count 120, lomo 0,2702", 17,5202 × 11,25". EXTRA = 3 unidades de fondo por el borde exterior para que `ajustar_mediabox` recorte sin dejar franja blanca.
+  - Nota: en las 5 portadas 6×9 el ajuste agregó 0,0022" sin contenido en el sangrado exterior, que se corta al imprimir.
+- **Verificado**:
+  - Sudokus con solución única y resolubles sólo con singles (verificador nuevo).
+  - Sopas en el PDF: 1 vez cada palabra, 0 al revés, 0 groserías, puzzle = solución.
+  - 0 desbordes en las 120 págs. (control en el navegador), grises, 0 Type3, zona segura y código de barras libre.
+- **Pendiente de Pedro**:
+  - Aprobar la v2 (msgs 464–470).
+  - Decidir A/B/C sobre la densidad de las sopas (9 palabras en 15×15, 76 % relleno). Recomendé C: 13×13.

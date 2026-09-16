@@ -55,7 +55,7 @@
     "GLASSES",
     "BOOKSHELF",
     "BOOKMARK",
-    "HUSH"
+    "QUIET"
    ]
   },
   {
@@ -68,7 +68,7 @@
     "BEE",
     "PETAL",
     "SPROUT",
-    "TRELLIS",
+    "WATERING",
     "DAISY"
    ]
   },
@@ -148,12 +148,12 @@
     "FIREWOOD",
     "FIREPLACE",
     "SUMMIT",
-    "SNOWSHOES",
+    "SNOW",
     "MIST",
     "WARMTH",
     "SHELTER",
     "LANTERN",
-    "KINDLING"
+    "PINE LOGS"
    ]
   },
   {
@@ -161,10 +161,10 @@
    "words": [
     "TEAPOT",
     "SCONES",
-    "CLOTTED CREAM",
+    "HONEY",
     "SAUCER",
     "STEEP",
-    "CUCUMBER",
+    "LEMON",
     "BISCUIT",
     "PORCELAIN",
     "SUGAR"
@@ -206,7 +206,7 @@
     "ROBIN",
     "DEW",
     "MEADOW",
-    "BUTTERFLY",
+    "BREEZE",
     "GREEN",
     "SEEDS",
     "SUNRISE"
@@ -221,7 +221,7 @@
     "SUNSET",
     "CRICKETS",
     "HAMMOCK",
-    "SWEET TEA",
+    "WARM NIGHT",
     "GARDEN",
     "LAUGHTER"
    ]
@@ -259,27 +259,27 @@
    "words": [
     "BASKET",
     "APPLES",
-    "PRESERVES",
+    "BREAD",
     "FLOWERS",
     "CHEESE",
     "JAM",
     "TOMATOES",
     "STALL",
-    "PEACHES"
+    "FRESH"
    ]
   },
   {
    "theme": "Country Road",
    "words": [
     "FENCE",
-    "CORNFIELD",
+    "MEADOW",
     "BARN",
     "GRAVEL",
     "WILDFLOWER",
     "TRACTOR",
     "HORSES",
     "HAYSTACK",
-    "MAILBOX"
+    "SUNSET"
    ]
   },
   {
@@ -290,9 +290,9 @@
     "REEDS",
     "DOCK",
     "HERON",
-    "DRAGONFLY",
+    "STILLNESS",
     "PEBBLES",
-    "LILY PADS",
+    "MIST",
     "DAWN"
    ]
   },
@@ -300,14 +300,14 @@
    "theme": "Birdsong",
    "words": [
     "SPARROW",
-    "CARDINAL",
+    "ROBIN",
     "FINCH",
     "WREN",
     "FEEDER",
-    "BLUEBIRD",
+    "NEST",
     "CHIRP",
     "FEATHER",
-    "BIRDBATH"
+    "DAWN"
    ]
   },
   {
@@ -315,7 +315,7 @@
    "words": [
     "TROWEL",
     "POTS",
-    "SPADE",
+    "SEEDS",
     "GLOVES",
     "TWINE",
     "WATERING CAN",
@@ -327,15 +327,15 @@
   {
    "theme": "Cup of Comfort",
    "words": [
-    "TOFFEE",
+    "COCOA",
     "MARSHMALLOW",
     "CARAMEL",
     "STEAM",
-    "NUTMEG",
+    "WARM MUG",
     "SIP",
-    "BISCOTTI",
+    "COZY",
     "SPICE",
-    "FOAM"
+    "CREAM"
    ]
   },
   {
@@ -376,7 +376,7 @@
     "SMILES",
     "FAMILY",
     "KEEPSAKE",
-    "SNAPSHOT",
+    "POLAROID",
     "MOMENT"
    ]
   },
@@ -386,9 +386,9 @@
     "PURR",
     "WHISKERS",
     "CUSHION",
-    "WINDOWSILL",
+    "SUNSPOT",
     "PAWS",
-    "YAWN",
+    "STRETCH",
     "CURLED UP",
     "KITTEN",
     "SLEEPY"
@@ -415,39 +415,39 @@
     "GLOW",
     "BEESWAX",
     "FLICKER",
-    "SCENTED",
-    "HOLDER",
-    "TEALIGHT",
-    "MATCHES",
+    "SOFT LIGHT",
+    "WARM",
+    "LANTERN",
+    "SHADOW",
     "EVENING"
    ]
   },
   {
    "theme": "Woolen Comforts",
    "words": [
-    "EARMUFFS",
+    "SWEATER",
     "SOCKS",
     "SHAWL",
     "FLEECE",
     "SNUG",
     "CARDIGAN",
     "THROW",
-    "BEANIE",
+    "SLIPPERS",
     "FLANNEL"
    ]
   },
   {
-   "theme": "Picnic Day",
+   "theme": "Baking Bread",
    "words": [
-    "GINGHAM",
-    "FLASK",
-    "SANDWICHES",
-    "GRASS",
-    "SHADE TREE",
-    "FRUIT SALAD",
-    "WICKER",
-    "NAPKINS",
-    "KITE"
+    "DOUGH",
+    "YEAST",
+    "CRUST",
+    "RISING",
+    "FLOUR",
+    "LOAF",
+    "WARM OVEN",
+    "KNEADING",
+    "CRUMB"
    ]
   },
   {
@@ -457,11 +457,11 @@
     "GINGER",
     "LEMON BALM",
     "INFUSION",
-    "HIBISCUS",
+    "HONEY",
     "PEPPERMINT",
     "SOOTHING",
-    "LOOSE LEAF",
-    "ROSEHIP"
+    "WARM CUP",
+    "PETALS"
    ]
   },
   {
@@ -472,52 +472,52 @@
     "COBBLES",
     "PIER",
     "BOATS",
-    "FISHING NETS",
-    "SEAFOOD",
-    "SEA GLASS",
+    "FISH NETS",
+    "SALT AIR",
+    "SUNSET",
     "ANCHOR"
    ]
   },
   {
-   "theme": "Sewing Box",
+   "theme": "Mountain Trail",
    "words": [
-    "THIMBLE",
-    "BUTTONS",
-    "THREAD",
-    "PINCUSHION",
-    "SPOOL",
-    "SCISSORS",
-    "PATCHWORK",
-    "HEM",
-    "MEASURING TAPE"
+    "BOOTS",
+    "BACKPACK",
+    "SUMMIT",
+    "VALLEY",
+    "STREAM",
+    "PINE",
+    "MAP",
+    "LOOKOUT",
+    "FRESH AIR"
    ]
   },
   {
-   "theme": "Library Visit",
+   "theme": "Morning Garden",
    "words": [
-    "LIBRARIAN",
-    "CATALOG",
-    "STORY TIME",
-    "HARDCOVER",
-    "CHAPTERS",
-    "BORROW",
-    "DUE DATE",
-    "READING ROOM",
-    "MYSTERY"
+    "DEW",
+    "WATERING",
+    "SPROUTS",
+    "BIRDSONG",
+    "SUNRISE",
+    "SOIL",
+    "GREEN",
+    "PATH",
+    "BLOOM"
    ]
   },
   {
-   "theme": "Pot of Soup",
+   "theme": "Rainy Window",
    "words": [
-    "BROTH",
-    "LADLE",
-    "SIMMER",
-    "NOODLES",
-    "CARROTS",
-    "CELERY",
-    "BOWL",
-    "CRACKERS",
-    "STEW"
+    "STREAKS",
+    "GLASS",
+    "GREY",
+    "PATTER",
+    "INSIDE",
+    "WARM LIGHT",
+    "QUIET",
+    "DROPLETS",
+    "STORM"
    ]
   },
   {
@@ -526,26 +526,26 @@
     "EMBERS",
     "LOGS",
     "CRACKLE",
-    "ROCKING CHAIR",
+    "ARMCHAIR",
     "TALES",
-    "LEGENDS",
+    "WARM",
     "HEARTH",
     "SHADOWS",
-    "GRANDPA"
+    "BLANKET"
    ]
   },
   {
    "theme": "Simple Pleasures",
    "words": [
-    "HOME COOKING",
-    "RAINBOWS",
+    "SMILE",
+    "SUNSHINE",
     "KINDNESS",
-    "GOOD NEWS",
+    "LAUGHTER",
     "FRIENDS",
     "GRATITUDE",
-    "PICNICS",
+    "MUSIC",
     "WALKS",
-    "HUGS"
+    "CALM"
    ]
   },
   {
@@ -553,32 +553,32 @@
    "words": [
     "DUSK",
     "LAMPLIGHT",
-    "STARGAZING",
-    "EARLY NIGHT",
+    "SOUP",
+    "SILENCE",
     "SOFA",
     "RADIO",
-    "BOARD GAMES",
+    "SLIPPERS",
     "KNITTING",
-    "JIGSAW"
+    "REST"
    ]
   },
   {
    "theme": "Gentle Sleep",
    "words": [
     "PILLOW",
-    "NIGHTGOWN",
+    "DREAMS",
     "LULLABY",
     "BEDTIME",
     "DRIFTING",
-    "SNOOZE",
-    "COVERS",
-    "GOODNIGHT",
+    "SOFT",
+    "QUILT",
+    "MOONLIGHT",
     "RESTFUL"
    ]
   }
  ],
  "cover": {
-  "page_count": 120,
+  "page_count": 128,
   "paper": "white",
   "script": "Calm & Cozy",
   "title": "PUZZLES",

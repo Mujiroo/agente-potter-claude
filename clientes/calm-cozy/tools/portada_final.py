@@ -86,15 +86,16 @@ def card_maze(x, y, cell=32, n=7, seed=9):
     return "".join(out)
 
 
-def front(x0, y0, w, h, cv):
-    """Frente con sangrado en los 4 lados; (x0, y0, w, h) incluye el sangrado."""
-    cx = x0 + w / 2
+def front(x0, y0, w, h, cv, extra=0):
+    """Frente con sangrado en los 4 lados; (x0, y0, w, h) incluye el sangrado.
+    extra: fondo adicional por el borde exterior (no mueve el diseño)."""
+    cx = x0 + (w - extra) / 2
     m, a, ink, cream = PAL["main"], PAL["accent"], PAL["ink"], PAL["cream"]
     top = 470
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{cream}"/>',
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{top}" fill="{m}"/>',
-           f'<circle cx="{x0+w*0.86}" cy="{y0+h*0.11}" r="80" fill="{a}" opacity=".85"/>',
-           texture(x0, y0, w, top, 3),
+           f'<circle cx="{x0+(w-extra)*0.86}" cy="{y0+h*0.11}" r="80" fill="{a}" opacity=".85"/>',
+           texture(x0, y0, w - extra, top, 3),
            f'<text x="{cx}" y="{y0+118}" text-anchor="middle" font-family="{SERIF}" font-size="26" letter-spacing="7" '
            f'fill="#FFFFFF">{esc(cv["author"].upper())}</text>',
            f'<text x="{cx}" y="{y0+240}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="96" '
@@ -177,11 +178,14 @@ def main(src, dst, front_only=False):
         svg = front(0, 0, W, H, cv)
         meta = ""
     else:
-        W = 2 * (tw + BLEED) * U + sw
+        # 3 unidades (0,03") de fondo extra por el borde exterior del frente: Chrome redondea la página a px
+        # y después ajustar_mediabox.py recorta al ancho exacto sin dejar una franja blanca
+        EXTRA = 3
+        W = 2 * (tw + BLEED) * U + sw + EXTRA
         fx = b + tw * U + sw  # borde izquierdo del frente (sin sangrado)
         # orden: contratapa y frente (cada uno con su sangrado) y encima el lomo, que tapa lo que invadió
         svg = (back(0, 0, b + tw * U + b, H, cv, trim_right=b + tw * U)
-               + front(fx - b, 0, tw * U + 2 * b, H, cv)
+               + front(fx - b, 0, tw * U + 2 * b + EXTRA, H, cv, extra=EXTRA)
                + spine(b + tw * U, 0, sw, H, cv))
         meta = f' data-spine="{sw/U:.4f}"'
     doc = f'''<!doctype html><html><head><meta charset="utf-8"><title>{esc(cv["script"])} {esc(cv["title"])} (cover)</title><style>

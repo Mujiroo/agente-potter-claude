@@ -176,7 +176,7 @@ def make_maze(rng, w=17, h=17):
 def maze_svg(maze, solve=False, cell=40, lw=9):
     w, h = maze["w"], maze["h"]
     W, H = w * cell, h * cell
-    out = [f'<svg class="maze" viewBox="{-lw} {-lw} {W+2*lw} {H+2*lw}" xmlns="http://www.w3.org/2000/svg">']
+    out = [f'<svg class="maze" viewBox="{-cell-lw} {-lw} {W+2*cell+2*lw} {H+2*lw}" xmlns="http://www.w3.org/2000/svg">']
     if solve:
         pts = " ".join(f"{c*cell+cell/2},{r*cell+cell/2}" for r, c in maze["path"])
         out.append(f'<polyline points="{pts}" fill="none" stroke="#BDBDBD" stroke-width="{cell*0.42:.0f}" '
@@ -186,19 +186,19 @@ def maze_svg(maze, solve=False, cell=40, lw=9):
         for c in range(w):
             x, y = c * cell, r * cell
             wl = maze["walls"][r][c]
-            if wl["N"] and not (r == 0 and c == 0):
+            if wl["N"]:  # la entrada es sólo por la izquierda (donde apunta la flecha)
                 seg.append(f"M{x},{y} h{cell}")
             if wl["W"] and not (r == 0 and c == 0):
                 seg.append(f"M{x},{y} v{cell}")
-            if r == h - 1 and wl["S"] and not (r == h - 1 and c == w - 1):
+            if r == h - 1 and wl["S"]:  # la salida es sólo por la derecha
                 seg.append(f"M{x},{y+cell} h{cell}")
             if c == w - 1 and wl["E"] and not (r == h - 1 and c == w - 1):
                 seg.append(f"M{x+cell},{y} v{cell}")
     out.append(f'<path d="{" ".join(seg)}" stroke="#111" stroke-width="{lw}" stroke-linecap="round" fill="none"/>')
     # flechas de entrada y salida
-    out.append(f'<path d="M{-cell*0.9},{cell/2} h{cell*0.55} m-14,-10 l14,10 -14,10" stroke="#111" stroke-width="{lw*0.8}" '
+    out.append(f'<path d="M{-cell*0.95},{cell/2} h{cell*0.75} m{-cell*0.3:.1f},{-cell*0.25:.1f} l{cell*0.3:.1f},{cell*0.25:.1f} {-cell*0.3:.1f},{cell*0.25:.1f}" stroke="#111" stroke-width="{lw*0.8}" '
                f'fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
-    out.append(f'<path d="M{W+cell*0.35},{H-cell/2} h{cell*0.55} m-14,-10 l14,10 -14,10" stroke="#111" stroke-width="{lw*0.8}" '
+    out.append(f'<path d="M{W+cell*0.2},{H-cell/2} h{cell*0.75} m{-cell*0.3:.1f},{-cell*0.25:.1f} l{cell*0.3:.1f},{cell*0.25:.1f} {-cell*0.3:.1f},{cell*0.25:.1f}" stroke="#111" stroke-width="{lw*0.8}" '
                f'fill="none" stroke-linecap="round" stroke-linejoin="round"/>')
     out.append("</svg>")
     return "".join(out)
