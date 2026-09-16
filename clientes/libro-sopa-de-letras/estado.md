@@ -522,3 +522,7 @@ son todos **8,5×11 de ~105 páginas**. En **6×9 el techo real es US$ 9,99**, q
 primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $8,99.
 **Ojo:** esto significa que el formato 6×9 de la serie deja plata en la mesa frente a los
 8,5×11. Vale la pena conversarlo con Pedro para los próximos volúmenes.
+
+## 2026-09-16 09:23 · Pedro elige los interiores corregidos (msg 375)
+- Los 5 interiores corregidos **reemplazan** a los aprobados en `entregables/volN/` (mismo nombre de archivo, 112 págs. cada uno). La carpeta `corregidos/` ya no existe.
+- Los originales quedan sólo en el historial de git (commit anterior a este cambio). Portadas sin cambios.
