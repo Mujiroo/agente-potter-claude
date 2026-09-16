@@ -71,3 +71,5 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
   - Portada: zona segura (0,125" desde el corte, lomo con 0,0625" por lado), código de barras libre (2×1,2" abajo a la derecha), sin choques, 0 groserías en texturas y mini sopa, 0 Type3, miniaturas legibles.
   - Interior: PDF de 128 págs. a 612×792. Las 40 sopas coinciden con su solución, cada palabra 1 vez, 0 al revés, 0 groserías. p2→73 correcto. Todo en grises.
 - Archivos: `entregables/vol1_final/` (cover PDF, interior PDF, previews). Enviados msgs 447–451.
+- 10:35 Pedro (msg 456): el Calm & Cozy **se queda en 8,5×11**, como le recomendé (msg 455). A 8,5×11 y US$ 12,99 le quedan ~US$ 4,62 por libro; en 6×9 a 9,99, ~US$ 3,30. Posible versión 6×9 aparte más adelante.
+- Sigue pendiente su OK explícito a los PDF finales (msgs 449–451).
