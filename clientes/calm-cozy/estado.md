@@ -121,3 +121,12 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - p2→74 correcto; portada en zona segura, código de barras libre; 0 Type3
 - Archivos: `entregables/vol1_final/` (v1 y v2 quedan como historial). Enviados msgs 495–500.
 - Siguiente: ficha KDP de Calm & Cozy cuando apruebe.
+
+## 2026-09-16 12:05 · A publicar (msgs 501–504)
+- Pedro: «ok, vamos a publicar… el calm and cozy». Tomo la v3 como aprobada.
+- Ficha KDP completa en `ficha_kdp.md`, enviada en msgs 505–509 (campos por pestaña + descripción en .txt + los 2 PDF).
+  - Precio US$ 12,99 → regalía US$ 4,72.
+  - Sin distribución ampliada, mate, sin sangrado, ISBN gratis.
+  - IA: texto sí, imágenes sí.
+- Él carga todo en su cuenta. Le pedí que me avise antes de apretar «Publicar» y que me mande capturas si el previsualizador marca errores.
+- Sin verificar: los nombres exactos de las categorías en el selector de KDP y si el campo de autor acepta «Peter &» como nombre.
