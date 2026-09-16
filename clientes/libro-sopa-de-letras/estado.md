@@ -511,3 +511,12 @@ Pedro pidió revisar todo como editor profesional.
   - Quedan en `entregables/corregidos/volN/`. **Los PDFs aprobados originales no se tocaron.** Las portadas no cambian (las grillas no aparecen en ellas): sólo cambia el interior.
   - Pedro debe decidir si publica los corregidos (recomendado) o los originales.
 - Falso positivo que corregí en mi propio verificador: no limpiaba los guiones, así que "TIT" dentro de CROSS-STITCH aparecía como si estuviera en el relleno.
+
+## 2026-09-16 01:40 · Borrador de ficha KDP del Vol. 5
+`vol5/ficha_kdp.md`: descripción, 7 keywords, categorías, precio y declaración de IA.
+Investigación en Amazon esa noche (búsqueda *large print christmas word search books for adults*):
+los que cobran **US$ 13,99–14,99** (Cozy Christmas 4,8★/364 reseñas, Nostalgic Christmas 4,6★)
+son todos **8,5×11 de ~105 páginas**. En **6×9 el techo real es US$ 9,99**, que además es el
+primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $8,99.
+**Ojo:** esto significa que el formato 6×9 de la serie deja plata en la mesa frente a los
+8,5×11. Vale la pena conversarlo con Pedro para los próximos volúmenes.
