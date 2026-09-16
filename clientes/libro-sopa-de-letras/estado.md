@@ -508,6 +508,8 @@ Pedro pidió revisar todo como editor profesional.
   - Con la lista **antigua** leída en 8 direcciones: **0 hallazgos reales**. Los PDFs aprobados no tenían ninguna de las palabras que ya filtrábamos.
   - Con la lista **nueva**: 34 hallazgos, entre ellos **KIKE (Vol.1 #15, Vol.4 #31), SPIC (Vol.4 #41), TWAT (Vol.1 #6, Vol.3 #34), ARSE (Vol.4 #7)**; el resto WOP y JEW.
 - **Regenerados los 5 interiores** con el filtro corregido: 0 errores en `verificar.py`, 0 hallazgos en el barrido estricto, 112 págs., 0 Type3.
+  - Verificado además en navegador: los 5 dan **112 páginas y 0 desbordes** (las listas de
+    palabras no cambian al regenerar, sólo el relleno de la grilla).
   - Quedan en `entregables/corregidos/volN/`. **Los PDFs aprobados originales no se tocaron.** Las portadas no cambian (las grillas no aparecen en ellas): sólo cambia el interior.
   - Pedro debe decidir si publica los corregidos (recomendado) o los originales.
 - Falso positivo que corregí en mi propio verificador: no limpiaba los guiones, así que "TIT" dentro de CROSS-STITCH aparecía como si estuviera en el relleno.
