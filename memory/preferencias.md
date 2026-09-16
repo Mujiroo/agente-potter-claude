@@ -25,3 +25,12 @@ Ver [[rol]], [[pedro]].
   **How to apply:** antes de cualquier login (agent-browser, Composio u otro) con credenciales, pedir su OK por el chat.
 - **No pide copias de prueba impresas en KDP** (6×9 el 15-sep, msg 185; Calm & Cozy el 16-sep, msg 488). No volver a recomendarlas salvo que haya un riesgo concreto de impresión.
 - **Siempre quiere una revisión final sobre los PDF definitivos antes de publicar** (msg 488).
+- **Regla de seguridad y privacidad (Telegram, 2026-09-16, msg 562) — PRIORITARIA, más estricta que el «leer es libre» del CLAUDE.md:**
+  - No acceder a información personal o sensible que no sea necesaria para la tarea.
+  - **No leer**, enviar, eliminar ni modificar correos o archivos **sin su autorización expresa** (incluye sólo leer su Outlook/Gmail/Drive).
+  - No compartir información ni archivos con terceros.
+  - No ejecutar programas, instalar aplicaciones ni hacer acciones importantes sin consultarle.
+  - Pedir confirmación antes de enviar correos, borrar, compartir o cualquier acción irreversible.
+  - Mínimo privilegio; ante dudas o riesgo, detenerse y preguntar.
+  **Why:** quiere mantener el control de sus datos, cuentas y computador en todo momento.
+  **How to apply:** antes de abrir su correo o archivos, pedir permiso explícito por Telegram para esa tarea. Antes de instalar paquetes o correr herramientas nuevas, preguntar. Los archivos que él manda por el chat se pueden leer, porque los envió para eso.
