@@ -534,3 +534,13 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - Portadas: 12,5×9,25" (teórico 12,502; Chrome redondea a puntos, 0,002"). 0 Type3 en los 10 PDF.
 - Respondido (msg 383): los archivos están listos. Para publicar faltan las **fichas KDP** (sólo hay borrador del Vol. 5, sin revisar), la declaración de IA y el límite de 3 títulos cada 24 h. Le ofrecí la ficha del Vol. 5.
 - Ojo: `entregables/libro1/` en la raíz del workspace (fuera de git) es una copia vieja del Vol. 1, con el interior anterior. No usarla.
+
+## 2026-09-16 10:10 · KDP: cuenta y ficha Vol. 5
+- Pedro configuró la cuenta KDP: banco Wise (EE. UU., datos USD) y perfil fiscal (RUT como TIN extranjero, tratado Chile–EE. UU. → retención esperada 10 %). Falta que confirme el % real.
+- Preguntó por repartir regalías entre los dos autores. Le expliqué que KDP paga a un solo titular y le recomendé la opción A: cobra él y reparte desde Wise. Esperando respuesta.
+- Ficha Vol. 5 enviada (msgs 415–417) y corregida:
+  - «diagonally down» → «diagonally» (FORWARD incluye la diagonal hacia arriba)
+  - quitado «no magnifier needed»
+  - categorías: KDP permite 3, no 10
+  - costo de impresión y umbral del 60 % verificados en la ayuda de KDP
+- **Declaración de IA: recomiendo texto SÍ + imágenes SÍ.** Las portadas las generó la IA (código SVG), y la guía de KDP define «AI-generated» como contenido creado por una herramienta de IA, portada incluida. Esto cambia lo que habíamos dejado (imágenes NO). Esperando OK.

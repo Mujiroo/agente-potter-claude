@@ -24,7 +24,7 @@ real está en **$9,99**. Conviene no pelear ese tramo con un libro más chico.
 ## Precio recomendado: **US$ 9,99**
 
 - Es el primer escalón con **regalía 60%** (bajo 9,99 es 50%).
-- Costo de impresión: 1,00 + 0,012 × 112 = **$2,344**.
+- Costo de impresión: 1,00 + 0,012 × 112 = **$2,344** (tarifa KDP verificada el 16-sep-2026; 60 % desde US$ 9,99).
 - Regalía: 9,99 × 0,60 − 2,344 = **$3,65 por copia**.
 - A $8,99 (50%): 4,495 − 2,344 = $2,15. A $9,99 gana **70% más** por copia y además queda
   al nivel de los dos competidores de 4,8–5,0 estrellas.
@@ -48,8 +48,8 @@ white space, so you can sit down with a cup of something warm and just enjoy it.
 <b>What's inside</b>
 <ul>
 <li><b>55 festive puzzles</b>, each on its own page, with nine words to find</li>
-<li><b>Extra large print</b> — comfortable on the eyes, no magnifier needed</li>
-<li><b>Words read forward only</b>: left to right, top to bottom, and diagonally down.
+<li><b>Large print</b> with big, bold letters that are easy on the eyes</li>
+<li><b>Words read forward only</b>: across, down and diagonally.
 Never backwards, never a trick</li>
 <li><b>Complete solutions</b> at the back, one per page and easy to check</li>
 <li><b>112 pages</b> of holiday puzzles — enough to last the whole season</li>
@@ -83,18 +83,17 @@ Las que usan los competidores del top: *Word Search Games*, *Word Games (Books)*
 
 - **Principal:** Books > Humor & Entertainment > Puzzles & Games > Word Search
 - **Secundaria:** Books > Humor & Entertainment > Puzzles & Games > Logic & Brain Teasers
-- *(KDP permite pedir hasta 10 categorías; vale la pena sumar una de temporada —
-  Holidays / Christmas — cuando esté disponible en el selector.)*
+- **Tercera:** una de temporada (Holidays / Christmas) si aparece en el selector.
+- KDP permite elegir **hasta 3 categorías** (verificado en la ayuda de KDP, 16-sep-2026).
 
 ## Declaración de IA en KDP
 
 - **Texto: SÍ** (contenido generado con IA, revisado y editado por el autor).
-- **Imágenes: NO** — la portada es vectorial, escrita a mano en código, no generada por IA.
+- **Imágenes: SÍ (recomendado 16-sep)** — la portada la generó la IA en código SVG; KDP cuenta eso como AI-generated (Content Guidelines). Pendiente OK de Pedro.
 - Traducción: no aplica.
 
 ## Antes de apretar publicar
 
 - Máximo **3 títulos nuevos por 24 horas** en KDP.
 - Si se publican los cinco, conviene empezar por el **Vol. 5** (temporada) y espaciar el resto.
-- Usar el **interior corregido** (`entregables/corregidos/vol5/`), no el original:
-  ver el hallazgo del filtro de groserías en `../estado.md`.
+- El interior vigente en `entregables/vol5/` ya es el corregido (Pedro, msg 375).
