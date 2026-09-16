@@ -136,3 +136,7 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - «poco contenido»: NO
   - «letra grande»: SÍ. La guía de KDP dice que «suelen» tener ≥16 pt; los juegos están entre 16 y 34 pt, pero instrucciones y tips van en 13–14 pt y las soluciones de sudoku en ~12 pt.
   - Pedro eligió A: publicar ya, sin subir esos textos a 16 pt (msg 531). Queda como posible mejora para una próxima edición.
+- 13:18–13:43 KDP:
+  - Previsualizador con 122 págs. (versión final confirmada) y código de barras puesto por KDP en el espacio libre.
+  - Pedro propuso US$ 7,99. Le recomendé no hacerlo: regalía US$ 0,93 al 50 %, contra US$ 2,92 a 9,99 y US$ 4,72 a 12,99. Recomendado 12,99; mínimo razonable 9,99.
+  - Esperando que decida el precio.

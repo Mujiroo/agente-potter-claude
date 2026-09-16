@@ -21,3 +21,4 @@
 
 ## Archivos
 - incoming/file_15.pdf (cotización Xiandai), incoming/file_14.pdf (SGS), incoming/file_16.pdf (PI Dongying 24-may-2021).
+- 13:08 Pedro pidió «el resumen de todo en un Excel» (msg 559). El script está listo (`scratchpad/xl/build.js`, con exceljs), pero **no lo ejecuté**: después llegó su regla de seguridad (msg 562). Le pedí autorización para correrlo (msg 574).
