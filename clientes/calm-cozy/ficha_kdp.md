@@ -24,7 +24,7 @@ Reglas de título, subtítulo y keywords verificadas en KDP Metadata Guidelines 
 - **Contenido para adultos:** No
 - **Libro de bajo contenido:** No (tiene puzzles y soluciones)
 
-## Descripción (HTML simple admitido por KDP)
+## Descripción (el editor de KDP NO lee HTML: pegar `entregables/vol1_final/descripcion_kdp.txt` y dar formato con los botones)
 ```html
 <b>Three kinds of puzzles, one calm afternoon.</b>
 

@@ -124,6 +124,7 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
 
 ## 2026-09-16 12:05 · A publicar (msgs 501–504)
 - Pedro: «ok, vamos a publicar… el calm and cozy». Tomo la v3 como aprobada.
+- OJO: el editor de descripción de KDP NO interpreta HTML (Pedro vio las etiquetas crudas, msg 513). Se entrega texto plano (`entregables/vol1_final/descripcion_kdp.txt`) y el formato se da con los botones del editor.
 - Ficha KDP completa en `ficha_kdp.md`, enviada en msgs 505–509 (campos por pestaña + descripción en .txt + los 2 PDF).
   - Precio US$ 12,99 → regalía US$ 4,72.
   - Sin distribución ampliada, mate, sin sangrado, ISBN gratis.
