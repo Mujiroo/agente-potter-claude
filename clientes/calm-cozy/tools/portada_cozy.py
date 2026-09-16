@@ -24,6 +24,20 @@ def esc(s):
     return html.escape(s, quote=True)
 
 
+def letter_texture(x0, y0, w, h, color, opacity, cell=46, seed=3, size=26):
+    """Textura suave de letras, como las portadas de la otra serie."""
+    import random
+    rng = random.Random(seed)
+    out = [f'<g fill="{color}" opacity="{opacity}" font-family="Playfair Display, serif" font-weight="700" '
+           f'font-size="{size}" text-anchor="middle">']
+    for r in range(int(h // cell) + 1):
+        for k in range(int(w // cell) + 1):
+            out.append(f'<text x="{x0+k*cell+cell/2}" y="{y0+r*cell+cell/2+9}">'
+                       f'{rng.choice("ABCDEFGHIJKLMNOPRSTUVWY")}</text>')
+    out.append("</g>")
+    return "".join(out)
+
+
 def leaves(x, y, c, k=1.0, rot=0):
     """Ramita con hojas."""
     return (f'<g transform="translate({x},{y}) rotate({rot}) scale({k})" stroke="{c["ink"]}" stroke-width="5" fill="none">'
@@ -92,6 +106,8 @@ def front(x0, y0, w, h, cv, c, cx=None, white=False):
     ink = c["ink"]
     bg = "#FFFFFF" if white else c["bg"]
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{bg}"/>']
+    if cv.get("texture", True):
+        out.append(letter_texture(x0, y0, w, h, c["ink"], 0.05 if white else 0.09))
     # marco fino
     out.append(f'<rect x="{x0+38}" y="{y0+38}" width="{w-76}" height="{h-76}" rx="18" fill="none" '
                f'stroke="{ink}" stroke-width="5" opacity=".55"/>')
@@ -126,6 +142,7 @@ def back(x0, y0, w, h, cv, c):
     left = x0 + BLEED * U + 52
     width = w - BLEED * U - 104
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{c["bg"]}"/>',
+           letter_texture(x0, y0, w, h, c["ink"], 0.09, seed=8) if cv.get("texture", True) else "",
            f'<rect x="{x0+BLEED*U+20}" y="{y0+38}" width="{w-BLEED*U-58}" height="{h-76}" rx="18" fill="none" stroke="{ink}" stroke-width="5" opacity=".55"/>',
            f'<text x="{left+width/2}" y="{y0+150}" text-anchor="middle" font-family="Caveat, cursive" font-size="74" '
            f'fill="{c["terracotta"]}">{esc(cv["back_headline"])}</text>',
