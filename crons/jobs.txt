@@ -9,5 +9,3 @@
 # 30 8 1 * * | [CRON] Día 1 del mes: revisa los pendientes mensuales y avisa por tg.sh.
 
 
-# 16-sep-2026: Pedro pidió retomar a las 8:00. Resumen de lo trabajado en la noche.
-0 8 16 9 * | [CRON] Son las 8:00 y Pedro pidió retomar a esta hora. Lee clientes/calm-cozy/estado.md y clientes/libro-sopa-de-letras/estado.md y mándale por bin/tg.sh el resumen de la noche: (1) el libro Calm & Cozy completo ya está generado y auditado, 128 págs., 0 errores, sólo falta que elija portada; (2) el hallazgo del filtro de groserías que miraba en una sola dirección, los slurs que aparecían en los 5 volúmenes aprobados (KIKE, SPIC, TWAT, ARSE) y que ya están los 5 interiores corregidos en entregables/corregidos/ sin tocar los originales, para que él decida cuáles publica; (3) el borrador de ficha KDP del Vol. 5 en clientes/libro-sopa-de-letras/vol5/ficha_kdp.md, con el dato de que los libros de US$ 13,99-14,99 son todos 8,5x11 y que en 6x9 el techo es US$ 9,99. Tono corto y directo, tags HTML. Después borra esta línea de crons/jobs.txt y commitea.
