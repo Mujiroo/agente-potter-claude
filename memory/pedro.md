@@ -21,3 +21,6 @@ Fuente: Pedro, Telegram, 2026-09-15.
 - **Gmail** (`p.puertasd@gmail.com`): también en uso.
 
 Ver [[rol]] y [[preferencias]].
+
+## Finanzas / KDP
+- Abrió una cuenta **Wise** para cobrar las regalías de Amazon KDP (2026-09-16, msg 386). Le indiqué: ubicación del banco = Estados Unidos (datos USD de Wise, routing ACH); luego viene la entrevista fiscal para no residentes en EE.UU.
