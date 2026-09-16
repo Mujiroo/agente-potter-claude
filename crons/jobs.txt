@@ -8,3 +8,6 @@
 # 0 9 * * 0 | [CRON] Reporte semanal: resume la semana y envíalo por tg.sh.
 # 30 8 1 * * | [CRON] Día 1 del mes: revisa los pendientes mensuales y avisa por tg.sh.
 
+
+# 16-sep-2026: Pedro pidió retomar a las 8:00. Resumen de lo trabajado en la noche.
+0 8 16 9 * | [CRON] Son las 8:00 y Pedro pidió retomar a esta hora. Lee clientes/calm-cozy/estado.md y clientes/libro-sopa-de-letras/estado.md y mándale por bin/tg.sh el resumen de la noche: (1) el libro Calm & Cozy completo ya está generado y auditado, 128 págs., 0 errores, sólo falta que elija portada; (2) el hallazgo del filtro de groserías que miraba en una sola dirección, los slurs que aparecían en los 5 volúmenes aprobados (KIKE, SPIC, TWAT, ARSE) y que ya están los 5 interiores corregidos en entregables/corregidos/ sin tocar los originales, para que él decida cuáles publica. Tono corto y directo, tags HTML. Después borra esta línea de crons/jobs.txt y commitea.
