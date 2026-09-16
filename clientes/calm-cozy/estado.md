@@ -131,3 +131,8 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - IA: texto sí, imágenes sí.
 - Él carga todo en su cuenta. Le pedí que me avise antes de apretar «Publicar» y que me mande capturas si el previsualizador marca errores.
 - Sin verificar: los nombres exactos de las categorías en el selector de KDP y si el campo de autor acepta «Peter &» como nombre.
+- 12:18 KDP pestaña 1:
+  - categorías confirmadas: Puzzles, Sopa de Letras, Sudoku
+  - «poco contenido»: NO
+  - «letra grande»: SÍ. La guía de KDP dice que «suelen» tener ≥16 pt; los juegos están entre 16 y 34 pt, pero instrucciones y tips van en 13–14 pt y las soluciones de sudoku en ~12 pt.
+  - Pedro eligió A: publicar ya, sin subir esos textos a 16 pt (msg 531). Queda como posible mejora para una próxima edición.
