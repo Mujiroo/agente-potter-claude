@@ -24,3 +24,18 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - 01:15 (16-sep) Enviadas **5 portadas** (msgs 333+): 1 cozy, 2 números, 3 ventana, 4 sobria, 5 moderna. Generador: `tools/portadas_opciones.py`; PNG en `entregables/portadas/`.
   - Recomendé la 5 (moderna) y, como alternativa segura, la 3 (ventana).
 - 00:28 Pedro pide **5 portadas más, más clásicas**, y que revise si se me pasa algo. Retoma a las 8:00.
+- 00:40 Enviadas las **5 clásicas** (msgs 344–352): 6 revista, 7 biblioteca, 8 diario, 9 barra de color, 10 colcha. Generador: `tools/portadas_clasicas.py`; PNG y `hoja_clasicas.png` (comparativa + las 10 en miniatura) en `entregables/portadas/`.
+  - Corregidos solapes en 6, 8 y 9 (el laberinto pisaba la banda inferior y el sudoku) y las esquinas dobles de la orla de la 10.
+  - Recomendé la **9** como apuesta clásica segura y la **6** si se quiere la palabra clave en el título; mi favorita sigue siendo la 5 (moderna).
+- Tres cosas que levanté en la revisión y **Pedro debe decidir**:
+  1. Las opciones 6–9 **no llevan el nombre de serie "Calm & Cozy"**. Definir si el nombre va en portada o la serie la hace el estilo.
+  2. Las portadas que sólo dicen "PUZZLES" (7 y 10) pierden la palabra que se busca en Amazon. El **título en KDP** debería ser explícito ("Large Print Word Search, Sudoku & Mazes for Adults") aunque la portada diga algo más corto.
+  3. La **10 no muestra sudoku ni laberinto**; si le gusta, hay que agregárselos.
+- 00:41 Pedro: "hablamos a partir de las 8:00 am", se fue a dormir. No escribirle hasta esa hora.
+
+## Pendientes generales (al 16-sep 00:45)
+1. Elegir portada (1–10) y armar la completa: frente + lomo + contratapa.
+2. Pedro debe revisar el interior de muestra (12 págs.).
+3. Vol. 1–5: falta el listado KDP (descripción, 7 keywords, categorías, precio). Partir por el Vol. 5 Christmas por temporada. Declaración de IA: texto sí, imágenes no. Máx. 3 títulos nuevos por 24 h.
+4. Ofrecimiento abierto: borrar definitivamente los 8 correos que quedaron en Eliminados de Hotmail.
+5. Sin luz verde todavía: Christmas Countdown Planner y prueba del libro para colorear.
