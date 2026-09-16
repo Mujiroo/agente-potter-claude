@@ -9,3 +9,7 @@
 # 30 8 1 * * | [CRON] Día 1 del mes: revisa los pendientes mensuales y avisa por tg.sh.
 
 
+
+# 16-sep-2026: Pedro aceptó recordatorio (msg 585). Calm & Cozy publicado a US$ 7,99, en revisión KDP.
+0 10 17 9 * | [CRON] Recordatorio para Pedro por bin/tg.sh (tags HTML, corto): revisar en KDP si «Calm & Cozy Puzzles» ya está «En venta» y, si lo está, subir el precio de US$ 7,99 a US$ 12,99 (mínimo 9,99): a 7,99 le quedan US$ 0,93 por libro y a 12,99 US$ 4,72. No accedas a ninguna cuenta suya; sólo recuérdale. Después borra esta línea de crons/jobs.txt y commitea.
+0 10 18 9 * | [CRON] Segundo recordatorio para Pedro por bin/tg.sh (tags HTML, corto): si todavía no lo hizo, revisar en KDP si «Calm & Cozy Puzzles» está «En venta» y subir el precio de US$ 7,99 a US$ 12,99 (mínimo 9,99). Si ya te dijo en el chat que lo cambió (revisa clientes/calm-cozy/estado.md), no mandes nada. No accedas a ninguna cuenta suya. Después borra esta línea de crons/jobs.txt y commitea.
