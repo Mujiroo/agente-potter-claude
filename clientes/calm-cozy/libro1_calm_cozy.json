@@ -3,7 +3,10 @@
  "subtitle": "Word Search · Sudoku · Mazes",
  "volume": "Vol. 1",
  "tagline": "40 Word Searches · 20 Easy Sudoku · 10 Mazes — All in Large Print",
- "trim": [8.5, 11],
+ "trim": [
+  8.5,
+  11
+ ],
  "size": 15,
  "seed": 7,
  "author": "Peter & Cardu",
@@ -13,45 +16,638 @@
  "sudokus": 20,
  "mazes": 10,
  "word_puzzles": [
-  {"theme": "Cozy Mornings", "words": ["COFFEE", "FRESH BREAD", "BLANKET", "QUIET", "SUNLIGHT", "WAKING UP", "MUG", "AROMA", "SLIPPERS"]},
-  {"theme": "Forest Walk", "words": ["TREES", "PINE", "TRAIL", "MOSS", "RIVER", "FRESH AIR", "BRANCHES", "NEST", "FERNS"]},
-  {"theme": "Reading Nook", "words": ["ARMCHAIR", "CANDLE", "NOVEL", "TEA", "PAGES", "GLASSES", "BOOKSHELF", "BOOKMARK", "QUIET"]},
-  {"theme": "Flower Garden", "words": ["ROSE", "LAVENDER", "SUNFLOWER", "SOIL", "BEE", "PETAL", "SPROUT", "WATERING", "DAISY"]},
-  {"theme": "Rainy Afternoon", "words": ["RAINDROPS", "UMBRELLA", "WINDOW", "CLOUDS", "QUILT", "THUNDER", "PUDDLE", "DRIZZLE", "RAINCOAT"]},
-  {"theme": "Beach Escape", "words": ["SAND", "WAVES", "SEASHELL", "BREEZE", "SALT", "SUN", "LIGHTHOUSE", "TOWEL", "OCEAN"]},
-  {"theme": "Starry Night", "words": ["MOON", "STARS", "DREAM", "CALM", "COSMOS", "MIDNIGHT", "PLANET", "COMET", "SILENCE"]},
-  {"theme": "Home Baking", "words": ["PIE", "CINNAMON", "OVEN", "RECIPE", "VANILLA", "KNEAD", "FLAVOR", "HONEY", "BUTTER"]},
-  {"theme": "Yoga Moments", "words": ["BREATHE", "STRETCH", "MANTRA", "PEACE", "MIND", "FLOW", "POSTURE", "BALANCE", "STILLNESS"]},
-  {"theme": "Mountain Cabin", "words": ["FIREWOOD", "FIREPLACE", "SUMMIT", "SNOW", "MIST", "WARMTH", "SHELTER", "LANTERN", "PINE LOGS"]},
-  {"theme": "Afternoon Tea", "words": ["TEAPOT", "SCONES", "HONEY", "SAUCER", "STEEP", "LEMON", "BISCUIT", "PORCELAIN", "SUGAR"]},
-  {"theme": "Autumn Leaves", "words": ["MAPLE", "AMBER", "ACORN", "HARVEST", "PUMPKIN", "CRISP AIR", "ORCHARD", "SWEATER", "BONFIRE"]},
-  {"theme": "Winter Window", "words": ["FROST", "ICICLE", "SNOWFALL", "MITTENS", "HOT COCOA", "SCARF", "CHIMNEY", "FLURRY", "COZY"]},
-  {"theme": "Spring Morning", "words": ["BLOSSOM", "TULIP", "ROBIN", "DEW", "MEADOW", "BREEZE", "GREEN", "SEEDS", "SUNRISE"]},
-  {"theme": "Summer Evening", "words": ["FIREFLY", "PORCH", "LEMONADE", "SUNSET", "CRICKETS", "HAMMOCK", "WARM NIGHT", "GARDEN", "LAUGHTER"]},
-  {"theme": "Knitting Basket", "words": ["YARN", "NEEDLES", "WOOL", "STITCH", "PATTERN", "SKEIN", "CROCHET", "RIBBING", "SOFT"]},
-  {"theme": "Kitchen Herbs", "words": ["BASIL", "THYME", "MINT", "ROSEMARY", "SAGE", "PARSLEY", "OREGANO", "CHIVES", "DILL"]},
-  {"theme": "Farmers Market", "words": ["BASKET", "APPLES", "BREAD", "FLOWERS", "CHEESE", "JAM", "TOMATOES", "STALL", "FRESH"]},
-  {"theme": "Country Road", "words": ["FENCE", "MEADOW", "BARN", "GRAVEL", "WILDFLOWER", "TRACTOR", "HORSES", "HAYSTACK", "SUNSET"]},
-  {"theme": "Lakeside Calm", "words": ["CANOE", "RIPPLE", "REEDS", "DOCK", "HERON", "STILLNESS", "PEBBLES", "MIST", "DAWN"]},
-  {"theme": "Birdsong", "words": ["SPARROW", "ROBIN", "FINCH", "WREN", "FEEDER", "NEST", "CHIRP", "FEATHER", "DAWN"]},
-  {"theme": "Garden Shed", "words": ["TROWEL", "POTS", "SEEDS", "GLOVES", "TWINE", "WATERING CAN", "RAKE", "COMPOST", "SHELVES"]},
-  {"theme": "Cup of Comfort", "words": ["COCOA", "MARSHMALLOW", "CARAMEL", "STEAM", "WARM MUG", "SIP", "COZY", "SPICE", "CREAM"]},
-  {"theme": "Quiet Sunday", "words": ["SLOW", "NEWSPAPER", "PAJAMAS", "BRUNCH", "NAP", "MUSIC", "SUNBEAM", "REST", "NOTHING"]},
-  {"theme": "Letters and Ink", "words": ["ENVELOPE", "STAMP", "PEN", "PAPER", "POSTCARD", "DIARY", "INKWELL", "WRITING", "SEAL"]},
-  {"theme": "Old Photographs", "words": ["ALBUM", "MEMORY", "FRAME", "SEPIA", "SMILES", "FAMILY", "KEEPSAKE", "POLAROID", "MOMENT"]},
-  {"theme": "Cats and Naps", "words": ["PURR", "WHISKERS", "CUSHION", "SUNSPOT", "PAWS", "STRETCH", "CURLED UP", "KITTEN", "SLEEPY"]},
-  {"theme": "Dogs and Walks", "words": ["LEASH", "WAGGING", "FETCH", "PUPPY", "PAWPRINT", "LOYAL", "PARK", "COLLAR", "TREATS"]},
-  {"theme": "Candlelight", "words": ["WICK", "GLOW", "BEESWAX", "FLICKER", "SOFT LIGHT", "WARM", "LANTERN", "SHADOW", "EVENING"]},
-  {"theme": "Woolen Comforts", "words": ["SWEATER", "SOCKS", "SHAWL", "FLEECE", "SNUG", "CARDIGAN", "THROW", "SLIPPERS", "FLANNEL"]},
-  {"theme": "Baking Bread", "words": ["DOUGH", "YEAST", "CRUST", "RISING", "FLOUR", "LOAF", "WARM OVEN", "KNEADING", "CRUMB"]},
-  {"theme": "Herbal Tea", "words": ["CHAMOMILE", "GINGER", "LEMON BALM", "INFUSION", "HONEY", "PEPPERMINT", "SOOTHING", "WARM CUP", "PETALS"]},
-  {"theme": "Seaside Town", "words": ["HARBOR", "GULLS", "COBBLES", "PIER", "BOATS", "FISH NETS", "SALT AIR", "SUNSET", "ANCHOR"]},
-  {"theme": "Mountain Trail", "words": ["BOOTS", "BACKPACK", "SUMMIT", "VALLEY", "STREAM", "PINE", "MAP", "LOOKOUT", "FRESH AIR"]},
-  {"theme": "Morning Garden", "words": ["DEW", "WATERING", "SPROUTS", "BIRDSONG", "SUNRISE", "SOIL", "GREEN", "PATH", "BLOOM"]},
-  {"theme": "Rainy Window", "words": ["STREAKS", "GLASS", "GREY", "PATTER", "INSIDE", "WARM LIGHT", "QUIET", "DROPLETS", "STORM"]},
-  {"theme": "Fireside Stories", "words": ["EMBERS", "LOGS", "CRACKLE", "ARMCHAIR", "TALES", "WARM", "HEARTH", "SHADOWS", "BLANKET"]},
-  {"theme": "Simple Pleasures", "words": ["SMILE", "SUNSHINE", "KINDNESS", "LAUGHTER", "FRIENDS", "GRATITUDE", "MUSIC", "WALKS", "CALM"]},
-  {"theme": "Slow Evenings", "words": ["DUSK", "LAMPLIGHT", "SOUP", "SILENCE", "SOFA", "RADIO", "SLIPPERS", "KNITTING", "REST"]},
-  {"theme": "Gentle Sleep", "words": ["PILLOW", "DREAMS", "LULLABY", "BEDTIME", "DRIFTING", "SOFT", "QUILT", "MOONLIGHT", "RESTFUL"]}
- ]
+  {
+   "theme": "Cozy Mornings",
+   "words": [
+    "COFFEE",
+    "FRESH BREAD",
+    "BLANKET",
+    "QUIET",
+    "SUNLIGHT",
+    "WAKING UP",
+    "MUG",
+    "AROMA",
+    "SLIPPERS"
+   ]
+  },
+  {
+   "theme": "Forest Walk",
+   "words": [
+    "TREES",
+    "PINE",
+    "TRAIL",
+    "MOSS",
+    "RIVER",
+    "FRESH AIR",
+    "BRANCHES",
+    "NEST",
+    "FERNS"
+   ]
+  },
+  {
+   "theme": "Reading Nook",
+   "words": [
+    "ARMCHAIR",
+    "CANDLE",
+    "NOVEL",
+    "TEA",
+    "PAGES",
+    "GLASSES",
+    "BOOKSHELF",
+    "BOOKMARK",
+    "QUIET"
+   ]
+  },
+  {
+   "theme": "Flower Garden",
+   "words": [
+    "ROSE",
+    "LAVENDER",
+    "SUNFLOWER",
+    "SOIL",
+    "BEE",
+    "PETAL",
+    "SPROUT",
+    "WATERING",
+    "DAISY"
+   ]
+  },
+  {
+   "theme": "Rainy Afternoon",
+   "words": [
+    "RAINDROPS",
+    "UMBRELLA",
+    "WINDOW",
+    "CLOUDS",
+    "QUILT",
+    "THUNDER",
+    "PUDDLE",
+    "DRIZZLE",
+    "RAINCOAT"
+   ]
+  },
+  {
+   "theme": "Beach Escape",
+   "words": [
+    "SAND",
+    "WAVES",
+    "SEASHELL",
+    "BREEZE",
+    "SALT",
+    "SUN",
+    "LIGHTHOUSE",
+    "TOWEL",
+    "OCEAN"
+   ]
+  },
+  {
+   "theme": "Starry Night",
+   "words": [
+    "MOON",
+    "STARS",
+    "DREAM",
+    "CALM",
+    "COSMOS",
+    "MIDNIGHT",
+    "PLANET",
+    "COMET",
+    "SILENCE"
+   ]
+  },
+  {
+   "theme": "Home Baking",
+   "words": [
+    "PIE",
+    "CINNAMON",
+    "OVEN",
+    "RECIPE",
+    "VANILLA",
+    "KNEAD",
+    "FLAVOR",
+    "HONEY",
+    "BUTTER"
+   ]
+  },
+  {
+   "theme": "Yoga Moments",
+   "words": [
+    "BREATHE",
+    "STRETCH",
+    "MANTRA",
+    "PEACE",
+    "MIND",
+    "FLOW",
+    "POSTURE",
+    "BALANCE",
+    "STILLNESS"
+   ]
+  },
+  {
+   "theme": "Mountain Cabin",
+   "words": [
+    "FIREWOOD",
+    "FIREPLACE",
+    "SUMMIT",
+    "SNOW",
+    "MIST",
+    "WARMTH",
+    "SHELTER",
+    "LANTERN",
+    "PINE LOGS"
+   ]
+  },
+  {
+   "theme": "Afternoon Tea",
+   "words": [
+    "TEAPOT",
+    "SCONES",
+    "HONEY",
+    "SAUCER",
+    "STEEP",
+    "LEMON",
+    "BISCUIT",
+    "PORCELAIN",
+    "SUGAR"
+   ]
+  },
+  {
+   "theme": "Autumn Leaves",
+   "words": [
+    "MAPLE",
+    "AMBER",
+    "ACORN",
+    "HARVEST",
+    "PUMPKIN",
+    "CRISP AIR",
+    "ORCHARD",
+    "SWEATER",
+    "BONFIRE"
+   ]
+  },
+  {
+   "theme": "Winter Window",
+   "words": [
+    "FROST",
+    "ICICLE",
+    "SNOWFALL",
+    "MITTENS",
+    "HOT COCOA",
+    "SCARF",
+    "CHIMNEY",
+    "FLURRY",
+    "COZY"
+   ]
+  },
+  {
+   "theme": "Spring Morning",
+   "words": [
+    "BLOSSOM",
+    "TULIP",
+    "ROBIN",
+    "DEW",
+    "MEADOW",
+    "BREEZE",
+    "GREEN",
+    "SEEDS",
+    "SUNRISE"
+   ]
+  },
+  {
+   "theme": "Summer Evening",
+   "words": [
+    "FIREFLY",
+    "PORCH",
+    "LEMONADE",
+    "SUNSET",
+    "CRICKETS",
+    "HAMMOCK",
+    "WARM NIGHT",
+    "GARDEN",
+    "LAUGHTER"
+   ]
+  },
+  {
+   "theme": "Knitting Basket",
+   "words": [
+    "YARN",
+    "NEEDLES",
+    "WOOL",
+    "STITCH",
+    "PATTERN",
+    "SKEIN",
+    "CROCHET",
+    "RIBBING",
+    "SOFT"
+   ]
+  },
+  {
+   "theme": "Kitchen Herbs",
+   "words": [
+    "BASIL",
+    "THYME",
+    "MINT",
+    "ROSEMARY",
+    "SAGE",
+    "PARSLEY",
+    "OREGANO",
+    "CHIVES",
+    "DILL"
+   ]
+  },
+  {
+   "theme": "Farmers Market",
+   "words": [
+    "BASKET",
+    "APPLES",
+    "BREAD",
+    "FLOWERS",
+    "CHEESE",
+    "JAM",
+    "TOMATOES",
+    "STALL",
+    "FRESH"
+   ]
+  },
+  {
+   "theme": "Country Road",
+   "words": [
+    "FENCE",
+    "MEADOW",
+    "BARN",
+    "GRAVEL",
+    "WILDFLOWER",
+    "TRACTOR",
+    "HORSES",
+    "HAYSTACK",
+    "SUNSET"
+   ]
+  },
+  {
+   "theme": "Lakeside Calm",
+   "words": [
+    "CANOE",
+    "RIPPLE",
+    "REEDS",
+    "DOCK",
+    "HERON",
+    "STILLNESS",
+    "PEBBLES",
+    "MIST",
+    "DAWN"
+   ]
+  },
+  {
+   "theme": "Birdsong",
+   "words": [
+    "SPARROW",
+    "ROBIN",
+    "FINCH",
+    "WREN",
+    "FEEDER",
+    "NEST",
+    "CHIRP",
+    "FEATHER",
+    "DAWN"
+   ]
+  },
+  {
+   "theme": "Garden Shed",
+   "words": [
+    "TROWEL",
+    "POTS",
+    "SEEDS",
+    "GLOVES",
+    "TWINE",
+    "WATERING CAN",
+    "RAKE",
+    "COMPOST",
+    "SHELVES"
+   ]
+  },
+  {
+   "theme": "Cup of Comfort",
+   "words": [
+    "COCOA",
+    "MARSHMALLOW",
+    "CARAMEL",
+    "STEAM",
+    "WARM MUG",
+    "SIP",
+    "COZY",
+    "SPICE",
+    "CREAM"
+   ]
+  },
+  {
+   "theme": "Quiet Sunday",
+   "words": [
+    "SLOW",
+    "NEWSPAPER",
+    "PAJAMAS",
+    "BRUNCH",
+    "NAP",
+    "MUSIC",
+    "SUNBEAM",
+    "REST",
+    "NOTHING"
+   ]
+  },
+  {
+   "theme": "Letters and Ink",
+   "words": [
+    "ENVELOPE",
+    "STAMP",
+    "PEN",
+    "PAPER",
+    "POSTCARD",
+    "DIARY",
+    "INKWELL",
+    "WRITING",
+    "SEAL"
+   ]
+  },
+  {
+   "theme": "Old Photographs",
+   "words": [
+    "ALBUM",
+    "MEMORY",
+    "FRAME",
+    "SEPIA",
+    "SMILES",
+    "FAMILY",
+    "KEEPSAKE",
+    "POLAROID",
+    "MOMENT"
+   ]
+  },
+  {
+   "theme": "Cats and Naps",
+   "words": [
+    "PURR",
+    "WHISKERS",
+    "CUSHION",
+    "SUNSPOT",
+    "PAWS",
+    "STRETCH",
+    "CURLED UP",
+    "KITTEN",
+    "SLEEPY"
+   ]
+  },
+  {
+   "theme": "Dogs and Walks",
+   "words": [
+    "LEASH",
+    "WAGGING",
+    "FETCH",
+    "PUPPY",
+    "PAWPRINT",
+    "LOYAL",
+    "PARK",
+    "COLLAR",
+    "TREATS"
+   ]
+  },
+  {
+   "theme": "Candlelight",
+   "words": [
+    "WICK",
+    "GLOW",
+    "BEESWAX",
+    "FLICKER",
+    "SOFT LIGHT",
+    "WARM",
+    "LANTERN",
+    "SHADOW",
+    "EVENING"
+   ]
+  },
+  {
+   "theme": "Woolen Comforts",
+   "words": [
+    "SWEATER",
+    "SOCKS",
+    "SHAWL",
+    "FLEECE",
+    "SNUG",
+    "CARDIGAN",
+    "THROW",
+    "SLIPPERS",
+    "FLANNEL"
+   ]
+  },
+  {
+   "theme": "Baking Bread",
+   "words": [
+    "DOUGH",
+    "YEAST",
+    "CRUST",
+    "RISING",
+    "FLOUR",
+    "LOAF",
+    "WARM OVEN",
+    "KNEADING",
+    "CRUMB"
+   ]
+  },
+  {
+   "theme": "Herbal Tea",
+   "words": [
+    "CHAMOMILE",
+    "GINGER",
+    "LEMON BALM",
+    "INFUSION",
+    "HONEY",
+    "PEPPERMINT",
+    "SOOTHING",
+    "WARM CUP",
+    "PETALS"
+   ]
+  },
+  {
+   "theme": "Seaside Town",
+   "words": [
+    "HARBOR",
+    "GULLS",
+    "COBBLES",
+    "PIER",
+    "BOATS",
+    "FISH NETS",
+    "SALT AIR",
+    "SUNSET",
+    "ANCHOR"
+   ]
+  },
+  {
+   "theme": "Mountain Trail",
+   "words": [
+    "BOOTS",
+    "BACKPACK",
+    "SUMMIT",
+    "VALLEY",
+    "STREAM",
+    "PINE",
+    "MAP",
+    "LOOKOUT",
+    "FRESH AIR"
+   ]
+  },
+  {
+   "theme": "Morning Garden",
+   "words": [
+    "DEW",
+    "WATERING",
+    "SPROUTS",
+    "BIRDSONG",
+    "SUNRISE",
+    "SOIL",
+    "GREEN",
+    "PATH",
+    "BLOOM"
+   ]
+  },
+  {
+   "theme": "Rainy Window",
+   "words": [
+    "STREAKS",
+    "GLASS",
+    "GREY",
+    "PATTER",
+    "INSIDE",
+    "WARM LIGHT",
+    "QUIET",
+    "DROPLETS",
+    "STORM"
+   ]
+  },
+  {
+   "theme": "Fireside Stories",
+   "words": [
+    "EMBERS",
+    "LOGS",
+    "CRACKLE",
+    "ARMCHAIR",
+    "TALES",
+    "WARM",
+    "HEARTH",
+    "SHADOWS",
+    "BLANKET"
+   ]
+  },
+  {
+   "theme": "Simple Pleasures",
+   "words": [
+    "SMILE",
+    "SUNSHINE",
+    "KINDNESS",
+    "LAUGHTER",
+    "FRIENDS",
+    "GRATITUDE",
+    "MUSIC",
+    "WALKS",
+    "CALM"
+   ]
+  },
+  {
+   "theme": "Slow Evenings",
+   "words": [
+    "DUSK",
+    "LAMPLIGHT",
+    "SOUP",
+    "SILENCE",
+    "SOFA",
+    "RADIO",
+    "SLIPPERS",
+    "KNITTING",
+    "REST"
+   ]
+  },
+  {
+   "theme": "Gentle Sleep",
+   "words": [
+    "PILLOW",
+    "DREAMS",
+    "LULLABY",
+    "BEDTIME",
+    "DRIFTING",
+    "SOFT",
+    "QUILT",
+    "MOONLIGHT",
+    "RESTFUL"
+   ]
+  }
+ ],
+ "cover": {
+  "page_count": 128,
+  "paper": "white",
+  "script": "Calm & Cozy",
+  "title": "PUZZLES",
+  "subtitle": "Word Search · Sudoku · Mazes",
+  "author": "Peter & Cardu",
+  "band_line": "70 Puzzles · Solutions Included",
+  "badge1": "70",
+  "badge2": "PUZZLES",
+  "spine": "CALM & COZY PUZZLES  ·  VOL. 1  ·  PETER & CARDU",
+  "cup": {
+   "grid": [
+    "CALMQZ",
+    "COZYXB",
+    "RESTQU",
+    "BREATH"
+   ],
+   "found": [
+    [
+     0,
+     0,
+     0,
+     3
+    ],
+    [
+     1,
+     0,
+     1,
+     3
+    ],
+    [
+     2,
+     0,
+     2,
+     3
+    ],
+    [
+     3,
+     0,
+     3,
+     5
+    ]
+   ]
+  },
+  "colors": {
+   "bg": "#F7F0E4",
+   "ink": "#2E2A26",
+   "sage": "#AFC3A6",
+   "sage2": "#C9D8BF",
+   "terracotta": "#C1663F",
+   "highlight": "#E8D9C2"
+  },
+  "back_headline": "Slow down and unwind",
+  "back_intro": [
+   "Three kinds of puzzles, one calm afternoon. <b>Calm &amp; Cozy Puzzles</b> brings together gentle word searches, easy sudoku and simple mazes, all printed large and clear."
+  ],
+  "back_bullets": [
+   "<b>40 word searches</b> on cozy themes, from quiet mornings to forest walks",
+   "<b>20 easy sudoku</b>, each with one single solution",
+   "<b>10 mazes</b> with thick, easy-to-follow lines",
+   "One puzzle per page, in generous large print",
+   "Full solutions at the back of the book"
+  ],
+  "back_close": "A screen-free way to relax for adults and seniors.",
+  "back_note": "No timers. No pressure. Just a quiet moment.",
+  "counts": [
+   40,
+   20,
+   10
+  ],
+  "series_line": "Calm & Cozy Puzzles · Vol. 1"
+ }
 }

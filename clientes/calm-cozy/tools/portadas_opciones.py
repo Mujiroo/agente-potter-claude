@@ -187,7 +187,8 @@ def front_modern(x0, y0, w, h, cv, c, pal=None):
     cw = dict(c, ink=ink, highlight=pal["highlight"])
     out.append(f'<g transform="rotate(-6 {cx-150} {y0+600})">{mini_grid(cx - 330, y0 + 510, 6, 4, cv["cup"], cw, cell=46, font=32)}</g>')
     out.append(f'<g transform="rotate(5 {cx+180} {y0+640})">{sudoku_mini(cx + 40, y0 + 546, cw, cell=36)}</g>')
-    out.append(f'<g transform="rotate(-3 {cx-70} {y0+840})">{maze_mini(cx - 250, y0 + 756, cw, cell=32, n=7)}</g>')
+    # laberinto sobre la franja LARGE PRINT: abajo termina a ~y0+h-195, con aire antes de la franja (y0+h-150)
+    out.append(f'<g transform="rotate(-3 {cx-150} {y0+h-300})">{maze_mini(cx - 248, y0 + h - 402, cw, cell=28, n=7)}</g>')
     out.append(f'<rect x="{x0+60}" y="{y0+h-150}" width="{w-120}" height="112" rx="56" fill="{ink}"/>')
     out.append(f'<text x="{cx}" y="{y0+h-98}" text-anchor="middle" font-family="Playfair Display, serif" font-weight="700" '
                f'font-size="42" letter-spacing="3" fill="{mustard}">LARGE PRINT</text>')

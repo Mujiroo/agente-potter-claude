@@ -59,3 +59,15 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
   - Recomendé la B; como alternativa, la C.
   - Defecto detectado: el laberinto mini queda tapado por la franja LARGE PRINT (también en la original). Se corrige en la elegida.
   - Esperando que elija.
+
+## 2026-09-16 10:30 · Vol. 1 FINAL (esperando aprobación)
+- Pedro (msg 440): aprueba el interior; portada = la que recomendé (moderna **B, marino y coral**) «por el momento». msg 443: que quede claro que son **3 tipos de juegos**. msg 442: revisar varias veces.
+- `tools/portada_final.py`: portada completa (contratapa + lomo + frente). Tiene la cinta «3 KINDS OF PUZZLES IN ONE BOOK» y 3 tarjetas rotuladas con cantidades.
+  - La textura de letras queda recortada a su bloque.
+  - El sudoku decorativo es real (`make_easy_sudoku`); antes tenía números repetidos.
+  - El laberinto ya no queda tapado por la franja. Además lo corregí en `portadas_opciones.front_modern`.
+- `tools/ajustar_mediabox.py`: Chrome redondea la página a px CSS; la portada salía 17,5433" y quedó en 17,5383" exactos.
+- Verificado:
+  - Portada: zona segura (0,125" desde el corte, lomo con 0,0625" por lado), código de barras libre (2×1,2" abajo a la derecha), sin choques, 0 groserías en texturas y mini sopa, 0 Type3, miniaturas legibles.
+  - Interior: PDF de 128 págs. a 612×792. Las 40 sopas coinciden con su solución, cada palabra 1 vez, 0 al revés, 0 groserías. p2→73 correcto. Todo en grises.
+- Archivos: `entregables/vol1_final/` (cover PDF, interior PDF, previews). Enviados msgs 447–451.
