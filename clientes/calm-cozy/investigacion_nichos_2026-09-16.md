@@ -49,3 +49,14 @@ Pedido de Pedro (msgs 690–698): nueva edición con 3 pasatiempos, nichos donde
 - **Reseñas**: sólo permitidas. Nada pagado, incentivado ni de familiares.
 - **Calendario**: publicar a mediados de octubre; segundo empuje en marzo-mayo.
 - **Medición semanal**: KDP Reports, ranking de categoría, Ads.
+
+## Anexo 17:20 · Autocompletado de Amazon (sin Book Bolt)
+Consulta pública al autocompletado de amazon.com (completion.amazon.com, alias stripbooks/aps). Muestra lo que la gente escribe, no volumen exacto.
+- «gardening» (Libros) → 2.ª sugerencia: **gardening word search puzzle book** (sobre gardening journal/books/for dummies).
+- «word search for seniors» (todo Amazon) → incluye **word search for seniors garden** y «…large print kitchen/autumn».
+- «gifts for gardeners» → woman, men, unique, «who have everything», «and bird watchers». Demanda de regalo fuerte.
+- «activity book for seniors» → **memory lane activity book for seniors** (1.ª), «…spanish», «…plus sudoku, and coloring pages».
+- «word search large print» → bible, for seniors, christmas, **spanish**, halloween, spiral bound.
+- «sopa de letras para adultos» → letra grande, mayores, en español, mayores letra grande.
+- Muchas sugerencias de «dementia / memory loss»: evitar promesas de salud en metadatos.
+Pendiente: BSR de 3 competidores de jardinería (capturas de Pedro) para estimar la rotación.
