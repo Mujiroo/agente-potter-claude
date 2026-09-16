@@ -1,0 +1,34 @@
+Necesito un estudio de mercado en Amazon.com. REGLAS: solo LECTURA. No inicies sesión, no agregues nada al carrito, no compres, no escribas reseñas y no hagas clic en anuncios. No inventes datos: si algo no aparece, escribe "no aparece". Si una página no carga o pide iniciar sesión, anótalo y sigue.
+
+Trabaja por partes y entrégame cada parte apenas la termines (Parte 1, luego Parte 2, luego Parte 3, luego Parte 4).
+
+PARTE 1 — Nicho principal (departamento Libros)
+Búsquedas:
+  1a) gardening word search
+  1b) gardening puzzle book for adults
+  1c) large print variety puzzle book
+  1d) sopa de letras letra grande
+En cada búsqueda toma los 10 primeros resultados que NO digan "Sponsored/Patrocinado", abre cada libro y anota en UNA tabla (una fila por libro):
+  Búsqueda | Posición | Título completo | Autor/editorial | Formato | Páginas | Dimensiones | Fecha de publicación | Precio | Estrellas | N.º de calificaciones | Best Sellers Rank en Books | Rankings de subcategorías (con nombres) | Tipos de juegos que incluye
+Al final anota el total de resultados que muestra Amazon en cada búsqueda (por ejemplo, "1-16 of over 1,000 results").
+
+PARTE 2 — Nichos para comparar (mismo análisis y misma tabla que la Parte 1)
+  2a) bird puzzle book for adults
+  2b) fishing activity book for adults
+  2c) bible word search large print
+  2d) spanish word search large print
+  2e) memory lane activity book for seniors
+
+PARTE 3 — Autocompletado (buscador de Amazon.com, departamento Libros)
+Escribe cada frase seguida de un espacio y de cada letra de la "a" a la "z", y anota TODAS las sugerencias de la lista desplegable, sin repetir:
+  - gardening word search
+  - word search for seniors
+  - puzzle book for
+Entrégalo como lista por frase.
+
+PARTE 4 — Los 3 mejores
+Para los 3 libros con MEJOR (más bajo) Best Sellers Rank en Books de todo el estudio, anota en viñetas:
+  - Título y ranking
+  - Si tienen contenido A+ (imágenes grandes bajo "From the Publisher")
+  - Si pertenecen a una serie y cuántos libros tiene
+  - Las 3 reseñas negativas más útiles (1 a 3 estrellas): qué critican, en una línea cada una
