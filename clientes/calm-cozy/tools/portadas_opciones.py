@@ -165,9 +165,13 @@ def front_clean(x0, y0, w, h, cv, c):
 
 
 # ------------------------------------------------------------------ 5. moderno geométrico
-def front_modern(x0, y0, w, h, cv, c):
+MODERN_DEFAULT = {"ink": "#1C2B2D", "accent": "#E5A020", "cream": "#F4EFE6", "main": "#2F6E6B", "highlight": "#F3DCA8"}
+
+
+def front_modern(x0, y0, w, h, cv, c, pal=None):
     cx = x0 + w / 2
-    ink, mustard, cream, teal = "#1C2B2D", "#E5A020", "#F4EFE6", "#2F6E6B"
+    pal = dict(MODERN_DEFAULT, **(pal or {}))
+    ink, mustard, cream, teal = pal["ink"], pal["accent"], pal["cream"], pal["main"]
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{cream}"/>',
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h*0.44}" fill="{teal}"/>',
            f'<circle cx="{x0+w*0.16}" cy="{y0+h*0.44}" r="120" fill="{mustard}"/>',
@@ -180,7 +184,7 @@ def front_modern(x0, y0, w, h, cv, c):
     out.append(f'<text x="{cx}" y="{y0+330}" text-anchor="middle" font-family="Caveat, cursive" font-size="82" fill="{mustard}">{esc(cv["script"])}</text>')
     out.append(f'<text x="{cx}" y="{y0+398}" text-anchor="middle" font-family="Playfair Display, serif" font-size="30" '
                f'letter-spacing="4" fill="#FFFFFF">{esc(cv["subtitle"].upper())}</text>')
-    cw = dict(c, ink=ink, highlight="#F3DCA8")
+    cw = dict(c, ink=ink, highlight=pal["highlight"])
     out.append(f'<g transform="rotate(-6 {cx-150} {y0+600})">{mini_grid(cx - 330, y0 + 510, 6, 4, cv["cup"], cw, cell=46, font=32)}</g>')
     out.append(f'<g transform="rotate(5 {cx+180} {y0+640})">{sudoku_mini(cx + 40, y0 + 546, cw, cell=36)}</g>')
     out.append(f'<g transform="rotate(-3 {cx-70} {y0+840})">{maze_mini(cx - 250, y0 + 756, cw, cell=32, n=7)}</g>')

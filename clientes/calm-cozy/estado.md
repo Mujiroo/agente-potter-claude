@@ -54,3 +54,8 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 - 09:10 Enviada la **p2 nueva** (msgs 367–368): `tools/pagina2.py` (`instructions_style: "icons"` en el JSON). Tiene «belongs to», How to Play, 3 tarjetas con mini ejemplo e íconos (sopa, sudoku y laberinto), aviso de soluciones en la pág. 73 y copyright.
   - Auditoría: 128 págs., 0 errores, sin salirse de márgenes, 0 Type3. El PDF vigente quedó en `entregables/`.
   - Esperando su OK.
+- 09:12 Enviada la **portada 5 en 6 paletas** (hoja `entregables/portadas/hoja_moderna.png`, generador `tools/portada_moderna_colores.py`; `front_modern` ahora acepta `pal`). A es la original (PNG idéntico byte a byte).
+  - Paletas: A petróleo/mostaza, B marino/coral, C terracota/amarillo, D salvia/rosa, E ciruela/dorado, F azul/amarillo.
+  - Recomendé la B; como alternativa, la C.
+  - Defecto detectado: el laberinto mini queda tapado por la franja LARGE PRINT (también en la original). Se corrige en la elegida.
+  - Esperando que elija.
