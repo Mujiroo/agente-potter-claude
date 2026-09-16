@@ -105,3 +105,4 @@ Las que usan los competidores del top: *Word Search Games*, *Word Games (Books)*
 - Máximo **3 títulos nuevos por 24 horas** en KDP.
 - Si se publican los cinco, conviene empezar por el **Vol. 5** (temporada) y espaciar el resto.
 - El interior vigente en `entregables/vol5/` ya es el corregido (Pedro, msg 375).
+- 15:25 Pedro creó la serie «Big Print Word Hunt» (quedó «en revisión», con la descripción de serie). KDP numera por posición, así que salía «Libro 1». Decidió dejar la serie para después y volvió a empezar la carga del Vol. 5 sin serie. Pendiente: agregar los 5 volúmenes a la serie cuando estén publicados (principal, ordenada, 1–5).
