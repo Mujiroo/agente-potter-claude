@@ -7,7 +7,7 @@
   8.5,
   11
  ],
- "size": 15,
+ "size": 13,
  "seed": 7,
  "author": "Peter & Cardu",
  "year": 2026,
@@ -578,7 +578,7 @@
   }
  ],
  "cover": {
-  "page_count": 120,
+  "page_count": 122,
   "paper": "white",
   "script": "Calm & Cozy",
   "title": "PUZZLES",
@@ -649,5 +649,7 @@
    10
   ],
   "series_line": "Calm & Cozy Puzzles · Vol. 1"
- }
+ },
+ "tips_page": true,
+ "thanks_page": true
 }

@@ -27,7 +27,17 @@ sys.path.insert(0, os.path.join(HERE, "..", "..", "libro-sopa-de-letras", "tools
 
 import puzzles as PZ  # noqa: E402
 import pagina2  # noqa: E402
-from generar import FORWARD, build, grid_svg, words_block  # noqa: E402
+from generar import FORWARD, build, words_block  # noqa: E402
+from generar import grid_svg as _grid_svg  # noqa: E402
+
+
+def grid_svg(grid, placed=None):
+    """La grilla de generar.py con aire entre las letras del borde y el marco (en 13x13 quedaban pegadas)."""
+    s = len(grid) * 40
+    svg = _grid_svg(grid, placed)
+    svg = svg.replace(f'viewBox="0 0 {s} {s}"', f'viewBox="-14 -14 {s+28} {s+28}"', 1)
+    return svg.replace(f'<rect x="1.5" y="1.5" width="{s-3}" height="{s-3}" rx="10"',
+                       f'<rect x="-11" y="-11" width="{s+22}" height="{s+22}" rx="14"', 1)
 
 GUTTER, OUTSIDE, TOP, BOTTOM = 0.6, 0.5, 0.5, 0.7
 
@@ -201,6 +211,8 @@ def main(src, dst):
                         for i, mz in solved_m[k:k + 4])
         page(f'<div class="tag">Solutions</div><h1>Mazes</h1><div class="sol4">{items}</div>')
 
+    if book.get("thanks_page"):
+        page(pagina2.thanks_page(book), "center")
     from portada_cozy import font_css
     fonts = font_css()
     with open(dst, "w", encoding="utf-8") as f:

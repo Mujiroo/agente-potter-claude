@@ -108,3 +108,16 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - PDF finales + revisión final sobre esos PDF
   - ficha KDP
   - Recomendé una copia de prueba impresa.
+
+## 2026-09-16 11:25 · VERSIÓN FINAL (v3) enviada, esperando OK
+- Decisiones de Pedro: tips sí (msg 488), thank you sí (msg 490, en lugar de una hoja en blanco), sin copia de prueba, revisión final sí, sopas **C = 13×13** (msg 492).
+- JSON: size 13, tips_page, thanks_page, cover.page_count 122.
+- `generar_mixto.grid_svg` agrega aire entre las letras y el marco.
+- Página de gracias en Liberation Sans (Playfair sólo tiene Bold).
+- **122 págs.**, lomo 0,2747", portada 17,5247 × 11,25".
+- Revisión final sobre los PDF:
+  - 122 págs. numeradas, sin blancos, 0 desbordes
+  - 40 sopas OK (13×13); 20 sudokus leídos del PDF con solución única y resolubles con singles (36–40 pistas)
+  - p2→74 correcto; portada en zona segura, código de barras libre; 0 Type3
+- Archivos: `entregables/vol1_final/` (v1 y v2 quedan como historial). Enviados msgs 495–500.
+- Siguiente: ficha KDP de Calm & Cozy cuando apruebe.

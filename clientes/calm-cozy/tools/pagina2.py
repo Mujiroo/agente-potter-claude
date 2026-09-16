@@ -109,8 +109,27 @@ CSS3 = """
 """
 
 
+CSS4 = """
+.thanks {{ width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }}
+.thanks .t-script {{ font-family: 'Caveat', cursive; font-size: 64pt; line-height: 1; margin-bottom: 0.3in; }}
+.thanks p {{ font-size: 16pt; line-height: 1.55; max-width: 5.8in; margin: 0 0 0.22in; color: #222; }}
+.thanks .sign {{ font-family: 'Playfair Display', serif; font-size: 14pt; letter-spacing: 5px; margin-top: 0.3in; }}
+"""
+
+
 def css():
-    return CSS.format() + CSS3.format()
+    return CSS.format() + CSS3.format() + CSS4.format()
+
+
+def thanks_page(book):
+    title = html.escape(book.get("series", book["title"]))
+    return ('<div class="thanks">'
+            f'{icon("cup", "0.8in")}<div class="t-script">Thank You!</div>'
+            f'<p>Thank you for spending some quiet time with <i>{title}</i>. '
+            'We hope these pages brought you a few peaceful moments.</p>'
+            '<p>If you enjoyed this book, we would be grateful if you shared your honest thoughts '
+            'in a short review. It helps other puzzle lovers find it, and it helps us create the next volume.</p>'
+            f'<div class="sign">{html.escape(book.get("author", "").upper())}</div></div>')
 
 
 TIPS = [
