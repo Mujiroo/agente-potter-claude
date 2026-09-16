@@ -500,3 +500,14 @@ Pedro pidió revisar todo como editor profesional.
   - Preguntas: idioma (la lista vino en español), 40 temas (¿los amplío yo?), serie nueva o dentro de Big Print Word Hunt (recomiendo nueva).
   - Ofrecí un libro de muestra con 2 sopas, 2 sudokus y 1 laberinto.
 - 20:26 Pedro confirma (msg 312): inglés, serie nueva, yo amplío a 40 temas. Proyecto en `clientes/calm-cozy/`.
+
+## 2026-09-16 · Revisión nocturna: el filtro de groserías miraba en una sola dirección
+- **Hallazgo.** `bad_words()` en `tools/generar.py` decía en su comentario "en ninguna dirección" pero sólo recorría `DIRS` (las 4 hacia adelante). Una grosería escondida se lee igual de derecha a izquierda o de abajo hacia arriba.
+- **Corregido**: ahora usa `BAD_DIRS` (las 8 direcciones) y se agregaron a `BAD` insultos que faltaban: JEW JEWS KIKE SPIC CHINK GOOK WOP RETARD TRANNY ARSE TWAT WANK PUSSY BASTARD.
+- **Barrido de los 5 volúmenes aprobados** (reproduciendo sus grillas con el código anterior):
+  - Con la lista **antigua** leída en 8 direcciones: **0 hallazgos reales**. Los PDFs aprobados no tenían ninguna de las palabras que ya filtrábamos.
+  - Con la lista **nueva**: 34 hallazgos, entre ellos **KIKE (Vol.1 #15, Vol.4 #31), SPIC (Vol.4 #41), TWAT (Vol.1 #6, Vol.3 #34), ARSE (Vol.4 #7)**; el resto WOP y JEW.
+- **Regenerados los 5 interiores** con el filtro corregido: 0 errores en `verificar.py`, 0 hallazgos en el barrido estricto, 112 págs., 0 Type3.
+  - Quedan en `entregables/corregidos/volN/`. **Los PDFs aprobados originales no se tocaron.** Las portadas no cambian (las grillas no aparecen en ellas): sólo cambia el interior.
+  - Pedro debe decidir si publica los corregidos (recomendado) o los originales.
+- Falso positivo que corregí en mi propio verificador: no limpiaba los guiones, así que "TIT" dentro de CROSS-STITCH aparecía como si estuviera en el relleno.

@@ -39,3 +39,9 @@ Los libros del subnicho que están hoy en el top 100 (Calming Mindfulness #12, C
 3. Vol. 1–5: falta el listado KDP (descripción, 7 keywords, categorías, precio). Partir por el Vol. 5 Christmas por temporada. Declaración de IA: texto sí, imágenes no. Máx. 3 títulos nuevos por 24 h.
 4. Ofrecimiento abierto: borrar definitivamente los 8 correos que quedaron en Eliminados de Hotmail.
 5. Sin luz verde todavía: Christmas Countdown Planner y prueba del libro para colorear.
+
+## 2026-09-16 01:15 · Libro completo generado (a la espera del OK de portada)
+- `libro1_calm_cozy.json`: los **40 temas**, ampliando los 10 bloques de Pedro (Mañanas Acogedoras → Cozy Mornings, etc.) con 30 más en la misma línea. 9 palabras cada uno, ninguna repetida ni contenida en otra dentro del mismo puzzle.
+- Interior generado y auditado con `tools/verificar_mixto.py` (nuevo): **128 páginas**, 40 sopas + 20 sudokus + 10 laberintos, **0 errores, 0 avisos**, sin desbordes, 0 Type3.
+- PDF en `entregables/CalmCozy_Vol1_interior_8.5x11.pdf`. Lomo con 128 págs. en papel blanco: **0,288"**.
+- Falta sólo que Pedro elija la portada para armar frente + lomo + contratapa.

@@ -87,7 +87,13 @@ def build(words, size, rng, dirs=DIRS, tries=2000):
 # Si una aparece DENTRO de una palabra de la lista (RAPE en GRAPE, CUM en CUCUMBER) se tolera.
 BAD = ("ASS SEX TIT TITS FUCK FUK FUC SHIT CRAP DAMN PISS DICK COCK CUNT FAG NAZI KKK SLUT WHORE HOE "
        "BITCH PORN NIGGER NIGGA NIG RAPE BOOB JIZZ CUM ANAL ANUS PENIS SCREW HELL DUMB IDIOT KILL DIE DEAD "
-       "GAY HAG PIG FAT UGLY STUPID HATE").split()
+       "GAY HAG PIG FAT UGLY STUPID HATE "
+       "JEW JEWS KIKE SPIC CHINK GOOK WOP RETARD TRANNY ARSE TWAT WANK PUSSY BASTARD").split()
+
+# Ocho direcciones: la promesa "sin palabras al revés" vale para la LISTA, no para el
+# relleno. Una grosería escondida se ve igual leída de derecha a izquierda o de abajo
+# hacia arriba, así que aquí se buscan en todas las direcciones.
+BAD_DIRS = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
 
 
 def bad_words(grid, placed):
@@ -98,7 +104,7 @@ def bad_words(grid, placed):
             for c in range(n):
                 if grid[r][c] != w[0]:
                     continue
-                for dr, dc in DIRS:
+                for dr, dc in BAD_DIRS:
                     cells = [(r + dr * k, c + dc * k) for k in range(len(w))]
                     if all(0 <= y < n and 0 <= x < n for y, x in cells) and all(
                             grid[y][x] == w[k] for k, (y, x) in enumerate(cells)):
