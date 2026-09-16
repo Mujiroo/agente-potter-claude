@@ -20,3 +20,6 @@ Ver [[rol]], [[pedro]].
 - **Nunca enviar correos ni actuar hacia afuera sin su aprobación explícita** (Telegram, 2026-09-15, msg 318; confirmado por mí en msg 319).
   **Why:** Pedro lo pidió expresamente.
   **How to apply:** redactar y mostrar; enviar/publicar/borrar solo cuando él lo confirme. Investigar y leer sí es libre.
+- **Nunca ingresar con una clave/credencial a ningún sitio sin preguntarle antes. Él autoriza todo** (Telegram, 2026-09-16, msg 358).
+  **Why:** lo pidió explícitamente.
+  **How to apply:** antes de cualquier login (agent-browser, Composio u otro) con credenciales, pedir su OK por el chat.
