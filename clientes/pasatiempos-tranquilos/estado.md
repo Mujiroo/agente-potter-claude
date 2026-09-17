@@ -57,3 +57,8 @@
   - Verificador `tools/verificar_temas.py`: cantidades, ≤13 letras, A–Z/Ñ, sin repetidas en la serie, sin contenidas por tema, BAD_ES (groserías/dobles sentidos regionales; úsese también para el relleno de grilla).
   - Reemplazadas por el filtro: CAFETERA, GUACAMOLE, CAPULLOS (capullo), PORTON (orto), CAPOT, PIJAMA (pija).
   - Pendiente: medir las palabras largas en la lista a 16 pt. Esperando OK para armar el Vol. 1.
+- 17-sep 10:30 Pedro (msg 823): en Papá Trabajador, además de OVEROL debe ir CAMISA, «que sea todo público». TALLER → CAMISA; en Día del Padre CAMISA → RELOJ. Lo tomé como OK a las listas (msg 824). Pregunté el color de la E (sin respuesta aún).
+- 17-sep 10:34 **Vol. 1 interior** enviado (msgs 827–828): `entregables/vol1/Pasatiempos_Vol1_interior_8.5x11.pdf`, 122 págs.
+  - Herramientas en español: `tools/generar_es.py`, `tools/pagina2_es.py` y `tools/verificar_es.py` (copias de las de calm-cozy con textos traducidos). El relleno usa letras con frecuencias del español, incluye Ñ, y filtra groserías en español e inglés.
+  - `vol1.json` (seed 12). Auditoría: 0 errores, 0 avisos, 0 desbordes, 0 Type3, MediaBox 612×792. Lomo 0,275".
+  - Pendiente: color de portada E → portada completa (frente + lomo + contratapa). Después, ficha KDP en español.

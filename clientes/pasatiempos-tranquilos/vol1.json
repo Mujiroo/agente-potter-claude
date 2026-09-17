@@ -1,0 +1,587 @@
+{
+ "title": "Sopa de Letras, Sudoku y Laberintos",
+ "subtitle": "Pasatiempos Tranquilos en Letra Grande para Adultos Mayores",
+ "volume": "Vol. 1",
+ "tagline": "40 sopas de letras · 20 sudokus fáciles · 10 laberintos · letra grande",
+ "trim": [
+  8.5,
+  11
+ ],
+ "size": 13,
+ "seed": 12,
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": "Pasatiempos Tranquilos",
+ "instructions_style": "icons",
+ "tips_page": true,
+ "thanks_page": true,
+ "cover": {
+  "author": "Peter & Cardu",
+  "script": "Pasatiempos Tranquilos",
+  "title": "Hogar y Sabores"
+ },
+ "sudokus": 20,
+ "mazes": 10,
+ "word_puzzles": [
+  {
+   "theme": "Domingo en Familia",
+   "words": [
+    "ABRAZOS",
+    "ALMUERZO",
+    "PRIMOS",
+    "TIOS",
+    "PASEO",
+    "RISAS",
+    "SOBRINOS",
+    "DESCANSO",
+    "UNION"
+   ]
+  },
+  {
+   "theme": "Los Abuelos",
+   "words": [
+    "ABUELITA",
+    "ABUELITO",
+    "BASTON",
+    "ANTEOJOS",
+    "MECEDORA",
+    "HISTORIAS",
+    "REGAZO",
+    "PAÑUELO",
+    "CARIÑITO"
+   ]
+  },
+  {
+   "theme": "Mis Nietos",
+   "words": [
+    "TERNURA",
+    "JUGUETES",
+    "CUENTOS",
+    "MIMOS",
+    "TRAVESURA",
+    "ALEGRIA",
+    "ORGULLO",
+    "BESITOS",
+    "COLUMPIO"
+   ]
+  },
+  {
+   "theme": "Álbum de Fotos",
+   "words": [
+    "RECUERDO",
+    "RETRATO",
+    "SONRISA",
+    "BEBE",
+    "GRADUACION",
+    "VIAJE",
+    "MARCO",
+    "CAMARA",
+    "NEGATIVOS"
+   ]
+  },
+  {
+   "theme": "La Sobremesa",
+   "words": [
+    "CHARLA",
+    "POSTRE",
+    "MANTEL",
+    "SERVILLETA",
+    "ANECDOTAS",
+    "CARCAJADAS",
+    "CONSEJOS",
+    "CAFECITO",
+    "COMPAÑIA"
+   ]
+  },
+  {
+   "theme": "Consejos de Mamá",
+   "words": [
+    "RESPETO",
+    "ESTUDIO",
+    "AHORRO",
+    "HUMILDAD",
+    "ORDEN",
+    "PUNTUALIDAD",
+    "HONRADEZ",
+    "PERSEVERAR",
+    "CORTESIA"
+   ]
+  },
+  {
+   "theme": "Papá Trabajador",
+   "words": [
+    "MADRUGAR",
+    "ESFUERZO",
+    "MALETIN",
+    "CORBATA",
+    "OVEROL",
+    "JORNADA",
+    "CAMISA",
+    "SACRIFICIO",
+    "EJEMPLO"
+   ]
+  },
+  {
+   "theme": "Hermanos y Primos",
+   "words": [
+    "HERMANITO",
+    "HERMANA",
+    "MELLIZOS",
+    "GEMELOS",
+    "LITERAS",
+    "COMPLICES",
+    "VACACIONES",
+    "PRIMOGENITO",
+    "BENJAMIN"
+   ]
+  },
+  {
+   "theme": "Mascotas de la Casa",
+   "words": [
+    "PERRITO",
+    "GATITO",
+    "PECES",
+    "TORTUGA",
+    "PECERA",
+    "COLLAR",
+    "CORREA",
+    "CONEJO",
+    "LADRIDO"
+   ]
+  },
+  {
+   "theme": "El Árbol Familiar",
+   "words": [
+    "APELLIDO",
+    "BISABUELA",
+    "TATARABUELO",
+    "RAICES",
+    "HERENCIA",
+    "PARIENTES",
+    "NUERA",
+    "YERNO",
+    "CUÑADO"
+   ]
+  },
+  {
+   "theme": "La Cocina de la Abuela",
+   "words": [
+    "OLLA",
+    "CUCHARA",
+    "DELANTAL",
+    "FOGON",
+    "CAZUELA",
+    "RECETA",
+    "SAZON",
+    "SARTEN",
+    "MOLINILLO"
+   ]
+  },
+  {
+   "theme": "El Patio",
+   "words": [
+    "MACETAS",
+    "HAMACA",
+    "TENDEDERO",
+    "GALLINAS",
+    "MANGUERA",
+    "SOMBRA",
+    "BANCA",
+    "HELECHO",
+    "ESCOBA"
+   ]
+  },
+  {
+   "theme": "La Sala de Estar",
+   "words": [
+    "SOFA",
+    "SILLON",
+    "CORTINAS",
+    "TELEVISOR",
+    "ALFOMBRA",
+    "LAMPARA",
+    "CUADROS",
+    "COJINES",
+    "VITRINA"
+   ]
+  },
+  {
+   "theme": "Tejer y Coser",
+   "words": [
+    "AGUJA",
+    "HILO",
+    "LANA",
+    "DEDAL",
+    "TIJERAS",
+    "BOTONES",
+    "PUNTADA",
+    "GANCHILLO",
+    "CARRETE"
+   ]
+  },
+  {
+   "theme": "Mis Plantitas",
+   "words": [
+    "TIERRA",
+    "ABONO",
+    "SUCULENTA",
+    "ALOE",
+    "BROTES",
+    "PODAR",
+    "VIOLETAS",
+    "REGAR",
+    "SEMILLERO"
+   ]
+  },
+  {
+   "theme": "Día de Limpieza",
+   "words": [
+    "BALDE",
+    "JABON",
+    "PLUMERO",
+    "ESPONJA",
+    "CLORO",
+    "BARRER",
+    "SACUDIR",
+    "RECOGEDOR",
+    "BRILLO"
+   ]
+  },
+  {
+   "theme": "El Ropero",
+   "words": [
+    "CAMISAS",
+    "VESTIDOS",
+    "PERCHAS",
+    "ABRIGO",
+    "BUFANDA",
+    "ZAPATOS",
+    "CAJONES",
+    "NAFTALINA",
+    "SOMBREROS"
+   ]
+  },
+  {
+   "theme": "La Mesa Puesta",
+   "words": [
+    "PLATOS",
+    "VASOS",
+    "TENEDOR",
+    "CUCHILLO",
+    "CUCHARITA",
+    "COPAS",
+    "JARRA",
+    "SALERO",
+    "FLORERO"
+   ]
+  },
+  {
+   "theme": "Herramientas de Casa",
+   "words": [
+    "MARTILLO",
+    "CLAVOS",
+    "SERRUCHO",
+    "TORNILLOS",
+    "PINZAS",
+    "TALADRO",
+    "NIVEL",
+    "CINTA METRICA",
+    "LIJA"
+   ]
+  },
+  {
+   "theme": "Lavar la Ropa",
+   "words": [
+    "LAVADERO",
+    "DETERGENTE",
+    "SUAVIZANTE",
+    "BATEA",
+    "TENDER",
+    "PLANCHA",
+    "ALMIDON",
+    "CANASTO",
+    "ESPUMA"
+   ]
+  },
+  {
+   "theme": "El Mercado",
+   "words": [
+    "PUESTOS",
+    "BALANZA",
+    "CANASTA",
+    "VERDURAS",
+    "REGATEO",
+    "SEMILLAS",
+    "VENDEDORA",
+    "CLIENTES",
+    "BOLSAS"
+   ]
+  },
+  {
+   "theme": "Frutas Tropicales",
+   "words": [
+    "MANGO",
+    "GUAYABA",
+    "GUANABANA",
+    "COCO",
+    "MAMEY",
+    "PITAYA",
+    "MARACUYA",
+    "TAMARINDO",
+    "PIÑA"
+   ]
+  },
+  {
+   "theme": "La Panadería",
+   "words": [
+    "HORNO",
+    "HARINA",
+    "LEVADURA",
+    "PANADERO",
+    "MEDIALUNA",
+    "PAN DULCE",
+    "POLVORON",
+    "ROSCA",
+    "AMASAR"
+   ]
+  },
+  {
+   "theme": "Sopas Calientitas",
+   "words": [
+    "CONSOME",
+    "FIDEOS",
+    "LENTEJAS",
+    "CALDO",
+    "SANCOCHO",
+    "AJIACO",
+    "CUCHARON",
+    "TAZON",
+    "CILANTRO"
+   ]
+  },
+  {
+   "theme": "El Maíz",
+   "words": [
+    "MAZORCA",
+    "CHOCLO",
+    "TORTILLA",
+    "AREPA",
+    "TAMAL",
+    "HUMITAS",
+    "PUPUSA",
+    "ATOLE",
+    "MAICENA"
+   ]
+  },
+  {
+   "theme": "Postres de Antes",
+   "words": [
+    "FLAN",
+    "ARROZ CON LECHE",
+    "DULCE DE LECHE",
+    "COCADA",
+    "ALFAJOR",
+    "MAZAPAN",
+    "BUÑUELOS",
+    "NATILLA",
+    "TRES LECHES"
+   ]
+  },
+  {
+   "theme": "Café y Chocolate",
+   "words": [
+    "CAFE",
+    "TAZA",
+    "CACAO",
+    "CANELA",
+    "AROMA",
+    "CHOCOLATERA",
+    "GRANOS",
+    "TOSTADO",
+    "BOMBONES"
+   ]
+  },
+  {
+   "theme": "Especias y Condimentos",
+   "words": [
+    "OREGANO",
+    "COMINO",
+    "PIMIENTA",
+    "AJO",
+    "LAUREL",
+    "AZAFRAN",
+    "ACHIOTE",
+    "PEREJIL",
+    "NUEZ MOSCADA"
+   ]
+  },
+  {
+   "theme": "Arroz y Frijoles",
+   "words": [
+    "ARROZ",
+    "FRIJOLES",
+    "POROTOS",
+    "CARAOTAS",
+    "HABICHUELAS",
+    "GALLO PINTO",
+    "SOFRITO",
+    "CACEROLA",
+    "GRANO"
+   ]
+  },
+  {
+   "theme": "Jugos Naturales",
+   "words": [
+    "NARANJA",
+    "LIMONADA",
+    "SANDIA",
+    "MELON",
+    "JAMAICA",
+    "HORCHATA",
+    "LICUADORA",
+    "HIELO",
+    "MORA"
+   ]
+  },
+  {
+   "theme": "Cocina Mexicana",
+   "words": [
+    "TACOS",
+    "MOLE",
+    "POZOLE",
+    "ENCHILADAS",
+    "SOPES",
+    "SALSA",
+    "QUESADILLA",
+    "CHILAQUILES",
+    "NOPALES"
+   ]
+  },
+  {
+   "theme": "Sabores del Caribe",
+   "words": [
+    "MOFONGO",
+    "TOSTONES",
+    "PLATANO",
+    "YUCA",
+    "LECHON",
+    "ROPA VIEJA",
+    "MANGU",
+    "ARROZ CON POLLO",
+    "MALANGA"
+   ]
+  },
+  {
+   "theme": "Centroamérica",
+   "words": [
+    "BALEADAS",
+    "NACATAMAL",
+    "CHICHARRON",
+    "PEPIAN",
+    "CASADO",
+    "CURTIDO",
+    "VIGORON",
+    "RELLENITOS",
+    "MONDONGO"
+   ]
+  },
+  {
+   "theme": "Colombia y Venezuela",
+   "words": [
+    "BANDEJA PAISA",
+    "PABELLON",
+    "HALLACAS",
+    "CACHAPA",
+    "TEQUEÑOS",
+    "PANDEBONO",
+    "PATACON",
+    "OBLEAS",
+    "TINTO"
+   ]
+  },
+  {
+   "theme": "Sabores Andinos",
+   "words": [
+    "CEVICHE",
+    "QUINUA",
+    "PAPAS",
+    "LOCRO",
+    "CHICHA MORADA",
+    "ANTICUCHOS",
+    "SALTEÑAS",
+    "LOMO SALTADO",
+    "AJI"
+   ]
+  },
+  {
+   "theme": "El Cono Sur",
+   "words": [
+    "EMPANADAS",
+    "MATE",
+    "BOMBILLA",
+    "PASTAFROLA",
+    "CHIMICHURRI",
+    "MILANESA",
+    "PROVOLETA",
+    "SOPAIPILLAS",
+    "CHIVITO"
+   ]
+  },
+  {
+   "theme": "Desayunos Latinos",
+   "words": [
+    "MANTEQUILLA",
+    "MERMELADA",
+    "AVENA",
+    "JUGO",
+    "CAFE CON LECHE",
+    "QUESO FRESCO",
+    "CHOCOLATE",
+    "PANQUEQUES",
+    "TOSTADAS"
+   ]
+  },
+  {
+   "theme": "Comida de la Calle",
+   "words": [
+    "CHURROS",
+    "ELOTES",
+    "RASPADOS",
+    "MANI TOSTADO",
+    "BROCHETAS",
+    "SALCHIPAPAS",
+    "CARRITO",
+    "VENDEDOR",
+    "PINCHOS"
+   ]
+  },
+  {
+   "theme": "El Asado",
+   "words": [
+    "PARRILLA",
+    "CARBON",
+    "BRASAS",
+    "COSTILLAS",
+    "CHORIZO",
+    "CHURRASCO",
+    "MORCILLA",
+    "PARRILLERO",
+    "FUEGO"
+   ]
+  },
+  {
+   "theme": "Cocina de Fiesta",
+   "words": [
+    "BANQUETE",
+    "PAVO",
+    "PERNIL",
+    "ENSALADA RUSA",
+    "BOCADITOS",
+    "CANAPES",
+    "BANDEJAS",
+    "COCTEL",
+    "TORTA"
+   ]
+  }
+ ]
+}
