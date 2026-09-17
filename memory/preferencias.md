@@ -34,3 +34,6 @@ Ver [[rol]], [[pedro]].
   - Mínimo privilegio; ante dudas o riesgo, detenerse y preguntar.
   **Why:** quiere mantener el control de sus datos, cuentas y computador en todo momento.
   **How to apply:** antes de abrir su correo o archivos, pedir permiso explícito por Telegram para esa tarea. Antes de instalar paquetes o correr herramientas nuevas, preguntar. Los archivos que él manda por el chat se pueden leer, porque los envió para eso.
+- **Direcciones: sólo el texto de la dirección, sin formato ni extras** (Telegram, 2026-09-17, msgs 817 y 821: «dame solo la primera dirección»).
+  **Why:** la quiere limpia para copiarla/pegarla (mapa, GPS).
+  **How to apply:** si pide una dirección, mandar una línea «Calle N°, Comuna». Si hay varias, listarlas breve y él elige; luego enviar la elegida sola.
