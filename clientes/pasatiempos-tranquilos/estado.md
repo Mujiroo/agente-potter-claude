@@ -67,3 +67,9 @@
   - Opciones: 1 Rojo 3 en 1 (patrón del BSR 3.459) · 2 Jardín alegre (BSR 6.194) · 3 Cocina cozy (premium US$ 13,99) · 4 Tablero 70 (BSR 10.897) · 5 Lotería grande (la E mejorada).
   - Textura de letras (seed 28) verificada sin groserías ES+EN (`check_textura`).
   - Recomendé la 1; alternativa, la 5. Esperando elección para armar la portada completa (lomo 0,275").
+- 17-sep 10:58 Pedro elige la **portada 1 (Rojo 3 en 1)** (msg 845). Empecé la completa: `tools/portada_final_es.py`. Contratapa con texto en español, zona del código de barras libre, lomo 0,2747". Genera `entregables/vol1/portada.html`, falta PDF y verificación. La pausé por el pedido siguiente.
+- 10:59 (msgs 848–849) pide ver la 1 en pequeño y 2–4 más para los otros volúmenes. Enviado `entregables/portadas/v2/hoja_serie.png` (msgs 853–854): Vol. 2 morado/azul, Vol. 3 verde/turquesa (`p1()` parametrizada, lista `SERIE`). Recomendé morado y verde. Esperando elección.
+- 11:00 (msg 852) preguntó si Amazon favorece o castiga libros hechos con IA. Respondido con fuentes (msg 855):
+  - Hay que declarar lo generado por IA; lo asistido, no. Límite de 3 títulos por día.
+  - No hay fuente oficial sobre efecto en visibilidad.
+  - Para nosotros: texto se declara como IA; imágenes «no» (vectoriales por código).

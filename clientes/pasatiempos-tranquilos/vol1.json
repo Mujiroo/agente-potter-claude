@@ -583,5 +583,25 @@
     "TORTA"
    ]
   }
- ]
+ ],
+ "cover_full": {
+  "page_count": 122,
+  "paper": "white",
+  "author": "Peter & Cardu",
+  "back_headline": "Un rato de calma, en español",
+  "back_intro": [
+   "Tres pasatiempos clásicos en un solo libro, con <b>letra grande</b> y temas que se sienten como en casa: la familia, el hogar y los sabores de toda Latinoamérica."
+  ],
+  "back_bullets": [
+   "<b>40 sopas de letras</b> sobre familia, hogar, sabores latinos y cocina de cada región",
+   "<b>20 sudokus fáciles</b>, cada uno con una sola solución",
+   "<b>10 laberintos</b> para relajarse",
+   "Palabras que <b>nunca van al revés</b>",
+   "Formato grande: 21,6 × 27,9 cm (8,5 × 11\")",
+   "<b>Soluciones</b> al final del libro"
+  ],
+  "back_close": "Un regalo ideal para mamá, papá, los abuelos… o para usted.",
+  "series_line": "Pasatiempos Tranquilos · Vol. 1",
+  "spine": "SOPA DE LETRAS · SUDOKU · LABERINTOS   ·   PASATIEMPOS TRANQUILOS VOL. 1   ·   PETER & CARDU"
+ }
 }

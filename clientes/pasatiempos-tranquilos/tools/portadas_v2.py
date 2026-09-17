@@ -50,8 +50,7 @@ def t(x, y, s, fill, text, family=SERIF, weight=700, ls=0, anchor="middle"):
 
 
 # 1 ------------------------------------------------------------------ Rojo 3 en 1
-def p1():
-    rojo, osc, am, azul = "#C62828", "#7F1414", "#FFD54F", "#1E3A8A"
+def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL):
     return "".join([
         f'<rect width="{W}" height="{H}" fill="{rojo}"/>', tex("#FFFFFF", 0.10),
         t(CX, 72, 24, "#FFFFFF", "PETER &amp; CARDU", ls=6, weight=400),
@@ -62,7 +61,7 @@ def p1():
         pill(CX, 392, 600, 56, azul, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 25),
         f'<rect x="36" y="478" width="{W-72}" height="330" rx="26" fill="#FFFFFF"/>',
         three_games(612, "#222222", am, "#222222"),
-        t(CX, 872, 52, "#FFFFFF", VOL),
+        t(CX, 872, 52, "#FFFFFF", vol),
         f'<rect x="0" y="{H-215}" width="{W}" height="130" fill="{am}"/>',
         t(CX, H - 125, 82, rojo, "LETRA GRANDE", SANS, ls=4),
         t(CX, H - 34, 30, "#FFFFFF", "70 pasatiempos · con soluciones"),
@@ -164,6 +163,13 @@ def p5():
     ])
 
 
+# Serie con el diseño 1 (Pedro, 17-sep, msgs 848–849): Vol. 1 rojo y 2 colores a elegir para los Vol. 2 y 3
+SERIE = [("S1-vol1-rojo", "Vol. 1 · Rojo", dict()),
+         ("S2-vol2-morado", "Vol. 2 · Morado", dict(rojo="#6A1B9A", osc="#3E0F5C", azul="#C62828", vol="Vol. 2 · Fiestas y Tradiciones")),
+         ("S3-vol2-azul", "Vol. 2 · Azul", dict(rojo="#1565C0", osc="#0D2A5C", azul="#C62828", vol="Vol. 2 · Fiestas y Tradiciones")),
+         ("S4-vol3-verde", "Vol. 3 · Verde", dict(rojo="#2E7D32", osc="#1B4D1E", azul="#6A1B9A", vol="Vol. 3 · Naturaleza y Recuerdos")),
+         ("S5-vol3-turquesa", "Vol. 3 · Turquesa", dict(rojo="#00796B", osc="#004D40", azul="#C62828", vol="Vol. 3 · Naturaleza y Recuerdos"))]
+
 DISENOS = [("1-rojo-3en1", "Rojo 3 en 1", p1), ("2-jardin-alegre", "Jardín alegre", p2), ("3-cocina-cozy", "Cocina cozy", p3),
            ("4-tablero-70", "Tablero 70", p4), ("5-loteria-grande", "Lotería grande", p5)]
 
@@ -192,7 +198,7 @@ if __name__ == "__main__":
     print("groserías en la textura:", check_textura() or "ninguna")
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, _l, fn in DISENOS:
+    for name, _l, fn in DISENOS + [(n, l, (lambda k=k: p1(**k))) for n, l, k in SERIE]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)
