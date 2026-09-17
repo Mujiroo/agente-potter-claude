@@ -16,3 +16,9 @@
   - Palabras con doble sentido regional reemplazadas: CONCHA → ROSCA, CAJETA → DULCE DE LECHE, PAPAYA → CIRUELA.
   - Pendiente: filtro de groserías en español para el relleno de la grilla (8 direcciones), además del inglés.
   - Esperando aprobación de las listas.
+- 21:10 Portada, patrones del Excel (español, top 10 de 1d y 2d):
+  - «SOPA DE LETRAS» gigante (10/10) y «LETRA GRANDE» (10/10); «EN ESPAÑOL» y «PARA ADULTOS» en casi todos.
+  - Grilla visible en la mayoría; número gigante «5000 PALABRAS» en los 2 más vendidos.
+  - Dos estilos: bold rojo/azul/amarillo 3D (baratos, arriba) y cozy floral/acuarela («relajante», US$ 13,99, BSR 18k). Toques latinos: textil, cempasúchil.
+  - Hueco: ningún 3-en-1, poco diseño premium.
+- Propuesta: 3 portadas, A cozy latino (recomendada), B llamativa, C floral suave. Esperando OK para empezar.
