@@ -93,3 +93,6 @@
     - `Pasatiempos_Vol1_interior_8.5x11.pdf` (122 págs., 0 Type3)
     - `preview_portada_completa.png`
   - Esperando revisión/OK y colores de la serie. Después: ficha KDP.
+- 17-sep 13:29–13:39 Pedro: no queda claro «Palabras que nunca van al revés» (msg 904). Propuse A/B/C (msg 905); respondió «Ok» (msg 906) y apliqué A, la recomendada: «Palabras fáciles de encontrar: se leen de izquierda a derecha, hacia abajo o en diagonal».
+  - Texto de la contratapa en 501/512 px de alto: cabe.
+  - Regenerados la portada KDP y el PDF de revisión, 0 Type3. Enviados msgs 907–909.
