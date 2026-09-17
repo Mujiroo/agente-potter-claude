@@ -22,3 +22,9 @@
   - Dos estilos: bold rojo/azul/amarillo 3D (baratos, arriba) y cozy floral/acuarela («relajante», US$ 13,99, BSR 18k). Toques latinos: textil, cempasúchil.
   - Hueco: ningún 3-en-1, poco diseño premium.
 - Propuesta: 3 portadas, A cozy latino (recomendada), B llamativa, C floral suave. Esperando OK para empezar.
+- 21:13 Autocompletado de amazon.com (búsquedas en español, verificado):
+  - «pasatiempos para adultos en español» (1.ª sugerencia de «pasatiempos»), «pasatiempos para personas mayores», «pasatiempos para adultos mayores (en español)».
+  - «libro de actividades para adultos mayores / en español»; «juegos para adultos mayores en español».
+  - «sopa de letras para adultos letra grande / mayores / en español»; «sudoku en español para adultos»; «sudoku letra grande»; «laberintos para adultos».
+  - En inglés: «spanish puzzle books for adults», «spanish puzzles for seniors», «spanish activity book for seniors».
+  - Keywords candidatas para la ficha KDP.

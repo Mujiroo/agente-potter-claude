@@ -1,0 +1,252 @@
+#!/usr/bin/env python3
+"""Tres opciones de portada (frente 8,5x11 con sangrado) para «Pasatiempos Tranquilos».
+
+A cozy latino · B llamativa · C floral suave. Todas llevan lo que repiten los más vendidos
+en español (estudio del 16-sep): SOPA DE LETRAS gigante, LETRA GRANDE, EN ESPAÑOL,
+número llamativo y grilla visible; y nuestra diferencia: los 3 juegos a la vista.
+
+Uso: portadas_opciones.py carpeta_salida
+"""
+import math
+import os
+import random
+import sys
+
+HERE = os.path.dirname(os.path.abspath(__file__))
+CC = os.path.join(HERE, "..", "..", "calm-cozy", "tools")
+sys.path.insert(0, CC)
+
+from portada_cozy import BLEED, U, font_css, letter_texture  # noqa: E402
+import puzzles as PZ  # noqa: E402
+
+W, H = (8.5 + 2 * BLEED) * U, (11 + 2 * BLEED) * U
+SERIF = "Playfair Display, serif"
+SCRIPT = "Caveat, cursive"
+SANS = "Liberation Sans, Arial, sans-serif"
+
+GRID = {"rows": ["CAFEMI", "FLORES", "PANSOL", "TIAMOR"],
+        "found": [(0, 0, 0, 3), (1, 0, 1, 5), (2, 0, 2, 2), (2, 3, 2, 5), (3, 2, 3, 5)]}
+
+
+def mini_grid(x, y, ink, hi, cell=34, font=25, paper="#fff"):
+    rows = GRID["rows"]
+    out = [f'<rect x="{x-14}" y="{y-14}" width="{6*cell+28}" height="{4*cell+28}" rx="12" fill="{paper}" stroke="{ink}" stroke-width="6"/>']
+    for r1, c1, r2, c2 in GRID["found"]:
+        out.append(f'<line x1="{x+c1*cell+cell/2}" y1="{y+r1*cell+cell/2}" x2="{x+c2*cell+cell/2}" y2="{y+r2*cell+cell/2}" '
+                   f'stroke="{hi}" stroke-width="26" stroke-linecap="round"/>')
+    for r, row in enumerate(rows):
+        for k, ch in enumerate(row):
+            out.append(f'<text x="{x+k*cell+cell/2}" y="{y+r*cell+cell/2+font*0.35:.1f}" text-anchor="middle" '
+                       f'font-family="{SANS}" font-weight="700" font-size="{font}" fill="{ink}">{ch}</text>')
+    return "".join(out)
+
+
+def mini_sudoku(x, y, ink, cell=25, paper="#fff"):
+    pz, _s, _g = PZ.make_easy_sudoku(random.Random(4))
+    out = [f'<rect x="{x}" y="{y}" width="{9*cell}" height="{9*cell}" fill="{paper}" stroke="{ink}" stroke-width="6"/>']
+    for i in range(1, 9):
+        wd = 4.5 if i % 3 == 0 else 1.5
+        out.append(f'<line x1="{x+i*cell}" y1="{y}" x2="{x+i*cell}" y2="{y+9*cell}" stroke="{ink}" stroke-width="{wd}"/>')
+        out.append(f'<line x1="{x}" y1="{y+i*cell}" x2="{x+9*cell}" y2="{y+i*cell}" stroke="{ink}" stroke-width="{wd}"/>')
+    for r in range(9):
+        for c in range(9):
+            if pz[r][c]:
+                out.append(f'<text x="{x+c*cell+cell/2}" y="{y+r*cell+cell/2+6}" text-anchor="middle" font-family="{SANS}" '
+                           f'font-weight="700" font-size="17" fill="{ink}">{pz[r][c]}</text>')
+    return "".join(out)
+
+
+def mini_maze(x, y, ink, hi, cell=32, n=7, paper="#fff"):
+    mz = PZ.make_maze(random.Random(9), n, n)
+    out = [f'<rect x="{x-10}" y="{y-10}" width="{n*cell+20}" height="{n*cell+20}" rx="10" fill="{paper}"/>']
+    pts = " ".join(f"{x+c*cell+cell/2},{y+r*cell+cell/2}" for r, c in mz["path"])
+    out.append(f'<polyline points="{pts}" fill="none" stroke="{hi}" stroke-width="14" stroke-linecap="round" stroke-linejoin="round"/>')
+    seg = []
+    for r in range(n):
+        for c in range(n):
+            wl = mz["walls"][r][c]
+            X, Y = x + c * cell, y + r * cell
+            if wl["N"]:
+                seg.append(f"M{X},{Y} h{cell}")
+            if wl["W"] and not (r == 0 and c == 0):
+                seg.append(f"M{X},{Y} v{cell}")
+            if r == n - 1 and wl["S"]:
+                seg.append(f"M{X},{Y+cell} h{cell}")
+            if c == n - 1 and wl["E"] and not (r == n - 1):
+                seg.append(f"M{X+cell},{Y} v{cell}")
+    out.append(f'<path d="{" ".join(seg)}" stroke="{ink}" stroke-width="6" stroke-linecap="round" fill="none"/>')
+    return "".join(out)
+
+
+def three_games(cy, ink, hi, label_ink, paper="#fff", labels=("SOPA DE LETRAS", "SUDOKU", "LABERINTOS"), rot=True):
+    cx = W / 2
+    centers = [cx - 266, cx, cx + 266]
+    items = [(mini_grid(centers[0] - 102, cy - 68, ink, hi, paper=paper), -4),
+             (mini_sudoku(centers[1] - 112.5, cy - 112.5, ink, paper=paper), 3),
+             (mini_maze(centers[2] - 112, cy - 112, ink, hi, paper=paper), -3)]
+    out = []
+    for (svg, r), x, lab in zip(items, centers, labels):
+        out.append(f'<g transform="rotate({r if rot else 0} {x} {cy})">{svg}</g>')
+        out.append(f'<text x="{x}" y="{cy+170}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="25" '
+                   f'letter-spacing="1" fill="{label_ink}">{lab}</text>')
+    return "".join(out)
+
+
+def papel_picado(y, colors, n=9, h=120):
+    """Banderines de papel picado con calados simples."""
+    out = [f'<path d="M0,{y} Q{W/2},{y+26} {W},{y}" stroke="#6B4B3A" stroke-width="3" fill="none"/>']
+    fw = W / n
+    for i in range(n):
+        x0 = i * fw + 6
+        sag = 26 * (1 - ((i + 0.5) / n * 2 - 1) ** 2)
+        top = y + sag
+        c = colors[i % len(colors)]
+        out.append(f'<path d="M{x0},{top} h{fw-12} v{h} l-{(fw-12)/4},-18 l-{(fw-12)/4},18 l-{(fw-12)/4},-18 l-{(fw-12)/4},18 z" fill="{c}"/>')
+        cxp = x0 + (fw - 12) / 2
+        out.append(f'<circle cx="{cxp}" cy="{top+45}" r="13" fill="#FBF3E4"/>')
+        for k in range(6):
+            a = k * math.pi / 3
+            out.append(f'<circle cx="{cxp+26*math.cos(a):.1f}" cy="{top+45+26*math.sin(a):.1f}" r="5" fill="#FBF3E4"/>')
+        out.append(f'<rect x="{cxp-22}" y="{top+84}" width="44" height="6" rx="3" fill="#FBF3E4"/>')
+    return "".join(out)
+
+
+def cempasuchil(cx, cy, r, c1="#F29F05", c2="#E36414"):
+    out = []
+    for ring, (rad, col) in enumerate([(r, c2), (r * 0.72, c1), (r * 0.45, c2)]):
+        for k in range(14):
+            a = k * 2 * math.pi / 14 + ring * 0.2
+            out.append(f'<circle cx="{cx+rad*0.55*math.cos(a):.1f}" cy="{cy+rad*0.55*math.sin(a):.1f}" r="{rad*0.42:.1f}" fill="{col}"/>')
+    out.append(f'<circle cx="{cx}" cy="{cy}" r="{r*0.22:.1f}" fill="#8A3B12"/>')
+    return "".join(out)
+
+
+def jarrito(cx, cy, s=1.0):
+    """Jarrito de barro con café de olla y vapor."""
+    body = "#B5542C"
+    return (f'<g transform="translate({cx} {cy}) scale({s})">'
+            f'<path d="M-70,-40 Q-80,40 -40,70 L40,70 Q80,40 70,-40 Z" fill="{body}"/>'
+            f'<ellipse cx="0" cy="-40" rx="72" ry="16" fill="#7A3217"/>'
+            f'<path d="M70,-20 Q115,-10 100,30 Q90,55 62,45" stroke="{body}" stroke-width="16" fill="none" stroke-linecap="round"/>'
+            f'<path d="M-50,5 h100" stroke="#F2C14E" stroke-width="6" stroke-dasharray="14 10"/>'
+            f'<path d="M-20,-70 q-14,-22 0,-44 q14,-22 0,-44" stroke="#C9B8A6" stroke-width="7" fill="none" stroke-linecap="round"/>'
+            f'<path d="M18,-66 q-14,-22 0,-44" stroke="#C9B8A6" stroke-width="7" fill="none" stroke-linecap="round"/>'
+            f'</g>')
+
+
+def pan_dulce(cx, cy, s=1.0):
+    return (f'<g transform="translate({cx} {cy}) scale({s})">'
+            f'<path d="M-80,20 Q-80,-60 0,-62 Q80,-60 80,20 Z" fill="#E9B872"/>'
+            f'<path d="M-72,14 Q-70,-50 0,-52 Q70,-50 72,14 Z" fill="#F7E1C4"/>'
+            + "".join(f'<path d="M{-55+i*22},10 Q{-40+i*18},-30 0,-48" stroke="#E0B98A" stroke-width="5" fill="none"/>' for i in range(6))
+            + '<rect x="-84" y="16" width="168" height="16" rx="8" fill="#D39A55"/></g>')
+
+
+def mariposa(cx, cy, s, c1, c2):
+    return (f'<g transform="translate({cx} {cy}) scale({s})" opacity=".9">'
+            f'<ellipse cx="-26" cy="-18" rx="30" ry="24" fill="{c1}"/><ellipse cx="26" cy="-18" rx="30" ry="24" fill="{c1}"/>'
+            f'<ellipse cx="-20" cy="16" rx="20" ry="16" fill="{c2}"/><ellipse cx="20" cy="16" rx="20" ry="16" fill="{c2}"/>'
+            f'<rect x="-4" y="-34" width="8" height="62" rx="4" fill="#4A3B47"/></g>')
+
+
+def flor_acuarela(cx, cy, r, col, op=".55"):
+    return "".join(f'<circle cx="{cx+r*0.6*math.cos(k*1.2566):.1f}" cy="{cy+r*0.6*math.sin(k*1.2566):.1f}" r="{r*0.55:.1f}" '
+                   f'fill="{col}" opacity="{op}"/>' for k in range(5)) + f'<circle cx="{cx}" cy="{cy}" r="{r*0.28:.1f}" fill="#F6C453"/>'
+
+
+def pill(cx, y, w, h, fill, text, color, size, family=SERIF, spacing=2):
+    return (f'<rect x="{cx-w/2}" y="{y}" width="{w}" height="{h}" rx="{h/2}" fill="{fill}"/>'
+            f'<text x="{cx}" y="{y+h/2+size*0.36:.1f}" text-anchor="middle" font-family="{family}" font-weight="700" '
+            f'font-size="{size}" letter-spacing="{spacing}" fill="{color}">{text}</text>')
+
+
+def seal(cx, cy, r, fill, l1, l2, color, s1=40, s2=19):
+    return (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}"/>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r-8}" fill="none" stroke="{color}" stroke-width="2.5" stroke-dasharray="5 5"/>'
+            f'<text x="{cx}" y="{cy+4}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="{s1}" fill="{color}">{l1}</text>'
+            f'<text x="{cx}" y="{cy+s2+16}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="{s2}" fill="{color}">{l2}</text>')
+
+
+# ---------------------------------------------------------------- A · cozy latino
+def cover_a():
+    cream, brown, terra, green, rosa, mostaza, turq = "#FBF3E4", "#3B2418", "#B5542C", "#2F6B4F", "#D6336C", "#E2A400", "#1C8C8C"
+    cx = W / 2
+    o = [f'<rect width="{W}" height="{H}" fill="{cream}"/>',
+         papel_picado(18, [rosa, turq, mostaza, green, terra]),
+         f'<text x="{cx}" y="205" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{brown}">PETER &amp; CARDU</text>',
+         f'<text x="{cx}" y="318" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="100" textLength="{W-150}" '
+         f'lengthAdjust="spacingAndGlyphs" fill="{brown}">SOPA DE LETRAS</text>',
+         f'<text x="{cx}" y="384" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="50" letter-spacing="4" fill="{terra}">SUDOKU · LABERINTOS</text>',
+         f'<text x="{cx}" y="456" text-anchor="middle" font-family="{SCRIPT}" font-size="78" fill="{green}">Pasatiempos Tranquilos</text>',
+         pill(cx, 482, 520, 50, green, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 22),
+         three_games(700, brown, "#F6D38A", brown),
+         jarrito(120, 1000, 0.62), pan_dulce(W - 130, 1010, 0.75),
+         cempasuchil(205, 1052, 26), cempasuchil(W - 225, 1060, 22),
+         seal(W - 128, 118 + 110, 86, rosa, "LETRA", "GRANDE", "#FFFFFF", 30, 30),
+         pill(cx, 950, 440, 76, terra, "70 PASATIEMPOS", "#FFFFFF", 36),
+         f'<text x="{cx}" y="1066" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{brown}">con soluciones</text>']
+    return "".join(o)
+
+
+# ---------------------------------------------------------------- B · llamativa
+def cover_b():
+    blue, yellow, red, white, ink = "#1B3A8C", "#FFD23F", "#E63946", "#FFFFFF", "#14213D"
+    cx = W / 2
+    tex = (f'<svg x="0" y="0" width="{W}" height="{H}" viewBox="0 0 {W} {H}" overflow="hidden">'
+           f'{letter_texture(0, 0, W, H, "#FFFFFF", 0.08, cell=50, size=28, seed=21)}</svg>')
+    title = "".join(f'<text x="{cx+dx}" y="{250+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="112" '
+                    f'textLength="{W-120}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>'
+                    for dx, dy, col in [(7, 7, red), (0, 0, yellow)])
+    o = [f'<rect width="{W}" height="{H}" fill="{blue}"/>', tex,
+         f'<text x="{cx}" y="110" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{white}">PETER &amp; CARDU</text>',
+         title,
+         f'<text x="{cx}" y="330" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="4" fill="{white}">SUDOKU · LABERINTOS</text>',
+         pill(cx, 360, 600, 64, red, "EN ESPAÑOL · PARA ADULTOS", yellow, 30),
+         f'<text x="{cx}" y="494" text-anchor="middle" font-family="{SCRIPT}" font-size="72" fill="{yellow}">Pasatiempos Tranquilos</text>',
+         f'<rect x="40" y="540" width="{W-80}" height="420" rx="28" fill="#F4F1EA"/>',
+         three_games(720, ink, "#FFD23F", ink, paper="#fff"),
+         f'<rect x="0" y="{H-160}" width="{W}" height="160" fill="{red}"/>',
+         f'<text x="{cx}" y="{H-90}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="3" fill="{yellow}">LETRA GRANDE</text>',
+         f'<text x="{cx}" y="{H-48}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{white}">con soluciones</text>',
+         f'<circle cx="{W-120}" cy="520" r="92" fill="{yellow}" stroke="{red}" stroke-width="8"/>',
+         f'<text x="{W-120}" y="532" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="72" fill="{red}">70</text>',
+         f'<text x="{W-120}" y="568" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="17" fill="{ink}">PASATIEMPOS</text>']
+    return "".join(o)
+
+
+# ---------------------------------------------------------------- C · floral suave
+def cover_c():
+    bg, plum, rosa, lila, verde, dorado = "#FCEFF1", "#4A2545", "#E58FA6", "#B9A2D8", "#7FB285", "#C9963A"
+    cx = W / 2
+    flores = "".join([flor_acuarela(70, 90, 90, rosa), flor_acuarela(W - 60, 120, 80, lila), flor_acuarela(80, H - 120, 100, lila),
+                      flor_acuarela(W - 80, H - 110, 95, rosa), flor_acuarela(W - 40, 560, 55, rosa, ".35"), flor_acuarela(40, 620, 50, lila, ".35")])
+    hojas = "".join(f'<ellipse cx="{x}" cy="{y}" rx="38" ry="14" fill="{verde}" opacity=".6" transform="rotate({a} {x} {y})"/>'
+                    for x, y, a in [(150, 150, 30), (W - 150, 190, -30), (170, H - 60, -20), (W - 170, H - 50, 25)])
+    o = [f'<rect width="{W}" height="{H}" fill="{bg}"/>', flores, hojas,
+         mariposa(W - 190, 300, 0.9, lila, rosa), mariposa(170, 470, 0.7, rosa, lila),
+         f'<text x="{cx}" y="110" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{plum}">PETER &amp; CARDU</text>',
+         f'<text x="{cx}" y="205" text-anchor="middle" font-family="{SCRIPT}" font-size="80" fill="{dorado}">Pasatiempos Tranquilos</text>',
+         f'<text x="{cx}" y="318" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="104" textLength="{W-170}" '
+         f'lengthAdjust="spacingAndGlyphs" fill="{plum}">SOPA DE LETRAS</text>',
+         f'<text x="{cx}" y="384" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="50" letter-spacing="4" fill="{rosa}">SUDOKU · LABERINTOS</text>',
+         pill(cx, 414, 520, 52, plum, "EN ESPAÑOL · PARA ADULTOS", "#FFFFFF", 24),
+         three_games(655, plum, "#F7C9D4", plum),
+         pill(cx, 880, 560, 90, rosa, "LETRA GRANDE", "#FFFFFF", 50),
+         f'<text x="{cx}" y="1018" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="34" fill="{plum}">70 pasatiempos · con soluciones</text>']
+    return "".join(o)
+
+
+def page(svg, title):
+    return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title><style>{font_css()}'
+            f'@page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }} html,body{{margin:0;padding:0}} '
+            f'svg{{display:block;width:{W/U:.4f}in;height:{H/U:.4f}in}}</style></head><body>'
+            f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W:.2f} {H:.2f}">{svg}</svg></body></html>')
+
+
+if __name__ == "__main__":
+    out = sys.argv[1]
+    os.makedirs(out, exist_ok=True)
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c)]:
+        p = os.path.join(out, f"portada_{name}.html")
+        open(p, "w", encoding="utf-8").write(page(fn(), name))
+        print(p)
