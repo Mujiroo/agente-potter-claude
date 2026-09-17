@@ -10,3 +10,9 @@
 - 40 temas en 6 grupos: hogar/familia, fiestas, sabores, naturaleza, recuerdos, bienestar.
 - Precio: lanzamiento US$ 9,99 → 11,99–13,99.
 - No generar listas ni libro sin su OK a nombre y temas.
+- 21:07 Pedro aprueba título y subtítulo (msg 752): «Sopa de Letras, Sudoku y Laberintos» / «Pasatiempos Tranquilos en Letra Grande para Adultos Mayores» / serie «Pasatiempos Tranquilos» Vol. 1. Portada: los 3 juegos grandes + «Pasatiempos Tranquilos» manuscrito + LARGE PRINT («LETRA GRANDE»).
+- Listas borrador: `temas_borrador.py` y `listas_borrador.txt`, enviadas.
+  - 360 palabras sin repetir, sin palabras contenidas, ≤ 13 letras.
+  - Palabras con doble sentido regional reemplazadas: CONCHA → ROSCA, CAJETA → DULCE DE LECHE, PAPAYA → CIRUELA.
+  - Pendiente: filtro de groserías en español para el relleno de la grilla (8 direcciones), además del inglés.
+  - Esperando aprobación de las listas.
