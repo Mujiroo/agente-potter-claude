@@ -141,3 +141,4 @@ Pedro pidió revisar todo como editor y experto en juegos. La v1 quedó en `entr
   - Pedro propuso US$ 7,99. Le recomendé no hacerlo: regalía US$ 0,93 al 50 %, contra US$ 2,92 a 9,99 y US$ 4,72 a 12,99. Recomendado 12,99; mínimo razonable 9,99.
   - Esperando que decida el precio.
 - 14:06 **PUBLICADO (enviado a revisión KDP)** con precio **US$ 7,99** (decisión de Pedro; regalía US$ 0,93). Recomendé subirlo a 12,99 (mínimo 9,99) cuando pase a «En venta». Le ofrecí un recordatorio programado; esperando respuesta.
+- 17-sep 10:00 Recordatorio enviado a Pedro (msg 807): revisar si está «En venta» y subir precio 7,99 → 12,99. Queda el 2.º recordatorio del 18-sep.
