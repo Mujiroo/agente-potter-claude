@@ -96,3 +96,7 @@
 - 17-sep 13:29–13:39 Pedro: no queda claro «Palabras que nunca van al revés» (msg 904). Propuse A/B/C (msg 905); respondió «Ok» (msg 906) y apliqué A, la recomendada: «Palabras fáciles de encontrar: se leen de izquierda a derecha, hacia abajo o en diagonal».
   - Texto de la contratapa en 501/512 px de alto: cabe.
   - Regenerados la portada KDP y el PDF de revisión, 0 Type3. Enviados msgs 907–909.
+- 17-sep 15:58 Pedro pregunta por qué el libro va en «usted» y cómo están los otros libros de Amazon (msgs 915, 917).
+  - Verificado hoy en las fichas de Amazon: B0DZ2439GN (BSR 3.459) impersonal · B0F5HND1MC (BSR 11.006) tutea · B0B7QPJTN6 («de la Abuela») usa usted. No hay norma.
+  - Corregí ante Pedro una afirmación mía anterior (que los más vendidos usaban «usted»): no estaba verificada.
+  - Propuesta: mantener «usted» en el interior y escribir la descripción KDP impersonal o dirigida a quien regala. Esperando si prefiere tutear.
