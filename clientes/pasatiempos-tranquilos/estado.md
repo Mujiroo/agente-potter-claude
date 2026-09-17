@@ -62,3 +62,8 @@
   - Herramientas en español: `tools/generar_es.py`, `tools/pagina2_es.py` y `tools/verificar_es.py` (copias de las de calm-cozy con textos traducidos). El relleno usa letras con frecuencias del español, incluye Ñ, y filtra groserías en español e inglés.
   - `vol1.json` (seed 12). Auditoría: 0 errores, 0 avisos, 0 desbordes, 0 Type3, MediaBox 612×792. Lomo 0,275".
   - Pendiente: color de portada E → portada completa (frente + lomo + contratapa). Después, ficha KDP en español.
+- 17-sep 10:53 Pedro (msg 834): falta la portada. Pidió 5 portadas nuevas «como diseñador», basadas en los datos del estudio de Claude.
+  - 11:1x Enviadas (msgs 837–843): `tools/portadas_v2.py`, PNG y `hoja_v2.png` (con miniaturas) en `entregables/portadas/v2/`.
+  - Opciones: 1 Rojo 3 en 1 (patrón del BSR 3.459) · 2 Jardín alegre (BSR 6.194) · 3 Cocina cozy (premium US$ 13,99) · 4 Tablero 70 (BSR 10.897) · 5 Lotería grande (la E mejorada).
+  - Textura de letras (seed 28) verificada sin groserías ES+EN (`check_textura`).
+  - Recomendé la 1; alternativa, la 5. Esperando elección para armar la portada completa (lomo 0,275").
