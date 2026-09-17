@@ -37,3 +37,4 @@
 - 21:30 Pedro pide más opciones (msg 772). Nuevas: D Talavera, E Lotería (cartas «La Sopa», «El Sudoku», «El Laberinto»), F Atardecer con bugambilias. Hoja `entregables/portadas/hoja2.png` con miniaturas junto a A+B.
   - Corregidos solapes: pill/etiquetas en D, contenido de las cartas en E, bugambilias sobre el título en F.
   - Ranking sugerido: E > A+B > D. Esperando elección.
+- 21:38 Pedro pide mejorar la F con el toque de la de Fiverr (msg 777). `cover_f2()`: azul noche → ciruela, estrellas y líneas doradas (sol, colinas, bugambilias), título en degradado dorado, juegos en dorado sobre panel oscuro, botón LETRA GRANDE dorado. Sin filtros (todo vectorial). Enviada; esperando aprobación.

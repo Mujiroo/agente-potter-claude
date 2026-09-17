@@ -370,6 +370,60 @@ def cover_f():
     return "".join(o)
 
 
+# ---------------------------------------------------------------- F2 · Atardecer dorado (estilo premium tipo Fiverr: noche + líneas doradas)
+def bugambilia_linea(cx, cy, r, oro, rot=0):
+    o = [f'<g transform="rotate({rot} {cx} {cy})" fill="none" stroke="{oro}" stroke-width="2.6" stroke-linecap="round">']
+    for k in range(3):
+        a = k * 2 * math.pi / 3
+        x, y = cx + r * 0.45 * math.cos(a), cy + r * 0.45 * math.sin(a)
+        o.append(f'<path d="M{cx:.1f},{cy:.1f} Q{x+r*0.5*math.cos(a+1.2):.1f},{y+r*0.5*math.sin(a+1.2):.1f} {x+r*0.55*math.cos(a):.1f},{y+r*0.55*math.sin(a):.1f} '
+                 f'Q{x+r*0.5*math.cos(a-1.2):.1f},{y+r*0.5*math.sin(a-1.2):.1f} {cx:.1f},{cy:.1f}"/>')
+    o.append(f'<circle cx="{cx}" cy="{cy}" r="{r*0.08:.1f}" fill="{oro}"/>')
+    o.append(f'<path d="M{cx},{cy} q{-r*0.9},{r*0.4} {-r*1.4},{r*1.2}"/>')
+    o.append(f'<path d="M{cx-r*0.9:.1f},{cy+r*0.7:.1f} q{-r*0.3},{-r*0.35} {-r*0.05},{-r*0.55} q{r*0.15},{r*0.3} {r*0.05},{r*0.55}"/>')
+    o.append('</g>')
+    return "".join(o)
+
+
+def cover_f2():
+    oro, crema, noche = "url(#oro)", "#F3E9D2", "#101A33"
+    oro_plano = "#D9B25A"
+    cx = W / 2
+    defs = ('<defs><linearGradient id="noche" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1730"/>'
+            '<stop offset=".6" stop-color="#1A1F3F"/><stop offset="1" stop-color="#2A1C3D"/></linearGradient>'
+            '<linearGradient id="oro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE7A8"/>'
+            '<stop offset=".5" stop-color="#D9A93F"/><stop offset="1" stop-color="#F4D27E"/></linearGradient>'
+            '<radialGradient id="brillo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F2C45A" stop-opacity=".35"/>'
+            '<stop offset="1" stop-color="#F2C45A" stop-opacity="0"/></radialGradient></defs>')
+    rng = random.Random(5)
+    puntos = "".join(f'<circle cx="{rng.random()*W:.0f}" cy="{rng.random()*H*0.5:.0f}" r="{rng.choice([1.2,1.6,2.2])}" fill="{oro_plano}" opacity="{rng.choice([.25,.4,.6])}"/>'
+                     for _ in range(90))
+    rayos = "".join(f'<line x1="{cx+132*math.cos(a):.1f}" y1="{600+132*math.sin(a):.1f}" x2="{cx+150*math.cos(a):.1f}" y2="{600+150*math.sin(a):.1f}" '
+                    f'stroke="{oro_plano}" stroke-width="2.5" stroke-linecap="round" opacity=".7"/>'
+                    for a in [math.pi + k * math.pi / 12 for k in range(1, 12)])
+    o = [defs, f'<rect width="{W}" height="{H}" fill="url(#noche)"/>', puntos,
+         f'<circle cx="{cx}" cy="600" r="300" fill="url(#brillo)"/>',
+         f'<circle cx="{cx}" cy="600" r="115" fill="none" stroke="{oro_plano}" stroke-width="3" opacity=".8"/>', rayos,
+         f'<path d="M0,560 Q200,470 430,535 Q650,595 {W},500" fill="none" stroke="{oro_plano}" stroke-width="3" opacity=".8"/>',
+         f'<path d="M0,600 Q260,540 520,585 Q720,620 {W},575" fill="none" stroke="{oro_plano}" stroke-width="2" opacity=".5"/>',
+         bugambilia_linea(70, 60, 42, oro_plano, -20), bugambilia_linea(W - 70, 60, 42, oro_plano, 200),
+         bugambilia_linea(80, H - 100, 44, oro_plano, 30), bugambilia_linea(W - 80, H - 100, 44, oro_plano, 160),
+         f'<text x="{cx}" y="92" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" letter-spacing="7" fill="{oro}">PETER &amp; CARDU</text>',
+         f'<line x1="{cx-150}" y1="112" x2="{cx+150}" y2="112" stroke="{oro_plano}" stroke-width="1.5"/>',
+         f'<text x="{cx}" y="238" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="120" textLength="{W-150}" '
+         f'lengthAdjust="spacingAndGlyphs" fill="{oro}">SOPA DE LETRAS</text>',
+         f'<text x="{cx}" y="306" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="52" letter-spacing="5" fill="{crema}">SUDOKU · LABERINTOS</text>',
+         f'<text x="{cx}" y="378" text-anchor="middle" font-family="{SCRIPT}" font-size="72" fill="{oro}">Pasatiempos Tranquilos</text>',
+         f'<rect x="{cx-280}" y="398" width="560" height="50" rx="25" fill="none" stroke="{oro_plano}" stroke-width="2.5"/>',
+         f'<text x="{cx}" y="431" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="22" letter-spacing="2" fill="{crema}">EN ESPAÑOL · PARA ADULTOS MAYORES</text>',
+         f'<rect x="44" y="612" width="{W-88}" height="330" rx="24" fill="#0E1730" opacity=".82" stroke="{oro_plano}" stroke-width="2"/>',
+         three_games(760, oro_plano, "#5B4A24", crema, paper="#141E3A"),
+         f'<rect x="{cx-230}" y="962" width="460" height="78" rx="39" fill="{oro}"/>',
+         f'<text x="{cx}" y="1015" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="42" letter-spacing="2" fill="{noche}">LETRA GRANDE</text>',
+         f'<text x="{cx}" y="1080" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" letter-spacing="1" fill="{crema}">70 pasatiempos · con soluciones</text>']
+    return "".join(o)
+
+
 def page(svg, title):
     return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title><style>{font_css()}'
             f'@page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }} html,body{{margin:0;padding:0}} '
@@ -380,7 +434,7 @@ def page(svg, title):
 if __name__ == "__main__":
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f)]:
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f), ("F2-atardecer-dorado", cover_f2)]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)
