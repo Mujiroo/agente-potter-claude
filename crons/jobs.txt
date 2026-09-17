@@ -12,3 +12,5 @@
 
 # 16-sep-2026: Pedro aceptó recordatorio (msg 585). Calm & Cozy publicado a US$ 7,99, en revisión KDP.
 0 10 18 9 * | [CRON] Segundo recordatorio para Pedro por bin/tg.sh (tags HTML, corto): si todavía no lo hizo, revisar en KDP si «Calm & Cozy Puzzles» está «En venta» y subir el precio de US$ 7,99 a US$ 12,99 (mínimo 9,99). Si ya te dijo en el chat que lo cambió (revisa clientes/calm-cozy/estado.md), no mandes nada. No accedas a ninguna cuenta suya. Después borra esta línea de crons/jobs.txt y commitea.
+# 17-sep-2026: Pedro pidió recordatorio (msg 861).
+30 14 17 9 * | [CRON] Recordatorio para Pedro por bin/tg.sh (tags HTML, una línea): «⏰ Recordatorio: pagar lo que tenías pendiente (me pediste avisarte a las 14:30)». Después borra esta línea y su comentario de crons/jobs.txt y commitea.
