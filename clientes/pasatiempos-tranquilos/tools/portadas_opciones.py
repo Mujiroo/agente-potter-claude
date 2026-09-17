@@ -385,12 +385,12 @@ def bugambilia_linea(cx, cy, r, oro, rot=0):
     return "".join(o)
 
 
-def cover_f2():
-    oro, crema, noche = "url(#oro)", "#F3E9D2", "#101A33"
+def cover_f2(fondo=("#0E1730", "#1A1F3F", "#2A1C3D"), panel="#0E1730", papel="#141E3A", resaltado="#5B4A24", noche="#101A33"):
+    oro, crema = "url(#oro)", "#F3E9D2"
     oro_plano = "#D9B25A"
     cx = W / 2
-    defs = ('<defs><linearGradient id="noche" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0E1730"/>'
-            '<stop offset=".6" stop-color="#1A1F3F"/><stop offset="1" stop-color="#2A1C3D"/></linearGradient>'
+    defs = (f'<defs><linearGradient id="noche" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{fondo[0]}"/>'
+            f'<stop offset=".6" stop-color="{fondo[1]}"/><stop offset="1" stop-color="{fondo[2]}"/></linearGradient>'
             '<linearGradient id="oro" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FBE7A8"/>'
             '<stop offset=".5" stop-color="#D9A93F"/><stop offset="1" stop-color="#F4D27E"/></linearGradient>'
             '<radialGradient id="brillo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#F2C45A" stop-opacity=".35"/>'
@@ -416,12 +416,29 @@ def cover_f2():
          f'<text x="{cx}" y="378" text-anchor="middle" font-family="{SCRIPT}" font-size="72" fill="{oro}">Pasatiempos Tranquilos</text>',
          f'<rect x="{cx-280}" y="398" width="560" height="50" rx="25" fill="none" stroke="{oro_plano}" stroke-width="2.5"/>',
          f'<text x="{cx}" y="431" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="22" letter-spacing="2" fill="{crema}">EN ESPAÑOL · PARA ADULTOS MAYORES</text>',
-         f'<rect x="44" y="612" width="{W-88}" height="330" rx="24" fill="#0E1730" opacity=".82" stroke="{oro_plano}" stroke-width="2"/>',
-         three_games(760, oro_plano, "#5B4A24", crema, paper="#141E3A"),
+         f'<rect x="44" y="612" width="{W-88}" height="330" rx="24" fill="{panel}" opacity=".85" stroke="{oro_plano}" stroke-width="2"/>',
+         three_games(760, oro_plano, resaltado, crema, paper=papel),
          f'<rect x="{cx-230}" y="962" width="460" height="78" rx="39" fill="{oro}"/>',
          f'<text x="{cx}" y="1015" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="42" letter-spacing="2" fill="{noche}">LETRA GRANDE</text>',
          f'<text x="{cx}" y="1080" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" letter-spacing="1" fill="{crema}">70 pasatiempos · con soluciones</text>']
     return "".join(o)
+
+
+def cover_f3():
+    """F con fondo cálido de atardecer (vino → terracota → ámbar) y las ideas de la de Fiverr."""
+    return cover_f2(fondo=("#4A1830", "#8E3A3A", "#C8693F"), panel="#3A1426", papel="#4A1B30", resaltado="#7A5A22", noche="#3A1426")
+
+
+def cover_f_verde():
+    return cover_f2(fondo=("#0F2A22", "#17402F", "#245740"), panel="#0C231C", papel="#12301F", resaltado="#5E5424", noche="#0C231C")
+
+
+def cover_f_berenjena():
+    return cover_f2(fondo=("#24122B", "#3B1D44", "#54285A"), panel="#1E0F24", papel="#2B1633", resaltado="#6A4E2A", noche="#1E0F24")
+
+
+def cover_f_chocolate():
+    return cover_f2(fondo=("#2A1810", "#43271A", "#5E3824"), panel="#23140D", papel="#301C12", resaltado="#6E5424", noche="#23140D")
 
 
 def page(svg, title):
@@ -434,7 +451,7 @@ def page(svg, title):
 if __name__ == "__main__":
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f), ("F2-atardecer-dorado", cover_f2)]:
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f), ("F2-atardecer-dorado", cover_f2), ("F3-atardecer-calido", cover_f3), ("F4-verde", cover_f_verde), ("F5-berenjena", cover_f_berenjena), ("F6-chocolate", cover_f_chocolate)]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)

@@ -38,3 +38,8 @@
   - Corregidos solapes: pill/etiquetas en D, contenido de las cartas en E, bugambilias sobre el título en F.
   - Ranking sugerido: E > A+B > D. Esperando elección.
 - 21:38 Pedro pide mejorar la F con el toque de la de Fiverr (msg 777). `cover_f2()`: azul noche → ciruela, estrellas y líneas doradas (sol, colinas, bugambilias), título en degradado dorado, juegos en dorado sobre panel oscuro, botón LETRA GRANDE dorado. Sin filtros (todo vectorial). Enviada; esperando aprobación.
+- 21:34–21:49 (16-sep) Pedro: no está seguro del fondo azul; «¿qué otro color?»; y la idea de **3 volúmenes** con distintas temáticas y la misma portada mejorada en 3 colores (msgs 779, 783, 784).
+- 17-sep 00:02 (respuesta atrasada, el puente estuvo caído) enviado:
+  - Lámina con F en 5 colores (`entregables/portadas/hoja3.png`; `cover_f2` parametrizada: azul, vino, verde, berenjena, chocolate).
+  - Propuesta de serie: Vol. 1 Hogar y Sabores (vino) · Vol. 2 Fiestas y Tradiciones (berenjena) · Vol. 3 Naturaleza y Recuerdos (verde). 40 temas cada uno, 120 en total, sin repetir palabras.
+  - Pregunté si aprueba temas/colores y si parto por el Vol. 1 completo.
