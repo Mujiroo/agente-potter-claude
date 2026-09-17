@@ -181,10 +181,9 @@ def cover_a():
          pill(cx, 482, 520, 50, green, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 22),
          three_games(700, brown, "#F6D38A", brown),
          jarrito(120, 1000, 0.62), pan_dulce(W - 130, 1010, 0.75),
-         cempasuchil(205, 1052, 26), cempasuchil(W - 225, 1060, 22),
-         seal(W - 128, 118 + 110, 86, rosa, "LETRA", "GRANDE", "#FFFFFF", 30, 30),
-         pill(cx, 950, 440, 76, terra, "70 PASATIEMPOS", "#FFFFFF", 36),
-         f'<text x="{cx}" y="1066" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{brown}">con soluciones</text>']
+         cempasuchil(60, 1085, 24), cempasuchil(W - 60, 1085, 22),
+         pill(cx, 935, 420, 84, rosa, "LETRA GRANDE", "#FFFFFF", 44),
+         f'<text x="{cx}" y="1062" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="28" fill="{brown}">70 pasatiempos · con soluciones</text>']
     return "".join(o)
 
 
@@ -193,7 +192,7 @@ def cover_b():
     blue, yellow, red, white, ink = "#1B3A8C", "#FFD23F", "#E63946", "#FFFFFF", "#14213D"
     cx = W / 2
     tex = (f'<svg x="0" y="0" width="{W}" height="{H}" viewBox="0 0 {W} {H}" overflow="hidden">'
-           f'{letter_texture(0, 0, W, H, "#FFFFFF", 0.08, cell=50, size=28, seed=21)}</svg>')
+           f'{letter_texture(0, 0, W, H, "#FFFFFF", 0.08, cell=50, size=28, seed=28)}</svg>')
     title = "".join(f'<text x="{cx+dx}" y="{250+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="112" '
                     f'textLength="{W-120}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>'
                     for dx, dy, col in [(7, 7, red), (0, 0, yellow)])
@@ -202,15 +201,15 @@ def cover_b():
          title,
          f'<text x="{cx}" y="330" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="4" fill="{white}">SUDOKU · LABERINTOS</text>',
          pill(cx, 360, 600, 64, red, "EN ESPAÑOL · PARA ADULTOS", yellow, 30),
-         f'<text x="{cx}" y="494" text-anchor="middle" font-family="{SCRIPT}" font-size="72" fill="{yellow}">Pasatiempos Tranquilos</text>',
+         f'<text x="{cx-85}" y="494" text-anchor="middle" font-family="{SCRIPT}" font-size="68" fill="{yellow}">Pasatiempos Tranquilos</text>',
          f'<rect x="40" y="540" width="{W-80}" height="420" rx="28" fill="#F4F1EA"/>',
          three_games(720, ink, "#FFD23F", ink, paper="#fff"),
          f'<rect x="0" y="{H-160}" width="{W}" height="160" fill="{red}"/>',
          f'<text x="{cx}" y="{H-90}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="3" fill="{yellow}">LETRA GRANDE</text>',
          f'<text x="{cx}" y="{H-48}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{white}">con soluciones</text>',
-         f'<circle cx="{W-120}" cy="520" r="92" fill="{yellow}" stroke="{red}" stroke-width="8"/>',
-         f'<text x="{W-120}" y="532" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="72" fill="{red}">70</text>',
-         f'<text x="{W-120}" y="568" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="17" fill="{ink}">PASATIEMPOS</text>']
+         f'<circle cx="{W-128}" cy="470" r="74" fill="{yellow}" stroke="{red}" stroke-width="7"/>',
+         f'<text x="{W-128}" y="484" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="62" fill="{red}">70</text>',
+         f'<text x="{W-128}" y="512" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="14" fill="{ink}">PASATIEMPOS</text>']
     return "".join(o)
 
 
@@ -218,12 +217,12 @@ def cover_b():
 def cover_c():
     bg, plum, rosa, lila, verde, dorado = "#FCEFF1", "#4A2545", "#E58FA6", "#B9A2D8", "#7FB285", "#C9963A"
     cx = W / 2
-    flores = "".join([flor_acuarela(70, 90, 90, rosa), flor_acuarela(W - 60, 120, 80, lila), flor_acuarela(80, H - 120, 100, lila),
-                      flor_acuarela(W - 80, H - 110, 95, rosa), flor_acuarela(W - 40, 560, 55, rosa, ".35"), flor_acuarela(40, 620, 50, lila, ".35")])
+    flores = "".join([flor_acuarela(70, 90, 90, rosa), flor_acuarela(W - 45, 60, 70, lila), flor_acuarela(80, H - 120, 100, lila),
+                      flor_acuarela(W - 80, H - 110, 95, rosa)])
     hojas = "".join(f'<ellipse cx="{x}" cy="{y}" rx="38" ry="14" fill="{verde}" opacity=".6" transform="rotate({a} {x} {y})"/>'
-                    for x, y, a in [(150, 150, 30), (W - 150, 190, -30), (170, H - 60, -20), (W - 170, H - 50, 25)])
+                    for x, y, a in [(60, 205, 30), (W - 70, 130, -30), (170, H - 60, -20), (W - 170, H - 50, 25)])
     o = [f'<rect width="{W}" height="{H}" fill="{bg}"/>', flores, hojas,
-         mariposa(W - 190, 300, 0.9, lila, rosa), mariposa(170, 470, 0.7, rosa, lila),
+         mariposa(W - 105, 440, 0.7, lila, rosa), mariposa(110, 440, 0.6, rosa, lila),
          f'<text x="{cx}" y="110" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{plum}">PETER &amp; CARDU</text>',
          f'<text x="{cx}" y="205" text-anchor="middle" font-family="{SCRIPT}" font-size="80" fill="{dorado}">Pasatiempos Tranquilos</text>',
          f'<text x="{cx}" y="318" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="104" textLength="{W-170}" '
@@ -232,7 +231,7 @@ def cover_c():
          pill(cx, 414, 520, 52, plum, "EN ESPAÑOL · PARA ADULTOS", "#FFFFFF", 24),
          three_games(655, plum, "#F7C9D4", plum),
          pill(cx, 880, 560, 90, rosa, "LETRA GRANDE", "#FFFFFF", 50),
-         f'<text x="{cx}" y="1018" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="34" fill="{plum}">70 pasatiempos · con soluciones</text>']
+         f'<text x="{cx}" y="1018" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="30" fill="{plum}">70 pasatiempos · con soluciones</text>']
     return "".join(o)
 
 

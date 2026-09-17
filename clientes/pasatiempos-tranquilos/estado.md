@@ -28,3 +28,8 @@
   - «sopa de letras para adultos letra grande / mayores / en español»; «sudoku en español para adultos»; «sudoku letra grande»; «laberintos para adultos».
   - En inglés: «spanish puzzle books for adults», «spanish puzzles for seniors», «spanish activity book for seniors».
   - Keywords candidatas para la ficha KDP.
+- 21:16 3 portadas frente enviadas (`tools/portadas_opciones.py`, PNG en `entregables/portadas/`): A cozy latino (recomendada), B llamativa, C floral suave.
+  - Revisado: sin solapes de texto.
+  - Textura de B con seed 28, verificada sin groserías inglés+español en 8 direcciones (seed 21 formaba ASS/FUK/GAY).
+  - Mini sopa CAFE/FLORES/PAN/SOL/AMOR limpia.
+  - Esperando elección. Pendiente también: OK a las 40 listas.
