@@ -52,3 +52,8 @@
   - Enviado (msgs 796–801): público → criterios → 3 volúmenes → 4 áreas × 10 temas = 120 temas. Detalle en `temas_serie.md`.
   - Se pasó de un listado muy mexicano a uno pan-latino. Del borrador quedan ~33 temas.
   - Esperando OK/ajustes antes de armar las 9 palabras por tema.
+- 17-sep 09:40 Pedro da OK a los 120 temas (msg 802).
+  - Palabras: `temas_serie.py` (3 vol × 4 áreas × 10 temas × 9 = 1.080), enviado `entregables/palabras_120_temas.txt` (msgs 805–806).
+  - Verificador `tools/verificar_temas.py`: cantidades, ≤13 letras, A–Z/Ñ, sin repetidas en la serie, sin contenidas por tema, BAD_ES (groserías/dobles sentidos regionales; úsese también para el relleno de grilla).
+  - Reemplazadas por el filtro: CAFETERA, GUACAMOLE, CAPULLOS (capullo), PORTON (orto), CAPOT, PIJAMA (pija).
+  - Pendiente: medir las palabras largas en la lista a 16 pt. Esperando OK para armar el Vol. 1.
