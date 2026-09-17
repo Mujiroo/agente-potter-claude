@@ -262,6 +262,114 @@ def cover_ab():
     return "".join(o)
 
 
+# ---------------------------------------------------------------- D · Talavera
+def azulejo(x, y, sz, azul="#1D4E9E", amarillo="#F2B705", fondo="#FFFDF7"):
+    c = sz / 2
+    o = [f'<rect x="{x}" y="{y}" width="{sz}" height="{sz}" fill="{fondo}" stroke="{azul}" stroke-width="{sz*0.05:.1f}"/>',
+         f'<circle cx="{x+c}" cy="{y+c}" r="{sz*0.16:.1f}" fill="{amarillo}"/>']
+    for k in range(8):
+        a = k * math.pi / 4
+        o.append(f'<ellipse cx="{x+c+sz*0.24*math.cos(a):.1f}" cy="{y+c+sz*0.24*math.sin(a):.1f}" rx="{sz*0.09:.1f}" ry="{sz*0.05:.1f}" '
+                 f'fill="{azul}" transform="rotate({k*45} {x+c+sz*0.24*math.cos(a):.1f} {y+c+sz*0.24*math.sin(a):.1f})"/>')
+    for dx, dy in [(0, 0), (sz, 0), (0, sz), (sz, sz)]:
+        o.append(f'<circle cx="{x+dx}" cy="{y+dy}" r="{sz*0.14:.1f}" fill="{azul}"/>')
+    o.append(f'<circle cx="{x+c}" cy="{y+c}" r="{sz*0.06:.1f}" fill="{azul}"/>')
+    return "".join(o)
+
+
+def cover_d():
+    blanco, azul, amarillo, ink = "#FFFDF7", "#1D4E9E", "#F2B705", "#16284F"
+    cx = W / 2
+    sz = W / 7
+    tiles = [azulejo(i * sz, 0, sz) for i in range(7)] + [azulejo(i * sz, H - sz, sz) for i in range(7)]
+    o = [f'<rect width="{W}" height="{H}" fill="{blanco}"/>', "".join(tiles),
+         f'<text x="{cx}" y="{sz+62}" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{ink}">PETER &amp; CARDU</text>',
+         "".join(f'<text x="{cx+dx}" y="{sz+180+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="112" '
+                 f'textLength="{W-120}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>' for dx, dy, col in [(5, 5, amarillo), (0, 0, azul)]),
+         f'<text x="{cx}" y="{sz+246}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="50" letter-spacing="4" fill="{ink}">SUDOKU · LABERINTOS</text>',
+         f'<text x="{cx}" y="{sz+318}" text-anchor="middle" font-family="{SCRIPT}" font-size="66" fill="{azul}">Pasatiempos Tranquilos</text>',
+         pill(cx, sz + 340, 560, 52, azul, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 22),
+         three_games(sz + 548, ink, "#FBE3A1", ink),
+         pill(cx - 70, H - sz - 112, 420, 72, amarillo, "LETRA GRANDE", ink, 38),
+         f'<circle cx="{cx+235}" cy="{H-sz-76}" r="54" fill="{azul}"/>',
+         f'<text x="{cx+235}" y="{H-sz-70}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="44" fill="#FFFFFF">70</text>',
+         f'<text x="{cx+235}" y="{H-sz-47}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="11" fill="#FFFFFF">PASATIEMPOS</text>']
+    return "".join(o)
+
+
+# ---------------------------------------------------------------- E · Lotería
+def carta(x, y, w, h, num, nombre, contenido, borde="#1B1B1B", fondo="#FFFDF4", color="#C8102E"):
+    return (f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="12" fill="{fondo}" stroke="{borde}" stroke-width="7"/>'
+            f'<rect x="{x+14}" y="{y+14}" width="{w-28}" height="{h-28}" rx="6" fill="none" stroke="{borde}" stroke-width="2.5"/>'
+            f'<text x="{x+28}" y="{y+52}" font-family="{SERIF}" font-weight="700" font-size="30" fill="{color}">{num}</text>'
+            f'{contenido}'
+            f'<text x="{x+w/2}" y="{y+h-30}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" letter-spacing="1" fill="{borde}">{nombre}</text>')
+
+
+def cover_e():
+    rojo, verde, amarillo, crema, ink = "#C8102E", "#00845A", "#F4B400", "#FFF6E3", "#1B1B1B"
+    cx = W / 2
+    stripes = "".join(f'<rect x="{i*W/12}" y="0" width="{W/12+1}" height="{H}" fill="{c}" opacity=".10"/>' for i, c in
+                      zip(range(12), [rojo, amarillo, verde] * 4))
+    cw, ch = 250, 340
+    xs = [cx - 1.5 * cw - 16, cx - cw / 2, cx + cw / 2 + 16]
+    y0 = 560
+    cards = [carta(xs[0], y0, cw, ch, "1", "LA SOPA", f'<g transform="translate({xs[0]+cw/2-93} {y0+118}) scale(0.78)">{mini_grid(14, 14, ink, "#FBE3A1")}</g>'),
+             carta(xs[1], y0 + 18, cw, ch, "2", "EL SUDOKU", f'<g transform="translate({xs[1]+cw/2-88} {y0+90}) scale(0.78)">{mini_sudoku(0, 0, ink)}</g>'),
+             carta(xs[2], y0, cw, ch, "3", "EL LABERINTO", f'<g transform="translate({xs[2]+cw/2-96} {y0+84}) scale(0.70)">{mini_maze(10, 10, ink, "#FBE3A1")}</g>')]
+    o = [f'<rect width="{W}" height="{H}" fill="{crema}"/>', stripes,
+         f'<text x="{cx}" y="100" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{ink}">PETER &amp; CARDU</text>',
+         f'<text x="{cx}" y="175" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{verde}">Pasatiempos Tranquilos</text>',
+         "".join(f'<text x="{cx+dx}" y="{300+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="118" '
+                 f'textLength="{W-110}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>' for dx, dy, col in [(6, 6, amarillo), (0, 0, rojo)]),
+         f'<text x="{cx}" y="370" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="54" letter-spacing="4" fill="{ink}">SUDOKU · LABERINTOS</text>',
+         pill(cx, 400, 560, 54, verde, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 23),
+         f'<text x="{cx}" y="520" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="34" fill="{ink}">¡Lotería de pasatiempos!</text>',
+         "".join(cards),
+         f'<rect x="0" y="{H-150}" width="{W}" height="150" fill="{rojo}"/>',
+         f'<text x="{cx}" y="{H-86}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="3" fill="#FFFFFF">LETRA GRANDE</text>',
+         f'<text x="{cx}" y="{H-44}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{amarillo}">70 pasatiempos · con soluciones</text>']
+    return "".join(o)
+
+
+# ---------------------------------------------------------------- F · Atardecer con bugambilias
+def bugambilia(cx, cy, r, col="#C2185B", col2="#E91E63"):
+    rng = random.Random(int(cx * 7 + cy))
+    o = []
+    for _ in range(18):
+        a, d = rng.random() * 2 * math.pi, rng.random() * r
+        x, y, rr = cx + d * math.cos(a), cy + d * math.sin(a), r * (0.18 + rng.random() * 0.12)
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rr:.1f}" fill="{col if rng.random()<0.5 else col2}" opacity=".9"/>')
+    for _ in range(6):
+        a, d = rng.random() * 2 * math.pi, r * (0.8 + rng.random() * 0.4)
+        x, y = cx + d * math.cos(a), cy + d * math.sin(a)
+        o.append(f'<ellipse cx="{x:.1f}" cy="{y:.1f}" rx="{r*0.22:.1f}" ry="{r*0.1:.1f}" fill="#3E7B3E" transform="rotate({rng.random()*180:.0f} {x:.1f} {y:.1f})"/>')
+    return "".join(o)
+
+
+def cover_f():
+    ink, blanco, rosa = "#2B1B17", "#FFFFFF", "#C2185B"
+    cx = W / 2
+    o = ['<defs><linearGradient id="cielo" x1="0" y1="0" x2="0" y2="1">'
+         '<stop offset="0" stop-color="#F9A03F"/><stop offset=".55" stop-color="#F7C59F"/><stop offset="1" stop-color="#FDEBD3"/></linearGradient></defs>',
+         f'<rect width="{W}" height="{H}" fill="url(#cielo)"/>',
+         f'<circle cx="{cx}" cy="470" r="150" fill="#FFE08A" opacity=".85"/>',
+         f'<path d="M0,500 Q200,420 420,480 Q640,540 {W},450 L{W},{H} L0,{H} Z" fill="#8DB580" opacity=".55"/>',
+         f'<path d="M0,560 Q260,500 520,550 Q720,590 {W},540 L{W},{H} L0,{H} Z" fill="#6E9E63" opacity=".45"/>',
+         bugambilia(20, 30, 80), bugambilia(W - 20, 30, 80), bugambilia(30, H - 40, 85), bugambilia(W - 30, H - 40, 85),
+         f'<text x="{cx}" y="110" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{ink}">PETER &amp; CARDU</text>',
+         "".join(f'<text x="{cx+dx}" y="{250+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="116" '
+                 f'textLength="{W-140}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>' for dx, dy, col in [(5, 5, "#FFFFFF"), (0, 0, ink)]),
+         f'<text x="{cx}" y="318" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="52" letter-spacing="4" fill="{rosa}">SUDOKU · LABERINTOS</text>',
+         f'<text x="{cx}" y="392" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{ink}">Pasatiempos Tranquilos</text>',
+         pill(cx, 414, 520, 50, ink, "EN ESPAÑOL · PARA ADULTOS", "#FFFFFF", 22),
+         f'<rect x="40" y="520" width="{W-80}" height="370" rx="26" fill="#FFFFFF" opacity=".92"/>',
+         three_games(680, ink, "#F9C6D8", ink),
+         pill(cx, 930, 480, 84, rosa, "LETRA GRANDE", blanco, 44),
+         f'<text x="{cx}" y="1060" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="28" fill="{ink}">70 pasatiempos · con soluciones</text>']
+    return "".join(o)
+
+
 def page(svg, title):
     return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title><style>{font_css()}'
             f'@page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }} html,body{{margin:0;padding:0}} '
@@ -272,7 +380,7 @@ def page(svg, title):
 if __name__ == "__main__":
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab)]:
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f)]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)

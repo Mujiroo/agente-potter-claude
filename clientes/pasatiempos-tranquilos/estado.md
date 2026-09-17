@@ -34,3 +34,6 @@
   - Mini sopa CAFE/FLORES/PAN/SOL/AMOR limpia.
   - Esperando elección. Pendiente también: OK a las 40 listas.
 - 21:25 Pedro eligió «mezcla A con B» (msg 768). `cover_ab()` en `tools/portadas_opciones.py`, PNG `entregables/portadas/AB-mezcla.png`, enviado. Esperando aprobación/ajustes. Siguen pendientes las 40 listas.
+- 21:30 Pedro pide más opciones (msg 772). Nuevas: D Talavera, E Lotería (cartas «La Sopa», «El Sudoku», «El Laberinto»), F Atardecer con bugambilias. Hoja `entregables/portadas/hoja2.png` con miniaturas junto a A+B.
+  - Corregidos solapes: pill/etiquetas en D, contenido de las cartas en E, bugambilias sobre el título en F.
+  - Ranking sugerido: E > A+B > D. Esperando elección.
