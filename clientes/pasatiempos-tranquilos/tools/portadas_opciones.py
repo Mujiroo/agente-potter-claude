@@ -277,11 +277,10 @@ def azulejo(x, y, sz, azul="#1D4E9E", amarillo="#F2B705", fondo="#FFFDF7"):
     return "".join(o)
 
 
-def cover_d():
-    blanco, azul, amarillo, ink = "#FFFDF7", "#1D4E9E", "#F2B705", "#16284F"
+def cover_d(azul="#1D4E9E", amarillo="#F2B705", ink="#16284F", hi="#FBE3A1", blanco="#FFFDF7", pill_txt=None):
     cx = W / 2
     sz = W / 7
-    tiles = [azulejo(i * sz, 0, sz) for i in range(7)] + [azulejo(i * sz, H - sz, sz) for i in range(7)]
+    tiles = [azulejo(i * sz, 0, sz, azul, amarillo, blanco) for i in range(7)] + [azulejo(i * sz, H - sz, sz, azul, amarillo, blanco) for i in range(7)]
     o = [f'<rect width="{W}" height="{H}" fill="{blanco}"/>', "".join(tiles),
          f'<text x="{cx}" y="{sz+62}" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{ink}">PETER &amp; CARDU</text>',
          "".join(f'<text x="{cx+dx}" y="{sz+180+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="112" '
@@ -289,8 +288,8 @@ def cover_d():
          f'<text x="{cx}" y="{sz+246}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="50" letter-spacing="4" fill="{ink}">SUDOKU · LABERINTOS</text>',
          f'<text x="{cx}" y="{sz+318}" text-anchor="middle" font-family="{SCRIPT}" font-size="66" fill="{azul}">Pasatiempos Tranquilos</text>',
          pill(cx, sz + 340, 560, 52, azul, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 22),
-         three_games(sz + 548, ink, "#FBE3A1", ink),
-         pill(cx - 70, H - sz - 112, 420, 72, amarillo, "LETRA GRANDE", ink, 38),
+         three_games(sz + 548, ink, hi, ink),
+         pill(cx - 70, H - sz - 112, 420, 72, amarillo, "LETRA GRANDE", pill_txt or ink, 38),
          f'<circle cx="{cx+235}" cy="{H-sz-76}" r="54" fill="{azul}"/>',
          f'<text x="{cx+235}" y="{H-sz-70}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="44" fill="#FFFFFF">70</text>',
          f'<text x="{cx+235}" y="{H-sz-47}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="11" fill="#FFFFFF">PASATIEMPOS</text>']
@@ -306,17 +305,16 @@ def carta(x, y, w, h, num, nombre, contenido, borde="#1B1B1B", fondo="#FFFDF4", 
             f'<text x="{x+w/2}" y="{y+h-30}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" letter-spacing="1" fill="{borde}">{nombre}</text>')
 
 
-def cover_e():
-    rojo, verde, amarillo, crema, ink = "#C8102E", "#00845A", "#F4B400", "#FFF6E3", "#1B1B1B"
+def cover_e(rojo="#C8102E", verde="#00845A", amarillo="#F4B400", crema="#FFF6E3", ink="#1B1B1B", sub=None):
     cx = W / 2
     stripes = "".join(f'<rect x="{i*W/12}" y="0" width="{W/12+1}" height="{H}" fill="{c}" opacity=".10"/>' for i, c in
                       zip(range(12), [rojo, amarillo, verde] * 4))
     cw, ch = 250, 340
     xs = [cx - 1.5 * cw - 16, cx - cw / 2, cx + cw / 2 + 16]
     y0 = 560
-    cards = [carta(xs[0], y0, cw, ch, "1", "LA SOPA", f'<g transform="translate({xs[0]+cw/2-93} {y0+118}) scale(0.78)">{mini_grid(14, 14, ink, "#FBE3A1")}</g>'),
-             carta(xs[1], y0 + 18, cw, ch, "2", "EL SUDOKU", f'<g transform="translate({xs[1]+cw/2-88} {y0+90}) scale(0.78)">{mini_sudoku(0, 0, ink)}</g>'),
-             carta(xs[2], y0, cw, ch, "3", "EL LABERINTO", f'<g transform="translate({xs[2]+cw/2-96} {y0+84}) scale(0.70)">{mini_maze(10, 10, ink, "#FBE3A1")}</g>')]
+    cards = [carta(xs[0], y0, cw, ch, "1", "LA SOPA", color=rojo, contenido=f'<g transform="translate({xs[0]+cw/2-93} {y0+118}) scale(0.78)">{mini_grid(14, 14, ink, "#FBE3A1")}</g>'),
+             carta(xs[1], y0 + 18, cw, ch, "2", "EL SUDOKU", color=rojo, contenido=f'<g transform="translate({xs[1]+cw/2-88} {y0+90}) scale(0.78)">{mini_sudoku(0, 0, ink)}</g>'),
+             carta(xs[2], y0, cw, ch, "3", "EL LABERINTO", color=rojo, contenido=f'<g transform="translate({xs[2]+cw/2-96} {y0+84}) scale(0.70)">{mini_maze(10, 10, ink, "#FBE3A1")}</g>')]
     o = [f'<rect width="{W}" height="{H}" fill="{crema}"/>', stripes,
          f'<text x="{cx}" y="100" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{ink}">PETER &amp; CARDU</text>',
          f'<text x="{cx}" y="175" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{verde}">Pasatiempos Tranquilos</text>',
@@ -328,7 +326,7 @@ def cover_e():
          "".join(cards),
          f'<rect x="0" y="{H-150}" width="{W}" height="150" fill="{rojo}"/>',
          f'<text x="{cx}" y="{H-86}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="56" letter-spacing="3" fill="#FFFFFF">LETRA GRANDE</text>',
-         f'<text x="{cx}" y="{H-44}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{amarillo}">70 pasatiempos · con soluciones</text>']
+         f'<text x="{cx}" y="{H-44}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{sub or amarillo}">70 pasatiempos · con soluciones</text>']
     return "".join(o)
 
 
@@ -441,6 +439,19 @@ def cover_f_chocolate():
     return cover_f2(fondo=("#2A1810", "#43271A", "#5E3824"), panel="#23140D", papel="#301C12", resaltado="#6E5424", noche="#23140D")
 
 
+# ---------------------------------------------------------------- D y E en 5 colores (Pedro, 17-sep, msg 787)
+D_COLORES = [("D1-azul-cobalto", "Azul cobalto", dict()),
+             ("D2-verde-jade", "Verde jade", dict(azul="#1F6B4A", amarillo="#E8A33D", ink="#15382A", hi="#F6DDB0")),
+             ("D3-terracota", "Terracota", dict(azul="#A8432A", amarillo="#1C8C8C", ink="#4A1E12", hi="#BFE3E0", pill_txt="#FFFFFF")),
+             ("D4-vino", "Vino", dict(azul="#7A1E3A", amarillo="#E2A400", ink="#3D0F1E", hi="#F6E0A0")),
+             ("D5-turquesa", "Turquesa", dict(azul="#0F6E7C", amarillo="#E4572E", ink="#0B3A42", hi="#F8CDBE"))]
+E_COLORES = [("E1-clasica", "Clásica roja", dict()),
+             ("E2-rosa-mexicano", "Rosa mexicano", dict(rojo="#C2255C", verde="#137C7C", amarillo="#E2A400")),
+             ("E3-azul", "Azul", dict(rojo="#1D4E9E", verde="#C8102E", amarillo="#F4B400")),
+             ("E4-naranja", "Naranja y morado", dict(rojo="#D9480F", verde="#5B2A86", amarillo="#F2B705", sub="#FFF6E3")),
+             ("E5-verde", "Verde", dict(rojo="#00704A", verde="#C8102E", amarillo="#F4B400"))]
+
+
 def page(svg, title):
     return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title><style>{font_css()}'
             f'@page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }} html,body{{margin:0;padding:0}} '
@@ -451,7 +462,8 @@ def page(svg, title):
 if __name__ == "__main__":
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f), ("F2-atardecer-dorado", cover_f2), ("F3-atardecer-calido", cover_f3), ("F4-verde", cover_f_verde), ("F5-berenjena", cover_f_berenjena), ("F6-chocolate", cover_f_chocolate)]:
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab), ("D-talavera", cover_d), ("E-loteria", cover_e), ("F-atardecer", cover_f), ("F2-atardecer-dorado", cover_f2), ("F3-atardecer-calido", cover_f3), ("F4-verde", cover_f_verde), ("F5-berenjena", cover_f_berenjena), ("F6-chocolate", cover_f_chocolate)] + \
+            [(n, lambda k=k: cover_d(**k)) for n, _l, k in D_COLORES] + [(n, lambda k=k: cover_e(**k)) for n, _l, k in E_COLORES]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)

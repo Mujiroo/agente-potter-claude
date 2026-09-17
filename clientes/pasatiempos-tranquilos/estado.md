@@ -43,3 +43,8 @@
   - Lámina con F en 5 colores (`entregables/portadas/hoja3.png`; `cover_f2` parametrizada: azul, vino, verde, berenjena, chocolate).
   - Propuesta de serie: Vol. 1 Hogar y Sabores (vino) · Vol. 2 Fiestas y Tradiciones (berenjena) · Vol. 3 Naturaleza y Recuerdos (verde). 40 temas cada uno, 120 en total, sin repetir palabras.
   - Pregunté si aprueba temas/colores y si parto por el Vol. 1 completo.
+- 17-sep 08:54 Pedro pide «5 opciones de la d, e y f» (msg 787). Lo interpreté como 5 colores de cada una (como la F).
+  - `cover_d`/`cover_e` parametrizadas; paletas en `D_COLORES`/`E_COLORES` (`tools/portadas_opciones.py`).
+  - PNG D1–D5, E1–E5 y láminas `hoja_D.png`/`hoja_E.png`; la F se reenvió con `hoja3.png` (msgs 790–793).
+  - Contraste corregido: D3 (texto blanco en pill turquesa) y E4 (subtítulo crema sobre naranja).
+  - Recomendé E1·E2·E5 para los 3 volúmenes. Pregunté si en vez de colores quería 5 diseños distintos. Esperando elección.
