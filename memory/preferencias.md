@@ -64,7 +64,11 @@ Ver [[rol]], [[pedro]].
     - impuestos, SII y facturas de Tamarama o los campos;
     - contraseñas y códigos de verificación.
   - **(3) Terceros.** Nunca guardar datos personales de otras personas: como mucho, el nombre de la empresa (sin nombre del contacto, correo ni teléfono). No escribirles ni reenviarles nada sin su OK.
-  - **(5) Correo.** Además de pedir permiso por tarea: **no descargar adjuntos** salvo que lo pida para esa tarea, y **borrar las descargas** al terminar.
+  - **(5) Correo.** Además de pedir permiso por tarea: **no descargar adjuntos** sin su permiso.
+    - Se pide **por cada adjunto y por esa sola vez**, diciendo cuál y para qué; la próxima vez se vuelve a preguntar (confirmado msg 901–902).
+    - Al terminar, borrar la descarga y no guardar su contenido.
+    - Si el adjunto cae en un tema vetado, no se abre aunque él lo haya pedido para la tarea; se le avisa.
+    - Lo que Pedro manda directo por Telegram sí se puede abrir.
   - **(7) Revisión mensual.** Cron el día 1 de cada mes: le mando la lista de todo lo guardado (memoria y carpetas) para borrar lo que sobre.
   - Pendientes de Pedro:
     - (1) quitar conexiones de Composio que no se usan (OneDrive, Google Drive/Sheets). Lo revisará él.
