@@ -83,3 +83,13 @@
   - `p1(fonts=...)`, `TIPOS`, `fonts_css()` en `portadas_v2.py`. `three_games(family=)` en `portadas_opciones.py`.
   - Enviadas 5 combinaciones A–E (msgs 865–873), PNG en `entregables/portadas/tipografia/`. Las 5 probadas en PDF: 0 Type3.
   - Recomendé D (Lilita One + Bree Serif + Oleo Script); alternativa, A (Poppins). Esperando elección. Después: rehacer portada completa y serie.
+- 17-sep 12:25 Pedro elige **tipografía E** (Archivo Black + Bree Serif + Caveat, msg 874) y pide «prepara el libro completo para revisarlo» (msg 875).
+  - `portada_final_es.py` usa `FONTS` = T5. `sello()` con textLength para que «3 EN 1» no se salga del círculo. `<b>` de la contratapa en rojo oscuro (Bree Serif tiene un solo peso).
+  - Portadilla, «Cómo jugar» y página de gracias del interior con Bree Serif / Archivo Black (`TIPO_E` en `generar_es.py`). Seed 12 igual: puzzles sin cambios, verificador 0/0.
+  - `tools/revision_es.py`: PDF de revisión = frente + interior + contratapa (124 págs.).
+  - Enviados (msgs 876–883):
+    - `Pasatiempos_Vol1_REVISION_libro_completo.pdf`
+    - `Pasatiempos_Vol1_portada.pdf` (17,5247×11,25", 0 Type3)
+    - `Pasatiempos_Vol1_interior_8.5x11.pdf` (122 págs., 0 Type3)
+    - `preview_portada_completa.png`
+  - Esperando revisión/OK y colores de la serie. Después: ficha KDP.

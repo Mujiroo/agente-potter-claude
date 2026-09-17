@@ -47,7 +47,8 @@ def big(text, y, size, fill, stroke=None, sw=0, family=SANS, tl=None, shadow=Non
 
 def sello(cx, cy, r, fill, ring, l1, l2, c1, c2, family=SANS):
     return (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}" stroke="{ring}" stroke-width="6"/>'
-            f'<text x="{cx}" y="{cy+8}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{r*0.56:.0f}" fill="{c1}">{l1}</text>'
+            f'<text x="{cx}" y="{cy+8}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{r*0.56:.0f}" '
+            f'textLength="{r*1.5:.0f}" lengthAdjust="spacingAndGlyphs" fill="{c1}">{l1}</text>'
             f'<text x="{cx}" y="{cy+r*0.52:.0f}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{r*0.22:.0f}" fill="{c2}">{l2}</text>')
 
 
@@ -72,7 +73,7 @@ def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL, fon
         three_games(612, "#222222", am, "#222222", family=f["sub"]),
         t(CX, 872, f["vol_size"], "#FFFFFF", vol, f["sub"]),
         f'<rect x="0" y="{H-215}" width="{W}" height="130" fill="{am}"/>',
-        t(CX, H - 125, 82, rojo, "LETRA GRANDE", f["bold"], ls=4),
+        t(CX, H - 125, 82, rojo, "LETRA GRANDE", f["bold"], ls=f.get("big_ls", 4)),
         t(CX, H - 42, 30, "#FFFFFF", "70 pasatiempos · con soluciones", f["sub"]),
     ])
 
@@ -197,7 +198,7 @@ TIPOS = [("T1-poppins", "A · Moderna", dict(title="Poppins Black", sub="Poppins
          ("T2-fredoka", "B · Redondeada", dict(title="Fredoka", sub="Fredoka", script="Pacifico", bold="Fredoka", script_size=62, sub_size=58, ls=3)),
          ("T3-dmserif", "C · Editorial", dict(title="DM Serif Display", sub="Poppins", script="Lobster", bold="Poppins", title_size=128, sub_size=50, script_size=66, vol_size=46, ls=3)),
          ("T4-lilita", "D · Cartel latino", dict(title="Lilita One", sub="Bree Serif", script="Oleo Script", bold="Lilita One", title_size=132, script_size=66, ls=3)),
-         ("T5-archivo", "E · Impacto", dict(title="Archivo Black", sub="Bree Serif", script="Caveat, cursive", bold="Archivo Black", title_size=118, ls=3))]
+         ("T5-archivo", "E · Impacto", dict(title="Archivo Black", sub="Bree Serif", script="Caveat, cursive", bold="Archivo Black", title_size=118, ls=3, big_ls=2))]
 
 DISENOS = [("1-rojo-3en1", "Rojo 3 en 1", p1), ("2-jardin-alegre", "Jardín alegre", p2), ("3-cocina-cozy", "Cocina cozy", p3),
            ("4-tablero-70", "Tablero 70", p4), ("5-loteria-grande", "Lotería grande", p5)]

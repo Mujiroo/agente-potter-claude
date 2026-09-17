@@ -20,7 +20,9 @@ from portada_cozy import BLEED, PAPER, U, font_css, letter_texture  # noqa: E402
 import portadas_v2 as V2  # noqa: E402
 
 ROJO, OSC, AM, AZUL = "#C62828", "#7F1414", "#FFD54F", "#1E3A8A"
-SERIF, SANS, SCRIPT = V2.SERIF, V2.SANS, V2.SCRIPT
+# Tipografía E elegida por Pedro (17-sep, msg 874): Archivo Black + Bree Serif + Caveat
+FONTS = dict(next(k for n, _l, k in V2.TIPOS if n == "T5-archivo"))
+SERIF, SANS, SCRIPT = FONTS["sub"], FONTS["bold"], FONTS["script"]
 BARCODE = (2.0 * U, 1.2 * U)  # ancho, alto
 BARCODE_MARGIN = 0.25 * U     # desde el corte inferior y desde el lomo
 
@@ -37,9 +39,9 @@ def texture(x0, y0, w, h, seed=28):
 def front(x0, w, H):
     """El diseño 1 tal cual (mide W = 8,75" con sangrado); si w es mayor, se extiende el fondo por el borde exterior."""
     return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="{ROJO}"/>'
-            f'<g transform="translate({x0} 0)">{V2.p1()}</g>'
+            f'<g transform="translate({x0} 0)">{V2.p1(fonts=FONTS)}</g>'
             f'<rect x="{x0 + V2.W - 1}" y="{H-215}" width="{w - V2.W + 1}" height="130" fill="{AM}"/>'
-            if w > V2.W else f'<g transform="translate({x0} 0)">{V2.p1()}</g>')
+            if w > V2.W else f'<g transform="translate({x0} 0)">{V2.p1(fonts=FONTS)}</g>')
 
 
 def back(x0, w, H, cv, trim_right):
@@ -87,15 +89,16 @@ def main(src, dst):
            + front(fx - b, tw * U + 2 * b + EXTRA, H)
            + spine(b + tw * U, sw, H, cv))
     doc = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Pasatiempos Tranquilos Vol. 1 (portada)</title><style>
-{font_css()}
+{font_css()}{V2.fonts_css()}
 @page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }}
 html, body {{ margin: 0; padding: 0; }}
 svg {{ display: block; width: {W/U:.4f}in; height: {H/U:.4f}in; }}
-.backtext {{ font-family: 'Liberation Sans', Arial, sans-serif; font-size: 25px; line-height: 1.38; color: #1B1B1B; }}
+.backtext {{ font-family: 'Bree Serif', Georgia, serif; font-size: 25px; line-height: 1.38; color: #1B1B1B; }}
 .backtext p {{ margin: 0 0 12px; }}
 .backtext ul {{ margin: 6px 0 10px; padding: 0; list-style: none; }}
 .backtext li {{ margin-bottom: 6px; padding-left: 30px; position: relative; }}
 .backtext li::before {{ content: ""; position: absolute; left: 3px; top: 10px; width: 13px; height: 13px; border-radius: 50%; background: {ROJO}; }}
+.backtext b {{ color: {OSC}; }}
 .backtext .close {{ font-weight: 700; margin-top: 10px; color: {OSC}; }}
 </style></head><body>
 <svg xmlns="http://www.w3.org/2000/svg" data-spine="{sw/U:.4f}" data-trim-w="{(W-EXTRA)/U:.4f}" viewBox="0 0 {W:.2f} {H:.2f}">{svg}</svg>

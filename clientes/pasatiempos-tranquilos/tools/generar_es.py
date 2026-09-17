@@ -224,11 +224,17 @@ def main(src, dst):
     if book.get("thanks_page"):
         page(pagina2.thanks_page(book), "center")
     from portada_cozy import font_css
+    from portadas_v2 import fonts_css as _v2fonts
     fonts = font_css()
+    V2FONTS = _v2fonts()
+    # tipografía E de la portada (Pedro, 17-sep, msg 874) en portadilla y separador de soluciones
+    TIPO_E = (".title-page .tp-author, .title-page .tp-sub, .title-page .tp-vol { font-family: 'Bree Serif', serif; }"
+              ".title-page .tp-title { font-family: 'Archivo Black', sans-serif; font-weight: 400; letter-spacing: 1px; }"
+              ".howbox, .p3 .howbox, .thanks .sign { font-family: 'Bree Serif', serif; }")
     with open(dst, "w", encoding="utf-8") as f:
         f.write(f'<!doctype html><html lang="es"><head><meta charset="utf-8">'
                 f'<title>{html.escape(book["title"])} (interior)</title>'
-                f'<style>{fonts}{css(w, h)}{pagina2.css()}</style></head><body>{"".join(pages)}</body></html>')
+                f'<style>{fonts}{V2FONTS}{css(w, h)}{pagina2.css()}{TIPO_E}</style></head><body>{"".join(pages)}</body></html>')
     print(f"{len(pages)} páginas {w}x{h} | sopas {wi} · sudokus {si} · laberintos {mi} -> {dst}")
 
 
