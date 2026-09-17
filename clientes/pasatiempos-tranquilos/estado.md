@@ -48,3 +48,7 @@
   - PNG D1–D5, E1–E5 y láminas `hoja_D.png`/`hoja_E.png`; la F se reenvió con `hoja3.png` (msgs 790–793).
   - Contraste corregido: D3 (texto blanco en pill turquesa) y E4 (subtítulo crema sobre naranja).
   - Recomendé E1·E2·E5 para los 3 volúmenes. Pregunté si en vez de colores quería 5 diseños distintos. Esperando elección.
+- 17-sep 09:37 Pedro: «quizá será E» (portada Lotería). Pide el listado de temas de lo general a lo particular, pensado para todo el público (msg 794).
+  - Enviado (msgs 796–801): público → criterios → 3 volúmenes → 4 áreas × 10 temas = 120 temas. Detalle en `temas_serie.md`.
+  - Se pasó de un listado muy mexicano a uno pan-latino. Del borrador quedan ~33 temas.
+  - Esperando OK/ajustes antes de armar las 9 palabras por tema.
