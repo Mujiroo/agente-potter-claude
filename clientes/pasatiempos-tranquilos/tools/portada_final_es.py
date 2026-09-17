@@ -38,7 +38,7 @@ def front(x0, w, H):
     """El diseño 1 tal cual (mide W = 8,75" con sangrado); si w es mayor, se extiende el fondo por el borde exterior."""
     return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="{ROJO}"/>'
             f'<g transform="translate({x0} 0)">{V2.p1()}</g>'
-            f'<rect x="{x0 + V2.W}" y="0" width="{max(0, w - V2.W)}" height="{H}" fill="{AM}"/>'
+            f'<rect x="{x0 + V2.W - 1}" y="{H-215}" width="{w - V2.W + 1}" height="130" fill="{AM}"/>'
             if w > V2.W else f'<g transform="translate({x0} 0)">{V2.p1()}</g>')
 
 

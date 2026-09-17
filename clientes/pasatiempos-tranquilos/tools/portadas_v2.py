@@ -31,10 +31,17 @@ def big(text, y, size, fill, stroke=None, sw=0, family=SANS, tl=None, shadow=Non
     out = []
     if shadow:
         out.append(f'<text x="{CX+dx}" y="{y+dx}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{size}" {tl} '
-                   f'fill="{shadow}" stroke="{shadow}" stroke-width="{sw}" stroke-linejoin="round">{text}</text>')
-    st = f'stroke="{stroke}" stroke-width="{sw}" stroke-linejoin="round" paint-order="stroke"' if stroke else ""
+                   f'fill="{shadow}">{text}</text>')
+    if stroke:
+        # contorno con 24 copias desplazadas en vez de stroke: Chrome pasa a Type 3 las fuentes con trazo, y KDP no las quiere
+        import math
+        r = sw / 2
+        for k in range(24):
+            a = k * math.pi / 12
+            out.append(f'<text x="{CX + r*math.cos(a):.2f}" y="{y + r*math.sin(a):.2f}" text-anchor="middle" font-family="{family}" '
+                       f'font-weight="700" font-size="{size}" {tl} fill="{stroke}">{text}</text>')
     out.append(f'<text x="{CX}" y="{y}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{size}" {tl} '
-               f'fill="{fill}" {st}>{text}</text>')
+               f'fill="{fill}">{text}</text>')
     return "".join(out)
 
 
@@ -64,7 +71,7 @@ def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL):
         t(CX, 872, 52, "#FFFFFF", vol),
         f'<rect x="0" y="{H-215}" width="{W}" height="130" fill="{am}"/>',
         t(CX, H - 125, 82, rojo, "LETRA GRANDE", SANS, ls=4),
-        t(CX, H - 34, 30, "#FFFFFF", "70 pasatiempos · con soluciones"),
+        t(CX, H - 42, 30, "#FFFFFF", "70 pasatiempos · con soluciones"),
     ])
 
 

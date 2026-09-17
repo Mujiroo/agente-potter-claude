@@ -73,3 +73,8 @@
   - Hay que declarar lo generado por IA; lo asistido, no. Límite de 3 títulos por día.
   - No hay fuente oficial sobre efecto en visibilidad.
   - Para nosotros: texto se declara como IA; imágenes «no» (vectoriales por código).
+- 17-sep 11:1x **Portada completa Vol. 1** enviada (msgs 857–859): `entregables/vol1/Pasatiempos_Vol1_portada.pdf` 17,5247×11,25", lomo 0,2747".
+  - Preview `preview_portada_completa.png`. Guías de corte, zona segura, lomo y código de barras revisadas.
+  - OJO: `agent-browser pdf` ignora @page. Se imprime con `~/.agent-browser/browsers/chrome-*/chrome --headless --no-sandbox --no-pdf-header-footer --print-to-pdf=...` + `calm-cozy/tools/ajustar_mediabox.py`. Interior regenerado igual y reenviado (msg 860): 122 págs., 612×792, 0 Type3.
+  - OJO: texto con `stroke` → Chrome lo pasa a Type3. `portadas_v2.big()` ahora hace el contorno con 24 copias desplazadas → 0 Type3.
+  - Esperando: OK al texto de contratapa y elección de colores Vol. 2 (morado/azul) y Vol. 3 (verde/turquesa). Después: ficha KDP en español.
