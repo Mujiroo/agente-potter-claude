@@ -235,6 +235,33 @@ def cover_c():
     return "".join(o)
 
 
+# ---------------------------------------------------------------- AB · mezcla elegida por Pedro (16-sep)
+def cover_ab():
+    cream, brown, terra, green, rosa, mostaza, turq = "#FBF3E4", "#3B2418", "#B5542C", "#2F6B4F", "#D6336C", "#E2A400", "#1C8C8C"
+    cx = W / 2
+    title = "".join(f'<text x="{cx+dx}" y="{300+dy}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="120" '
+                    f'textLength="{W-110}" lengthAdjust="spacingAndGlyphs" fill="{col}">SOPA DE LETRAS</text>'
+                    for dx, dy, col in [(6, 6, mostaza), (0, 0, terra)])
+    o = [f'<rect width="{W}" height="{H}" fill="{cream}"/>',
+         papel_picado(14, [rosa, turq, mostaza, green, terra], h=100),
+         f'<text x="{cx}" y="172" text-anchor="middle" font-family="{SERIF}" font-size="24" letter-spacing="6" fill="{brown}">PETER &amp; CARDU</text>',
+         title,
+         f'<text x="{cx}" y="368" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="54" letter-spacing="4" fill="{brown}">SUDOKU · LABERINTOS</text>',
+         pill(cx, 390, 560, 54, green, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 23),
+         f'<text x="{cx-78}" y="506" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{green}">Pasatiempos Tranquilos</text>',
+         f'<rect x="40" y="552" width="{W-80}" height="340" rx="26" fill="#FFFFFF" stroke="{terra}" stroke-width="3"/>',
+         three_games(698, brown, "#F6D38A", brown),
+         f'<circle cx="{W-122}" cy="510" r="64" fill="{mostaza}" stroke="{rosa}" stroke-width="7"/>',
+         f'<text x="{W-122}" y="522" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="54" fill="{brown}">70</text>',
+         f'<text x="{W-122}" y="546" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="12" fill="{brown}">PASATIEMPOS</text>',
+         f'<rect x="0" y="{H-150}" width="{W}" height="150" fill="{rosa}"/>',
+         f'<text x="{cx}" y="{H-84}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="58" letter-spacing="3" fill="#FFFFFF">LETRA GRANDE</text>',
+         f'<text x="{cx}" y="{H-42}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="26" fill="{mostaza}">con soluciones</text>',
+         jarrito(92, 940, 0.36), pan_dulce(W - 96, 952, 0.45),
+         cempasuchil(52, H - 75, 22), cempasuchil(W - 52, H - 75, 22)]
+    return "".join(o)
+
+
 def page(svg, title):
     return (f'<!doctype html><html><head><meta charset="utf-8"><title>{title}</title><style>{font_css()}'
             f'@page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }} html,body{{margin:0;padding:0}} '
@@ -245,7 +272,7 @@ def page(svg, title):
 if __name__ == "__main__":
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c)]:
+    for name, fn in [("A-cozy-latino", cover_a), ("B-llamativa", cover_b), ("C-floral-suave", cover_c), ("AB-mezcla", cover_ab)]:
         p = os.path.join(out, f"portada_{name}.html")
         open(p, "w", encoding="utf-8").write(page(fn(), name))
         print(p)

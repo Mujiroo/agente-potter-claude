@@ -33,3 +33,4 @@
   - Textura de B con seed 28, verificada sin groserías inglés+español en 8 direcciones (seed 21 formaba ASS/FUK/GAY).
   - Mini sopa CAFE/FLORES/PAN/SOL/AMOR limpia.
   - Esperando elección. Pendiente también: OK a las 40 listas.
+- 21:25 Pedro eligió «mezcla A con B» (msg 768). `cover_ab()` en `tools/portadas_opciones.py`, PNG `entregables/portadas/AB-mezcla.png`, enviado. Esperando aprobación/ajustes. Siguen pendientes las 40 listas.
