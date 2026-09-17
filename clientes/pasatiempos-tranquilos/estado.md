@@ -78,3 +78,8 @@
   - OJO: `agent-browser pdf` ignora @page. Se imprime con `~/.agent-browser/browsers/chrome-*/chrome --headless --no-sandbox --no-pdf-header-footer --print-to-pdf=...` + `calm-cozy/tools/ajustar_mediabox.py`. Interior regenerado igual y reenviado (msg 860): 122 págs., 612×792, 0 Type3.
   - OJO: texto con `stroke` → Chrome lo pasa a Type3. `portadas_v2.big()` ahora hace el contorno con 24 copias desplazadas → 0 Type3.
   - Esperando: OK al texto de contratapa y elección de colores Vol. 2 (morado/azul) y Vol. 3 (verde/turquesa). Después: ficha KDP en español.
+- 17-sep 12:22 Pedro (msg 864): le gustan las portadas; pide presentar y mejorar la tipografía.
+  - Descargadas 9 fuentes OFL de github.com/google/fonts a `tools/fonts/` (con sus OFL.txt): Poppins, Fredoka, Pacifico, DM Serif Display, Lobster, Lilita One, Bree Serif, Oleo Script, Archivo Black. Satisfy no bajó.
+  - `p1(fonts=...)`, `TIPOS`, `fonts_css()` en `portadas_v2.py`. `three_games(family=)` en `portadas_opciones.py`.
+  - Enviadas 5 combinaciones A–E (msgs 865–873), PNG en `entregables/portadas/tipografia/`. Las 5 probadas en PDF: 0 Type3.
+  - Recomendé D (Lilita One + Bree Serif + Oleo Script); alternativa, A (Poppins). Esperando elección. Después: rehacer portada completa y serie.

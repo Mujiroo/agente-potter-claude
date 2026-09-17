@@ -45,10 +45,10 @@ def big(text, y, size, fill, stroke=None, sw=0, family=SANS, tl=None, shadow=Non
     return "".join(out)
 
 
-def sello(cx, cy, r, fill, ring, l1, l2, c1, c2):
+def sello(cx, cy, r, fill, ring, l1, l2, c1, c2, family=SANS):
     return (f'<circle cx="{cx}" cy="{cy}" r="{r}" fill="{fill}" stroke="{ring}" stroke-width="6"/>'
-            f'<text x="{cx}" y="{cy+8}" text-anchor="middle" font-family="{SANS}" font-weight="700" font-size="{r*0.56:.0f}" fill="{c1}">{l1}</text>'
-            f'<text x="{cx}" y="{cy+r*0.52:.0f}" text-anchor="middle" font-family="{SANS}" font-weight="700" font-size="{r*0.22:.0f}" fill="{c2}">{l2}</text>')
+            f'<text x="{cx}" y="{cy+8}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{r*0.56:.0f}" fill="{c1}">{l1}</text>'
+            f'<text x="{cx}" y="{cy+r*0.52:.0f}" text-anchor="middle" font-family="{family}" font-weight="700" font-size="{r*0.22:.0f}" fill="{c2}">{l2}</text>')
 
 
 def t(x, y, s, fill, text, family=SERIF, weight=700, ls=0, anchor="middle"):
@@ -57,21 +57,23 @@ def t(x, y, s, fill, text, family=SERIF, weight=700, ls=0, anchor="middle"):
 
 
 # 1 ------------------------------------------------------------------ Rojo 3 en 1
-def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL):
+def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL, fonts=None):
+    f = dict(title=SANS, sub=SERIF, script=SCRIPT, bold=SANS, title_size=124, sub_size=58, script_size=72, vol_size=52, ls=3)
+    f.update(fonts or {})
     return "".join([
         f'<rect width="{W}" height="{H}" fill="{rojo}"/>', tex("#FFFFFF", 0.10),
-        t(CX, 72, 24, "#FFFFFF", "PETER &amp; CARDU", ls=6, weight=400),
-        t(CX - 70, 158, 72, am, "Pasatiempos Tranquilos", SCRIPT, 400),
-        sello(W - 108, 126, 62, am, "#FFFFFF", "3 EN 1", "JUEGOS", rojo, osc),
-        big("SOPA DE LETRAS", 300, 124, "#FFFFFF", osc, 12, tl=W - 90),
-        t(CX, 368, 58, "#FFFFFF", "SUDOKU · LABERINTOS", ls=3),
-        pill(CX, 392, 600, 56, azul, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 25),
+        t(CX, 72, 24, "#FFFFFF", "PETER &amp; CARDU", f["sub"], ls=6, weight=400),
+        t(CX - 70, 158, f["script_size"], am, "Pasatiempos Tranquilos", f["script"], 400),
+        sello(W - 108, 126, 62, am, "#FFFFFF", "3 EN 1", "JUEGOS", rojo, osc, f["bold"]),
+        big("SOPA DE LETRAS", 300, f["title_size"], "#FFFFFF", osc, 12, family=f["title"], tl=W - 90),
+        t(CX, 368, f["sub_size"], "#FFFFFF", "SUDOKU · LABERINTOS", f["sub"], ls=f["ls"]),
+        pill(CX, 392, 600, 56, azul, "EN ESPAÑOL · PARA ADULTOS MAYORES", "#FFFFFF", 25, f["sub"]),
         f'<rect x="36" y="478" width="{W-72}" height="330" rx="26" fill="#FFFFFF"/>',
-        three_games(612, "#222222", am, "#222222"),
-        t(CX, 872, 52, "#FFFFFF", vol),
+        three_games(612, "#222222", am, "#222222", family=f["sub"]),
+        t(CX, 872, f["vol_size"], "#FFFFFF", vol, f["sub"]),
         f'<rect x="0" y="{H-215}" width="{W}" height="130" fill="{am}"/>',
-        t(CX, H - 125, 82, rojo, "LETRA GRANDE", SANS, ls=4),
-        t(CX, H - 42, 30, "#FFFFFF", "70 pasatiempos · con soluciones"),
+        t(CX, H - 125, 82, rojo, "LETRA GRANDE", f["bold"], ls=4),
+        t(CX, H - 42, 30, "#FFFFFF", "70 pasatiempos · con soluciones", f["sub"]),
     ])
 
 
@@ -177,6 +179,26 @@ SERIE = [("S1-vol1-rojo", "Vol. 1 · Rojo", dict()),
          ("S4-vol3-verde", "Vol. 3 · Verde", dict(rojo="#2E7D32", osc="#1B4D1E", azul="#6A1B9A", vol="Vol. 3 · Naturaleza y Recuerdos")),
          ("S5-vol3-turquesa", "Vol. 3 · Turquesa", dict(rojo="#00796B", osc="#004D40", azul="#C62828", vol="Vol. 3 · Naturaleza y Recuerdos"))]
 
+# Tipografía (Pedro, 17-sep, msg 864): 5 combinaciones sobre el diseño 1. Fuentes OFL en tools/fonts.
+FONT_FILES = {"Poppins Black": "Poppins-Black.ttf", "Poppins": "Poppins-Bold.ttf", "Fredoka": "Fredoka-700.ttf",
+              "Pacifico": "Pacifico-Regular.ttf", "DM Serif Display": "DMSerifDisplay-Regular.ttf", "Lobster": "Lobster-Regular.ttf",
+              "Lilita One": "LilitaOne-Regular.ttf", "Bree Serif": "BreeSerif-Regular.ttf", "Oleo Script": "OleoScript-Bold.ttf",
+              "Archivo Black": "ArchivoBlack-Regular.ttf"}
+
+
+def fonts_css():
+    """Un archivo por familia, declarado en todos los pesos: Chrome no inventa negritas falsas (que salen Type 3)."""
+    d = os.path.join(os.path.dirname(os.path.abspath(__file__)), "fonts")
+    return "".join(f"@font-face {{ font-family: '{fam}'; src: url('file://{d}/{fn}'); font-weight: {w}; }}"
+                   for fam, fn in FONT_FILES.items() for w in (400, 700))
+
+
+TIPOS = [("T1-poppins", "A · Moderna", dict(title="Poppins Black", sub="Poppins", script="Caveat, cursive", bold="Poppins", sub_size=54, ls=2)),
+         ("T2-fredoka", "B · Redondeada", dict(title="Fredoka", sub="Fredoka", script="Pacifico", bold="Fredoka", script_size=62, sub_size=58, ls=3)),
+         ("T3-dmserif", "C · Editorial", dict(title="DM Serif Display", sub="Poppins", script="Lobster", bold="Poppins", title_size=128, sub_size=50, script_size=66, vol_size=46, ls=3)),
+         ("T4-lilita", "D · Cartel latino", dict(title="Lilita One", sub="Bree Serif", script="Oleo Script", bold="Lilita One", title_size=132, script_size=66, ls=3)),
+         ("T5-archivo", "E · Impacto", dict(title="Archivo Black", sub="Bree Serif", script="Caveat, cursive", bold="Archivo Black", title_size=118, ls=3))]
+
 DISENOS = [("1-rojo-3en1", "Rojo 3 en 1", p1), ("2-jardin-alegre", "Jardín alegre", p2), ("3-cocina-cozy", "Cocina cozy", p3),
            ("4-tablero-70", "Tablero 70", p4), ("5-loteria-grande", "Lotería grande", p5)]
 
@@ -205,7 +227,7 @@ if __name__ == "__main__":
     print("groserías en la textura:", check_textura() or "ninguna")
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
-    for name, _l, fn in DISENOS + [(n, l, (lambda k=k: p1(**k))) for n, l, k in SERIE]:
+    for name, _l, fn in DISENOS + [(n, l, (lambda k=k: p1(**k))) for n, l, k in SERIE] + [(n, l, (lambda k=k: p1(fonts=k))) for n, l, k in TIPOS]:
         p = os.path.join(out, f"portada_{name}.html")
-        open(p, "w", encoding="utf-8").write(page(fn(), name))
+        open(p, "w", encoding="utf-8").write(page(fn(), name).replace("<style>", "<style>" + fonts_css(), 1))
         print(p)

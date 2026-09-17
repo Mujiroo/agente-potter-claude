@@ -78,7 +78,7 @@ def mini_maze(x, y, ink, hi, cell=32, n=7, paper="#fff"):
     return "".join(out)
 
 
-def three_games(cy, ink, hi, label_ink, paper="#fff", labels=("SOPA DE LETRAS", "SUDOKU", "LABERINTOS"), rot=True):
+def three_games(cy, ink, hi, label_ink, paper="#fff", labels=("SOPA DE LETRAS", "SUDOKU", "LABERINTOS"), rot=True, family=None):
     cx = W / 2
     centers = [cx - 266, cx, cx + 266]
     items = [(mini_grid(centers[0] - 102, cy - 68, ink, hi, paper=paper), -4),
@@ -87,7 +87,7 @@ def three_games(cy, ink, hi, label_ink, paper="#fff", labels=("SOPA DE LETRAS", 
     out = []
     for (svg, r), x, lab in zip(items, centers, labels):
         out.append(f'<g transform="rotate({r if rot else 0} {x} {cy})">{svg}</g>')
-        out.append(f'<text x="{x}" y="{cy+170}" text-anchor="middle" font-family="{SERIF}" font-weight="700" font-size="25" '
+        out.append(f'<text x="{x}" y="{cy+170}" text-anchor="middle" font-family="{family or SERIF}" font-weight="700" font-size="25" '
                    f'letter-spacing="1" fill="{label_ink}">{lab}</text>')
     return "".join(out)
 
