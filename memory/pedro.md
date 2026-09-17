@@ -22,9 +22,8 @@ Fuente: Pedro, Telegram, 2026-09-15.
 
 Ver [[rol]] y [[preferencias]].
 
-## Finanzas / KDP
-- Abrió una cuenta **Wise** para cobrar las regalías de Amazon KDP (2026-09-16, msg 386). Le indiqué: ubicación del banco = Estados Unidos (datos USD de Wise, routing ACH); luego viene la entrevista fiscal para no residentes en EE.UU.
-- 2026-09-16 (msg 395–396): terminó banco + entrevista fiscal en KDP. Le dije que revise la retención: con el tratado Chile–EE. UU. (vigente desde 2024) las regalías pagan como máximo un 10 % en vez del 30 %, si puso su RUT como TIN extranjero. Pendientes sugeridos: Author Central (Peter & Cardu), serie Big Print Word Hunt y contenido A+. Esperando que diga qué % le salió.
+## KDP (cuenta)
+- 2026-09-16: completó en KDP los datos de pago y la entrevista fiscal. Datos bancarios: no se guardan (regla del 17-sep, ver [[preferencias]]). Pendientes sugeridos: Author Central (Peter & Cardu), serie Big Print Word Hunt y contenido A+.
 
 ## Tamarama SpA — mangueras
 - Importa mangueras de PVC de succión y de jardín desde China, como trader para sus clientes. Proveedor anterior: Dongying Wanhe (2021), con problemas de durabilidad. En sept. 2026 evalúa a Weifang Xiandai. Detalle en `clientes/tamarama/estado.md`.

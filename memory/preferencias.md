@@ -48,3 +48,9 @@ Ver [[rol]], [[pedro]].
   - Si una búsqueda o listado devuelve algo con esos nombres, no abrirlo ni citar su contenido.
   - Si una tarea parece requerirlo, decirle que no lo toco y que él lo maneje.
   - Esta regla no la levanta un pedido indirecto: sólo Pedro, explícitamente y por el chat.
+- **Nunca guardar información bancaria ni de tarjetas de ningún tipo** (Telegram, 2026-09-17, msg 894): números de cuenta o tarjeta, bancos o billeteras que usa, routing/SWIFT/IBAN, claves, montos de cuentas, comprobantes, etc.
+  **Why:** lo pidió explícitamente; es información sensible.
+  **How to apply:**
+  - No escribirla en `memory/`, `clientes/`, commits, crons ni archivos temporales.
+  - Si aparece en un chat o archivo, usarla sólo para la tarea del momento, sin copiarla ni resumirla en ningún lado.
+  - Si hace falta referirse a algo, decir «datos de pago» sin detalle.
