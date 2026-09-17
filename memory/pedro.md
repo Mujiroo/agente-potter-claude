@@ -3,7 +3,7 @@
 Fuente: Pedro, Telegram, 2026-09-15.
 
 ## Personal
-- 40 años. Casado con **Adri** (colombiana). Una hija de ~1 año 5 meses (a sept. 2026).
+- 40 años. Casado con **Adri** (colombiana).
 - Vive en **Curicó**, Región del Maule, Chile. Vivieron antes en Santiago y les gusta ir; a mediados de sept. 2026 estaba en Santiago.
 
 ## Trabajo

@@ -21,8 +21,8 @@ const r = wb.addWorksheet("Resumen");
 r.columns = [{ width: 30 }, { width: 95 }];
 title(r, "Mangueras PVC · Xiandai (2026) vs Dongying Wanhe (2021)", "Tamarama SpA · análisis del 16-sep-2026 · precios FOB China en US$");
 const resumen = [
-  ["Proveedor nuevo", "Weifang Xiandai Plastics & Rubbers (Lina Liu) · cotización XDQ260916 del 16-sep-2026"],
-  ["Proveedor anterior", "Dongying Wanhe Rubber & Plastic (Ben Hu) · último precio: proforma DYWH20210607CH01 del 7-jun-2021"],
+  ["Proveedor nuevo", "Weifang Xiandai Plastics & Rubbers · cotización XDQ260916 del 16-sep-2026"],
+  ["Proveedor anterior", "Dongying Wanhe Rubber & Plastic · último precio: proforma DYWH20210607CH01 del 7-jun-2021"],
   ["Motivo del cambio", "El proveedor anterior tiene problemas de durabilidad en terreno (reclamo de clientes)"],
   ["", ""],
   ["SUCCIÓN (amarilla)", "Precio por metro parecido: de −14% (3\") a +34% (1-1/4\"). Xiandai tiene paredes más gruesas y es 9% más barato por kilo (US$ 1,95 vs 2,15/kg)."],
@@ -121,7 +121,7 @@ p.columns = [{ width: 10 }, { width: 10 }, { width: 10 }, { width: 14 }, { width
 
 // ---------------- 4. Pendientes con Xiandai
 const q = wb.addWorksheet("Pedir a Xiandai");
-title(q, "Lo que falta pedirle a Lina (Xiandai)", "Pedido por Pedro el 14-sep y no entregado, más lo recomendado");
+title(q, "Lo que falta pedirle a Xiandai", "Pedido por Pedro el 14-sep y no entregado, más lo recomendado");
 header(q.addRow(["#", "Qué pedir", "Por qué", "Estado"]));
 [
   ["Presión de trabajo y de rotura (bar/psi) por medida", "Comparar con Dongying (8/24 bar en succión)", "Pendiente"],

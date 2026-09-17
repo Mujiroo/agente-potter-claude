@@ -54,3 +54,21 @@ Ver [[rol]], [[pedro]].
   - No escribirla en `memory/`, `clientes/`, commits, crons ni archivos temporales.
   - Si aparece en un chat o archivo, usarla sólo para la tarea del momento, sin copiarla ni resumirla en ningún lado.
   - Si hace falta referirse a algo, decir «datos de pago» sin detalle.
+- **Privacidad ampliada — aprobada por Pedro** (Telegram, 2026-09-17, msg 898, sobre mis recomendaciones del msg 897):
+  - **(2) Temas vetados.** No guardar, buscar ni resumir:
+    - documentos de identidad (RUT, carnet, pasaporte) de Pedro, Adri o su hija;
+    - **ningún dato de su hija** (es menor);
+    - salud de él o su familia;
+    - dirección de su casa y rutinas;
+    - datos de arrendatarios, trabajadores del campo, clientes o proveedores (RUT, teléfonos, correos, sueldos, deudas);
+    - impuestos, SII y facturas de Tamarama o los campos;
+    - contraseñas y códigos de verificación.
+  - **(3) Terceros.** Nunca guardar datos personales de otras personas: como mucho, el nombre de la empresa (sin nombre del contacto, correo ni teléfono). No escribirles ni reenviarles nada sin su OK.
+  - **(5) Correo.** Además de pedir permiso por tarea: **no descargar adjuntos** salvo que lo pida para esa tarea, y **borrar las descargas** al terminar.
+  - **(7) Revisión mensual.** Cron el día 1 de cada mes: le mando la lista de todo lo guardado (memoria y carpetas) para borrar lo que sobre.
+  - Pendientes de Pedro:
+    - (1) quitar conexiones de Composio que no se usan (OneDrive, Google Drive/Sheets). Lo revisará él.
+    - Decidir si se borra del historial git la mención antigua a su billetera de cobro KDP (preguntado en msg 895).
+  **Why:** proteger su privacidad y la de todas las personas con que se relaciona.
+  **How to apply:** si un dato de estas categorías aparece en una tarea, usarlo sólo en ese momento y no escribirlo en ningún archivo, commit ni cron. Ante la duda, no guardar y preguntar.
+  - Limpieza hecha el 17-sep: saqué la edad de su hija de [[pedro]] y los nombres/correos de contactos de proveedores de `clientes/tamarama/` (estado.md, excel_build.js y el .xlsx).
