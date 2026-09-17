@@ -41,6 +41,7 @@ Ver [[rol]], [[pedro]].
   - El archivo «Propiedades Pedro, Joaquin y Ramnoa» (nombre exacto del archivo, confirmado en msg 888).
   - El archivo «Gastos campo».
   - **La regla sigue aunque cambien de nombre** (msg 888): cualquier archivo con ese contenido (propiedades de Pedro/Joaquín/Ramnoa, gastos del campo) está vetado, se llame como se llame.
+  - **También cualquier archivo con nombre parecido** (msg 890): p. ej. variantes con «Propiedades», «Joaquin/Joaquín», «Ramnoa/Ramona» o «Gastos» + «campo». Ante la duda, no se abre y se le pregunta.
   - **Nunca** acceder, leer, abrir, buscar, listar, copiar, modificar ni resumir esa información: ni en OneDrive ni en ningún otro lugar (Drive, Gmail, Outlook, Sheets, archivos que aparezcan, etc.).
   **Why:** «eso solo lo manejo yo. Lo cambio yo, lo leo yo. Es 100 % privado».
   **How to apply:**
