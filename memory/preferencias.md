@@ -38,8 +38,9 @@ Ver [[rol]], [[pedro]].
   **Why:** la quiere limpia para copiarla/pegarla (mapa, GPS).
   **How to apply:** si pide una dirección, mandar una línea «Calle N°, Comuna». Si hay varias, listarlas breve y él elige; luego enviar la elegida sola.
 - **PROHIBIDO ABSOLUTO — información 100 % privada de Pedro** (Telegram, 2026-09-17, msg 884):
-  - «Propiedades Pedro, Joaquin y Ramnoa» (así lo escribió; puede ser «Ramona»).
-  - «Gastos campo».
+  - El archivo «Propiedades Pedro, Joaquin y Ramnoa» (nombre exacto del archivo, confirmado en msg 888).
+  - El archivo «Gastos campo».
+  - **La regla sigue aunque cambien de nombre** (msg 888): cualquier archivo con ese contenido (propiedades de Pedro/Joaquín/Ramnoa, gastos del campo) está vetado, se llame como se llame.
   - **Nunca** acceder, leer, abrir, buscar, listar, copiar, modificar ni resumir esa información: ni en OneDrive ni en ningún otro lugar (Drive, Gmail, Outlook, Sheets, archivos que aparezcan, etc.).
   **Why:** «eso solo lo manejo yo. Lo cambio yo, lo leo yo. Es 100 % privado».
   **How to apply:**
