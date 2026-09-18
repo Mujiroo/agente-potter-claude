@@ -125,28 +125,28 @@ def thanks_page(book):
     title = html.escape(book.get("series", book["title"]))
     return ('<div class="thanks">'
             f'{icon("cup", "0.8in")}<div class="t-script">¡Gracias!</div>'
-            f'<p>Gracias por regalarse un rato de calma con <i>{title}</i>. '
-            'Esperamos que estas páginas le hayan dado momentos tranquilos y felices.</p>'
-            '<p>Si le gustó este libro, le agradeceríamos mucho que dejara una breve reseña con su opinión sincera. '
+            f'<p>Gracias por regalarte un rato de calma con <i>{title}</i>. '
+            'Esperamos que estas páginas te hayan dado momentos tranquilos y felices.</p>'
+            '<p>Si te gustó este libro, te agradeceríamos mucho que dejaras una breve reseña con tu opinión sincera. '
             'Ayuda a que otras personas lo encuentren y nos anima a preparar el próximo volumen.</p>'
             f'<div class="sign">{html.escape(book.get("author", "").upper())}</div></div>')
 
 
 TIPS = [
     ("lens", "Sopa de Letras", [
-        "Busque la <b>primera letra</b> de la palabra y revise las letras de alrededor.",
-        "Fíjese en las letras dobles, como la <b>LL</b> de OLLA o la <b>RR</b> de ARROZ.",
-        "Recorra fila por fila, con el dedo o un marcador como guía.",
+        "Busca la <b>primera letra</b> de la palabra y revisa las letras de alrededor.",
+        "Fíjate en las letras dobles, como la <b>LL</b> de OLLA o la <b>RR</b> de ARROZ.",
+        "Recorre fila por fila, con el dedo o un marcador como guía.",
     ]),
     ("grid9", "Sudoku Fácil", [
-        "Empiece por la fila, columna o cuadro que tenga <b>más números</b>.",
-        "Elija un número, por ejemplo el <b>1</b>, y busque en qué cuadros todavía falta.",
-        "¿No está seguro? Anote números pequeños en la esquina de la casilla.",
+        "Empieza por la fila, columna o cuadro que tenga <b>más números</b>.",
+        "Elige un número, por ejemplo el <b>1</b>, y busca en qué cuadros todavía falta.",
+        "¿Tienes dudas? Anota números pequeños en la esquina de la casilla.",
     ]),
     ("path", "Laberintos", [
-        "Trace el camino <b>suavemente</b> con lápiz para poder borrar.",
-        "¿Se atascó? Empiece desde la <b>flecha de salida</b> y vaya hacia atrás.",
-        "Un callejón sin salida es parte del juego: vuelva al último cruce.",
+        "Traza el camino <b>suavemente</b> con lápiz para poder borrar.",
+        "¿Te atascaste? Empieza desde la <b>flecha de salida</b> y ve hacia atrás.",
+        "Un callejón sin salida es parte del juego: vuelve al último cruce.",
     ]),
 ]
 
@@ -167,9 +167,9 @@ def page2(book, sol_start):
 
     cards = [
         (_word_example(), "Sopa de Letras", [
-            ("list", "Busque cada palabra de la lista."),
+            ("list", "Busca cada palabra de la lista."),
             ("lens", "Van hacia la derecha, hacia abajo o en diagonal. <b>Nunca al revés.</b>"),
-            ("pencil", "Enciérrela en la grilla y táchela de la lista."),
+            ("pencil", "Enciérrala en la grilla y táchala de la lista."),
         ]),
         (_sudoku_example(), "Sudoku Fácil", [
             ("grid9", "Cada <b>fila</b>, <b>columna</b> y <b>cuadro de 3&times;3</b> lleva los números del <b>1 al 9</b>."),
@@ -177,9 +177,9 @@ def page2(book, sol_start):
             ("check", "Cada sudoku tiene una sola solución."),
         ]),
         (_maze_example(), "Laberintos", [
-            ("start", "Entre por la flecha de la izquierda."),
-            ("path", "Encuentre el único camino hasta la flecha de la derecha."),
-            ("pencil", "Use lápiz para poder intentarlo de nuevo."),
+            ("start", "Entra por la flecha de la izquierda."),
+            ("path", "Encuentra el único camino hasta la flecha de la derecha."),
+            ("pencil", "Usa lápiz para poder intentarlo de nuevo."),
         ]),
     ]
     captions = {"Sudoku Fácil": "A este cuadro le falta el 7."}
@@ -194,5 +194,5 @@ def page2(book, sol_start):
                      'sin permiso escrito de los autores.</div>')
     return ('<div class="p2"><div class="belongs">Este libro pertenece a<span></span></div>'
             f'<div class="howbox">Cómo Jugar</div>{body}'
-            f'<div class="solnote">{icon("cup", "0.4in")}<span><b>Tómese su tiempo. ¿Se atascó? Las soluciones empiezan en la página '
+            f'<div class="solnote">{icon("cup", "0.4in")}<span><b>Tómate tu tiempo. ¿Te atascaste? Las soluciones empiezan en la página '
             f'{sol_start}.</b></span></div>{copyright}</div>')
