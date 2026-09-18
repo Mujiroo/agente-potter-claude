@@ -123,4 +123,4 @@
 - 18-sep 09:40 Pedro pide la revisión final antes de publicar, «como experto editor, diseñador y en libros de pasatiempos» (msgs 962, 964). Enviada (msg 965).
   - Técnico OK: márgenes mínimos medidos con agent-browser (interior 0,60", exterior 0,50", sup. 0,50", inf. 0,34" = folio); portada sin textos fuera de la zona segura; texto del lomo a 0,085" de cada borde; código de barras libre; 6 fuentes incrustadas en el interior y 5 en la portada; verificador 0/0; soluciones en pág. 74.
   - Propuse: (1) cambiar «Nunca al revés»; (2) nota «sin tildes / compuestas juntas» (16 compuestas); (3) títulos en mayúscula sólo inicial, salvo nombres propios. Falta la ficha KDP (precio anotado: lanzamiento US$ 9,99). Esperando OK.
-  - «ok» del msg 962 podría ser OK al recordatorio del Vol. 4 (msg 961). No lo programé: preguntar si no queda claro.
+  - Tomé el «ok» del msg 962 como sí al recordatorio del Vol. 4 (msg 961): cron 19-sep 12:00 en crons/jobs.txt.
