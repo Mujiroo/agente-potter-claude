@@ -104,7 +104,7 @@ def main(src, dst):
     for i, p in enumerate(pages, 1):
         t = re.search(r'<div class="tag">([^<]+)</div>', p)
         kinds.append((i, t.group(1) if t else None))
-    ws = [(i, t) for i, t in kinds if t and t.startswith("Sopa de Letras")]
+    ws = [(i, t) for i, t in kinds if t and t.startswith("Sopa de letras")]
     su = [(i, t) for i, t in kinds if t and t.startswith("Sudoku")]
     mz = [(i, t) for i, t in kinds if t and t.startswith("Laberinto")]
     if len(ws) != 2 * n_w:
@@ -188,7 +188,7 @@ def main(src, dst):
 
     # --- laberintos: que tengan camino
     for i, t in mz:
-        if '<h1>Encuentra el Camino</h1>' not in pages[i - 1]:
+        if '<h1>Encuentra el camino</h1>' not in pages[i - 1]:
             errs.append(f"{t} (pág. {i}): falta el título")
     for i, p in enumerate(pages, 1):  # flechas de entrada/salida dentro del dibujo
         for vb, cell in re.findall(r'<svg class="maze" viewBox="(-?[\d.]+) [^"]*"[^>]*>.*?M(-[\d.]+),', p, re.S):

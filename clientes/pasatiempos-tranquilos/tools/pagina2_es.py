@@ -133,12 +133,12 @@ def thanks_page(book):
 
 
 TIPS = [
-    ("lens", "Sopa de Letras", [
+    ("lens", "Sopa de letras", [
         "Busca la <b>primera letra</b> de la palabra y revisa las letras de alrededor.",
         "Fíjate en las letras dobles, como la <b>LL</b> de OLLA o la <b>RR</b> de ARROZ.",
         "Recorre fila por fila, con el dedo o un marcador como guía.",
     ]),
-    ("grid9", "Sudoku Fácil", [
+    ("grid9", "Sudoku fácil", [
         "Empieza por la fila, columna o cuadro que tenga <b>más números</b>.",
         "Elige un número, por ejemplo el <b>1</b>, y busca en qué cuadros todavía falta.",
         "¿Tienes dudas? Anota números pequeños en la esquina de la casilla.",
@@ -156,7 +156,7 @@ def page3():
         f'<div class="tipcard"><h2>{icon(ic, "0.34in")}{t}</h2><ul>'
         + "".join(f"<li>{x}</li>" for x in tips) + "</ul></div>"
         for ic, t, tips in TIPS)
-    return ('<div class="p3"><div class="howbox">Consejos Útiles</div>'
+    return ('<div class="p3"><div class="howbox">Consejos útiles</div>'
             '<div class="lead">Algunas ideas para empezar con calma.</div>'
             f'{cards}<div class="closing">{icon("cup", "0.4in")}<span>Sin apuro y sin presiones. Un pasatiempo a la vez.</span></div></div>')
 
@@ -166,13 +166,13 @@ def page2(book, sol_start):
         return "".join(f'<div class="step">{icon(ic, "0.27in")}<span>{tx}</span></div>' for ic, tx in rows)
 
     cards = [
-        (_word_example(), "Sopa de Letras", [
+        (_word_example(), "Sopa de letras", [
             ("list", "Busca cada palabra de la lista."),
             ("lens", "Se leen de izquierda a derecha, hacia abajo o en diagonal."),
             ("check", "Van <b>sin tildes</b>, y las de dos palabras van <b>juntas</b> (ARROZ CON LECHE = ARROZCONLECHE)."),
             ("pencil", "Enciérrala en la grilla y táchala de la lista."),
         ]),
-        (_sudoku_example(), "Sudoku Fácil", [
+        (_sudoku_example(), "Sudoku fácil", [
             ("grid9", "Cada <b>fila</b>, <b>columna</b> y <b>cuadro de 3&times;3</b> lleva los números del <b>1 al 9</b>."),
             ("norep", "Ningún número se repite en la misma fila, columna o cuadro."),
             ("check", "Cada sudoku tiene una sola solución."),
@@ -183,7 +183,7 @@ def page2(book, sol_start):
             ("pencil", "Usa lápiz para poder intentarlo de nuevo."),
         ]),
     ]
-    captions = {"Sudoku Fácil": "A este cuadro le falta el 7."}
+    captions = {"Sudoku fácil": "A este cuadro le falta el 7."}
     body = "".join(f'<div class="card"><div class="ex">{ex}'
                    + (f'<div class="cap">{captions[t]}</div>' if t in captions else "")
                    + f'</div><div class="txt"><h2>{t}</h2>{steps(st)}</div></div>'
@@ -194,6 +194,6 @@ def page2(book, sol_start):
                      'Todos los derechos reservados. Ninguna parte de este libro puede reproducirse de ninguna forma '
                      'sin permiso escrito de los autores.</div>')
     return ('<div class="p2"><div class="belongs">Este libro pertenece a<span></span></div>'
-            f'<div class="howbox">Cómo Jugar</div>{body}'
+            f'<div class="howbox">Cómo jugar</div>{body}'
             f'<div class="solnote">{icon("cup", "0.4in")}<span><b>Tómate tu tiempo. ¿Te atascaste? Las soluciones empiezan en la página '
             f'{sol_start}.</b></span></div>{copyright}</div>')

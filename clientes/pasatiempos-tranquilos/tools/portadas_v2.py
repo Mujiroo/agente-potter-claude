@@ -19,7 +19,7 @@ from portadas_opciones import (W, H, SERIF, SCRIPT, SANS, three_games, papel_pic
 
 CX = W / 2
 TEX = dict(cell=50, size=28, seed=28)  # textura verificada sin groserías (ver check_textura)
-VOL = "Vol. 1 · Hogar y Sabores"
+VOL = "Vol. 1 · Hogar y sabores"
 
 
 def tex(color, op):
@@ -175,10 +175,10 @@ def p5():
 
 # Serie con el diseño 1 (Pedro, 17-sep, msgs 848–849): Vol. 1 rojo y 2 colores a elegir para los Vol. 2 y 3
 SERIE = [("S1-vol1-rojo", "Vol. 1 · Rojo", dict()),
-         ("S2-vol2-morado", "Vol. 2 · Morado", dict(rojo="#6A1B9A", osc="#3E0F5C", azul="#C62828", vol="Vol. 2 · Fiestas y Tradiciones")),
-         ("S3-vol2-azul", "Vol. 2 · Azul", dict(rojo="#1565C0", osc="#0D2A5C", azul="#C62828", vol="Vol. 2 · Fiestas y Tradiciones")),
-         ("S4-vol3-verde", "Vol. 3 · Verde", dict(rojo="#2E7D32", osc="#1B4D1E", azul="#6A1B9A", vol="Vol. 3 · Naturaleza y Recuerdos")),
-         ("S5-vol3-turquesa", "Vol. 3 · Turquesa", dict(rojo="#00796B", osc="#004D40", azul="#C62828", vol="Vol. 3 · Naturaleza y Recuerdos"))]
+         ("S2-vol2-morado", "Vol. 2 · Morado", dict(rojo="#6A1B9A", osc="#3E0F5C", azul="#C62828", vol="Vol. 2 · Fiestas y tradiciones")),
+         ("S3-vol2-azul", "Vol. 2 · Azul", dict(rojo="#1565C0", osc="#0D2A5C", azul="#C62828", vol="Vol. 2 · Fiestas y tradiciones")),
+         ("S4-vol3-verde", "Vol. 3 · Verde", dict(rojo="#2E7D32", osc="#1B4D1E", azul="#6A1B9A", vol="Vol. 3 · Naturaleza y recuerdos")),
+         ("S5-vol3-turquesa", "Vol. 3 · Turquesa", dict(rojo="#00796B", osc="#004D40", azul="#C62828", vol="Vol. 3 · Naturaleza y recuerdos"))]
 
 # Tipografía (Pedro, 17-sep, msg 864): 5 combinaciones sobre el diseño 1. Fuentes OFL en tools/fonts.
 FONT_FILES = {"Poppins Black": "Poppins-Black.ttf", "Poppins": "Poppins-Bold.ttf", "Fredoka": "Fredoka-700.ttf",

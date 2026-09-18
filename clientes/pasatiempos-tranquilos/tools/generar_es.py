@@ -123,7 +123,7 @@ def main(src, dst):
         page(f'<div class="tp-author">{html.escape(cv["author"].upper())}</div>'
              f'<div class="tp-script">{html.escape(cv["script"])}</div>'
              f'<div class="tp-title">{html.escape(cv["title"])}</div>'
-             f'<div class="tp-sub">Sopa de Letras &middot; Sudoku Fácil &middot; Laberintos</div>'
+             f'<div class="tp-sub">Sopa de letras &middot; Sudoku fácil &middot; Laberintos</div>'
              f'<div class="tp-icons"><div>{pagina2._word_example()}</div><div>{pagina2._sudoku_example()}</div>'
              f'<div>{pagina2._maze_example()}</div></div>'
              f'<div class="tp-vol">{html.escape(book.get("volume", "").upper())}</div>'
@@ -192,7 +192,7 @@ def main(src, dst):
             wi += 1
             grid, placed = build(p["words"], size, rng, FORWARD)
             solved_w.append((wi, p, grid, placed))
-            page(f'<div class="tag">Sopa de Letras {wi}</div><h1>{html.escape(p["theme"])}</h1>'
+            page(f'<div class="tag">Sopa de letras {wi}</div><h1>{html.escape(p["theme"])}</h1>'
                  f'{grid_svg(grid)}{words_block(p["words"])}')
         elif kind == "s":
             si += 1
@@ -204,13 +204,13 @@ def main(src, dst):
             mi += 1
             mz = maze_pool[mi - 1]
             solved_m.append((mi, mz))
-            page(f'<div class="tag">Laberinto {mi}</div><h1>Encuentra el Camino</h1>{PZ.maze_svg(mz)}'
+            page(f'<div class="tag">Laberinto {mi}</div><h1>Encuentra el camino</h1>{PZ.maze_svg(mz)}'
                  '<div class="hint">Entra por la flecha de la izquierda y sal por la de la derecha.</div>', "center")
 
     page('<div class="divider"><div class="tp-script">Soluciones</div>'
-         '<div class="tp-sub">Sopa de Letras &middot; Sudoku Fácil &middot; Laberintos</div></div>', "title-page")
+         '<div class="tp-sub">Sopa de letras &middot; Sudoku fácil &middot; Laberintos</div></div>', "title-page")
     for i, p, grid, placed in solved_w:
-        page(f'<div class="tag">Sopa de Letras {i}</div><h1>{html.escape(p["theme"])}</h1>'
+        page(f'<div class="tag">Sopa de letras {i}</div><h1>{html.escape(p["theme"])}</h1>'
              f'{grid_svg(grid, placed)}{words_block(p["words"])}')
     for k in range(0, len(solved_s), 6):  # seis sudokus por página (2 x 3)
         items = "".join(f'<div class="item">{PZ.sudoku_svg(pz, sol, cell=46)}<div>Sudoku {i}</div></div>'

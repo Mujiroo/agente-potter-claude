@@ -18,13 +18,13 @@
  "cover": {
   "author": "Peter & Cardu",
   "script": "Pasatiempos Tranquilos",
-  "title": "Hogar y Sabores"
+  "title": "Hogar y sabores"
  },
  "sudokus": 20,
  "mazes": 10,
  "word_puzzles": [
   {
-   "theme": "Domingo en Familia",
+   "theme": "Domingo en familia",
    "words": [
     "ABRAZOS",
     "ALMUERZO",
@@ -38,7 +38,7 @@
    ]
   },
   {
-   "theme": "Los Abuelos",
+   "theme": "Los abuelos",
    "words": [
     "ABUELITA",
     "ABUELITO",
@@ -52,7 +52,7 @@
    ]
   },
   {
-   "theme": "Mis Nietos",
+   "theme": "Mis nietos",
    "words": [
     "TERNURA",
     "JUGUETES",
@@ -66,7 +66,7 @@
    ]
   },
   {
-   "theme": "Álbum de Fotos",
+   "theme": "Álbum de fotos",
    "words": [
     "RECUERDO",
     "RETRATO",
@@ -80,7 +80,7 @@
    ]
   },
   {
-   "theme": "La Sobremesa",
+   "theme": "La sobremesa",
    "words": [
     "CHARLA",
     "POSTRE",
@@ -94,7 +94,7 @@
    ]
   },
   {
-   "theme": "Consejos de Mamá",
+   "theme": "Consejos de mamá",
    "words": [
     "RESPETO",
     "ESTUDIO",
@@ -108,7 +108,7 @@
    ]
   },
   {
-   "theme": "Papá Trabajador",
+   "theme": "Papá trabajador",
    "words": [
     "MADRUGAR",
     "ESFUERZO",
@@ -122,7 +122,7 @@
    ]
   },
   {
-   "theme": "Hermanos y Primos",
+   "theme": "Hermanos y primos",
    "words": [
     "HERMANITO",
     "HERMANA",
@@ -136,7 +136,7 @@
    ]
   },
   {
-   "theme": "Mascotas de la Casa",
+   "theme": "Mascotas de la casa",
    "words": [
     "PERRITO",
     "GATITO",
@@ -150,7 +150,7 @@
    ]
   },
   {
-   "theme": "El Árbol Familiar",
+   "theme": "El árbol familiar",
    "words": [
     "APELLIDO",
     "BISABUELA",
@@ -164,7 +164,7 @@
    ]
   },
   {
-   "theme": "La Cocina de la Abuela",
+   "theme": "La cocina de la abuela",
    "words": [
     "OLLA",
     "CUCHARA",
@@ -178,7 +178,7 @@
    ]
   },
   {
-   "theme": "El Patio",
+   "theme": "El patio",
    "words": [
     "MACETAS",
     "HAMACA",
@@ -192,7 +192,7 @@
    ]
   },
   {
-   "theme": "La Sala de Estar",
+   "theme": "La sala de estar",
    "words": [
     "SOFA",
     "SILLON",
@@ -206,7 +206,7 @@
    ]
   },
   {
-   "theme": "Tejer y Coser",
+   "theme": "Tejer y coser",
    "words": [
     "AGUJA",
     "HILO",
@@ -220,7 +220,7 @@
    ]
   },
   {
-   "theme": "Mis Plantitas",
+   "theme": "Mis plantitas",
    "words": [
     "TIERRA",
     "ABONO",
@@ -234,7 +234,7 @@
    ]
   },
   {
-   "theme": "Día de Limpieza",
+   "theme": "Día de limpieza",
    "words": [
     "BALDE",
     "JABON",
@@ -248,7 +248,7 @@
    ]
   },
   {
-   "theme": "El Ropero",
+   "theme": "El ropero",
    "words": [
     "CAMISAS",
     "VESTIDOS",
@@ -262,7 +262,7 @@
    ]
   },
   {
-   "theme": "La Mesa Puesta",
+   "theme": "La mesa puesta",
    "words": [
     "PLATOS",
     "VASOS",
@@ -276,7 +276,7 @@
    ]
   },
   {
-   "theme": "Herramientas de Casa",
+   "theme": "Herramientas de casa",
    "words": [
     "MARTILLO",
     "CLAVOS",
@@ -290,7 +290,7 @@
    ]
   },
   {
-   "theme": "Lavar la Ropa",
+   "theme": "Lavar la ropa",
    "words": [
     "LAVADERO",
     "DETERGENTE",
@@ -304,7 +304,7 @@
    ]
   },
   {
-   "theme": "El Mercado",
+   "theme": "El mercado",
    "words": [
     "PUESTOS",
     "BALANZA",
@@ -318,7 +318,7 @@
    ]
   },
   {
-   "theme": "Frutas Tropicales",
+   "theme": "Frutas tropicales",
    "words": [
     "MANGO",
     "GUAYABA",
@@ -332,7 +332,7 @@
    ]
   },
   {
-   "theme": "La Panadería",
+   "theme": "La panadería",
    "words": [
     "HORNO",
     "HARINA",
@@ -346,7 +346,7 @@
    ]
   },
   {
-   "theme": "Sopas Calientitas",
+   "theme": "Sopas calientitas",
    "words": [
     "CONSOME",
     "FIDEOS",
@@ -360,7 +360,7 @@
    ]
   },
   {
-   "theme": "El Maíz",
+   "theme": "El maíz",
    "words": [
     "MAZORCA",
     "CHOCLO",
@@ -374,7 +374,7 @@
    ]
   },
   {
-   "theme": "Postres de Antes",
+   "theme": "Postres de antes",
    "words": [
     "FLAN",
     "ARROZ CON LECHE",
@@ -388,7 +388,7 @@
    ]
   },
   {
-   "theme": "Café y Chocolate",
+   "theme": "Café y chocolate",
    "words": [
     "CAFE",
     "TAZA",
@@ -402,7 +402,7 @@
    ]
   },
   {
-   "theme": "Especias y Condimentos",
+   "theme": "Especias y condimentos",
    "words": [
     "OREGANO",
     "COMINO",
@@ -416,7 +416,7 @@
    ]
   },
   {
-   "theme": "Arroz y Frijoles",
+   "theme": "Arroz y frijoles",
    "words": [
     "ARROZ",
     "FRIJOLES",
@@ -430,7 +430,7 @@
    ]
   },
   {
-   "theme": "Jugos Naturales",
+   "theme": "Jugos naturales",
    "words": [
     "NARANJA",
     "LIMONADA",
@@ -444,7 +444,7 @@
    ]
   },
   {
-   "theme": "Cocina Mexicana",
+   "theme": "Cocina mexicana",
    "words": [
     "TACOS",
     "MOLE",
@@ -500,7 +500,7 @@
    ]
   },
   {
-   "theme": "Sabores Andinos",
+   "theme": "Sabores andinos",
    "words": [
     "CEVICHE",
     "QUINUA",
@@ -528,7 +528,7 @@
    ]
   },
   {
-   "theme": "Desayunos Latinos",
+   "theme": "Desayunos latinos",
    "words": [
     "MANTEQUILLA",
     "MERMELADA",
@@ -542,7 +542,7 @@
    ]
   },
   {
-   "theme": "Comida de la Calle",
+   "theme": "Comida de la calle",
    "words": [
     "CHURROS",
     "ELOTES",
@@ -556,7 +556,7 @@
    ]
   },
   {
-   "theme": "El Asado",
+   "theme": "El asado",
    "words": [
     "PARRILLA",
     "CARBON",
@@ -570,7 +570,7 @@
    ]
   },
   {
-   "theme": "Cocina de Fiesta",
+   "theme": "Cocina de fiesta",
    "words": [
     "BANQUETE",
     "PAVO",

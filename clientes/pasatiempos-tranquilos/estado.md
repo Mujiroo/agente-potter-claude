@@ -126,3 +126,7 @@
   - Tomé el «ok» del msg 962 como sí al recordatorio del Vol. 4 (msg 961): cron 19-sep 12:00 en crons/jobs.txt.
 - 18-sep 09:52 Pedro: OK a 1 y 2, pide explicar el 3 (msg 966). Explicado con fuente RAE (msg 967): títulos con mayúscula sólo en la primera palabra; colección «Pasatiempos Tranquilos» se mantiene; recomendé también «Hogar y sabores». ~45 títulos. Esperando OK.
   - 1 y 2 aplicados en `page2()`: «Se leen de izquierda a derecha, hacia abajo o en diagonal.» + paso nuevo «Van sin tildes, y las de dos palabras van juntas (ARROZ CON LECHE = ARROZCONLECHE).» Pág. 2 cabe (revisada en pantalla). interior.html regenerado; PDFs todavía NO (esperar decisión del 3).
+- 18-sep 09:54 Pedro OK al 3 (msg 968); preguntó si así queda correcto (msg 969): sí, norma RAE.
+  - Mayúscula sólo inicial en: 40 temas (`vol1.json`; en `temas_serie.py` 36 cambiados, las claves de volumen «Vol. 2 · Fiestas y Tradiciones» / «Vol. 3 · Naturaleza y Recuerdos» quedaron igual: ajustar al armar esos volúmenes), «Cómo jugar», «Consejos útiles», «Sopa de letras», «Sudoku fácil», «Encuentra el camino», portadilla y separador. `cover.title` y `VOL` → «Hogar y sabores». `SERIE` de portadas_v2 también en minúscula. `verificar_es.py` actualizado a los nuevos títulos.
+  - Excepciones: nombres propios (Caribe, Centroamérica, Colombia y Venezuela, El Cono Sur) y la colección «Pasatiempos Tranquilos».
+  - PDFs regenerados y verificados (0/0, 0 fuera de página, 0 Type3, 0 imágenes). Enviados msgs 972–975. Siguiente: ficha KDP (esperando OK). Regla para la ficha: también mayúsculas RAE.
