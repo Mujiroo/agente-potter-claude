@@ -104,3 +104,5 @@
   - Leídas 6 de 13 fichas en español (Amazon bloquea las consultas seguidas; lectura lenta con `scratchpad/scan_amazon.sh`): 3 tutean (Deepuzzle B0F3DC9F2T, TG Edition B0FFF3JFBH, BrainWorkout B0F5HND1MC), 1 usa usted (Edward Arris B0B7QPJTN6), 1 impersonal (Martin Littlewolf B0DZ2439GN, BSR 3.459), 1 con la descripción en inglés (Luz ES B0CMD6F5KH).
   - No verificable: el interior de esos libros (no se puede leer sin comprar) ni la nacionalidad de los autores (son sellos indie).
   - Propuesta enviada (msg 927): descripción KDP tuteada, interior en «usted». Esperando decisión.
+- 18-sep 09:22 Pedro pega un conteo de otra fuente (msg 933): «5 de 5 usan tú», sólo 2 confirmados con texto interior. No calza del todo con lo mío (3 tú, 1 usted, 1 impersonal), pero ambos dan mayoría tuteo.
+  - Enviado (msg 934): A todo en tú (recomendada) · B interior usted + ficha tú · C todo usted. Esperando elección; si A, cambiar portadilla, «Cómo jugar», contratapa y gracias.
