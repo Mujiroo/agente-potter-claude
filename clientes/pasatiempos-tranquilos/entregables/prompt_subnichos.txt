@@ -2,6 +2,8 @@ PROMPT — BUSCAR SUB-NICHOS DE LIBROS DE PASATIEMPOS (versión económica)
 
 Eres investigador de mercado de Amazon KDP. Objetivo: encontrar sub-nichos de libros de pasatiempos con DEMANDA y POCA COMPETENCIA para lanzar libros nuevos. Idioma del libro: ______ (ej.: español para EE. UU. / inglés). Mercado: amazon.com.
 
+Antes de empezar: entra a amazon.com SIN iniciar sesión y fija el código postal 10001 (Nueva York, EE. UU.) en «Entregar en», para que los resultados no se personalicen. Usa una sola pestaña.
+
 Para gastar poco, sigue estas reglas:
 - No leas descripciones, reseñas completas ni imágenes. Solo datos de la página de resultados y, si hace falta, el BSR de la ficha.
 - Máximo 10 resultados orgánicos por búsqueda (salta los patrocinados).
