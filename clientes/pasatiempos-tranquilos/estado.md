@@ -130,3 +130,6 @@
   - Mayúscula sólo inicial en: 40 temas (`vol1.json`; en `temas_serie.py` 36 cambiados, las claves de volumen «Vol. 2 · Fiestas y Tradiciones» / «Vol. 3 · Naturaleza y Recuerdos» quedaron igual: ajustar al armar esos volúmenes), «Cómo jugar», «Consejos útiles», «Sopa de letras», «Sudoku fácil», «Encuentra el camino», portadilla y separador. `cover.title` y `VOL` → «Hogar y sabores». `SERIE` de portadas_v2 también en minúscula. `verificar_es.py` actualizado a los nuevos títulos.
   - Excepciones: nombres propios (Caribe, Centroamérica, Colombia y Venezuela, El Cono Sur) y la colección «Pasatiempos Tranquilos».
   - PDFs regenerados y verificados (0/0, 0 fuera de página, 0 Type3, 0 imágenes). Enviados msgs 972–975. Siguiente: ficha KDP (esperando OK). Regla para la ficha: también mayúsculas RAE.
+- 18-sep 09:57 Pedro OK a preparar la ficha KDP (msg 976). `ficha_kdp.md` + `entregables/vol1/descripcion_kdp.txt` (en tú), enviados msgs 978–980.
+  - Título «Sopa de letras, sudoku y laberintos» / subtítulo «Pasatiempos Tranquilos en letra grande para adultos mayores» / serie n.º 1. 7 keywords del autocompletado. Categorías Puzzles · Sopa de Letras · Sudoku. Papel BLANCO (lomo). Brillante. IA: texto sí, imágenes sí, traducción algunas secciones. Precio recomendado US$ 9,99 → 12,99.
+  - Pedí captura del previsualizador antes de «Publicar».
