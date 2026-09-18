@@ -163,3 +163,4 @@
 - 18-sep 13:20 Pedro pide prompt costo-eficiente para buscar sub-nichos (msg 1101). `entregables/prompt_subnichos.txt` enviado (msgs 1102–1103).
 - 18-sep 13:5x Vol. 3 etapa 6: ficha en ficha_kdp.md + entregables/vol3/descripcion_kdp.txt (keyword 6: «sopa de letras recuerdos»). Etapa 7: verificador 0/0, verificar_temas OK, barrido 80 grillas limpio (172), textura de portada limpia con filtro ampliado (check_textura ahora incluye BAD_RELLENO), PDFs 0 Type3/0 imágenes, márgenes y zona segura OK.
 - Vol. 3 verificación final y archivos enviados (msgs 1114–1118). Veredicto: listo para subir.
+- 18-sep 20:00 Pedro pregunta si el Vol. 3 está 100 % (msg 1124). Re-verificado: listo. Detecté que el Vol. 2 con tildes (12:45) no se le había reenviado: enviado ahora (msgs 1125–1126). Portada Vol. 2 sin cambios.
