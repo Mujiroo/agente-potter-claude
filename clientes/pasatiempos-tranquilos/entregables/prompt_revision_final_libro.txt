@@ -1,0 +1,63 @@
+PROMPT — REVISIÓN FINAL DE UN LIBRO DE PASATIEMPOS ANTES DE PUBLICAR EN AMAZON KDP
+
+Actúa a la vez como editor profesional, diseñador editorial, experto en libros de pasatiempos para adultos mayores y especialista en las normas de Amazon KDP. Te adjunto el PDF del INTERIOR, el PDF de la PORTADA completa (contratapa + lomo + frente) y, si la tengo, la FICHA KDP (título, subtítulo, descripción, palabras clave, categorías, precio).
+
+Datos del libro (complétalos):
+- Idioma y público: ______ (ej.: español latinoamericano neutro, adultos mayores)
+- Tamaño y páginas: ______ (ej.: 8,5 × 11 in, 122 págs., papel blanco, sin sangrado)
+- Tipo: ______ (ej.: sopa de letras + sudoku + laberintos, con soluciones)
+
+Revisa TODO, página por página, sin saltarte nada. No supongas: si algo no lo puedes comprobar, dilo.
+
+1. TEXTO Y REDACCIÓN
+- Ortografía, tildes, puntuación y gramática en todas las páginas, la contratapa y la ficha.
+- Trato uniforme (tú o usted) en todo el libro, la contratapa y la descripción.
+- Palabras repetidas dentro de un mismo párrafo o página. Propón una redacción más fluida.
+- Mayúsculas: en español, los títulos llevan mayúscula solo en la primera palabra y en los nombres propios (norma RAE). Señala cualquier «Título Al Estilo Inglés».
+- Instrucciones claras para una persona mayor que lee por primera vez: ¿se entiende sin ayuda?
+- Coherencia de cifras: número de puzzles, página donde empiezan las soluciones, medidas y conteos en la portada y la contratapa.
+
+2. LISTAS DE PALABRAS
+- Que cada palabra de la lista exista y esté bien escrita (con o sin tildes, según la regla del libro).
+- Palabras repetidas o casi repetidas dentro del libro (singular/plural, diminutivos).
+- Palíndromos (ORO, ANA): se leen igual al revés y confunden si el libro dice que no hay palabras al revés.
+- Regionalismos, dobles sentidos o palabras que en algún país son vulgares u ofensivas.
+- Anglicismos innecesarios en títulos de temas.
+
+3. GRILLAS (lo más fácil de pasar por alto)
+- Busca en las 8 direcciones de CADA grilla (puzzles y soluciones) palabras formadas POR AZAR con las letras de relleno que sean groserías, insultos, palabras sexuales, escatológicas, de violencia o de drogas, en inglés y en español de todos los países (ej.: PICO en Chile, CHOTA en Perú, TOTA y BICHO en Puerto Rico, CUCA en Venezuela, PUTA, CACA, MIERDA, IDIOTA, SEX, ASS…).
+- Lista cada hallazgo con número de página y palabra.
+- Comprueba que cada palabra de la lista esté en la grilla exactamente una vez, que no aparezca también al revés y que la solución la marque bien.
+
+4. SUDOKUS Y LABERINTOS
+- Cada sudoku tiene una sola solución, y la solución impresa coincide con el enunciado.
+- Cada laberinto tiene camino de entrada a salida, y la solución lo marca bien.
+- Que no se repitan puzzles dentro del libro ni entre volúmenes de la misma serie.
+
+5. DISEÑO INTERIOR
+- Márgenes: nada importante a menos del mínimo de KDP (para 24–150 págs.: interior ≥ 0,375", exterior ≥ 0,25").
+- Nada cortado, fuera de página o superpuesto; números de página correctos y consecutivos.
+- Tamaños de letra: en «letra grande», los juegos ≥ 16 pt. Indica qué textos quedan por debajo.
+- Consistencia visual: mismos estilos de título, lista y numeración en todas las páginas.
+- Página de agradecimiento: si pide reseña, que sea «sincera» y sin ofrecer nada a cambio (normas de Amazon).
+
+6. PORTADA
+- Medidas exactas según páginas y papel (ancho = 2 × ancho de página + lomo + 0,25"; alto = alto de página + 0,25").
+- Lomo: ancho correcto para esas páginas y ese papel; texto del lomo con ≥ 0,0625" de margen a cada lado.
+- Zona segura: textos a ≥ 0,125" del corte.
+- Recuadro libre para el código de barras en la contratapa (abajo a la derecha, 2 × 1,2").
+- El título y el autor de la portada coinciden con la ficha KDP.
+- Legibilidad en miniatura (como se ve en Amazon), contraste y jerarquía visual.
+- Promesas de la contratapa que el interior cumple (cantidades, letra grande, soluciones).
+
+7. ARCHIVOS PDF
+- Fuentes incrustadas, sin fuentes Type 3, sin imágenes de baja resolución, sin marcas de recorte ni anotaciones.
+
+8. FICHA KDP
+- Título y subtítulo sin palabras clave de relleno, sin marcas registradas ni promesas de salud.
+- 7 palabras clave útiles y no repetidas con el título.
+- Categorías adecuadas; declaración de contenido generado por IA; precio y regalía estimada.
+
+ENTREGA
+- Una tabla por sección: OK / PROBLEMA / NO VERIFICABLE, con página exacta y la corrección propuesta.
+- Al final, los 5 problemas más importantes, ordenados por gravedad, y tu veredicto: ¿se puede publicar tal cual? Sí o no, y por qué.
