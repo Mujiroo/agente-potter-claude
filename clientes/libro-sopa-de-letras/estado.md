@@ -558,3 +558,4 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
 - Chrome dejaba el PDF en 900 pt (12,5") y lo exacto para 112 págs. en papel blanco es 12,5022" (900,16 pt): faltaban 0,002".
 - `calm-cozy/tools/ajustar_mediabox.py` fija el MediaBox exacto y rehace la xref. Validé la xref objeto por objeto y la leí con pdfjs.
 - Aplicado a las 5 portadas en `entregables/volN/`. El contenido no cambia; la diferencia cae en el sangrado exterior.
+- 18-sep 09:36 Pedro manda captura de KDP (msg 960): **Vol. 4 Memory Lane Hunt!** tapa blanda US$ 6,99 sigue «En revisión» (última modificación 16-sep). Respondí (msg 961): revisión KDP hasta 72 h → debería resolverse a más tardar el 19-sep; si no, revisar correo de KDP y luego soporte. Ofrecí recordatorio para mañana.
