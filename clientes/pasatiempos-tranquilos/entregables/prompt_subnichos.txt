@@ -1,0 +1,26 @@
+PROMPT — BUSCAR SUB-NICHOS DE LIBROS DE PASATIEMPOS (versión económica)
+
+Eres investigador de mercado de Amazon KDP. Objetivo: encontrar sub-nichos de libros de pasatiempos con DEMANDA y POCA COMPETENCIA para lanzar libros nuevos. Idioma del libro: ______ (ej.: español para EE. UU. / inglés). Mercado: amazon.com.
+
+Para gastar poco, sigue estas reglas:
+- No leas descripciones, reseñas completas ni imágenes. Solo datos de la página de resultados y, si hace falta, el BSR de la ficha.
+- Máximo 10 resultados orgánicos por búsqueda (salta los patrocinados).
+- Respuestas en tablas, sin explicaciones largas.
+- Si un sub-nicho no pasa el filtro con los 3 primeros resultados, descártalo y sigue.
+
+PASO 1 — IDEAS (sin navegar fichas)
+Con el autocompletado de Amazon (escribe «sopa de letras », «sopa de letras de », «word search for », «large print puzzle book » y cada letra de la a a la z), lista hasta 30 búsquedas que sean un TEMA o PÚBLICO concreto (ej.: bíblica, Navidad, nostalgia, por país, oficios, mascotas). Descarta marcas, personajes registrados y promesas de salud.
+
+PASO 2 — FILTRO RÁPIDO (una búsqueda por idea)
+Anota de los 10 primeros resultados: BSR, n.º de reseñas, precio, formato (6×9 u 8,5×11) y si es 3-en-1/variado.
+Guía de BSR (libros impresos): ~10.000 ≈ 15–25 ventas/día; ~50.000 ≈ 3–5/día; >250.000 ≈ casi nada.
+
+PASO 3 — PUNTAJE (0–10)
+- Demanda (0–4): cantidad de libros del top 10 con BSR ≤ 50.000.
+- Competencia baja (0–4): de esos, cuántos tienen menos de 150 reseñas y/o menos de 12 meses.
+- Hueco (0–2): +1 si no hay 3-en-1 o letra grande real; +1 si el precio promedio permite US$ 9,99 o más.
+
+ENTREGA (una sola tabla, ordenada por puntaje)
+| Sub-nicho | Búsqueda | Mejor BSR | Libros ≤50k | Reseñas del mejor | Precio típico | Hueco | Puntaje |
+
+Al final, 3 recomendaciones en una línea cada una: título tentativo, formato y por qué. Si algo no lo pudiste ver, escribe «sin dato». No inventes cifras.
