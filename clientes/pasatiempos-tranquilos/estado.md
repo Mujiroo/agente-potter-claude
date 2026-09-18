@@ -149,4 +149,4 @@
   - `BAD_RELLENO` en `verificar_temas.py` (sólo relleno, no listas; se toleran dentro de palabras de la lista: CACA en CACAO, PITO en PAPITO), usado por `generar_es.py` y `verificar_es.py`.
   - Ambos volúmenes regenerados: verificador 0/0, barrido amplio limpio. Sudokus y laberintos sin cambios (se generan antes que las grillas); portada igual.
   - Avisé a Pedro que no publicara el Vol. 1 (msg 1011). No lo había subido (faltaba precio, msg 1016). Enviado interior corregido Vol. 1 (msg 1014) + instrucciones + precio recomendado 9,99 → 12,99.
-  - Pendiente: reenviar a Pedro los PDF corregidos del Vol. 2.
+  - Vol. 2 re-auditado (márgenes, zona segura, soluciones pág. 74) y reenviado corregido (msgs 1018+). Listo para subir.
