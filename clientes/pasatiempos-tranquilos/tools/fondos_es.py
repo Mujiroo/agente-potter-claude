@@ -32,9 +32,15 @@ def textura(fill, op=1.0):
     return V2.tex(fill, op)
 
 
-def viñeta(k, w=W, h=H):
+# Paleta del fondo por volumen: (centro claro, base, borde oscuro)
+PALETAS = {"rojo": ("#DC3B2E", ROJO, "#8C1616"), "morado": ("#8A3AB9", "#6A1B9A", "#3A0E57"),
+           "azul": ("#2F7FD6", "#1565C0", "#0B2E66")}
+
+
+def viñeta(k, w=W, h=H, pal="rojo"):
     """Centro más luminoso detrás del título, bordes más oscuros."""
-    return (f'<defs>{radial(f"vg{k}", w / 2, TY + 60, 820, [(0, "#DC3B2E", 1), (0.55, ROJO, 1), (1, "#8C1616", 1)])}</defs>'
+    c, base, borde = PALETAS[pal]
+    return (f'<defs>{radial(f"vg{k}", w / 2, TY + 60, 820, [(0, c, 1), (0.55, base, 1), (1, borde, 1)])}</defs>'
             f'<rect width="{w}" height="{h}" fill="url(#vg{k})"/>')
 
 
@@ -71,14 +77,14 @@ def f_tono():
     return viñeta("d") + textura("#F0625A", 0.30)
 
 
-def f_brillos(w=W, h=H, k="e", espejo=False, tex=True):
+def f_brillos(w=W, h=H, k="e", espejo=False, tex=True, pal="rojo"):
     """E · Brillos: viñeta + halos de luz cálida (naranja y rosa) en esquinas y detrás del título.
     Elegido por Pedro (18-sep, msg 952). espejo=True para la contratapa (halos reflejados hacia el lomo)."""
     mx = (lambda x: w - x) if espejo else (lambda x: x)
     halos = [(f"{k}1", w / 2, TY, 420, "#FFB74D", 0.22), (f"{k}2", mx(60), 60, 380, "#FF8A65", 0.20),
              (f"{k}3", mx(w - 40), 700, 360, "#F06292", 0.16), (f"{k}4", mx(120), h - 260, 340, "#FFB74D", 0.14)]
     defs = "".join(radial(i, x, y, r, [(0, c, a), (1, c, 0)]) for i, x, y, r, c, a in halos)
-    return (viñeta(k, w, h) + f'<defs>{defs}</defs>'
+    return (viñeta(k, w, h, pal) + f'<defs>{defs}</defs>'
             + "".join(f'<rect width="{w}" height="{h}" fill="url(#{i})"/>' for i, *_ in halos)
             + (textura("#FFFFFF", 0.09) if tex else ""))
 
