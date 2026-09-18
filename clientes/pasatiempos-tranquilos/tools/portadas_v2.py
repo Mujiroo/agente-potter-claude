@@ -58,11 +58,11 @@ def t(x, y, s, fill, text, family=SERIF, weight=700, ls=0, anchor="middle"):
 
 
 # 1 ------------------------------------------------------------------ Rojo 3 en 1
-def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL, fonts=None):
+def p1(rojo="#C62828", osc="#7F1414", am="#FFD54F", azul="#1E3A8A", vol=VOL, fonts=None, fondo=None):
     f = dict(title=SANS, sub=SERIF, script=SCRIPT, bold=SANS, title_size=124, sub_size=58, script_size=72, vol_size=52, ls=3)
     f.update(fonts or {})
     return "".join([
-        f'<rect width="{W}" height="{H}" fill="{rojo}"/>', tex("#FFFFFF", 0.10),
+        fondo or (f'<rect width="{W}" height="{H}" fill="{rojo}"/>' + tex("#FFFFFF", 0.10)),  # fondo: variantes en fondos_es.py
         t(CX, 72, 24, "#FFFFFF", "PETER &amp; CARDU", f["sub"], ls=6, weight=400),
         t(CX - 70, 158, f["script_size"], am, "Pasatiempos Tranquilos", f["script"], 400),
         sello(W - 108, 126, 62, am, "#FFFFFF", "3 EN 1", "JUEGOS", rojo, osc, f["bold"]),

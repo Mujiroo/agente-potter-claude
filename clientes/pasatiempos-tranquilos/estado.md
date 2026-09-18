@@ -113,3 +113,7 @@
   - Build: `generar_es.py vol1.json interior.html` · `portada_final_es.py vol1.json portada.html` · `revision_es.py vol1.json interior.html revision.html` · chrome --print-to-pdf · `ajustar_mediabox.py` SOLO a la portada (17.5247 11.25; con varias páginas falla).
   - Pregunta abierta: igualar «Nunca al revés» de Cómo jugar a la frase de la contratapa.
 - 18-sep 09:28 Pedro (msg 941): portada, leves cambios en el FONDO para verse más profesional: más rojos, distintos brillos, sutil pero que lo diferencie. En curso.
+- 18-sep 09:31 Pedro pregunta qué queda mejor: «Nunca al revés» o la frase de la contratapa (msg 946). Recomendé «Se leen de izquierda a derecha, hacia abajo o en diagonal.» (msg 947). Esperando OK para cambiarla en `page2()` de `pagina2_es.py`.
+- 18-sep 09:3x Fondos de portada (msg 941): `p1(fondo=...)` en `portadas_v2.py` y `tools/fondos_es.py` con 5 variantes vectoriales (degradados SVG, sin filtros): A viñeta · B rojo profundo · C rayos · D tono sobre tono · E brillos cálidos. PNG y `hoja.png` en `entregables/portadas/fondos/`. PDF de prueba de cada una: 0 Type3, 0 imágenes.
+  - Enviados msgs 948–951. Recomendé E; alternativa C. Al elegir: aplicar el mismo fondo a lomo y contratapa en `portada_final_es.py` (hoy `ROJO` plano + `texture()`).
+  - OJO: Chrome headless `--screenshot` se colgó o crasheó con la lámina (hoja.html con <img>). Con agent-browser (`set viewport` + `screenshot`) funcionó.
