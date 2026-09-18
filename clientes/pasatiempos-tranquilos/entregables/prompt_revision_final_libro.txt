@@ -18,7 +18,7 @@ Revisa TODO, página por página, sin saltarte nada. No supongas: si algo no lo 
 - Coherencia de cifras: número de puzzles, página donde empiezan las soluciones, medidas y conteos en la portada y la contratapa.
 
 2. LISTAS DE PALABRAS
-- Que cada palabra de la lista exista y esté bien escrita. En español, la lista bajo la grilla lleva tildes (las mayúsculas se acentúan, RAE) aunque la grilla vaya sin ellas; señala cada palabra de la lista a la que le falte la tilde.
+- Que cada palabra de la lista exista y esté bien escrita. En español, la lista bajo la grilla lleva tildes (las mayúsculas se acentúan, RAE) aunque la grilla vaya sin ellas; señala cada palabra de la lista a la que le falte la tilde. La Ñ va en la lista Y en la grilla (es una letra, no una tilde): comprueba que ninguna palabra con Ñ esté escrita con N en la grilla.
 - Palabras repetidas o casi repetidas dentro del libro (singular/plural, diminutivos).
 - Palíndromos (ORO, ANA): se leen igual al revés y confunden si el libro dice que no hay palabras al revés.
 - Regionalismos, dobles sentidos o palabras que en algún país son vulgares u ofensivas.

@@ -18,6 +18,7 @@ Pedro pide que toda revisión sea exhaustiva (msg 1033, 18-sep-2026). Ver [[pref
 - Frases que se entienden a la primera, para adultos mayores; nada de «Nunca al revés» sin explicar.
 - Que el interior avise que en la GRILLA las palabras van sin tildes y que las compuestas van juntas.
 - La LISTA bajo la grilla lleva tildes (mayúsculas acentuadas, RAE). Se genera con `pasatiempos-tranquilos/tools/tildes_es.py` (Pedro, msg 1080: «eso ya lo habíamos hablado»; no volver a entregar listas sin tildes).
+- La Ñ va en la lista Y en la grilla (es letra, no tilde); comprobar que ninguna palabra con Ñ esté con N en la grilla (Pedro, msg 1090–1093).
 - Números citados: la página de soluciones y los conteos (40/20/10 = 70) coinciden con el libro.
 
 ## Listas de palabras
