@@ -916,7 +916,7 @@
   "sample": {
    "title": "SAMPLE",
    "grid": [
-    "JUKEBX",
+    "HVQTWF",
     "RECORD",
     "DIMEQZ",
     "NICKEL",
@@ -961,5 +961,7 @@
    "ink": "#1F0F45",
    "deep": "#4527A0"
   }
- }
+ },
+ "closing": "Take your time and enjoy the trip down memory lane!",
+ "closing_icon": "cup"
 }

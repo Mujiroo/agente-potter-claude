@@ -31,6 +31,7 @@ Pedro pide que toda revisión sea exhaustiva (msg 1033, 18-sep-2026). Ver [[pref
 - Groserías en inglés y en español, con jerga regional: Chile (PICO), Perú y Argentina (CHOTA), Puerto Rico (TOTA, BICHO), Venezuela y Colombia (CUCA), además de CACA, CAGON, PITO, etc. Se revisan en las 8 direcciones.
 - Filtro en `verificar_temas.BAD_ES` (listas) y `BAD_RELLENO` (solo relleno; ampliado el 18-sep a pedido de Pedro, msg 1035: insultos, sexuales por país, escatológicas, violencia y drogas). Si aparece una palabra ofensiva nueva, se agrega ahí.
 - Barrido extra con una lista más amplia antes de dar por buena la revisión.
+- La TEXTURA de letras de fondo de las portadas también se barre con el filtro completo (18-sep: las portadas Word Search estilo bold formaban SLUT/COCK/JEW con las semillas 7 y 11).
 
 ## Puzzles
 - Correr el verificador: solución única, soluciones bien marcadas, nada leído al revés.

@@ -566,3 +566,10 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - ERROR: `tools/generar.py:229` fija «Take your time and enjoy every aisle!» + ícono «cart» en la pág. 2 de TODOS los volúmenes → Vol. 2–5 dicen «aisle». Parametrizar por libro al editar. Arreglar antes de subir Vol. 2 y 3.
   - Mejoras: Calm & Cozy pág. 122 repetitiva («Thank You! / Thank you», «helps… helps»); Vol. 5 TWENTY FIVE → TWENTY-FIVE; Vol. 4 muestra de contratapa con fila «JUKEBX»; listas a 14 pt en 6×9 (grilla 18,5); apóstrofos mezclados (’ en títulos, ' en listas).
   - Reportado a Pedro (msg 1062+). Recomendado: corregir todo junto al editar cada uno cuando esté En venta.
+- 18-sep 20:4x Edición 2 de Vol. 4 y Vol. 5 (ambos «En línea»: Vol. 4 ASIN B0HKBCRVJS; Vol. 5 ASIN no legible en la captura). En `entregables/vol4_edicion2/` y `vol5_edicion2/`:
+  - `generar.py`: cierre de la pág. 2 por libro (`closing`, `closing_icon` en el JSON; ícono nuevo «cup»). Vol. 4: «Take your time and enjoy the trip down memory lane!»; Vol. 5: «Take your time and enjoy the holiday cheer!». Sin `closing` sigue el del Vol. 1 (aisle/cart).
+  - `generar.BAD` ahora suma BAD_ES + BAD_RELLENO (172 palabras) para TODOS los libros.
+  - Vol. 5: TWENTY FIVE → TWENTY-FIVE. Vol. 4: muestra de contratapa «JUKEBX» → «HVQTWF».
+  - HALLAZGO: `portada_alt.letter_texture` con semilla 7 (frente) y 11 (contratapa) formaba SLUT, COCK, FUC, FUK, CUM, ASS, JEW, PIG, WOP. Nuevas semillas verificadas: 42 (frente) y 82 (contratapa). Afecta a las portadas de TODOS los Word Search publicados con estilo bold.
+  - verificar.py y auditar_pdf.py: 0 errores; márgenes OK; MediaBox 432×648 / 900,16×666; 0 Type3.
+  - Enviados a Pedro (msgs 1178+). Regenerar un libro publicado antes confirmó que el build es reproducible (texto idéntico al PDF subido).

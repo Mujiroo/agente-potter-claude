@@ -20,7 +20,7 @@
 - **Pendiente al editar cualquier libro en inglés** (Pedro, 18-sep-2026, msg 1047: «los regeneramos al momento de editarlos»):
   - Regenerar con el filtro ampliado en español (`pasatiempos-tranquilos/tools/verificar_temas.py`: BAD_ES + BAD_RELLENO) sumado al BAD en inglés.
   - Hallazgos del barrido del 18-sep: Calm & Cozy (PAJA, WEON, MOCO) · Aisle Hunt 1 (TETA, ORTO, CACA, PAPO) · World Hunt 2 (TETA, PEDO, TOTA) · USA Hunt 3 (PENE, PAJA, WEON, MEAR, TOTO) · Memory Lane 4 (TETA, TOTA, PAPO, MOCO, TONTO, BOBO) · Christmas Hunt 5 (PENE, ORTO, TOTO).
-  - También corregir al editar: pág. 2 «enjoy every aisle!» + ícono carrito fijo en `generar.py` (Vol. 2–5); Calm & Cozy pág. final repetitiva; Vol. 5 TWENTY-FIVE; Vol. 4 «JUKEBX» en la contratapa; listas 14 pt en 6×9.
+  - 18-sep: preparadas ediciones 2 de Calm & Cozy, Vol. 4 y Vol. 5 (entregables/*edicion2). Falta que Pedro las suba. Vol. 1 Aisle (¿publicado?), Vol. 2 World y Vol. 3 USA: regenerar antes de subir (cierre `closing` propio, filtro ES, semillas de textura nuevas). Pendiente de decidir: listas a 14 pt en 6×9.
   - Detalle en `clientes/libro-sopa-de-letras/estado.md`. Ver [[checklist-revision]].
 
 Ver [[pedro]], [[preferencias]].

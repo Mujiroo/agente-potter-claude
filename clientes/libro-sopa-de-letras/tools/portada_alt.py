@@ -159,7 +159,7 @@ def front_bold(x0, y0, w, h, cv, c, cx=None, white=False):
            '<stop offset="60%" stop-color="#000" stop-opacity="0"/>'
            f'<stop offset="100%" stop-color="#000" stop-opacity="{0 if white else .28}"/></radialGradient></defs>',
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
-           letter_texture(x0, y0, w, h, *tex),
+           letter_texture(x0, y0, w, h, *tex, seed=42),  # semilla verificada sin groserías EN+ES en 8 direcciones (18-sep)
            f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="url(#vign)"/>']
     festive = cv.get("festive") and not white
     if festive:
@@ -515,7 +515,7 @@ def back_bold(x0, y0, w, h, cv, c):
     left = x0 + BLEED * U + 45
     width = w - BLEED * U - 90
     out = [f'<rect x="{x0}" y="{y0}" width="{w}" height="{h}" fill="{blue}"/>',
-           letter_texture(x0, y0, w, h, "#FFFFFF", 0.11, seed=11),
+           letter_texture(x0, y0, w, h, "#FFFFFF", 0.11, seed=82),  # antes 11: formaba SLUT/COCK/JEW; 82 verificada limpia
            big_title(left + width / 2, y0 + 118, cv["back_headline"].upper(), 44, width - 10, c["yellow"], deep, navy),
            f'<rect x="{left}" y="{y0+150}" width="{width}" height="418" rx="24" fill="#fff" stroke="{navy}" stroke-width="6"/>',
            f'<foreignObject x="{left+28}" y="{y0+170}" width="{width-56}" height="390">'

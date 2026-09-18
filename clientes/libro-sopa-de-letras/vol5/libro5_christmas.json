@@ -583,7 +583,7 @@
     "COUNTDOWN",
     "DOORS",
     "DAILY TREAT",
-    "TWENTY FIVE",
+    "TWENTY-FIVE",
     "NUMBERS",
     "PATIENCE",
     "DECEMBER"
@@ -974,5 +974,7 @@
    "deep": "#124116"
   },
   "festive": true
- }
+ },
+ "closing": "Take your time and enjoy the holiday cheer!",
+ "closing_icon": "cup"
 }

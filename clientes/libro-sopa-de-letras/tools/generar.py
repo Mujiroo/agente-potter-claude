@@ -93,6 +93,11 @@ BAD = ("ASS SEX TIT TITS FUCK FUK FUC SHIT CRAP DAMN PISS DICK COCK CUNT FAG NAZ
 # Ocho direcciones: la promesa "sin palabras al revés" vale para la LISTA, no para el
 # relleno. Una grosería escondida se ve igual leída de derecha a izquierda o de abajo
 # hacia arriba, así que aquí se buscan en todas las direcciones.
+# Filtro ampliado en español (Pedro, 18-sep-2026, msgs 1035 y 1047): también para los libros en inglés,
+# porque en amazon.com hay muchos lectores hispanos. Listas en pasatiempos-tranquilos/tools/verificar_temas.py.
+sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "pasatiempos-tranquilos", "tools"))
+from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
+BAD = list(dict.fromkeys(BAD + BAD_ES + BAD_RELLENO))
 BAD_DIRS = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
 
 
@@ -176,6 +181,7 @@ ICON = {  # íconos de línea propios, 24x24
     "pencil": '<path d="M4 20l1.2-4.4L16 4.8a2 2 0 0 1 2.8 0l.4.4a2 2 0 0 1 0 2.8L8.4 18.8z"/><path d="M14 6.8l3.2 3.2"/>',
     "cart": '<path d="M3 4h2.5l2.2 10.5h10.3l2-7.5H7"/><circle cx="9.5" cy="19" r="1.6"/><circle cx="16.5" cy="19" r="1.6"/>',
     "check": '<circle cx="12" cy="12" r="9.5"/><path d="M7.5 12.5l3 3 6-6.5"/>',
+    "cup": '<path d="M4 9h12v5a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5z"/><path d="M16 11h1.5a2.5 2.5 0 0 1 0 5H16"/><path d="M8 3.5v3M12 3.5v3"/>',
 }
 
 
@@ -219,14 +225,15 @@ def example_grid():
     return "".join(out)
 
 
-def instructions_icons(forward, sol_page):
+def instructions_icons(forward, sol_page, book=None):
     rows = [
         (icon("list"), "Read the word list under the grid."),
         (icon("lens"), "Hunt for one word at a time."),
         (arrows_icon(), "Words go across, down or diagonally. <b>Never backwards.</b>" if forward
          else "Words go in any direction, even backwards."),
         (icon("pencil"), "Circle each word and cross it off the list."),
-        (icon("cart"), "Take your time and enjoy every aisle!"),
+        # cierre propio de cada libro (el del Vol. 1 hablaba de pasillos del supermercado y se copiaba a todos)
+        (icon((book or {}).get("closing_icon", "cart")), (book or {}).get("closing", "Take your time and enjoy every aisle!")),
     ]
     items = "".join(f'<div class="step">{ic}<span>{tx}</span></div>' for ic, tx in rows)
     return (f'<div class="howbox">How to Play</div>{items}'
@@ -318,7 +325,7 @@ def main(src, dst):
     belongs = ('<div class="belongs">This book belongs to<span></span></div>'
                if book.get("belongs_to", True) else "")
     if book.get("instructions_style") == "icons":
-        page(belongs + instructions_icons(forward, 3 + len(puzzles)) + note)
+        page(belongs + instructions_icons(forward, 3 + len(puzzles), book) + note)
     else:
         page(belongs + '<div class="instr"><h1>How to Play</h1>'
              '<p>Each puzzle has a grid of letters and a list of words below it.</p>' + how +
