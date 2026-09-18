@@ -27,7 +27,7 @@ Pedro pide que toda revisión sea exhaustiva (msg 1033, 18-sep-2026). Ver [[pref
 
 ## Grillas (relleno al azar)
 - Groserías en inglés y en español, con jerga regional: Chile (PICO), Perú y Argentina (CHOTA), Puerto Rico (TOTA, BICHO), Venezuela y Colombia (CUCA), además de CACA, CAGON, PITO, etc. Se revisan en las 8 direcciones.
-- Filtro en `verificar_temas.BAD_ES` (listas) y `BAD_RELLENO` (solo relleno).
+- Filtro en `verificar_temas.BAD_ES` (listas) y `BAD_RELLENO` (solo relleno; ampliado el 18-sep a pedido de Pedro, msg 1035: insultos, sexuales por país, escatológicas, violencia y drogas). Si aparece una palabra ofensiva nueva, se agrega ahí.
 - Barrido extra con una lista más amplia antes de dar por buena la revisión.
 
 ## Puzzles
