@@ -76,3 +76,6 @@ Ver [[rol]], [[pedro]].
   **Why:** proteger su privacidad y la de todas las personas con que se relaciona.
   **How to apply:** si un dato de estas categorías aparece en una tarea, usarlo sólo en ese momento y no escribirlo en ningún archivo, commit ni cron. Ante la duda, no guardar y preguntar.
   - Limpieza hecha el 17-sep: saqué la edad de su hija de [[pedro]] y los nombres/correos de contactos de proveedores de `clientes/tamarama/` (estado.md, excel_build.js y el .xlsx).
+- **Cuando pide «revisar», la revisión es exhaustiva, con el mayor número de detalles** (Telegram, 2026-09-18, msg 1033).
+  **Why:** en la primera revisión final del Vol. 1 de Pasatiempos Tranquilos se me pasaron palabras vulgares regionales formadas al azar en las grillas (PICO, CHOTA…); aparecieron recién en la segunda pasada.
+  **How to apply:** seguir completa la lista de [[checklist-revision]] (texto, redacción, puzzles, grillas, diseño y KDP) desde la primera pasada, no solo lo técnico. Informar qué se revisó y qué queda fuera de mi alcance.
