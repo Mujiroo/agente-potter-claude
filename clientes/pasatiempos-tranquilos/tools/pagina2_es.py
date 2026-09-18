@@ -168,7 +168,8 @@ def page2(book, sol_start):
     cards = [
         (_word_example(), "Sopa de Letras", [
             ("list", "Busca cada palabra de la lista."),
-            ("lens", "Van hacia la derecha, hacia abajo o en diagonal. <b>Nunca al revés.</b>"),
+            ("lens", "Se leen de izquierda a derecha, hacia abajo o en diagonal."),
+            ("check", "Van <b>sin tildes</b>, y las de dos palabras van <b>juntas</b> (ARROZ CON LECHE = ARROZCONLECHE)."),
             ("pencil", "Enciérrala en la grilla y táchala de la lista."),
         ]),
         (_sudoku_example(), "Sudoku Fácil", [
