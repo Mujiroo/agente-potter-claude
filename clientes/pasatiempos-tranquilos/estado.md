@@ -162,3 +162,4 @@
 - 18-sep 12:5x Vol. 3 etapas 3–5 enviadas (vol3.json seed 32, palette verde; PALETAS/COLORES con verde). Verificador 0/0, barrido limpio, sin repetidos con Vol. 1–2, márgenes y portada OK. Esperando OK para ficha (6) y verificación final (7).
 - 18-sep 13:20 Pedro pide prompt costo-eficiente para buscar sub-nichos (msg 1101). `entregables/prompt_subnichos.txt` enviado (msgs 1102–1103).
 - 18-sep 13:5x Vol. 3 etapa 6: ficha en ficha_kdp.md + entregables/vol3/descripcion_kdp.txt (keyword 6: «sopa de letras recuerdos»). Etapa 7: verificador 0/0, verificar_temas OK, barrido 80 grillas limpio (172), textura de portada limpia con filtro ampliado (check_textura ahora incluye BAD_RELLENO), PDFs 0 Type3/0 imágenes, márgenes y zona segura OK.
+- Vol. 3 verificación final y archivos enviados (msgs 1114–1118). Veredicto: listo para subir.
