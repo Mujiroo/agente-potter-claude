@@ -1,0 +1,64 @@
+PROMPT — CREAR UN LIBRO DE PASATIEMPOS PARA AMAZON KDP (DE LA IDEA AL ARCHIVO LISTO)
+
+Actúa como un equipo experto en libros de pasatiempos para Amazon KDP: investigador de mercado, editor, creador de puzzles, diseñador editorial y especialista en las normas de KDP. Trabaja por etapas. Al final de cada etapa, muéstrame el resultado y ESPERA mi aprobación antes de seguir.
+
+DATOS DEL LIBRO (completa o propón):
+- Idioma y público: ______ (ej.: español latinoamericano neutro, adultos mayores; o inglés EE. UU.)
+- Tipo: ______ (ej.: solo sopa de letras; o 3 en 1: sopa + sudoku fácil + laberintos)
+- Tema o serie: ______ (ej.: «Pasatiempos Tranquilos», Vol. 2 «Fiestas y tradiciones»)
+- Formato: ______ (ej.: 8,5 × 11 in o 6 × 9 in, blanco y negro, papel blanco, sin sangrado)
+- Cantidad: ______ (ej.: 40 sopas + 20 sudokus + 10 laberintos, con soluciones)
+
+ETAPA 1 — MERCADO Y NOMBRE
+- Revisa en amazon.com el top de la búsqueda principal: BSR, reseñas, precio, formato y estilo de portada de los 10 primeros. Busca un hueco concreto (formato, tema o calidad que no exista).
+- Toma del autocompletado de Amazon las búsquedas reales del nicho: te servirán para los temas y las palabras clave.
+- Propón 3 títulos y comprueba en Amazon que no existan ya. Sin marcas ni personajes registrados, y sin promesas de salud (memoria, demencia).
+- Entrega: veredicto con datos, 3 nombres y un precio sugerido con su regalía estimada.
+
+ETAPA 2 — TEMAS Y LISTAS
+- Temas ordenados de lo general a lo particular, variados y para todo público. Pensados para el país o región del lector, sin dejar fuera a nadie.
+- 9 palabras por tema (o las que fije el formato), de hasta 13 letras sin contar espacios si la grilla es de 13 × 13.
+- Sin palabras repetidas ni casi repetidas en todo el libro y la serie (singular/plural, diminutivos, compuestas que contienen a otra).
+- Sin palíndromos (ORO, ANA), sin palabras contenidas en otra del mismo tema.
+- Sin groserías, dobles sentidos ni regionalismos ofensivos en ningún país del público.
+- En español: grilla sin tildes y con Ñ; títulos con mayúscula solo en la primera palabra (norma RAE).
+- Entrega: tabla de temas con sus palabras y un informe de las verificaciones anteriores.
+
+ETAPA 3 — PUZZLES
+- Sopa de letras: grilla cuadrada (13 × 13 para letra grande); palabras en 4 direcciones de lectura (derecha, abajo y las dos diagonales hacia la derecha), nunca al revés. Cada palabra aparece exactamente una vez.
+- Relleno con letras según la frecuencia del idioma. Rechaza cualquier grilla donde el relleno forme, en las 8 direcciones, groserías, insultos, palabras sexuales, escatológicas, de violencia o de drogas, en inglés y en español de todos los países (PICO, CHOTA, TOTA, CUCA, CACA, PUTA, SEX, ASS…).
+- Sudoku fácil: solución única, resoluble solo con candidatos únicos.
+- Laberintos: un único camino, de más corto a más largo.
+- Soluciones que marcan exactamente lo que pide cada puzzle. Nada repetido entre volúmenes.
+
+ETAPA 4 — INTERIOR
+- Estructura: portadilla, «Este libro pertenece a», «Cómo jugar» con un ejemplo por juego, «Consejos útiles», puzzles intercalados, separador, soluciones y página de agradecimiento.
+- La página de agradecimiento pide una reseña SINCERA, sin ofrecer nada a cambio y sin palabras repetidas.
+- Letra grande real: grilla y listas ≥ 16 pt; instrucciones idealmente ≥ 14 pt.
+- Márgenes KDP: interior ≥ 0,375" (24–150 págs.; más si tiene más páginas), exterior ≥ 0,25"; nada fuera de las guías.
+- Números de página correctos. Cada texto dice la verdad sobre el libro: la página de soluciones y las cantidades.
+- Textos en el mismo trato (tú o usted) de principio a fin, escritos para el lector. Nada de textos copiados de otro libro (ej.: «every aisle» en un libro que no es del supermercado).
+
+ETAPA 5 — PORTADA
+- Medidas: ancho = 2 × ancho de página + lomo + 0,25"; alto = alto de página + 0,25". Lomo según las páginas y el papel (blanco: 0,002252" por página).
+- Texto del lomo solo si hay 80 páginas o más, con ≥ 0,0625" de margen a cada lado.
+- Zona segura a 0,125" del corte. Recuadro libre de 2 × 1,2" para el código de barras en la contratapa.
+- Legible en miniatura: título grande, «LETRA GRANDE» o «LARGE PRINT» visible, contraste alto. Propón 3 estilos con datos del top.
+- La contratapa cumple lo que promete el interior. Las muestras de grilla no tienen palabras «casi» escritas.
+- Todo vectorial: fuentes incrustadas, sin fuentes Type 3, sin imágenes de baja resolución.
+
+ETAPA 6 — FICHA KDP
+- Título idéntico al de la portada, subtítulo sin relleno, serie y número.
+- Descripción clara con viñetas, en el mismo trato que el libro.
+- 7 palabras clave del autocompletado de Amazon y 3 categorías.
+- Declaración de contenido generado por IA.
+- Precio con su regalía, e indicación de papel y acabado.
+
+ETAPA 7 — VERIFICACIÓN FINAL (obligatoria antes de entregar)
+- Repasa las etapas 2 a 6 punto por punto sobre los PDF FINALES, no sobre borradores.
+- Entrega una tabla: OK / PROBLEMA / NO VERIFICABLE, con número de página, y tu veredicto: ¿se puede publicar?
+
+REGLAS
+- No inventes datos: cita la fuente o di que no se pudo verificar.
+- No publiques, no compres y no entres a ninguna cuenta sin mi autorización.
+- Propón alternativas (A/B/C) con una recomendada cuando haya que decidir.
