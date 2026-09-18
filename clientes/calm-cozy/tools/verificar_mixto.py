@@ -13,6 +13,9 @@ DIRS = [(0, 1), (1, 0), (1, 1), (-1, 1)]
 ALL8 = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
 sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/../../libro-sopa-de-letras/tools")
 from generar import BAD  # noqa: E402  (la misma lista que usa el generador)
+sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/../../pasatiempos-tranquilos/tools")
+from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
+BAD = list(dict.fromkeys(BAD + BAD_ES + BAD_RELLENO))
 
 
 def solvable_by_singles(g):

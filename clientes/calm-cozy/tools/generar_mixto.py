@@ -29,6 +29,12 @@ import puzzles as PZ  # noqa: E402
 import pagina2  # noqa: E402
 from generar import FORWARD, build, words_block  # noqa: E402
 from generar import grid_svg as _grid_svg  # noqa: E402
+import generar  # noqa: E402
+sys.path.insert(0, os.path.join(HERE, "..", "..", "pasatiempos-tranquilos", "tools"))
+from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
+# Filtro ampliado también en español (Pedro, 18-sep-2026, msgs 1035 y 1047): un lector hispano en EE. UU.
+# no debe encontrar groserías formadas por el relleno.
+generar.BAD[:] = list(dict.fromkeys(generar.BAD + BAD_ES + BAD_RELLENO))
 
 
 def grid_svg(grid, placed=None):
