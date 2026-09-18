@@ -207,14 +207,14 @@ DISENOS = [("1-rojo-3en1", "Rojo 3 en 1", p1), ("2-jardin-alegre", "Jardín aleg
 def check_textura():
     """Reconstruye la textura (misma semilla) y busca groserías en 8 direcciones."""
     import random
-    from verificar_temas import BAD_ES
+    from verificar_temas import BAD_ES, BAD_RELLENO
     sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", "libro-sopa-de-letras", "tools"))
     from generar import BAD
     rng = random.Random(TEX["seed"])
     rows, cols = int(H // TEX["cell"]) + 1, int(W // TEX["cell"]) + 1
     g = [[rng.choice("ABCDEFGHIJKLMNOPRSTUVWY") for _ in range(cols)] for _ in range(rows)]
     hits = []
-    for w in set(BAD + BAD_ES):
+    for w in set(BAD + BAD_ES + BAD_RELLENO):
         for r in range(rows):
             for c in range(cols):
                 for dr, dc in [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]:

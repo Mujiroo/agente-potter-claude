@@ -54,3 +54,14 @@ Igual que el Vol. 1 salvo:
 - **Palabras clave:** las mismas 7, cambiando la 6 por `sopa de letras navidad` (autocompletado amazon.com, 18-sep) — el tema trae Navidad, Nochebuena y Día de Reyes.
 - **Archivos:** `Pasatiempos_Vol2_interior_8.5x11.pdf` (122 págs.) · `Pasatiempos_Vol2_portada.pdf` (17,5247 × 11,25", papel BLANCO)
 - **Precio:** igual que el Vol. 1.
+
+---
+
+# Ficha KDP — Pasatiempos Tranquilos, Vol. 3 (tapa blanda)
+
+Igual que el Vol. 1 salvo:
+- **Serie:** `Pasatiempos Tranquilos` · número **3**
+- **Descripción:** `entregables/vol3/descripcion_kdp.txt`
+- **Palabras clave:** las del Vol. 1, cambiando la 6 por `sopa de letras recuerdos` (autocompletado amazon.com, 18-sep).
+- **Archivos:** `Pasatiempos_Vol3_interior_8.5x11.pdf` (122 págs.) · `Pasatiempos_Vol3_portada.pdf` (17,5247 × 11,25", papel BLANCO)
+- **Precio:** igual que el Vol. 1.
