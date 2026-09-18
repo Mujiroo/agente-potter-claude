@@ -151,3 +151,4 @@
   - Avisé a Pedro que no publicara el Vol. 1 (msg 1011). No lo había subido (faltaba precio, msg 1016). Enviado interior corregido Vol. 1 (msg 1014) + instrucciones + precio recomendado 9,99 → 12,99.
   - Vol. 2 re-auditado (márgenes, zona segura, soluciones pág. 74) y reenviado corregido (msgs 1018+). Listo para subir.
 - 18-sep 10:39 Pedro: página de gracias repetitiva (msg 1021). Nueva redacción en `thanks_page()` («Nos alegra que hayas elegido…», reseña sincera en Amazon). Vol. 1 y 2 regenerados (sólo cambia la pág. 122; verificador 0/0; auditoría OK). Portada Vol. 1 subida por Pedro se mantiene (msg 1022). Manuscritos FINALES enviados.
+- 18-sep 10:41 Pedro pregunta si se puede pedir reseña dentro del libro (msg 1028). Sí: Amazon Community Guidelines permiten animar a una «unbiased, un-incentivized review»; prohibido compensar o pedir sólo positivas (verificado en amazon.com con agent-browser).
