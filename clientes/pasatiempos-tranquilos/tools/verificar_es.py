@@ -15,6 +15,7 @@ sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/../../libro-sopa-de-letras/too
 from generar import BAD  # noqa: E402
 sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/..")
 from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
+from tildes_es import con_tildes, sin_tildes  # noqa: E402
 BAD = list(dict.fromkeys(BAD + BAD_ES + BAD_RELLENO))
 
 
@@ -139,9 +140,12 @@ def main(src, dst):
         for idx in (pi, si):
             if f'<h1>{html.escape(pz["theme"])}</h1>' not in pages[idx - 1]:
                 errs.append(f"{tag}: falta el título en la página {idx}")
-            listed = re.findall(r'<li>([^<]+)</li>', pages[idx - 1])
-            if [x.strip() for x in listed] != pz["words"]:
+            listed = [html.unescape(x).strip() for x in re.findall(r'<li>([^<]+)</li>', pages[idx - 1])]
+            if [sin_tildes(x) for x in listed] != pz["words"]:
                 errs.append(f"{tag}: la lista de la página {idx} no calza con el JSON")
+            # la lista va con su ortografía correcta (tildes), la grilla sin ellas
+            if listed != [con_tildes(w) for w in pz["words"]]:
+                errs.append(f"{tag}: la lista de la página {idx} no lleva las tildes de tildes_es.py")
         # cada palabra, una sola vez y nunca al revés
         for w in pz["words"]:
             plain = w.replace(" ", "")

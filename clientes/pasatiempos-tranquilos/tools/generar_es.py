@@ -33,6 +33,7 @@ import generar  # noqa: E402
 import puzzles as PZ  # noqa: E402
 import pagina2_es as pagina2  # noqa: E402
 from generar import FORWARD, build, words_block  # noqa: E402
+from tildes_es import con_tildes  # noqa: E402
 from generar import grid_svg as _grid_svg  # noqa: E402
 from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
 
@@ -193,7 +194,7 @@ def main(src, dst):
             grid, placed = build(p["words"], size, rng, FORWARD)
             solved_w.append((wi, p, grid, placed))
             page(f'<div class="tag">Sopa de letras {wi}</div><h1>{html.escape(p["theme"])}</h1>'
-                 f'{grid_svg(grid)}{words_block(p["words"])}')
+                 f'{grid_svg(grid)}{words_block([con_tildes(w) for w in p["words"]])}')
         elif kind == "s":
             si += 1
             pz, sol, givens = sud_pool[si - 1]
@@ -211,7 +212,7 @@ def main(src, dst):
          '<div class="tp-sub">Sopa de letras &middot; Sudoku fácil &middot; Laberintos</div></div>', "title-page")
     for i, p, grid, placed in solved_w:
         page(f'<div class="tag">Sopa de letras {i}</div><h1>{html.escape(p["theme"])}</h1>'
-             f'{grid_svg(grid, placed)}{words_block(p["words"])}')
+             f'{grid_svg(grid, placed)}{words_block([con_tildes(w) for w in p["words"]])}')
     for k in range(0, len(solved_s), 6):  # seis sudokus por página (2 x 3)
         items = "".join(f'<div class="item">{PZ.sudoku_svg(pz, sol, cell=46)}<div>Sudoku {i}</div></div>'
                         for i, pz, sol in solved_s[k:k + 6])

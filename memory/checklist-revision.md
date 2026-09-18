@@ -16,7 +16,8 @@ Pedro pide que toda revisión sea exhaustiva (msg 1033, 18-sep-2026). Ver [[pref
 - Repeticiones de palabras en un mismo párrafo o página (p. ej. «gracias… agradeceríamos», «tranquilos»).
 - Mayúsculas según la RAE: en títulos, solo la primera palabra y los nombres propios. Las festividades y colecciones sí llevan mayúscula.
 - Frases que se entienden a la primera, para adultos mayores; nada de «Nunca al revés» sin explicar.
-- Que el interior avise que las palabras van sin tildes y que las compuestas van juntas.
+- Que el interior avise que en la GRILLA las palabras van sin tildes y que las compuestas van juntas.
+- La LISTA bajo la grilla lleva tildes (mayúsculas acentuadas, RAE). Se genera con `pasatiempos-tranquilos/tools/tildes_es.py` (Pedro, msg 1080: «eso ya lo habíamos hablado»; no volver a entregar listas sin tildes).
 - Números citados: la página de soluciones y los conteos (40/20/10 = 70) coinciden con el libro.
 
 ## Listas de palabras

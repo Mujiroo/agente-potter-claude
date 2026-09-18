@@ -34,7 +34,7 @@ def textura(fill, op=1.0):
 
 # Paleta del fondo por volumen: (centro claro, base, borde oscuro)
 PALETAS = {"rojo": ("#DC3B2E", ROJO, "#8C1616"), "morado": ("#8A3AB9", "#6A1B9A", "#3A0E57"),
-           "azul": ("#2F7FD6", "#1565C0", "#0B2E66")}
+           "azul": ("#2F7FD6", "#1565C0", "#0B2E66"), "verde": ("#3E9A44", "#2E7D32", "#123F16")}
 
 
 def viñeta(k, w=W, h=H, pal="rojo"):

@@ -169,7 +169,7 @@ def page2(book, sol_start):
         (_word_example(), "Sopa de letras", [
             ("list", "Busca cada palabra de la lista."),
             ("lens", "Se leen de izquierda a derecha, hacia abajo o en diagonal."),
-            ("check", "Van <b>sin tildes</b>, y las de dos palabras van <b>juntas</b> (ARROZ CON LECHE = ARROZCONLECHE)."),
+            ("check", "En la grilla van <b>sin tildes</b>, y las de dos palabras van <b>juntas</b> (ARROZ CON LECHE = ARROZCONLECHE)."),
             ("pencil", "Enciérrala en la grilla y táchala de la lista."),
         ]),
         (_sudoku_example(), "Sudoku fácil", [

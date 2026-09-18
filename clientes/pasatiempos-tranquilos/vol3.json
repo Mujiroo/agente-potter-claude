@@ -1,0 +1,608 @@
+{
+ "title": "Sopa de Letras, Sudoku y Laberintos",
+ "subtitle": "Pasatiempos Tranquilos en Letra Grande para Adultos Mayores",
+ "volume": "Vol. 3",
+ "tagline": "40 sopas de letras · 20 sudokus fáciles · 10 laberintos · letra grande",
+ "trim": [
+  8.5,
+  11
+ ],
+ "size": 13,
+ "seed": 32,
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": "Pasatiempos Tranquilos",
+ "instructions_style": "icons",
+ "tips_page": true,
+ "thanks_page": true,
+ "cover": {
+  "author": "Peter & Cardu",
+  "script": "Pasatiempos Tranquilos",
+  "title": "Naturaleza y recuerdos"
+ },
+ "sudokus": 20,
+ "mazes": 10,
+ "word_puzzles": [
+  {
+   "theme": "Flores del jardín",
+   "words": [
+    "GERANIO",
+    "BUGAMBILIA",
+    "MARGARITA",
+    "CLAVEL",
+    "GIRASOL",
+    "LIRIO",
+    "JAZMIN",
+    "ORQUIDEA",
+    "HORTENSIA"
+   ]
+  },
+  {
+   "theme": "Árboles",
+   "words": [
+    "ROBLE",
+    "CEIBA",
+    "OLIVO",
+    "SAUCE",
+    "ALGARROBO",
+    "JACARANDA",
+    "GUAYACAN",
+    "ARAUCARIA",
+    "CEDRO"
+   ]
+  },
+  {
+   "theme": "Pájaros",
+   "words": [
+    "GORRION",
+    "COLIBRI",
+    "GARZA",
+    "CANARIO",
+    "JILGUERO",
+    "HORNERO",
+    "LORO",
+    "NIDO",
+    "TRINO"
+   ]
+  },
+  {
+   "theme": "Animales de granja",
+   "words": [
+    "CABALLO",
+    "VACA",
+    "CERDITO",
+    "OVEJA",
+    "CABRA",
+    "GALLO",
+    "POLLITOS",
+    "PATO",
+    "BURRO"
+   ]
+  },
+  {
+   "theme": "Animales de la selva",
+   "words": [
+    "JAGUAR",
+    "MONO",
+    "PEREZOSO",
+    "TAPIR",
+    "GUACAMAYA",
+    "IGUANA",
+    "ANACONDA",
+    "TUCAN",
+    "RANITA"
+   ]
+  },
+  {
+   "theme": "El mar y la playa",
+   "words": [
+    "OLAS",
+    "ARENA",
+    "CARACOLES",
+    "GAVIOTAS",
+    "SOMBRILLA",
+    "BRISA",
+    "CANGREJO",
+    "ESTRELLA DE MAR",
+    "TOALLA"
+   ]
+  },
+  {
+   "theme": "Ríos y montañas",
+   "words": [
+    "CUMBRE",
+    "VALLE",
+    "GLACIAR",
+    "PIEDRAS",
+    "RIBERA",
+    "SENDERO",
+    "NEBLINA",
+    "PUENTE",
+    "ARROYO"
+   ]
+  },
+  {
+   "theme": "Tarde de lluvia",
+   "words": [
+    "NUBES",
+    "TRUENOS",
+    "PARAGUAS",
+    "CHARCOS",
+    "GOTAS",
+    "VENTANA",
+    "COBIJA",
+    "ARCOIRIS",
+    "IMPERMEABLE"
+   ]
+  },
+  {
+   "theme": "Noche estrellada",
+   "words": [
+    "LUNA",
+    "LUCEROS",
+    "CONSTELACION",
+    "GRILLOS",
+    "LUCIERNAGA",
+    "VIA LACTEA",
+    "TELESCOPIO",
+    "FIRMAMENTO",
+    "BUHO"
+   ]
+  },
+  {
+   "theme": "Las estaciones",
+   "words": [
+    "PRIMAVERA",
+    "VERANO",
+    "OTOÑO",
+    "INVIERNO",
+    "HOJAS SECAS",
+    "CALOR",
+    "FRIO",
+    "FLORECER",
+    "HELADAS"
+   ]
+  },
+  {
+   "theme": "Los Andes",
+   "words": [
+    "CONDOR",
+    "LLAMA",
+    "ALPACA",
+    "VICUÑA",
+    "NEVADO",
+    "ALTIPLANO",
+    "TERRAZAS",
+    "QUEBRADA",
+    "PUNA"
+   ]
+  },
+  {
+   "theme": "Islas del Caribe",
+   "words": [
+    "PALMERAS",
+    "ARRECIFE",
+    "CORAL",
+    "BAHIA",
+    "VELERO",
+    "FARO",
+    "MUELLE",
+    "MANGLAR",
+    "ISLOTE"
+   ]
+  },
+  {
+   "theme": "La selva amazónica",
+   "words": [
+    "AMAZONAS",
+    "LIANAS",
+    "CANOA",
+    "BROMELIAS",
+    "VICTORIA REGIA",
+    "DELFIN ROSADO",
+    "CAUCHO",
+    "HUMEDAD",
+    "FOLLAJE"
+   ]
+  },
+  {
+   "theme": "Volcanes y desiertos",
+   "words": [
+    "VOLCAN",
+    "CRATER",
+    "LAVA",
+    "CENIZA",
+    "DUNAS",
+    "CACTUS",
+    "OASIS",
+    "SALAR",
+    "ESPEJISMO"
+   ]
+  },
+  {
+   "theme": "Pueblos coloniales",
+   "words": [
+    "EMPEDRADO",
+    "CALLEJON",
+    "CATEDRAL",
+    "TEJAS",
+    "ADOBE",
+    "ALJIBE",
+    "AZULEJOS",
+    "CONVENTO",
+    "ZAGUAN"
+   ]
+  },
+  {
+   "theme": "Cascadas y lagos",
+   "words": [
+    "CASCADA",
+    "CATARATAS",
+    "LAGUNA",
+    "ROCIO",
+    "BRUMA",
+    "REFLEJO",
+    "BOTE",
+    "ORILLA",
+    "REMOS"
+   ]
+  },
+  {
+   "theme": "El campo",
+   "words": [
+    "PRADERA",
+    "TRIGAL",
+    "MOLINO",
+    "TRACTOR",
+    "GRANERO",
+    "HENO",
+    "ARADO",
+    "CAMPESINO",
+    "POTRERO"
+   ]
+  },
+  {
+   "theme": "La huerta",
+   "words": [
+    "TOMATE",
+    "CALABAZA",
+    "LECHUGA",
+    "PEPINO",
+    "ZANAHORIA",
+    "REGADERA",
+    "AZADON",
+    "SURCO",
+    "COSECHA"
+   ]
+  },
+  {
+   "theme": "El rancho y la finca",
+   "words": [
+    "CORRAL",
+    "ESTABLO",
+    "ESPUELAS",
+    "LAZO",
+    "MONTURA",
+    "VAQUERO",
+    "HACIENDA",
+    "ORDEÑAR",
+    "HERRADURA"
+   ]
+  },
+  {
+   "theme": "Tierra de café",
+   "words": [
+    "CAFETAL",
+    "ARABICA",
+    "RECOLECTOR",
+    "CEREZAS",
+    "SECADERO",
+    "TUESTE",
+    "ARRIERO",
+    "MULA",
+    "LADERA"
+   ]
+  },
+  {
+   "theme": "El barrio de mi infancia",
+   "words": [
+    "VECINOS",
+    "ESQUINA",
+    "ACERA",
+    "BICICLETA",
+    "AMIGUITOS",
+    "TOBOGAN",
+    "PATINES",
+    "TIMBRE",
+    "PARQUE"
+   ]
+  },
+  {
+   "theme": "La tiendita de la esquina",
+   "words": [
+    "MOSTRADOR",
+    "FIADO",
+    "CARAMELOS",
+    "FRASCOS",
+    "TENDERO",
+    "MONEDAS",
+    "REFRESCO",
+    "CAMBIO",
+    "ABARROTES"
+   ]
+  },
+  {
+   "theme": "Moda de antes",
+   "words": [
+    "ENAGUA",
+    "CORBATIN",
+    "TIRANTES",
+    "GUANTES",
+    "CHALECO",
+    "PEINETA",
+    "BOINA",
+    "MINIFALDA",
+    "GOMINA"
+   ]
+  },
+  {
+   "theme": "Autos clásicos",
+   "words": [
+    "VOLANTE",
+    "BOCINA",
+    "RETROVISOR",
+    "PARACHOQUES",
+    "DESCAPOTABLE",
+    "RUEDAS",
+    "CARBURADOR",
+    "MANIVELA",
+    "CROMADO"
+   ]
+  },
+  {
+   "theme": "El cine de antes",
+   "words": [
+    "PELICULA",
+    "PANTALLA",
+    "BUTACA",
+    "TAQUILLA",
+    "PALOMITAS",
+    "PROYECTOR",
+    "INTERMEDIO",
+    "CARTELERA",
+    "ACOMODADOR"
+   ]
+  },
+  {
+   "theme": "Cartas y postales",
+   "words": [
+    "SOBRE",
+    "ESTAMPILLA",
+    "CARTERO",
+    "BUZON",
+    "REMITENTE",
+    "POSTAL",
+    "DESTINATARIO",
+    "TINTA",
+    "CORREO"
+   ]
+  },
+  {
+   "theme": "El primer amor",
+   "words": [
+    "MARIPOSAS",
+    "CITA",
+    "MIRADAS",
+    "TIMIDEZ",
+    "NOVIAZGO",
+    "SONROJO",
+    "PRIMER BESO",
+    "FLECHAZO",
+    "ILUSION"
+   ]
+  },
+  {
+   "theme": "Mi primer trabajo",
+   "words": [
+    "SUELDO",
+    "JEFE",
+    "HORARIO",
+    "OFICINA",
+    "CONTRATO",
+    "ENTREVISTA",
+    "CREDENCIAL",
+    "COLEGAS",
+    "ENTUSIASMO"
+   ]
+  },
+  {
+   "theme": "Viajes en tren",
+   "words": [
+    "ESTACION",
+    "VAGON",
+    "LOCOMOTORA",
+    "BOLETO",
+    "ANDEN",
+    "EQUIPAJE",
+    "PAISAJE",
+    "RIELES",
+    "SILBATO"
+   ]
+  },
+  {
+   "theme": "Remedios de la abuela",
+   "words": [
+    "MANZANILLA",
+    "EUCALIPTO",
+    "MIEL",
+    "LIMON",
+    "JENGIBRE",
+    "SABILA",
+    "UNGUENTO",
+    "MENTA",
+    "CALDITO"
+   ]
+  },
+  {
+   "theme": "Palabras bonitas",
+   "words": [
+    "BONDAD",
+    "PAZ",
+    "SERENIDAD",
+    "GENEROSIDAD",
+    "PACIENCIA",
+    "HONESTIDAD",
+    "DULZURA",
+    "CALMA",
+    "NOBLEZA"
+   ]
+  },
+  {
+   "theme": "Gracias a la vida",
+   "words": [
+    "SALUD",
+    "FAMILIA",
+    "AMANECER",
+    "NATURALEZA",
+    "PERDON",
+    "HOGAR",
+    "MILAGROS",
+    "CORAZON",
+    "ABUNDANCIA"
+   ]
+  },
+  {
+   "theme": "Caminar y moverse",
+   "words": [
+    "CAMINATA",
+    "ESTIRAR",
+    "BAILAR",
+    "NADAR",
+    "YOGA",
+    "ZAPATILLAS",
+    "RESPIRAR",
+    "EQUILIBRIO",
+    "ENERGIA"
+   ]
+  },
+  {
+   "theme": "Tés e infusiones",
+   "words": [
+    "TETERA",
+    "BOLSITAS",
+    "TILO",
+    "TORONJIL",
+    "HIERBABUENA",
+    "TE VERDE",
+    "AGUA CALIENTE",
+    "ANIS",
+    "BOLDO"
+   ]
+  },
+  {
+   "theme": "Buen descanso",
+   "words": [
+    "SIESTA",
+    "ALMOHADA",
+    "SABANAS",
+    "CAMISON",
+    "BOSTEZO",
+    "PANTUFLAS",
+    "SUEÑO",
+    "EDREDON",
+    "RELAJACION"
+   ]
+  },
+  {
+   "theme": "La amistad",
+   "words": [
+    "HERMANDAD",
+    "CONFIANZA",
+    "LEALTAD",
+    "SECRETOS",
+    "APOYO",
+    "VISITAS",
+    "TERTULIA",
+    "SOLIDARIDAD",
+    "INCONDICIONAL"
+   ]
+  },
+  {
+   "theme": "Fe y esperanza",
+   "words": [
+    "PLEGARIA",
+    "ESPERANZA",
+    "ORACION",
+    "FORTALEZA",
+    "CONSUELO",
+    "LUZ",
+    "ANGEL",
+    "GRATITUD",
+    "PROVIDENCIA"
+   ]
+  },
+  {
+   "theme": "Mis pasatiempos",
+   "words": [
+    "CRUCIGRAMAS",
+    "PUNTO DE CRUZ",
+    "JARDINERIA",
+    "LECTURA",
+    "PINTURA",
+    "ROMPECABEZAS",
+    "COCINAR",
+    "SUDOKU",
+    "BORDADO"
+   ]
+  },
+  {
+   "theme": "Buen humor",
+   "words": [
+    "CHISTES",
+    "PAYASO",
+    "COSQUILLAS",
+    "OCURRENCIAS",
+    "BROMAS",
+    "RISOTADA",
+    "CHISPA",
+    "DIVERSION",
+    "OPTIMISMO"
+   ]
+  },
+  {
+   "theme": "Sabiduría de los años",
+   "words": [
+    "EXPERIENCIA",
+    "PRUDENCIA",
+    "MADUREZ",
+    "SENSATEZ",
+    "CANAS",
+    "APRENDIZAJE",
+    "TOLERANCIA",
+    "CRITERIO",
+    "PERSPECTIVA"
+   ]
+  }
+ ],
+ "cover_full": {
+  "page_count": 122,
+  "paper": "white",
+  "author": "Peter & Cardu",
+  "back_headline": "Un rato de calma, en español",
+  "back_intro": [
+   "Tres pasatiempos clásicos en un solo libro, con <b>letra grande</b> y temas que traen paz y buenos recuerdos: la naturaleza, los paisajes de Latinoamérica, los tiempos de antes y las pequeñas alegrías de cada día."
+  ],
+  "back_bullets": [
+   "<b>40 sopas de letras</b> sobre naturaleza, paisajes latinos, recuerdos y bienestar",
+   "<b>20 sudokus fáciles</b>, cada uno con una sola solución",
+   "<b>10 laberintos</b> para relajarse",
+   "Palabras <b>fáciles de encontrar</b>: se leen de izquierda a derecha, hacia abajo o en diagonal",
+   "Formato grande: 21,6 × 27,9 cm (8,5 × 11\")",
+   "<b>Soluciones</b> al final del libro"
+  ],
+  "back_close": "Un regalo ideal para mamá, papá, los abuelos… o para ti.",
+  "series_line": "Pasatiempos Tranquilos · Vol. 3",
+  "spine": "SOPA DE LETRAS · SUDOKU · LABERINTOS   ·   PASATIEMPOS TRANQUILOS VOL. 3   ·   PETER & CARDU",
+  "palette": "verde"
+ }
+}

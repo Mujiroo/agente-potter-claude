@@ -24,7 +24,7 @@ ROJO, OSC, AM, AZUL = "#C62828", "#7F1414", "#FFD54F", "#1E3A8A"
 PAL, VOL = "rojo", V2.VOL
 # Color de cada volumen: base, oscuro, pastilla (Vol. 1 rojo; Vol. 2 y 3 según la serie, portadas_v2.SERIE)
 COLORES = {"rojo": ("#C62828", "#7F1414", "#1E3A8A"), "morado": ("#6A1B9A", "#3E0F5C", "#C62828"),
-           "azul": ("#1565C0", "#0D2A5C", "#C62828")}
+           "azul": ("#1565C0", "#0D2A5C", "#C62828"), "verde": ("#2E7D32", "#1B4D1E", "#6A1B9A")}
 
 
 def set_volumen(book):
