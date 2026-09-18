@@ -133,3 +133,4 @@
 - 18-sep 09:57 Pedro OK a preparar la ficha KDP (msg 976). `ficha_kdp.md` + `entregables/vol1/descripcion_kdp.txt` (en tú), enviados msgs 978–980.
   - Título «Sopa de letras, sudoku y laberintos» / subtítulo «Pasatiempos Tranquilos en letra grande para adultos mayores» / serie n.º 1. 7 keywords del autocompletado. Categorías Puzzles · Sopa de Letras · Sudoku. Papel BLANCO (lomo). Brillante. IA: texto sí, imágenes sí, traducción algunas secciones. Precio recomendado US$ 9,99 → 12,99.
   - Pedí captura del previsualizador antes de «Publicar».
+- 18-sep 10:02 Pedro manda captura de categorías (msgs 982–983): Humor y Entretenimiento › Puzzles y Juegos › Puzzles · Sopa de Letras · Sudoku. Confirmado OK.
