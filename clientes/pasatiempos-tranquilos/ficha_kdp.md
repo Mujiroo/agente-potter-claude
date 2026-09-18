@@ -42,3 +42,15 @@ Trato: descripción en tú (opción A, msg 939). Mayúsculas según la RAE (msg 
 ## Antes de publicar
 - Máx. 3 títulos nuevos cada 24 h.
 - Pedro carga todo en su cuenta; yo no entro a KDP.
+
+---
+
+# Ficha KDP — Pasatiempos Tranquilos, Vol. 2 (tapa blanda)
+
+Igual que el Vol. 1 salvo:
+- **Título / subtítulo:** los mismos (`Sopa de letras, sudoku y laberintos` / `Pasatiempos Tranquilos en letra grande para adultos mayores`)
+- **Serie:** `Pasatiempos Tranquilos` · número **2**
+- **Descripción:** `entregables/vol2/descripcion_kdp.txt`
+- **Palabras clave:** las mismas 7, cambiando la 6 por `sopa de letras navidad` (autocompletado amazon.com, 18-sep) — el tema trae Navidad, Nochebuena y Día de Reyes.
+- **Archivos:** `Pasatiempos_Vol2_interior_8.5x11.pdf` (122 págs.) · `Pasatiempos_Vol2_portada.pdf` (17,5247 × 11,25", papel BLANCO)
+- **Precio:** igual que el Vol. 1.

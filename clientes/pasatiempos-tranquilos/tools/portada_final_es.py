@@ -21,6 +21,18 @@ import portadas_v2 as V2  # noqa: E402
 import fondos_es  # noqa: E402
 
 ROJO, OSC, AM, AZUL = "#C62828", "#7F1414", "#FFD54F", "#1E3A8A"
+PAL, VOL = "rojo", V2.VOL
+# Color de cada volumen: base, oscuro, pastilla (Vol. 1 rojo; Vol. 2 y 3 según la serie, portadas_v2.SERIE)
+COLORES = {"rojo": ("#C62828", "#7F1414", "#1E3A8A"), "morado": ("#6A1B9A", "#3E0F5C", "#C62828"),
+           "azul": ("#1565C0", "#0D2A5C", "#C62828")}
+
+
+def set_volumen(book):
+    """Fija color y texto de volumen desde libro.json (cover_full.palette, volume y cover.title)."""
+    global ROJO, OSC, AZUL, PAL, VOL
+    PAL = book["cover_full"].get("palette", "rojo")
+    ROJO, OSC, AZUL = COLORES[PAL]
+    VOL = f'{book["volume"]} · {book["cover"]["title"]}'
 # Tipografía E elegida por Pedro (17-sep, msg 874): Archivo Black + Bree Serif + Caveat
 FONTS = dict(next(k for n, _l, k in V2.TIPOS if n == "T5-archivo"))
 SERIF, SANS, SCRIPT = FONTS["sub"], FONTS["bold"], FONTS["script"]
@@ -40,8 +52,8 @@ def texture(x0, y0, w, h, seed=28):
 def front(x0, w, H):
     """El diseño 1 con el fondo E «Brillos cálidos» (Pedro, 18-sep, msg 952); mide W = 8,75" con sangrado.
     Si w es mayor, se extiende el fondo por el borde exterior."""
-    p1 = V2.p1(fonts=FONTS, fondo=fondos_es.f_brillos(k="fe"))
-    return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="#8C1616"/>'
+    p1 = V2.p1(rojo=ROJO, osc=OSC, azul=AZUL, vol=VOL, fonts=FONTS, fondo=fondos_es.f_brillos(k="fe", pal=PAL))
+    return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="{fondos_es.PALETAS[PAL][2]}"/>'
             f'<g transform="translate({x0} 0)">{p1}</g>'
             f'<rect x="{x0 + V2.W - 1}" y="{H-215}" width="{w - V2.W + 1}" height="130" fill="{AM}"/>'
             if w > V2.W else f'<g transform="translate({x0} 0)">{p1}</g>')
@@ -53,7 +65,7 @@ def back(x0, w, H, cv, trim_right):
     width = trim_right - left - 55
     cx = left + width / 2
     bx, by = trim_right - BARCODE_MARGIN - BARCODE[0], H - b - BARCODE_MARGIN - BARCODE[1]
-    fondo = fondos_es.f_brillos(w, H, k="be", espejo=True, tex=False)  # mismo fondo E que el frente, reflejado
+    fondo = fondos_es.f_brillos(w, H, k="be", espejo=True, tex=False, pal=PAL)  # mismo fondo E que el frente, reflejado
     out = [f'<svg x="{x0}" y="0" width="{w}" height="{H}" viewBox="0 0 {w} {H}" overflow="hidden">{fondo}</svg>',
            texture(x0, 0, w, H, seed=28),
            f'<text x="{cx}" y="{b+120}" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{AM}">{esc(cv["back_headline"])}</text>',
@@ -82,6 +94,7 @@ def spine(x0, sw, H, cv):
 
 def main(src, dst):
     book = json.load(open(src, encoding="utf-8"))
+    set_volumen(book)
     cv = book["cover_full"]
     tw, th = book["trim"]
     b = BLEED * U
@@ -93,7 +106,7 @@ def main(src, dst):
     svg = (back(0, b + tw * U + b, H, cv, trim_right=b + tw * U)
            + front(fx - b, tw * U + 2 * b + EXTRA, H)
            + spine(b + tw * U, sw, H, cv))
-    doc = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Pasatiempos Tranquilos Vol. 1 (portada)</title><style>
+    doc = f'''<!doctype html><html lang="es"><head><meta charset="utf-8"><title>Pasatiempos Tranquilos {book["volume"]} (portada)</title><style>
 {font_css()}{V2.fonts_css()}
 @page {{ size: {W/U:.4f}in {H/U:.4f}in; margin: 0; }}
 html, body {{ margin: 0; padding: 0; }}

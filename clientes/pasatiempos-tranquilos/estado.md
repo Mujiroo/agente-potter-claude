@@ -138,3 +138,9 @@
   - Respondido (msg 997): NO; el estudio validó el formato, no los temas. Opciones con datos: A Fe y esperanza (bíblica; recomendada: Biblia BSR 753–15.384, devocional 5.160) · B Recuerdos de antes (Memory Lane 955; obliga a rehacer el Vol. 3) · C Fiestas y tradiciones (sin dato; Navidad en Q4). Esperando elección.
   - Autocompletado amazon.com 18-sep (alias aps): biblia/biblicas/cristianas/católico/salmos/mujeres de la biblia/letra grande; recuerdos, nostalgia, años 50, telenovela; navidad; baby shower (juego de fiesta, otra intención); por país: mexicana, colombia, puerto rico, boricua, venezuela, república dominicana.
   - Listo por si sigue C: muestras de color con fondo E en `entregables/vol2/colores/` (morado, azul, hoja.png). `fondos_es.PALETAS` + `f_brillos(pal=...)`.
+- 18-sep 10:22 Pedro elige C: Vol. 2 sigue «Fiestas y tradiciones» (msg 998). Pregunté color (msgs 999–1000; muestras en `entregables/vol2/colores/`).
+  - Listas Vol. 2 en `temas_serie.py`: títulos en mayúsculas RAE (festividades con mayúscula), «Día de la Madre», «Esperando al bebé». 18 palabras cambiadas (casi repetidas en el libro o repetidas con el Vol. 3; ORO palíndromo → ZAPATITOS). `verificar_temas.py`: 1.080 únicas OK, 0 palíndromos. Respaldo previo en scratchpad (temporal).
+  - `portada_final_es.set_volumen(book)`: color por `cover_full.palette` (rojo/morado/azul) y texto de volumen desde `volume` + `cover.title`. Vol. 1 regenerado idéntico (cmp).
+  - `vol2.json` (seed 22, palette morado). PDFs en `entregables/vol2/`: verificador 0/0; márgenes, zona segura, lomo y código de barras OK; 0 Type3; 0 imágenes; sudokus y laberintos distintos a los del Vol. 1; soluciones pág. 74.
+  - Ficha KDP Vol. 2 en `ficha_kdp.md` + `entregables/vol2/descripcion_kdp.txt` (keyword 6 → «sopa de letras navidad»).
+  - Propuesta final enviada (msgs 1001–1003). Esperando color (morado por defecto) y OK.

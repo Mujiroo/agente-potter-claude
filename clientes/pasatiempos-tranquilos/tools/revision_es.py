@@ -14,6 +14,7 @@ sys.path.insert(0, HERE)
 import portada_final_es as PF  # noqa: E402
 
 book = json.load(open(sys.argv[1], encoding="utf-8"))
+PF.set_volumen(book)
 doc = open(sys.argv[2], encoding="utf-8").read()
 b = PF.BLEED * PF.U
 tw, th = book["trim"]

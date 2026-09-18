@@ -1,0 +1,608 @@
+{
+ "title": "Sopa de Letras, Sudoku y Laberintos",
+ "subtitle": "Pasatiempos Tranquilos en Letra Grande para Adultos Mayores",
+ "volume": "Vol. 2",
+ "tagline": "40 sopas de letras · 20 sudokus fáciles · 10 laberintos · letra grande",
+ "trim": [
+  8.5,
+  11
+ ],
+ "size": 13,
+ "seed": 22,
+ "author": "Peter & Cardu",
+ "year": 2026,
+ "series": "Pasatiempos Tranquilos",
+ "instructions_style": "icons",
+ "tips_page": true,
+ "thanks_page": true,
+ "cover": {
+  "author": "Peter & Cardu",
+  "script": "Pasatiempos Tranquilos",
+  "title": "Fiestas y tradiciones"
+ },
+ "sudokus": 20,
+ "mazes": 10,
+ "word_puzzles": [
+  {
+   "theme": "Año Nuevo",
+   "words": [
+    "UVAS",
+    "CAMPANADAS",
+    "PROPOSITOS",
+    "MEDIANOCHE",
+    "PIROTECNIA",
+    "CALENDARIO",
+    "BUENOS DESEOS",
+    "CHAMPAÑA",
+    "CONTEO"
+   ]
+  },
+  {
+   "theme": "Carnaval",
+   "words": [
+    "DISFRAZ",
+    "MASCARAS",
+    "COMPARSA",
+    "SERPENTINA",
+    "CONFETI",
+    "CARROZA",
+    "MURGA",
+    "DESFILE",
+    "PLUMAS"
+   ]
+  },
+  {
+   "theme": "Semana Santa",
+   "words": [
+    "AYUNO",
+    "PROCESION",
+    "CUARESMA",
+    "PASCUA",
+    "VIGILIA",
+    "RESURRECCION",
+    "CIRIOS",
+    "PESCADO",
+    "RECOGIMIENTO"
+   ]
+  },
+  {
+   "theme": "Día de la Madre",
+   "words": [
+    "FLORES",
+    "DESVELOS",
+    "DESAYUNO",
+    "MAMITA",
+    "ROSAS",
+    "BESOS",
+    "DEDICACION",
+    "CARIÑO",
+    "HOMENAJE"
+   ]
+  },
+  {
+   "theme": "Día del Padre",
+   "words": [
+    "PAPITO",
+    "HEROE",
+    "BILLETERA",
+    "PARRILLADA",
+    "PROTECTOR",
+    "GUIA",
+    "PARTIDO",
+    "COLONIA",
+    "RELOJ"
+   ]
+  },
+  {
+   "theme": "Fiestas Patrias",
+   "words": [
+    "BANDERA",
+    "HIMNO",
+    "INDEPENDENCIA",
+    "PATRIA",
+    "ESCARAPELA",
+    "PROCERES",
+    "ESCUDO",
+    "TRICOLOR",
+    "FESTEJOS"
+   ]
+  },
+  {
+   "theme": "Día de Muertos",
+   "words": [
+    "OFRENDA",
+    "CEMPASUCHIL",
+    "CALAVERITA",
+    "VELADORA",
+    "PAPEL PICADO",
+    "COPAL",
+    "CATRINA",
+    "PAN DE MUERTO",
+    "MEMORIA"
+   ]
+  },
+  {
+   "theme": "Nochebuena",
+   "words": [
+    "CENA",
+    "VILLANCICOS",
+    "ESTRELLA",
+    "PESEBRE",
+    "MISA DE GALLO",
+    "PONCHE",
+    "ROMPOPE",
+    "AGUINALDO",
+    "VELAS"
+   ]
+  },
+  {
+   "theme": "Navidad en casa",
+   "words": [
+    "ARBOLITO",
+    "ESFERAS",
+    "REGALOS",
+    "GUIRNALDA",
+    "LUCECITAS",
+    "CORONA",
+    "ADORNOS",
+    "MOÑOS",
+    "TARJETAS"
+   ]
+  },
+  {
+   "theme": "Día de Reyes",
+   "words": [
+    "MELCHOR",
+    "GASPAR",
+    "BALTASAR",
+    "CAMELLOS",
+    "ZAPATITOS",
+    "INCIENSO",
+    "MIRRA",
+    "REYES MAGOS",
+    "ORIENTE"
+   ]
+  },
+  {
+   "theme": "Fiesta de cumpleaños",
+   "words": [
+    "PASTEL",
+    "GLOBOS",
+    "VELITAS",
+    "INVITADOS",
+    "SORPRESA",
+    "PIÑATA",
+    "DESEO",
+    "DULCES",
+    "GORRITOS"
+   ]
+  },
+  {
+   "theme": "La boda",
+   "words": [
+    "NOVIA",
+    "NOVIO",
+    "ANILLOS",
+    "VALS",
+    "ARRAS",
+    "VELO",
+    "RAMO",
+    "BRINDIS",
+    "ALTAR"
+   ]
+  },
+  {
+   "theme": "El bautizo",
+   "words": [
+    "PADRINO",
+    "MADRINA",
+    "AGUA BENDITA",
+    "CAPILLA",
+    "BENDICION",
+    "ROPON",
+    "PILA",
+    "PARROQUIA",
+    "BEBITO"
+   ]
+  },
+  {
+   "theme": "Primera comunión",
+   "words": [
+    "CALIZ",
+    "CATECISMO",
+    "VESTIDO BLANCO",
+    "ROSARIO",
+    "BIBLIA",
+    "MISAL",
+    "CRUCIFIJO",
+    "CATEQUISTA",
+    "HOSTIA"
+   ]
+  },
+  {
+   "theme": "Quinceañera",
+   "words": [
+    "CHAMBELANES",
+    "TIARA",
+    "QUINCE AÑOS",
+    "MUÑECA",
+    "PRINCESA",
+    "COREOGRAFIA",
+    "FOTOGRAFO",
+    "LENTEJUELAS",
+    "MAQUILLAJE"
+   ]
+  },
+  {
+   "theme": "Graduación",
+   "words": [
+    "TOGA",
+    "BIRRETE",
+    "DIPLOMA",
+    "TITULO",
+    "DISCURSO",
+    "MEDALLA",
+    "COMPAÑEROS",
+    "BORLA",
+    "EXITO"
+   ]
+  },
+  {
+   "theme": "Aniversario",
+   "words": [
+    "FIDELIDAD",
+    "COMPLICIDAD",
+    "ROMANCE",
+    "PROMESA",
+    "BODAS DE PLATA",
+    "VOTOS",
+    "VELADA",
+    "DETALLES",
+    "CARTA DE AMOR"
+   ]
+  },
+  {
+   "theme": "Esperando al bebé",
+   "words": [
+    "CUNA",
+    "PAÑALES",
+    "BIBERON",
+    "CHUPETE",
+    "SONAJERO",
+    "COCHECITO",
+    "MANTITA",
+    "CIGUEÑA",
+    "BABEROS"
+   ]
+  },
+  {
+   "theme": "Bodas de oro",
+   "words": [
+    "CINCUENTA",
+    "DORADO",
+    "COMPROMISO",
+    "BISNIETOS",
+    "MEDIO SIGLO",
+    "ESPOSOS",
+    "FIESTA",
+    "ALIANZA",
+    "TRAYECTORIA"
+   ]
+  },
+  {
+   "theme": "Reunión familiar",
+   "words": [
+    "REENCUENTRO",
+    "FOTO GRUPAL",
+    "MESA LARGA",
+    "COMIDA",
+    "TIAS",
+    "MUSICA",
+    "CONVIVENCIA",
+    "BIENVENIDA",
+    "CELEBRACION"
+   ]
+  },
+  {
+   "theme": "Boleros",
+   "words": [
+    "GUITARRA",
+    "REQUINTO",
+    "MARACAS",
+    "ROMANTICO",
+    "CANCION",
+    "NOSTALGIA",
+    "SUSPIROS",
+    "MELODIA",
+    "ENAMORADOS"
+   ]
+  },
+  {
+   "theme": "Salsa",
+   "words": [
+    "TIMBAL",
+    "CONGA",
+    "CLAVE",
+    "TROMPETA",
+    "SABOR",
+    "SONERO",
+    "BONGO",
+    "ORQUESTA",
+    "PASITOS"
+   ]
+  },
+  {
+   "theme": "Cumbia",
+   "words": [
+    "ACORDEON",
+    "GUACHARACA",
+    "GAITA",
+    "TAMBORA",
+    "POLLERA",
+    "RITMO",
+    "PALMAS",
+    "PAREJA",
+    "GIROS"
+   ]
+  },
+  {
+   "theme": "Merengue y bachata",
+   "words": [
+    "GUIRA",
+    "BACHATA",
+    "MERENGUE",
+    "SAXOFON",
+    "VUELTAS",
+    "SANTO DOMINGO",
+    "BAJO ELECTRICO",
+    "CARIBE",
+    "PISTA"
+   ]
+  },
+  {
+   "theme": "Tango",
+   "words": [
+    "BANDONEON",
+    "MILONGA",
+    "BUENOS AIRES",
+    "ARRABAL",
+    "COMPAS",
+    "VIOLIN",
+    "PASION",
+    "ELEGANCIA",
+    "FIGURAS"
+   ]
+  },
+  {
+   "theme": "Mariachi y rancheras",
+   "words": [
+    "VIHUELA",
+    "GUITARRON",
+    "CHARRO",
+    "CORRIDO",
+    "JALISCO",
+    "BOTINES",
+    "BIGOTES",
+    "SARAPE",
+    "RANCHERA"
+   ]
+  },
+  {
+   "theme": "Instrumentos",
+   "words": [
+    "PIANO",
+    "ARPA",
+    "FLAUTA",
+    "CLARINETE",
+    "CHARANGO",
+    "QUENA",
+    "CUATRO",
+    "MARIMBA",
+    "ZAMPOÑA"
+   ]
+  },
+  {
+   "theme": "La serenata",
+   "words": [
+    "SERENATA",
+    "BALCON",
+    "DEDICATORIA",
+    "PRETENDIENTE",
+    "TROVADOR",
+    "POEMA",
+    "CORTEJO",
+    "REJA",
+    "CANTO"
+   ]
+  },
+  {
+   "theme": "Tríos y voces",
+   "words": [
+    "CANTANTE",
+    "ARMONIA",
+    "MICROFONO",
+    "TENOR",
+    "SOPRANO",
+    "CORO",
+    "DUETO",
+    "ESCENARIO",
+    "APLAUSOS"
+   ]
+  },
+  {
+   "theme": "Bailes de salón",
+   "words": [
+    "CHACHACHA",
+    "PASODOBLE",
+    "DANZON",
+    "MAMBO",
+    "BOLERO",
+    "TACONES",
+    "SALON",
+    "GALA",
+    "ZAPATEO"
+   ]
+  },
+  {
+   "theme": "Juegos de mesa",
+   "words": [
+    "LOTERIA",
+    "DOMINO",
+    "NAIPES",
+    "DADOS",
+    "AJEDREZ",
+    "DAMAS",
+    "TABLERO",
+    "FICHAS",
+    "BINGO"
+   ]
+  },
+  {
+   "theme": "Juegos de la infancia",
+   "words": [
+    "CANICAS",
+    "TROMPO",
+    "RAYUELA",
+    "YOYO",
+    "ESCONDIDAS",
+    "COMETA",
+    "RONDA",
+    "PELOTA",
+    "SOLDADITOS"
+   ]
+  },
+  {
+   "theme": "La plaza del pueblo",
+   "words": [
+    "KIOSCO",
+    "IGLESIA",
+    "FUENTE",
+    "MONUMENTO",
+    "FAROLES",
+    "CAMPANARIO",
+    "HELADERO",
+    "ALCALDIA",
+    "PORTALES"
+   ]
+  },
+  {
+   "theme": "La feria",
+   "words": [
+    "CARRUSEL",
+    "ALGODON",
+    "TIRO AL BLANCO",
+    "PREMIOS",
+    "CARPAS",
+    "PELUCHES",
+    "TOMBOLA",
+    "RIFA",
+    "CABALLITOS"
+   ]
+  },
+  {
+   "theme": "Oficios de antes",
+   "words": [
+    "ZAPATERO",
+    "SASTRE",
+    "HERRERO",
+    "LECHERO",
+    "AFILADOR",
+    "CARPINTERO",
+    "LAVANDERA",
+    "COSTURERA",
+    "PELUQUERO"
+   ]
+  },
+  {
+   "theme": "Refranes y dichos",
+   "words": [
+    "REFRANES",
+    "DICHOS",
+    "CAMARON",
+    "CORRIENTE",
+    "GOLONDRINA",
+    "BUEN ARBOL",
+    "PAJARO EN MANO",
+    "MAL TIEMPO",
+    "BUENA CARA"
+   ]
+  },
+  {
+   "theme": "Cuentos y leyendas",
+   "words": [
+    "HABIA UNA VEZ",
+    "DUENDE",
+    "SIRENA",
+    "CASTILLO",
+    "HADAS",
+    "DRAGON",
+    "TESORO",
+    "FABULA",
+    "LEYENDA"
+   ]
+  },
+  {
+   "theme": "Radio y telenovelas",
+   "words": [
+    "RADIONOVELA",
+    "LOCUTOR",
+    "ANTENA",
+    "PERILLA",
+    "VILLANA",
+    "GALAN",
+    "CAPITULO",
+    "FINAL FELIZ",
+    "ESTRENO"
+   ]
+  },
+  {
+   "theme": "La escuela de antes",
+   "words": [
+    "PIZARRON",
+    "TIZA",
+    "CUADERNO",
+    "MAESTRA",
+    "PUPITRE",
+    "RECREO",
+    "UNIFORME",
+    "TAREA",
+    "TINTERO"
+   ]
+  },
+  {
+   "theme": "Fútbol y béisbol",
+   "words": [
+    "GOL",
+    "PORTERO",
+    "CANCHA",
+    "ESTADIO",
+    "BATE",
+    "JONRON",
+    "CAMISETA",
+    "PENAL",
+    "AFICIONADOS"
+   ]
+  }
+ ],
+ "cover_full": {
+  "page_count": 122,
+  "paper": "white",
+  "author": "Peter & Cardu",
+  "back_headline": "Un rato de calma, en español",
+  "back_intro": [
+   "Tres pasatiempos clásicos en un solo libro, con <b>letra grande</b> y temas que traen buenos recuerdos: las fiestas del año, las celebraciones de la familia, la música que se baila y las costumbres de toda Latinoamérica."
+  ],
+  "back_bullets": [
+   "<b>40 sopas de letras</b> sobre fiestas, celebraciones, música y costumbres latinas",
+   "<b>20 sudokus fáciles</b>, cada uno con una sola solución",
+   "<b>10 laberintos</b> para relajarse",
+   "Palabras <b>fáciles de encontrar</b>: se leen de izquierda a derecha, hacia abajo o en diagonal",
+   "Formato grande: 21,6 × 27,9 cm (8,5 × 11\")",
+   "<b>Soluciones</b> al final del libro"
+  ],
+  "back_close": "Un regalo ideal para mamá, papá, los abuelos… o para ti.",
+  "series_line": "Pasatiempos Tranquilos · Vol. 2",
+  "spine": "SOPA DE LETRAS · SUDOKU · LABERINTOS   ·   PASATIEMPOS TRANQUILOS VOL. 2   ·   PETER & CARDU",
+  "palette": "morado"
+ }
+}
