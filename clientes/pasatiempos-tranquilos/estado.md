@@ -144,3 +144,4 @@
   - `vol2.json` (seed 22, palette morado). PDFs en `entregables/vol2/`: verificador 0/0; márgenes, zona segura, lomo y código de barras OK; 0 Type3; 0 imágenes; sudokus y laberintos distintos a los del Vol. 1; soluciones pág. 74.
   - Ficha KDP Vol. 2 en `ficha_kdp.md` + `entregables/vol2/descripcion_kdp.txt` (keyword 6 → «sopa de letras navidad»).
   - Propuesta final enviada (msgs 1001–1003). Esperando color (morado por defecto) y OK.
+- 18-sep 10:32 Pedro: «morado ok» (msg 1004). Enviados manuscrito, portada, descripción y diferencias de ficha (msgs 1005+). Vol. 2 listo para subir.
