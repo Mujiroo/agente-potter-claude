@@ -27,3 +27,6 @@ Ver [[rol]] y [[preferencias]].
 
 ## Tamarama SpA — mangueras
 - Importa mangueras de PVC de succión y de jardín desde China, como trader para sus clientes. Proveedor anterior: Dongying Wanhe (2021), con problemas de durabilidad. En sept. 2026 evalúa a Weifang Xiandai. Detalle en `clientes/tamarama/estado.md`.
+
+## Marca de autor «Peter & Cardu»
+- Historia que Pedro autorizó para la biografía (Telegram, 2026-09-18, msg 1119): pareja del sur de Latinoamérica, les gusta recorrer pueblitos pintorescos, apasionados de los juegos de mesa y de cartas; diseñan libros de pasatiempos que usan ellos mismos y los venden. Bios A/B (ES+EN) propuestas en msgs 1120–1121; recomendada B. Sin nombres reales ni ciudad.
