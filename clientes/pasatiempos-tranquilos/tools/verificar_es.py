@@ -14,8 +14,8 @@ ALL8 = [(0, 1), (0, -1), (1, 0), (-1, 0), (1, 1), (1, -1), (-1, 1), (-1, -1)]
 sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/../../libro-sopa-de-letras/tools")
 from generar import BAD  # noqa: E402
 sys.path.insert(0, __file__.rsplit("/", 1)[0] + "/..")
-from verificar_temas import BAD_ES  # noqa: E402
-BAD = list(dict.fromkeys(BAD + BAD_ES))
+from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
+BAD = list(dict.fromkeys(BAD + BAD_ES + BAD_RELLENO))
 
 
 def solvable_by_singles(g):

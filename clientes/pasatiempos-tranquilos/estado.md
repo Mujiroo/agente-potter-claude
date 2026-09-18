@@ -145,3 +145,8 @@
   - Ficha KDP Vol. 2 en `ficha_kdp.md` + `entregables/vol2/descripcion_kdp.txt` (keyword 6 → «sopa de letras navidad»).
   - Propuesta final enviada (msgs 1001–1003). Esperando color (morado por defecto) y OK.
 - 18-sep 10:32 Pedro: «morado ok» (msg 1004). Enviados manuscrito, portada, descripción y diferencias de ficha (msgs 1005+). Vol. 2 listo para subir.
+- 18-sep 10:32–10:37 Pedro pide revisar de nuevo el Vol. 2 antes de subir (msg 1005). Segunda revisión: grillas con palabras vulgares formadas al azar que el filtro no tenía (Vol. 1: PICO, CHOTA, CACA, MOCO, CAGON, CUCA, PITO; Vol. 2: CACA, TOTA).
+  - `BAD_RELLENO` en `verificar_temas.py` (sólo relleno, no listas; se toleran dentro de palabras de la lista: CACA en CACAO, PITO en PAPITO), usado por `generar_es.py` y `verificar_es.py`.
+  - Ambos volúmenes regenerados: verificador 0/0, barrido amplio limpio. Sudokus y laberintos sin cambios (se generan antes que las grillas); portada igual.
+  - Avisé a Pedro que no publicara el Vol. 1 (msg 1011). No lo había subido (faltaba precio, msg 1016). Enviado interior corregido Vol. 1 (msg 1014) + instrucciones + precio recomendado 9,99 → 12,99.
+  - Pendiente: reenviar a Pedro los PDF corregidos del Vol. 2.

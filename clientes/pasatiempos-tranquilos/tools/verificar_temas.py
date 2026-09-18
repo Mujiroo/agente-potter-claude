@@ -10,6 +10,12 @@ BAD_ES = ("PUTA PUTO CULO COÑO VERGA PENE PICHULA PIJA POLLA CONCHA CHUCHA CHOC
           "CABRON JODER JODID MIERDA CAGAR CAGAD MAMAR MAMADA COGER COJON HUEVON HUEVO MARICA MARICON JOTO PUÑETA "
           "CARAJO CHINGA ORTO POTO CACHAR TETA TETAS ZORRA PERRA GUARRA MAMON CULIAO CULEAR BOLUDO PELOTUDO SORETE "
           "CHIMBA GONORREA MALPARID CAPULLO GILIPOLL NALGA PEDO MEAR ESTUPID IDIOTA IMBECIL NAZI").split()
+# Sólo para el RELLENO de la grilla (no para las listas): palabras que el azar puede formar y que
+# son vulgares en alguna región (PICO en Chile, CHOTA en Perú/Argentina, TOTA y BICHO en Puerto Rico) o de mal gusto. CACA vive
+# dentro de CACAO, por eso no va en BAD_ES (marcaría la palabra de la lista). Revisión del 18-sep-2026.
+BAD_RELLENO = ("PICO CHOTA CACA PAJA PICHA MOCO CAGON CUCA PITO TOTA PINGA BICHO OJETE CULERO SEXO").split()
+
+
 def main():
     ok = True
     seen = {}

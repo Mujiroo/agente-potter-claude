@@ -34,11 +34,11 @@ import puzzles as PZ  # noqa: E402
 import pagina2_es as pagina2  # noqa: E402
 from generar import FORWARD, build, words_block  # noqa: E402
 from generar import grid_svg as _grid_svg  # noqa: E402
-from verificar_temas import BAD_ES  # noqa: E402
+from verificar_temas import BAD_ES, BAD_RELLENO  # noqa: E402
 
 # Relleno con frecuencias aproximadas del español (incluye Ñ) y groserías en ambos idiomas.
 generar.ALPHA = "AAAAAAAAAAAABBCCCCDDDDDEEEEEEEEEEEEEFGGHIIIIIIJLLLLLMMMNNNNNNNÑOOOOOOOOOPPPQRRRRRRRSSSSSSSTTTTTUUUUVYZ"
-generar.BAD[:] = list(dict.fromkeys(generar.BAD + BAD_ES))
+generar.BAD[:] = list(dict.fromkeys(generar.BAD + BAD_ES + BAD_RELLENO))
 
 
 def grid_svg(grid, placed=None):
