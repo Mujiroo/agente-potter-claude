@@ -125,10 +125,10 @@ def thanks_page(book):
     title = html.escape(book.get("series", book["title"]))
     return ('<div class="thanks">'
             f'{icon("cup", "0.8in")}<div class="t-script">¡Gracias!</div>'
-            f'<p>Gracias por regalarte un rato de calma con <i>{title}</i>. '
-            'Esperamos que estas páginas te hayan dado momentos tranquilos y felices.</p>'
-            '<p>Si te gustó este libro, te agradeceríamos mucho que dejaras una breve reseña con tu opinión sincera. '
-            'Ayuda a que otras personas lo encuentren y nos anima a preparar el próximo volumen.</p>'
+            f'<p>Nos alegra que hayas elegido <i>{title}</i> para tus ratos de calma. '
+            'Esperamos que cada página te haya regalado momentos felices.</p>'
+            '<p>Si el libro te gustó, cuéntalo con una breve reseña en Amazon. Tu opinión sincera ayuda '
+            'a otras personas a encontrarlo y nos anima a preparar el próximo volumen.</p>'
             f'<div class="sign">{html.escape(book.get("author", "").upper())}</div></div>')
 
 
