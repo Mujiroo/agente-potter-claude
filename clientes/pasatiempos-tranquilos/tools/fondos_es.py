@@ -12,7 +12,6 @@ import sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import portadas_v2 as V2  # noqa: E402
 from portadas_opciones import W, H, page  # noqa: E402
-import portada_final_es as PF  # noqa: E402
 
 CX, TY = W / 2, 300  # centro horizontal y altura del título
 ROJO, OSC = "#C62828", "#7F1414"
@@ -33,10 +32,10 @@ def textura(fill, op=1.0):
     return V2.tex(fill, op)
 
 
-def viñeta(k):
+def viñeta(k, w=W, h=H):
     """Centro más luminoso detrás del título, bordes más oscuros."""
-    return (f'<defs>{radial(f"vg{k}", CX, TY + 60, 820, [(0, "#DC3B2E", 1), (0.55, ROJO, 1), (1, "#8C1616", 1)])}</defs>'
-            f'<rect width="{W}" height="{H}" fill="url(#vg{k})"/>')
+    return (f'<defs>{radial(f"vg{k}", w / 2, TY + 60, 820, [(0, "#DC3B2E", 1), (0.55, ROJO, 1), (1, "#8C1616", 1)])}</defs>'
+            f'<rect width="{w}" height="{h}" fill="url(#vg{k})"/>')
 
 
 def f_actual():
@@ -72,13 +71,16 @@ def f_tono():
     return viñeta("d") + textura("#F0625A", 0.30)
 
 
-def f_brillos():
-    """E · Brillos: viñeta + halos de luz cálida (naranja y rosa) en esquinas y detrás del título."""
-    halos = [("h1", CX, TY, 420, "#FFB74D", 0.22), ("h2", 60, 60, 380, "#FF8A65", 0.20),
-             ("h3", W - 40, 700, 360, "#F06292", 0.16), ("h4", 120, H - 260, 340, "#FFB74D", 0.14)]
+def f_brillos(w=W, h=H, k="e", espejo=False, tex=True):
+    """E · Brillos: viñeta + halos de luz cálida (naranja y rosa) en esquinas y detrás del título.
+    Elegido por Pedro (18-sep, msg 952). espejo=True para la contratapa (halos reflejados hacia el lomo)."""
+    mx = (lambda x: w - x) if espejo else (lambda x: x)
+    halos = [(f"{k}1", w / 2, TY, 420, "#FFB74D", 0.22), (f"{k}2", mx(60), 60, 380, "#FF8A65", 0.20),
+             (f"{k}3", mx(w - 40), 700, 360, "#F06292", 0.16), (f"{k}4", mx(120), h - 260, 340, "#FFB74D", 0.14)]
     defs = "".join(radial(i, x, y, r, [(0, c, a), (1, c, 0)]) for i, x, y, r, c, a in halos)
-    return (viñeta("e") + f'<defs>{defs}</defs>'
-            + "".join(f'<rect width="{W}" height="{H}" fill="url(#{i})"/>' for i, *_ in halos) + textura("#FFFFFF", 0.09))
+    return (viñeta(k, w, h) + f'<defs>{defs}</defs>'
+            + "".join(f'<rect width="{w}" height="{h}" fill="url(#{i})"/>' for i, *_ in halos)
+            + (textura("#FFFFFF", 0.09) if tex else ""))
 
 
 FONDOS = [("0-actual", "Actual (plano)", f_actual), ("A-vineta", "A · Viñeta cálida", f_vineta),
@@ -86,6 +88,7 @@ FONDOS = [("0-actual", "Actual (plano)", f_actual), ("A-vineta", "A · Viñeta c
           ("D-tono", "D · Tono sobre tono", f_tono), ("E-brillos", "E · Brillos cálidos", f_brillos)]
 
 if __name__ == "__main__":
+    import portada_final_es as PF
     out = sys.argv[1]
     os.makedirs(out, exist_ok=True)
     for name, _l, fn in FONDOS:

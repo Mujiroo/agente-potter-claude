@@ -18,6 +18,7 @@ sys.path.insert(0, os.path.join(HERE, "..", "..", "calm-cozy", "tools"))
 
 from portada_cozy import BLEED, PAPER, U, font_css, letter_texture  # noqa: E402
 import portadas_v2 as V2  # noqa: E402
+import fondos_es  # noqa: E402
 
 ROJO, OSC, AM, AZUL = "#C62828", "#7F1414", "#FFD54F", "#1E3A8A"
 # Tipografía E elegida por Pedro (17-sep, msg 874): Archivo Black + Bree Serif + Caveat
@@ -33,15 +34,17 @@ def esc(s):
 
 def texture(x0, y0, w, h, seed=28):
     return (f'<svg x="{x0}" y="{y0}" width="{w}" height="{h}" viewBox="0 0 {w} {h}" overflow="hidden">'
-            f'{letter_texture(0, 0, w, h, "#FFFFFF", 0.10, cell=50, size=28, seed=seed)}</svg>')
+            f'{letter_texture(0, 0, w, h, "#FFFFFF", 0.09, cell=50, size=28, seed=seed)}</svg>')
 
 
 def front(x0, w, H):
-    """El diseño 1 tal cual (mide W = 8,75" con sangrado); si w es mayor, se extiende el fondo por el borde exterior."""
-    return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="{ROJO}"/>'
-            f'<g transform="translate({x0} 0)">{V2.p1(fonts=FONTS)}</g>'
+    """El diseño 1 con el fondo E «Brillos cálidos» (Pedro, 18-sep, msg 952); mide W = 8,75" con sangrado.
+    Si w es mayor, se extiende el fondo por el borde exterior."""
+    p1 = V2.p1(fonts=FONTS, fondo=fondos_es.f_brillos(k="fe"))
+    return (f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="#8C1616"/>'
+            f'<g transform="translate({x0} 0)">{p1}</g>'
             f'<rect x="{x0 + V2.W - 1}" y="{H-215}" width="{w - V2.W + 1}" height="130" fill="{AM}"/>'
-            if w > V2.W else f'<g transform="translate({x0} 0)">{V2.p1(fonts=FONTS)}</g>')
+            if w > V2.W else f'<g transform="translate({x0} 0)">{p1}</g>')
 
 
 def back(x0, w, H, cv, trim_right):
@@ -50,7 +53,9 @@ def back(x0, w, H, cv, trim_right):
     width = trim_right - left - 55
     cx = left + width / 2
     bx, by = trim_right - BARCODE_MARGIN - BARCODE[0], H - b - BARCODE_MARGIN - BARCODE[1]
-    out = [f'<rect x="{x0}" y="0" width="{w}" height="{H}" fill="{ROJO}"/>', texture(x0, 0, w, H, seed=28),
+    fondo = fondos_es.f_brillos(w, H, k="be", espejo=True, tex=False)  # mismo fondo E que el frente, reflejado
+    out = [f'<svg x="{x0}" y="0" width="{w}" height="{H}" viewBox="0 0 {w} {H}" overflow="hidden">{fondo}</svg>',
+           texture(x0, 0, w, H, seed=28),
            f'<text x="{cx}" y="{b+120}" text-anchor="middle" font-family="{SCRIPT}" font-size="70" fill="{AM}">{esc(cv["back_headline"])}</text>',
            f'<rect x="{left}" y="{b+160}" width="{width}" height="560" rx="24" fill="#FFFFFF"/>',
            f'<foreignObject x="{left+34}" y="{b+186}" width="{width-68}" height="512">'

@@ -117,3 +117,6 @@
 - 18-sep 09:3x Fondos de portada (msg 941): `p1(fondo=...)` en `portadas_v2.py` y `tools/fondos_es.py` con 5 variantes vectoriales (degradados SVG, sin filtros): A viñeta · B rojo profundo · C rayos · D tono sobre tono · E brillos cálidos. PNG y `hoja.png` en `entregables/portadas/fondos/`. PDF de prueba de cada una: 0 Type3, 0 imágenes.
   - Enviados msgs 948–951. Recomendé E; alternativa C. Al elegir: aplicar el mismo fondo a lomo y contratapa en `portada_final_es.py` (hoy `ROJO` plano + `texture()`).
   - OJO: Chrome headless `--screenshot` se colgó o crasheó con la lámina (hoja.html con <img>). Con agent-browser (`set viewport` + `screenshot`) funcionó.
+- 18-sep 09:34 Pedro elige **fondo E «Brillos cálidos»** (msg 952). `f_brillos(w, h, k, espejo, tex)` en `fondos_es.py`; `portada_final_es.py`: frente con `p1(fondo=f_brillos(k="fe"))`, contratapa con `f_brillos(espejo=True, tex=False)` + `texture()` (opacidad 0,09 como el frente). Lomo sigue `OSC` plano.
+  - Regenerados portada KDP (1261,78×810 pt) y revisión (124 págs.): 0 Type3, 0 imágenes. `preview_portada_completa.png` revisada a ojo.
+- 18-sep 09:35 Pedro pide ver el interior final (msg 954). Enviados interior, preview, revisión y portada (msgs 955–959). Sigue pendiente el OK para cambiar «Nunca al revés» en Cómo jugar.
