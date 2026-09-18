@@ -120,3 +120,7 @@
 - 18-sep 09:34 Pedro elige **fondo E «Brillos cálidos»** (msg 952). `f_brillos(w, h, k, espejo, tex)` en `fondos_es.py`; `portada_final_es.py`: frente con `p1(fondo=f_brillos(k="fe"))`, contratapa con `f_brillos(espejo=True, tex=False)` + `texture()` (opacidad 0,09 como el frente). Lomo sigue `OSC` plano.
   - Regenerados portada KDP (1261,78×810 pt) y revisión (124 págs.): 0 Type3, 0 imágenes. `preview_portada_completa.png` revisada a ojo.
 - 18-sep 09:35 Pedro pide ver el interior final (msg 954). Enviados interior, preview, revisión y portada (msgs 955–959). Sigue pendiente el OK para cambiar «Nunca al revés» en Cómo jugar.
+- 18-sep 09:40 Pedro pide la revisión final antes de publicar, «como experto editor, diseñador y en libros de pasatiempos» (msgs 962, 964). Enviada (msg 965).
+  - Técnico OK: márgenes mínimos medidos con agent-browser (interior 0,60", exterior 0,50", sup. 0,50", inf. 0,34" = folio); portada sin textos fuera de la zona segura; texto del lomo a 0,085" de cada borde; código de barras libre; 6 fuentes incrustadas en el interior y 5 en la portada; verificador 0/0; soluciones en pág. 74.
+  - Propuse: (1) cambiar «Nunca al revés»; (2) nota «sin tildes / compuestas juntas» (16 compuestas); (3) títulos en mayúscula sólo inicial, salvo nombres propios. Falta la ficha KDP (precio anotado: lanzamiento US$ 9,99). Esperando OK.
+  - «ok» del msg 962 podría ser OK al recordatorio del Vol. 4 (msg 961). No lo programé: preguntar si no queda claro.
