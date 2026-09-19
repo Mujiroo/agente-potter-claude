@@ -30,3 +30,4 @@ Ver [[rol]] y [[preferencias]].
 
 ## Marca de autor «Peter & Cardu»
 - Historia que Pedro autorizó para la biografía (Telegram, 2026-09-18, msg 1119): pareja del sur de Latinoamérica, les gusta recorrer pueblitos pintorescos, apasionados de los juegos de mesa y de cartas; diseñan libros de pasatiempos que usan ellos mismos y los venden. Bios A/B (ES+EN) propuestas en msgs 1120–1121; Pedro eligió B y pidió: viajar, perderse en pueblitos pintorescos, juegos de mesa → de ahí nacen los libros (msg 1122). Versión mejorada en msg 1123. Sin nombres reales ni ciudad.
+- 2026-09-19 (msg 1279–1280): preguntó si la reseña de autor en Author Central lleva foto. Respondí: opcional; recomendé ilustración/logo de marca (sin caras reales, por ser seudónimo). Esperando que elija A (solo texto), B (ilustración, recomendada) o C (foto real).
