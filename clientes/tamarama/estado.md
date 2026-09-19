@@ -23,3 +23,7 @@
 - incoming/file_15.pdf (cotización Xiandai), incoming/file_14.pdf (SGS), incoming/file_16.pdf (PI Dongying 24-may-2021).
 - 13:08 Pedro pidió «el resumen de todo en un Excel» (msg 559). Se generó el 16-sep 14:05 con su autorización: `Mangueras_Xiandai_vs_Dongying.xlsx` (`excel_build.js`).
 - 18-sep 21:20 Pedro retoma mangueras (msg 1202). Enviado resumen + borrador de correo a Xiandai en inglés (msgs 1203–1204), 7 puntos: ficha técnica, material, SGS de otro producto, muestras, plan de carga con embalaje, Form F, negociar jardín. NO enviado; esperando revisión de Pedro.
+- 18-sep 21:24 Pedro pide qué proveedor es mejor (msgs 1205–1206). Análisis con datos públicos (msg 1207):
+  - Xiandai: 2002, especialista PVC, 100–120 líneas, 36.000–60.000 t/año (cifras inconsistentes entre fuentes), ISO 9001/14001/18001, SGS FDA/SVHC declarados. Fuentes: wfpvc.suppliergo.com/about.html, made-in-china, búsqueda.
+  - Wanhe: 2007, foco caucho, 14.000 m², exporta a +20 países incl. Chile, ISO 9001:2008 (versión vencida desde 2018). Fuente: whrubberhose.com/aboutus.html.
+  - Veredicto: Xiandai mejor para PVC; falta validar con muestras + ensayo del producto exacto y métricas Alibaba (bloqueadas para mí; ofrecí prompt para Claude en Chrome).
