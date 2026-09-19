@@ -573,3 +573,4 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - HALLAZGO: `portada_alt.letter_texture` con semilla 7 (frente) y 11 (contratapa) formaba SLUT, COCK, FUC, FUK, CUM, ASS, JEW, PIG, WOP. Nuevas semillas verificadas: 42 (frente) y 82 (contratapa). Afecta a las portadas de TODOS los Word Search publicados con estilo bold.
   - verificar.py y auditar_pdf.py: 0 errores; márgenes OK; MediaBox 432×648 / 900,16×666; 0 Type3.
   - Enviados a Pedro (msgs 1178+). Regenerar un libro publicado antes confirmó que el build es reproducible (texto idéntico al PDF subido).
+- 18-sep 21:02 Memory Lane edición 2: previsualizador OK (pág. 2 nueva, portada con HVQTWF y textura nueva, código de barras KDP). Pedro publica.
