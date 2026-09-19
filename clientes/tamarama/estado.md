@@ -1,7 +1,7 @@
 # Tamarama SpA — mangueras de PVC (proveedores chinos)
 
 ## Contexto
-- Tamarama SpA (RUT 76.518.407-K, Huesca 727, Curicó) importa mangueras de PVC de **succión** (amarilla, espiral rígida) y **jardín** (verde). Pedro es trader: presenta precios a sus clientes.
+- Tamarama SpA (Curicó) importa mangueras de PVC de **succión** (amarilla, espiral rígida) y **jardín** (verde). Pedro es trader: presenta precios a sus clientes.
 - Proveedor anterior: **Dongying Wanhe Rubber & Plastic**. Pedidos en 2021; último precio en la proforma DYWH20210607CH01 (7-jun-2021): US$ 21.016 FOB por un 40HQ, pago 30/70.
 - 14-sep-2026: Pedro pidió cotización a **Weifang Xiandai Plastics & Rubbers** (contacto vía Alibaba). Motivo: el proveedor actual tiene **problemas de calidad** («se ven bien, pero duran poco en terreno», según sus clientes). Pidió ficha técnica completa: WP/BP, vacío, radio de curvatura, temperatura, UV, certificaciones y MOQ.
 - 16-sep-2026: Xiandai mandó la cotización XDQ260916 (FOB por rollo; sin accesorios ni embalaje; precio por contenedor completo) y un informe SGS RoHS (TAOEC26010757001_1).
@@ -21,4 +21,4 @@
 
 ## Archivos
 - incoming/file_15.pdf (cotización Xiandai), incoming/file_14.pdf (SGS), incoming/file_16.pdf (PI Dongying 24-may-2021).
-- 13:08 Pedro pidió «el resumen de todo en un Excel» (msg 559). El script está listo (`scratchpad/xl/build.js`, con exceljs), pero **no lo ejecuté**: después llegó su regla de seguridad (msg 562). Le pedí autorización para correrlo (msg 574).
+- 13:08 Pedro pidió «el resumen de todo en un Excel» (msg 559). Se generó el 16-sep 14:05 con su autorización: `Mangueras_Xiandai_vs_Dongying.xlsx` (`excel_build.js`).
