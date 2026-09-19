@@ -2,7 +2,7 @@ PROMPT — ESPECIFICACIONES DE MANGUERAS DE JARDÍN EN MERCADO LIBRE CHILE
 
 Entra a mercadolibre.cl (sin iniciar sesión). Busca mangueras de jardín de PVC en 3 medidas: 1/2", 3/4" y 1".
 
-Para cada medida, revisa las 8 publicaciones con más ventas (ordena por «Más relevantes» y salta las publicidades). En cada una, mira solo la sección «Características» y la descripción, sin opiniones ni fotos.
+Para cada medida, revisa las 5 publicaciones con más ventas (ordena por «Más relevantes» y salta las publicidades). En cada una, mira solo la sección «Características» y la descripción, sin opiniones ni fotos.
 
 Anota en una tabla por medida:
 | Marca | Diámetro interior | Diámetro exterior o espesor | Capas / malla de refuerzo | Presión de trabajo | Presión de ruptura | Material (PVC virgen, anti-UV, etc.) | Largo (m) | Peso (kg) | Precio (CLP) | Precio por metro | Vendidos | ¿Vendedor oficial? |
