@@ -27,3 +27,4 @@
   - Xiandai: 2002, especialista PVC, 100–120 líneas, 36.000–60.000 t/año (cifras inconsistentes entre fuentes), ISO 9001/14001/18001, SGS FDA/SVHC declarados. Fuentes: wfpvc.suppliergo.com/about.html, made-in-china, búsqueda.
   - Wanhe: 2007, foco caucho, 14.000 m², exporta a +20 países incl. Chile, ISO 9001:2008 (versión vencida desde 2018). Fuente: whrubberhose.com/aboutus.html.
   - Veredicto: Xiandai mejor para PVC; falta validar con muestras + ensayo del producto exacto y métricas Alibaba (bloqueadas para mí; ofrecí prompt para Claude en Chrome).
+- 18-sep 21:37 Pedro pide correo para el contacto de Xiandai (msg 1208). Borrador enviado (msg 1209): 8 puntos (se agregó copia del ISO 9001 vigente y tono de interés en succión). NO enviado por mí.
