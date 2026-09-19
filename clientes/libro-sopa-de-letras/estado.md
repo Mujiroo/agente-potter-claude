@@ -575,3 +575,4 @@ primer escalón de regalía 60%: **$3,65 por copia** contra $2,15 si se pone a $
   - Enviados a Pedro (msgs 1178+). Regenerar un libro publicado antes confirmó que el build es reproducible (texto idéntico al PDF subido).
 - 18-sep 21:02 Memory Lane edición 2: previsualizador OK (pág. 2 nueva, portada con HVQTWF y textura nueva, código de barras KDP). Pedro publica.
 - 18-sep 21:06 Christmas Hunt edición 2: previsualizador OK (pág. 2 «holiday cheer», portada con texturas nuevas). Pedro publica; luego borrar borrador duplicado.
+- 18-sep 22:15 Pedro pregunta cuándo hacer publicidad (msg 1249): esperar ficha visible + 3–5 reseñas; Christmas desde mediados de octubre (y subir a 7,99); Calm & Cozy primero por regalía 4,72; Pasatiempos con la serie completa. Sin acceso a cuenta de Ads (armo el plan).
