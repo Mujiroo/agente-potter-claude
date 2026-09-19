@@ -22,3 +22,4 @@
 ## Archivos
 - incoming/file_15.pdf (cotización Xiandai), incoming/file_14.pdf (SGS), incoming/file_16.pdf (PI Dongying 24-may-2021).
 - 13:08 Pedro pidió «el resumen de todo en un Excel» (msg 559). Se generó el 16-sep 14:05 con su autorización: `Mangueras_Xiandai_vs_Dongying.xlsx` (`excel_build.js`).
+- 18-sep 21:20 Pedro retoma mangueras (msg 1202). Enviado resumen + borrador de correo a Xiandai en inglés (msgs 1203–1204), 7 puntos: ficha técnica, material, SGS de otro producto, muestras, plan de carga con embalaje, Form F, negociar jardín. NO enviado; esperando revisión de Pedro.
