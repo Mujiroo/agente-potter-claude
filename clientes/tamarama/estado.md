@@ -28,3 +28,4 @@
   - Wanhe: 2007, foco caucho, 14.000 m², exporta a +20 países incl. Chile, ISO 9001:2008 (versión vencida desde 2018). Fuente: whrubberhose.com/aboutus.html.
   - Veredicto: Xiandai mejor para PVC; falta validar con muestras + ensayo del producto exacto y métricas Alibaba (bloqueadas para mí; ofrecí prompt para Claude en Chrome).
 - 18-sep 21:37 Pedro pide correo para el contacto de Xiandai (msg 1208). Borrador enviado (msg 1209): 8 puntos (se agregó copia del ISO 9001 vigente y tono de interés en succión). NO enviado por mí.
+- 18-sep 21:39 ¿Especificaciones comparables? (msg 1214): parcialmente. Comparables: DI/DE, largo, peso → pared y kg/m (succión Xiandai más gruesa en 1"–2" y 4"; jardín 3/4" y 1" misma manguera). No comparables: presiones (sólo Wanhe), construcción, largo de rollo, fecha (Wanhe 2021, PI 24-may DYWH20210524CH02), material. Enviado msg 1215.
